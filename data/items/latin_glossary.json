@@ -1,0 +1,54 @@
+{
+  "id": "latin_glossary",
+  "type": "dictionary",
+  "name": "Latin deciphering glossary",
+  "from": "la",
+  "to": "cs",
+  "price": 5,
+  "entries": [
+    {
+      "type": "word",
+      "source": "lens",
+      "translation": "čočka"
+    },
+    {
+      "type": "word",
+      "source": "anulus",
+      "translation": "prstenec"
+    },
+    {
+      "type": "word",
+      "source": "discus",
+      "translation": "kotouč",
+      "forms": [
+        "discum"
+      ]
+    },
+    {
+      "type": "word",
+      "source": "Graecia",
+      "translation": "Řecko",
+      "forms": [
+        "Graecia"
+      ]
+    },
+    {
+      "type": "word",
+      "source": "finis",
+      "translation": "cíl"
+    },
+    {
+      "type": "verb",
+      "source": "convenire",
+      "translation": "setkat se",
+      "forms": [
+        "conveniunt"
+      ]
+    },
+    {
+      "type": "phrase",
+      "phrase": "latin_page2"
+    }
+  ],
+  "description": "A limited Latin to Czech dictionary. Read it to study its entries."
+}

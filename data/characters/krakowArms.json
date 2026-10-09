@@ -1,0 +1,14 @@
+{
+  "id": "krakowArms",
+  "name": "Piotr · bowyer",
+  "description": "A local weapons seller offering RPG supplies.",
+  "language": "pl",
+  "dialogue": "krakowArms",
+  "specialty": "weapons",
+  "stock": [
+    "short_bow",
+    "arrows",
+    "iron_sword",
+    "wooden_shield"
+  ]
+}

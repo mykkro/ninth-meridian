@@ -1,0 +1,12 @@
+{
+  "id": "ingrid",
+  "name": "Ingrid · northern guide",
+  "description": "A guide on the final road to Ireland.",
+  "language": "no",
+  "dialogue": "ingrid",
+  "stock": [
+    "ingrid_notes",
+    "scroll_en",
+    "scroll_native"
+  ]
+}

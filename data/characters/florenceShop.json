@@ -1,0 +1,13 @@
+{
+  "id": "florenceShop",
+  "name": "Florence · bookseller",
+  "language": "it",
+  "dialogue": "florenceShop",
+  "stock": [
+    "it_cs_route",
+    "scroll_en",
+    "scroll_native",
+    "latin_glossary"
+  ],
+  "description": "Florence · bookseller. Speaks Italian."
+}

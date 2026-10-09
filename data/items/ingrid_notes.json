@@ -1,0 +1,31 @@
+{
+  "id": "ingrid_notes",
+  "type": "dictionary",
+  "name": "Oslo field notes",
+  "description": "A limited local-language phrasebook for the final journey.",
+  "from": "no",
+  "to": "cs",
+  "price": 3,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "ingrid_greet"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ingrid_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ingrid_clue"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ingrid_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ingrid_bye"
+    }
+  ]
+}

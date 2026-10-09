@@ -1,0 +1,102 @@
+{
+  "id": "pl_sk",
+  "type": "dictionary",
+  "name": "Caravan phrasebook",
+  "from": "pl",
+  "to": "sk",
+  "price": 10,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "trade"
+    },
+    {
+      "type": "phrase",
+      "phrase": "polishClue"
+    },
+    {
+      "type": "phrase",
+      "phrase": "zofia_question"
+    },
+    {
+      "type": "phrase",
+      "phrase": "zofia_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "zofia_test"
+    },
+    {
+      "type": "phrase",
+      "phrase": "zofia_help"
+    },
+    {
+      "type": "phrase",
+      "phrase": "zofia_hint"
+    },
+    {
+      "type": "phrase",
+      "phrase": "zofia_answer"
+    },
+    {
+      "type": "phrase",
+      "phrase": "zofia_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "shopBrowse"
+    },
+    {
+      "type": "phrase",
+      "phrase": "shopLeave"
+    },
+    {
+      "type": "phrase",
+      "phrase": "askRumors"
+    },
+    {
+      "type": "phrase",
+      "phrase": "askLocalRumor"
+    },
+    {
+      "type": "phrase",
+      "phrase": "askTrailRumor"
+    },
+    {
+      "type": "phrase",
+      "phrase": "returnRumors"
+    },
+    {
+      "type": "phrase",
+      "phrase": "returnMain"
+    },
+    {
+      "type": "word",
+      "source": "klucz",
+      "translation": "kľúč",
+      "forms": [
+        "klucza",
+        "kluczem"
+      ]
+    },
+    {
+      "type": "verb",
+      "source": "szukać",
+      "translation": "hľadať",
+      "forms": [
+        "szukam",
+        "szukasz"
+      ]
+    },
+    {
+      "type": "word",
+      "source": "gwiazda",
+      "translation": "hviezda",
+      "forms": [
+        "gwiazdę",
+        "gwiazdy"
+      ]
+    }
+  ],
+  "description": "A limited Polish to Slovak dictionary. Read it to study its entries."
+}

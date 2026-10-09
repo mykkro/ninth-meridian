@@ -1,0 +1,31 @@
+{
+  "id": "niamh_notes",
+  "type": "dictionary",
+  "name": "Galway field notes",
+  "description": "A limited local-language phrasebook for the final journey.",
+  "from": "ga",
+  "to": "cs",
+  "price": 3,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "niamh_greet"
+    },
+    {
+      "type": "phrase",
+      "phrase": "niamh_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "niamh_clue"
+    },
+    {
+      "type": "phrase",
+      "phrase": "niamh_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "niamh_bye"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "toledoPotions",
+  "name": "Diego · apothecary",
+  "description": "A local potions seller offering RPG supplies.",
+  "language": "es",
+  "dialogue": "toledoPotions",
+  "specialty": "potions",
+  "stock": [
+    "health_potion",
+    "stamina_potion",
+    "antidote",
+    "bandage"
+  ]
+}

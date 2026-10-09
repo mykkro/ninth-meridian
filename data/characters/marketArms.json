@@ -1,0 +1,16 @@
+{
+  "id": "marketArms",
+  "name": "Václav · arms merchant",
+  "description": "A local weapons seller offering RPG supplies.",
+  "language": "cs",
+  "dialogue": "marketArms",
+  "specialty": "weapons",
+  "stock": [
+    "iron_sword",
+    "short_bow",
+    "arrows",
+    "wooden_shield",
+    "leather_armor",
+    "leather_boots"
+  ]
+}

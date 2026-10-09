@@ -1,0 +1,172 @@
+{
+  "id": "marie",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "herb_errand_offer",
+      "choices": [
+        {
+          "phrase": "herb_errand_accept",
+          "next": "task",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "herb_errand_started"
+            }
+          ]
+        },
+        {
+          "phrase": "herb_errand_wisdomAsk",
+          "next": "wisdom",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "herb_errand_turnin",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "item": "lavender",
+            "milestone": "herb_errand_started"
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "herb_errand",
+              "gold": 15,
+              "take": [
+                {
+                  "item": "lavender",
+                  "count": 1
+                }
+              ],
+              "items": [
+                {
+                  "item": "healing_salve",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "herb_errand_done"
+            }
+          ]
+        },
+        {
+          "phrase": "banter_sillySpoon",
+          "next": "banterSpoon",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "task": {
+      "phrase": "herb_errand_offer",
+      "choices": [
+        {
+          "phrase": "herb_errand_turnin",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "item": "lavender"
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "herb_errand",
+              "gold": 15,
+              "take": [
+                {
+                  "item": "lavender",
+                  "count": 1
+                }
+              ],
+              "items": [
+                {
+                  "item": "healing_salve",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "herb_errand_done"
+            }
+          ]
+        }
+      ]
+    },
+    "wisdom": {
+      "phrase": "herb_errand_wisdom",
+      "rumor": "herb_errand_wisdom",
+      "choices": [
+        {
+          "phrase": "herb_errand_accept",
+          "next": "task",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "herb_errand_started"
+            }
+          ]
+        }
+      ]
+    },
+    "done": {
+      "phrase": "herb_errand_thanks",
+      "outcome": "success",
+      "choices": []
+    },
+    "banterSpoon": {
+      "phrase": "banter_spoonRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterCheese": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterDismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    }
+  }
+}

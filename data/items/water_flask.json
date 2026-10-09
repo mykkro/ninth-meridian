@@ -1,0 +1,13 @@
+{
+  "id": "water_flask",
+  "type": "equipment",
+  "name": "Water flask",
+  "description": "Equipment with metadata for future exploration and combat.",
+  "price": 5,
+  "purchaseQuantity": 1,
+  "stackable": false,
+  "slot": "utility",
+  "stats": {
+    "capacity": 1
+  }
+}

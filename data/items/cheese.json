@@ -1,0 +1,12 @@
+{
+  "id": "cheese",
+  "type": "food",
+  "name": "Cheese wedge",
+  "description": "Food carried as a supply for later exploration.",
+  "price": 4,
+  "purchaseQuantity": 1,
+  "stackable": true,
+  "effects": {
+    "restoreHealth": 8
+  }
+}

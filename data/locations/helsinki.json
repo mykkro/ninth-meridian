@@ -1,0 +1,20 @@
+{
+  "id": "helsinki",
+  "name": "Helsinki",
+  "country": "Finland",
+  "language": "fi",
+  "requires": "sweden",
+  "description": "The last road to Ireland",
+  "npcs": [
+    "aino"
+  ],
+  "milestone": "finland",
+  "coordinates": {
+    "lon": 24.9384,
+    "lat": 60.1699
+  },
+  "mapLabelOffset": [
+    9,
+    -9
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "aino",
+  "name": "Aino · rune reader",
+  "description": "A guide on the final road to Ireland.",
+  "language": "fi",
+  "dialogue": "aino",
+  "stock": [
+    "aino_notes",
+    "scroll_en",
+    "scroll_native"
+  ]
+}

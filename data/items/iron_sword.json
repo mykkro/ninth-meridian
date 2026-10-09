@@ -1,0 +1,13 @@
+{
+  "id": "iron_sword",
+  "type": "weapon",
+  "name": "Iron sword",
+  "description": "A weapon with an authored attack value for future combat.",
+  "price": 24,
+  "purchaseQuantity": 1,
+  "stackable": false,
+  "slot": "mainHand",
+  "stats": {
+    "attack": 5
+  }
+}

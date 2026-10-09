@@ -1,0 +1,31 @@
+{
+  "id": "eszter_notes",
+  "type": "dictionary",
+  "name": "Budapest field notes",
+  "description": "A limited local-language phrasebook for the final journey.",
+  "from": "hu",
+  "to": "cs",
+  "price": 3,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "eszter_greet"
+    },
+    {
+      "type": "phrase",
+      "phrase": "eszter_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "eszter_clue"
+    },
+    {
+      "type": "phrase",
+      "phrase": "eszter_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "eszter_bye"
+    }
+  ]
+}

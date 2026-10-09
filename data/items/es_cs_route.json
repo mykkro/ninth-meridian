@@ -1,0 +1,39 @@
+{
+  "id": "es_cs_route",
+  "type": "dictionary",
+  "name": "Toledo travel notes",
+  "from": "es",
+  "to": "cs",
+  "price": 3,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "ines_greet"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ines_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ines_test"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ines_answer"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ines_clue"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ines_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ines_bye"
+    }
+  ],
+  "description": "A limited Spanish to Czech dictionary. Read it to study its entries."
+}

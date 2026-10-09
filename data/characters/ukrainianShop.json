@@ -1,0 +1,13 @@
+{
+  "id": "ukrainianShop",
+  "name": "Iryna · bookseller",
+  "language": "uk",
+  "dialogue": "ukrainianShop",
+  "stock": [
+    "ru_cs",
+    "scroll_en",
+    "scroll_native",
+    "uk_cs"
+  ],
+  "description": "Iryna · bookseller. Speaks Ukrainian."
+}

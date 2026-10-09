@@ -1,0 +1,235 @@
+{
+  "id": "lev",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "lev_question",
+      "choices": [
+        {
+          "phrase": "lev_silly",
+          "next": "rebuke",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "lev_ask",
+          "next": "test",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "lev_rude",
+          "next": "dismiss",
+          "quality": "rude"
+        },
+        {
+          "phrase": "askRumors",
+          "next": "rumors",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_sillySpoon",
+          "next": "banterSpoon",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "test": {
+      "phrase": "lev_test",
+      "choices": [
+        {
+          "phrase": "lev_help",
+          "next": "hint",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "lev_wrong",
+          "next": "rebuke",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "lev_answer",
+          "next": "clue",
+          "quality": "sensible",
+          "requires": {
+            "item": "star"
+          }
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "hint": {
+      "phrase": "lev_hint",
+      "choices": [
+        {
+          "phrase": "lev_answer",
+          "next": "clue",
+          "quality": "sensible",
+          "requires": {
+            "item": "star"
+          }
+        },
+        {
+          "phrase": "lev_wrong",
+          "next": "dismiss",
+          "quality": "nonsense"
+        }
+      ]
+    },
+    "rebuke": {
+      "phrase": "lev_rebuke",
+      "choices": [
+        {
+          "phrase": "lev_ask",
+          "next": "test",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "lev_rude",
+          "next": "dismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "clue": {
+      "phrase": "russianClue",
+      "choices": [
+        {
+          "phrase": "lev_accept",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "novgorod"
+            }
+          ]
+        },
+        {
+          "phrase": "lev_rude",
+          "next": "dismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "dismiss": {
+      "phrase": "lev_dismiss",
+      "outcome": "dismissed",
+      "choices": []
+    },
+    "bye": {
+      "phrase": "lev_bye",
+      "outcome": "success",
+      "choices": []
+    },
+    "rumors": {
+      "phrase": "rumorMenu",
+      "choices": [
+        {
+          "phrase": "askLocalRumor",
+          "next": "rumorLocal",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "askTrailRumor",
+          "next": "rumorTrail",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "returnMain",
+          "next": "greeting",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "rumorLocal": {
+      "phrase": "lev_rumorLocal",
+      "rumor": "lev_rumorLocal",
+      "choices": [
+        {
+          "phrase": "returnRumors",
+          "next": "rumors",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "returnMain",
+          "next": "greeting",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "rumorTrail": {
+      "phrase": "lev_rumorTrail",
+      "rumor": "lev_rumorTrail",
+      "choices": [
+        {
+          "phrase": "returnRumors",
+          "next": "rumors",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "returnMain",
+          "next": "greeting",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "banterSpoon": {
+      "phrase": "banter_spoonRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterCheese": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterDismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    }
+  }
+}

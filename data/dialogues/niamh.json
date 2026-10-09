@@ -1,0 +1,124 @@
+{
+  "id": "niamh",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "niamh_greet",
+      "choices": [
+        {
+          "phrase": "niamh_ask",
+          "next": "clue",
+          "quality": "sensible",
+          "requires": {
+            "item": "irish_key"
+          }
+        },
+        {
+          "phrase": "niamh_browse",
+          "next": "trade",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_sillySpoon",
+          "next": "banterSpoon",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "clue": {
+      "phrase": "niamh_clue",
+      "choices": [
+        {
+          "phrase": "niamh_accept",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "ireland"
+            }
+          ]
+        }
+      ]
+    },
+    "bye": {
+      "phrase": "niamh_bye",
+      "outcome": "success",
+      "choices": []
+    },
+    "trade": {
+      "phrase": "niamh_greet",
+      "shop": true,
+      "choices": [
+        {
+          "phrase": "niamh_ask",
+          "next": "clue",
+          "quality": "sensible",
+          "requires": {
+            "item": "irish_key"
+          }
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterSpoon": {
+      "phrase": "banter_spoonRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterCheese": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterDismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    }
+  }
+}

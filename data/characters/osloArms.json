@@ -1,0 +1,15 @@
+{
+  "id": "osloArms",
+  "name": "Tor · weaponsmith",
+  "description": "A local weapons seller offering RPG supplies.",
+  "language": "no",
+  "dialogue": "osloArms",
+  "specialty": "weapons",
+  "stock": [
+    "iron_sword",
+    "short_bow",
+    "arrows",
+    "wooden_shield",
+    "leather_armor"
+  ]
+}

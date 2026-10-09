@@ -1,0 +1,13 @@
+{
+  "id": "wooden_shield",
+  "type": "equipment",
+  "name": "Wooden shield",
+  "description": "Equipment with metadata for future exploration and combat.",
+  "price": 12,
+  "purchaseQuantity": 1,
+  "stackable": false,
+  "slot": "offHand",
+  "stats": {
+    "defense": 2
+  }
+}

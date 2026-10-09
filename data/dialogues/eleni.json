@@ -1,0 +1,143 @@
+{
+  "id": "eleni",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "eleni_greet",
+      "choices": [
+        {
+          "phrase": "eleni_ask",
+          "next": "test",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "eleni_wrong",
+          "next": "rebuke",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_sillySpoon",
+          "next": "banterSpoon",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "test": {
+      "phrase": "eleni_test",
+      "choices": [
+        {
+          "phrase": "eleni_wrong",
+          "next": "rebuke",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "eleni_answer",
+          "next": "clue",
+          "quality": "sensible",
+          "requires": {
+            "items": [
+              "lens",
+              "ring",
+              "disc"
+            ]
+          }
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "rebuke": {
+      "phrase": "eleni_rebuke",
+      "choices": [
+        {
+          "phrase": "eleni_ask",
+          "next": "test",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "clue": {
+      "phrase": "eleni_clue",
+      "choices": [
+        {
+          "phrase": "eleni_accept",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "greece"
+            },
+            {
+              "type": "give",
+              "item": "astrolabe"
+            }
+          ]
+        }
+      ]
+    },
+    "bye": {
+      "phrase": "eleni_bye",
+      "outcome": "success",
+      "choices": []
+    },
+    "banterSpoon": {
+      "phrase": "banter_spoonRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterCheese": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterDismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    }
+  }
+}

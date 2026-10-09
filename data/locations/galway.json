@@ -1,0 +1,21 @@
+{
+  "id": "galway",
+  "name": "Galway",
+  "country": "Ireland",
+  "language": "ga",
+  "requires": "finland",
+  "description": "The last road to Ireland",
+  "npcs": [
+    "niamh",
+    "galwayGeneral"
+  ],
+  "milestone": "ireland",
+  "coordinates": {
+    "lon": -9.0568,
+    "lat": 53.2707
+  },
+  "mapLabelOffset": [
+    9,
+    -9
+  ]
+}

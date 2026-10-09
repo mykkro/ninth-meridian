@@ -1,0 +1,20 @@
+{
+  "id": "mira",
+  "name": "Mira · caravan guide",
+  "language": "sk",
+  "dialogue": "mira",
+  "description": "Mira · caravan guide. Speaks Slovak.",
+  "companion": {
+    "name": "Mira",
+    "native": "sk",
+    "knows": [
+      "sk",
+      "pl",
+      "uk"
+    ],
+    "outputs": [
+      "sk"
+    ],
+    "description": "A caravan interpreter. Translates Polish and Ukrainian into Slovak."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "oslo",
+  "name": "Oslo",
+  "country": "Norway",
+  "language": "no",
+  "requires": "greece",
+  "description": "The last road to Ireland",
+  "npcs": [
+    "ingrid",
+    "bjorn",
+    "osloArms"
+  ],
+  "milestone": "norway",
+  "coordinates": {
+    "lon": 10.7522,
+    "lat": 59.9139
+  },
+  "mapLabelOffset": [
+    9,
+    -9
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "marketGeneral",
+  "name": "Matěj · general store",
+  "description": "A local general seller offering RPG supplies.",
+  "language": "cs",
+  "dialogue": "marketGeneral",
+  "specialty": "general",
+  "stock": [
+    "travel_rope",
+    "torch",
+    "water_flask",
+    "bandage",
+    "travel_rations"
+  ]
+}

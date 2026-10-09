@@ -1,0 +1,14 @@
+{
+  "id": "caravanFood",
+  "name": "Jana · caravan cook",
+  "description": "A local food seller offering RPG supplies.",
+  "language": "sk",
+  "dialogue": "caravanFood",
+  "specialty": "food",
+  "stock": [
+    "bread",
+    "cheese",
+    "travel_rations",
+    "stamina_potion"
+  ]
+}

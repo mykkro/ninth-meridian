@@ -1,0 +1,7 @@
+{
+  "id": "flowers",
+  "type": "resource",
+  "name": "Meadow flowers",
+  "description": "Fresh flowers gathered for the apothecary.",
+  "stackable": true
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pragueShop",
+  "name": "Tomáš · bookseller",
+  "language": "cs",
+  "dialogue": "pragueShop",
+  "stock": [
+    "sk_cs",
+    "scroll_en",
+    "scroll_native",
+    "it_es",
+    "en_ga"
+  ],
+  "description": "Tomáš · bookseller. Speaks Czech."
+}

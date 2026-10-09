@@ -1,0 +1,63 @@
+{
+  "id": "berlinGeneral",
+  "start": "trade",
+  "nodes": {
+    "trade": {
+      "phrase": "berlinGeneral_welcome",
+      "shop": true,
+      "choices": [
+        {
+          "phrase": "berlinGeneral_ask",
+          "next": "advice",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "berlinGeneral_leave",
+          "next": "bye",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "silly",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "dismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "advice": {
+      "phrase": "berlinGeneral_advice",
+      "rumor": "berlinGeneral_advice",
+      "choices": [
+        {
+          "phrase": "berlinGeneral_browse",
+          "next": "trade",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "silly": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "berlinGeneral_browse",
+          "next": "trade",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "dismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    },
+    "bye": {
+      "phrase": "berlinGeneral_bye",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

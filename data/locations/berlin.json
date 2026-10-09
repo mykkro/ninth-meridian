@@ -1,0 +1,22 @@
+{
+  "id": "berlin",
+  "name": "Berlin",
+  "country": "Germany",
+  "language": "de",
+  "requires": "novgorod",
+  "description": "The northern ring",
+  "npcs": [
+    "otto",
+    "berlinShop",
+    "berlinGeneral"
+  ],
+  "milestone": "germany",
+  "coordinates": {
+    "lon": 13.405,
+    "lat": 52.52
+  },
+  "mapLabelOffset": [
+    -10,
+    -10
+  ]
+}

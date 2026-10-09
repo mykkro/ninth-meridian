@@ -1,0 +1,21 @@
+{
+  "id": "amsterdam",
+  "name": "Amsterdam",
+  "country": "Netherlands",
+  "language": "nl",
+  "requires": "germany",
+  "description": "The northern ring",
+  "npcs": [
+    "sanne",
+    "amsterdamShop"
+  ],
+  "milestone": "netherlands",
+  "coordinates": {
+    "lon": 4.9041,
+    "lat": 52.3676
+  },
+  "mapLabelOffset": [
+    -10,
+    -8
+  ]
+}

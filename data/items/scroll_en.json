@@ -1,0 +1,8 @@
+{
+  "id": "scroll_en",
+  "type": "scroll",
+  "name": "English translation scroll",
+  "target": "en",
+  "price": 6,
+  "description": "A single-use scroll that translates an exchange into English."
+}

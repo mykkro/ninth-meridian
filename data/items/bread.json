@@ -1,0 +1,12 @@
+{
+  "id": "bread",
+  "type": "food",
+  "name": "Bread loaf",
+  "description": "Food carried as a supply for later exploration.",
+  "price": 3,
+  "purchaseQuantity": 1,
+  "stackable": true,
+  "effects": {
+    "restoreHealth": 5
+  }
+}

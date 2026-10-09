@@ -1,0 +1,155 @@
+{
+  "id": "bea",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "bea_greet",
+      "choices": [
+        {
+          "phrase": "bea_ask",
+          "next": "test",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "bea_wrong",
+          "next": "rebuke",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "bea_joke_eels",
+          "next": "jokeEels",
+          "quality": "nonsense",
+          "easterEgg": "hovercraft-eels"
+        },
+        {
+          "phrase": "banter_sillySpoon",
+          "next": "banterSpoon",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "test": {
+      "phrase": "bea_test",
+      "choices": [
+        {
+          "phrase": "bea_wrong",
+          "next": "rebuke",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "bea_answer",
+          "next": "clue",
+          "quality": "sensible",
+          "requires": {
+            "item": "star"
+          }
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "rebuke": {
+      "phrase": "bea_rebuke",
+      "choices": [
+        {
+          "phrase": "bea_ask",
+          "next": "test",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "clue": {
+      "phrase": "bea_clue",
+      "choices": [
+        {
+          "phrase": "bea_accept",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "britain"
+            },
+            {
+              "type": "give",
+              "item": "lens"
+            }
+          ]
+        }
+      ]
+    },
+    "bye": {
+      "phrase": "bea_bye",
+      "outcome": "success",
+      "choices": []
+    },
+    "jokeEels": {
+      "phrase": "bea_joke_reply",
+      "choices": [
+        {
+          "phrase": "bea_ask",
+          "next": "test",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "banterSpoon": {
+      "phrase": "banter_spoonRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterCheese": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterDismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    }
+  }
+}

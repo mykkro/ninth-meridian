@@ -1,0 +1,12 @@
+{
+  "id": "antidote",
+  "type": "potion",
+  "name": "Antidote",
+  "description": "A bottled remedy with an authored effect for future gameplay.",
+  "price": 8,
+  "purchaseQuantity": 1,
+  "stackable": true,
+  "effects": {
+    "removeStatus": "poison"
+  }
+}

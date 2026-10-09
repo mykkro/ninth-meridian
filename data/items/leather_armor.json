@@ -1,0 +1,13 @@
+{
+  "id": "leather_armor",
+  "type": "equipment",
+  "name": "Leather armor",
+  "description": "Equipment with metadata for future exploration and combat.",
+  "price": 18,
+  "purchaseQuantity": 1,
+  "stackable": false,
+  "slot": "body",
+  "stats": {
+    "defense": 3
+  }
+}

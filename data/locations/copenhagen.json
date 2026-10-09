@@ -1,0 +1,22 @@
+{
+  "id": "copenhagen",
+  "name": "Copenhagen",
+  "country": "Denmark",
+  "language": "da",
+  "requires": "netherlands",
+  "description": "The northern ring",
+  "npcs": [
+    "astrid",
+    "copenhagenShop",
+    "freja"
+  ],
+  "milestone": "denmark",
+  "coordinates": {
+    "lon": 12.5683,
+    "lat": 55.6761
+  },
+  "mapLabelOffset": [
+    9,
+    -9
+  ]
+}

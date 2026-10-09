@@ -1,0 +1,12 @@
+{
+  "id": "travel_rations",
+  "type": "food",
+  "name": "Travel rations",
+  "description": "Food carried as a supply for later exploration.",
+  "price": 8,
+  "purchaseQuantity": 1,
+  "stackable": true,
+  "effects": {
+    "restoreHealth": 15
+  }
+}

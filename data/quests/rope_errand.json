@@ -1,0 +1,18 @@
+{
+  "id": "rope_errand",
+  "title": "Petros · fisherman · errand",
+  "description": "An optional delivery for Petros · fisherman.",
+  "milestones": [
+    "rope_errand_started",
+    "rope_errand_done"
+  ],
+  "completion": "rope_errand_done",
+  "reward": {
+    "gold": 20,
+    "item": "brass_compass"
+  },
+  "fetchItem": "rope",
+  "location": "athens",
+  "giver": "petros",
+  "fetchCount": 1
+}

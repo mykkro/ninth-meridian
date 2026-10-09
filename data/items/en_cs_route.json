@@ -1,0 +1,39 @@
+{
+  "id": "en_cs_route",
+  "type": "dictionary",
+  "name": "London travel notes",
+  "from": "en",
+  "to": "cs",
+  "price": 3,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "bea_greet"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bea_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bea_test"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bea_answer"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bea_clue"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bea_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bea_bye"
+    }
+  ],
+  "description": "A limited English to Czech dictionary. Read it to study its entries."
+}

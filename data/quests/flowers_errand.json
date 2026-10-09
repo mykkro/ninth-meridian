@@ -1,0 +1,19 @@
+{
+  "id": "flowers_errand",
+  "title": "Zuzana · apothecary · gathering",
+  "description": "Gather materials nearby and return to Zuzana · apothecary.",
+  "milestones": [
+    "flowers_errand_started",
+    "flowers_errand_done"
+  ],
+  "completion": "flowers_errand_done",
+  "fetchItem": "flowers",
+  "fetchCount": 2,
+  "giver": "zuzana",
+  "location": "bratislava",
+  "reward": {
+    "gold": 10,
+    "item": "health_potion",
+    "count": 1
+  }
+}

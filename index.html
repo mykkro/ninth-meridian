@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="cs">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Ninth Meridian · Voyage</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><label class="language-switch"><span data-i18n="UI language">Jazyk rozhraní</span> <select id="ui-language"><option value="cs">Čeština</option><option value="en">English</option></select></label><span class="eyebrow" data-i18n="A language-learning RPG · playable prototype">RPG pro výuku jazyků · hratelný prototyp</span><h1 data-i18n="The Ninth Meridian">Devátý poledník</h1><p data-i18n="A missing cartographer. A broken astrolabe. A secret carried across Europe.">Zmizelý kartograf. Rozbitý astroláb. Tajemství putující Evropou.</p></header>
+<p id="load-status" role="status">Načítání výpravy… / Loading voyage…</p>
+<main inert>
+<section id="world-map" class="map-panel" aria-label="Mapa výpravy"></section>
+<aside><h2 data-i18n="Your voyage">Tvá výprava</h2><nav id="locations" aria-label="Cíle výpravy"></nav><div id="player"></div><label class="mode"><input id="easy" type="checkbox" checked> <span data-i18n="Easy mode · learned translation notes">Snadný režim · poznámky z přečtených slovníků</span></label><button id="reset" class="secondary" data-i18n="Start a new voyage">Začít novou výpravu</button></aside>
+<section class="scene"><div id="scene-heading"></div><div id="exploration"></div><div id="npcs" class="tabs"></div><div id="conversation" aria-live="polite"></div><div id="choices"></div><div class="tools"><label><span data-i18n="Translation scroll">Překladový svitek</span><select id="scroll"></select></label><button id="cast" data-i18n="Translate this line">Přeložit tuto repliku a odpovědi</button><button id="replay" class="secondary" data-i18n="Replay conversation">Zopakovat rozhovor</button></div><p id="notice" role="status"></p></section>
+<aside><h2 data-i18n="Satchel & companions">Brašna a společníci</h2><div id="inventory"></div><h2 data-i18n="Quest journal">Deník výpravy</h2><div id="journal"></div></aside>
+</main><footer data-i18n="Read a phrasebook to learn its entries. Follow the words, follow the trail.">Přečti si slovník a nauč se jeho fráze. Sleduj slova, sleduj stopu.</footer>
+<script src="content.js"></script><script src="engine.js"></script><script src="i18n.js"></script><script src="relief.js"></script><script src="map.js"></script><script src="app.js"></script>
+</body></html>

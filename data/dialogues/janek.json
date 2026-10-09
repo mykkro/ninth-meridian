@@ -1,0 +1,100 @@
+{
+  "id": "janek",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "wood_errand_offer",
+      "choices": [
+        {
+          "phrase": "wood_errand_accept",
+          "next": "task",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "wood_errand_started"
+            }
+          ]
+        },
+        {
+          "phrase": "wood_errand_turnin",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "wood_errand_started",
+            "quantities": {
+              "wood": 3
+            }
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "wood_errand",
+              "gold": 12,
+              "take": [
+                {
+                  "item": "wood",
+                  "count": 3
+                }
+              ],
+              "items": [
+                {
+                  "item": "torch",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "wood_errand_done"
+            }
+          ]
+        }
+      ]
+    },
+    "task": {
+      "phrase": "wood_errand_offer",
+      "choices": [
+        {
+          "phrase": "wood_errand_turnin",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "wood_errand_started",
+            "quantities": {
+              "wood": 3
+            }
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "wood_errand",
+              "gold": 12,
+              "take": [
+                {
+                  "item": "wood",
+                  "count": 3
+                }
+              ],
+              "items": [
+                {
+                  "item": "torch",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "wood_errand_done"
+            }
+          ]
+        }
+      ]
+    },
+    "done": {
+      "phrase": "wood_errand_thanks",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

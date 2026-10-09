@@ -1,0 +1,63 @@
+{
+  "id": "athensPotions",
+  "start": "trade",
+  "nodes": {
+    "trade": {
+      "phrase": "athensPotions_welcome",
+      "shop": true,
+      "choices": [
+        {
+          "phrase": "athensPotions_ask",
+          "next": "advice",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "athensPotions_leave",
+          "next": "bye",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "silly",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "dismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "advice": {
+      "phrase": "athensPotions_advice",
+      "rumor": "athensPotions_advice",
+      "choices": [
+        {
+          "phrase": "athensPotions_browse",
+          "next": "trade",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "silly": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "athensPotions_browse",
+          "next": "trade",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "dismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    },
+    "bye": {
+      "phrase": "athensPotions_bye",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

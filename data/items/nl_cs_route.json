@@ -1,0 +1,39 @@
+{
+  "id": "nl_cs_route",
+  "type": "dictionary",
+  "name": "Amsterdam travel notes",
+  "from": "nl",
+  "to": "cs",
+  "price": 3,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "sanne_greet"
+    },
+    {
+      "type": "phrase",
+      "phrase": "sanne_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "sanne_test"
+    },
+    {
+      "type": "phrase",
+      "phrase": "sanne_answer"
+    },
+    {
+      "type": "phrase",
+      "phrase": "sanne_clue"
+    },
+    {
+      "type": "phrase",
+      "phrase": "sanne_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "sanne_bye"
+    }
+  ],
+  "description": "A limited Dutch to Czech dictionary. Read it to study its entries."
+}

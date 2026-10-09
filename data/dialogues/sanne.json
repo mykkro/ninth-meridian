@@ -1,0 +1,139 @@
+{
+  "id": "sanne",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "sanne_greet",
+      "choices": [
+        {
+          "phrase": "sanne_ask",
+          "next": "test",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "sanne_wrong",
+          "next": "rebuke",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_sillySpoon",
+          "next": "banterSpoon",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "test": {
+      "phrase": "sanne_test",
+      "choices": [
+        {
+          "phrase": "sanne_wrong",
+          "next": "rebuke",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "sanne_answer",
+          "next": "clue",
+          "quality": "sensible",
+          "requires": {
+            "item": "seal"
+          }
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "rebuke": {
+      "phrase": "sanne_rebuke",
+      "choices": [
+        {
+          "phrase": "sanne_ask",
+          "next": "test",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "clue": {
+      "phrase": "sanne_clue",
+      "choices": [
+        {
+          "phrase": "sanne_accept",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "netherlands"
+            },
+            {
+              "type": "give",
+              "item": "chart"
+            }
+          ]
+        }
+      ]
+    },
+    "bye": {
+      "phrase": "sanne_bye",
+      "outcome": "success",
+      "choices": []
+    },
+    "banterSpoon": {
+      "phrase": "banter_spoonRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterCheese": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterDismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    }
+  }
+}

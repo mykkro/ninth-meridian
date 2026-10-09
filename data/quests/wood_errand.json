@@ -1,0 +1,19 @@
+{
+  "id": "wood_errand",
+  "title": "Janek · carpenter · gathering",
+  "description": "Gather materials nearby and return to Janek · carpenter.",
+  "milestones": [
+    "wood_errand_started",
+    "wood_errand_done"
+  ],
+  "completion": "wood_errand_done",
+  "fetchItem": "wood",
+  "fetchCount": 3,
+  "giver": "janek",
+  "location": "prague",
+  "reward": {
+    "gold": 12,
+    "item": "torch",
+    "count": 2
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "latinCodex",
+  "start": "page1",
+  "nodes": {
+    "page1": {
+      "phrase": "latin_page1",
+      "choices": [
+        {
+          "phrase": "latin_list",
+          "next": "page2",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "latin_silly",
+          "next": "retry",
+          "quality": "nonsense"
+        }
+      ]
+    },
+    "page2": {
+      "phrase": "latin_page2",
+      "choices": [
+        {
+          "phrase": "latin_wrong",
+          "next": "retry",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "latin_greece",
+          "next": "done",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "latin_deciphered"
+            }
+          ]
+        }
+      ]
+    },
+    "retry": {
+      "phrase": "latin_retry",
+      "choices": [
+        {
+          "phrase": "latin_reread",
+          "next": "page1",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "done": {
+      "phrase": "latin_final",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

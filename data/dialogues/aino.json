@@ -1,0 +1,128 @@
+{
+  "id": "aino",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "aino_greet",
+      "choices": [
+        {
+          "phrase": "aino_ask",
+          "next": "clue",
+          "quality": "sensible",
+          "requires": {
+            "item": "aurora_chart"
+          }
+        },
+        {
+          "phrase": "aino_browse",
+          "next": "trade",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_sillySpoon",
+          "next": "banterSpoon",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "clue": {
+      "phrase": "aino_clue",
+      "choices": [
+        {
+          "phrase": "aino_accept",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "finland"
+            },
+            {
+              "type": "give",
+              "item": "irish_key"
+            }
+          ]
+        }
+      ]
+    },
+    "bye": {
+      "phrase": "aino_bye",
+      "outcome": "success",
+      "choices": []
+    },
+    "trade": {
+      "phrase": "aino_greet",
+      "shop": true,
+      "choices": [
+        {
+          "phrase": "aino_ask",
+          "next": "clue",
+          "quality": "sensible",
+          "requires": {
+            "item": "aurora_chart"
+          }
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterSpoon": {
+      "phrase": "banter_spoonRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterCheese": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterDismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    }
+  }
+}

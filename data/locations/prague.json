@@ -1,0 +1,37 @@
+{
+  "id": "prague",
+  "name": "Prague",
+  "country": "Czechia",
+  "language": "cs",
+  "description": "Rain on the cobblestones. A sealed letter waits in the mapmaker’s shop.",
+  "npcs": [
+    "ada",
+    "pragueShop",
+    "boris",
+    "marketGeneral",
+    "marketFood",
+    "marketArms",
+    "janek"
+  ],
+  "milestone": "prague",
+  "actions": [
+    {
+      "id": "wood_errand_gather",
+      "label": "Gather wood at the forest edge",
+      "item": "wood",
+      "count": 1,
+      "limit": 5,
+      "requires": {
+        "milestone": "wood_errand_started"
+      }
+    }
+  ],
+  "coordinates": {
+    "lon": 14.4378,
+    "lat": 50.0755
+  },
+  "mapLabelOffset": [
+    -10,
+    -9
+  ]
+}

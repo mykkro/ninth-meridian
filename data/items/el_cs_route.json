@@ -1,0 +1,39 @@
+{
+  "id": "el_cs_route",
+  "type": "dictionary",
+  "name": "Athens travel notes",
+  "from": "el",
+  "to": "cs",
+  "price": 3,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "eleni_greet"
+    },
+    {
+      "type": "phrase",
+      "phrase": "eleni_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "eleni_test"
+    },
+    {
+      "type": "phrase",
+      "phrase": "eleni_answer"
+    },
+    {
+      "type": "phrase",
+      "phrase": "eleni_clue"
+    },
+    {
+      "type": "phrase",
+      "phrase": "eleni_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "eleni_bye"
+    }
+  ],
+  "description": "A limited Greek to Czech dictionary. Read it to study its entries."
+}

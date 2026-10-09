@@ -1,0 +1,39 @@
+{
+  "id": "fr_cs_route",
+  "type": "dictionary",
+  "name": "Lyon travel notes",
+  "from": "fr",
+  "to": "cs",
+  "price": 3,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "camille_greet"
+    },
+    {
+      "type": "phrase",
+      "phrase": "camille_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "camille_test"
+    },
+    {
+      "type": "phrase",
+      "phrase": "camille_answer"
+    },
+    {
+      "type": "phrase",
+      "phrase": "camille_clue"
+    },
+    {
+      "type": "phrase",
+      "phrase": "camille_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "camille_bye"
+    }
+  ],
+  "description": "A limited French to Czech dictionary. Read it to study its entries."
+}

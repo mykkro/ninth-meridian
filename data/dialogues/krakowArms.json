@@ -1,0 +1,63 @@
+{
+  "id": "krakowArms",
+  "start": "trade",
+  "nodes": {
+    "trade": {
+      "phrase": "krakowArms_welcome",
+      "shop": true,
+      "choices": [
+        {
+          "phrase": "krakowArms_ask",
+          "next": "advice",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "krakowArms_leave",
+          "next": "bye",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "silly",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "dismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "advice": {
+      "phrase": "krakowArms_advice",
+      "rumor": "krakowArms_advice",
+      "choices": [
+        {
+          "phrase": "krakowArms_browse",
+          "next": "trade",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "silly": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "krakowArms_browse",
+          "next": "trade",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "dismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    },
+    "bye": {
+      "phrase": "krakowArms_bye",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

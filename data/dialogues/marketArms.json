@@ -1,0 +1,63 @@
+{
+  "id": "marketArms",
+  "start": "trade",
+  "nodes": {
+    "trade": {
+      "phrase": "marketArms_welcome",
+      "shop": true,
+      "choices": [
+        {
+          "phrase": "marketArms_ask",
+          "next": "advice",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "marketArms_leave",
+          "next": "bye",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "silly",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "dismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "advice": {
+      "phrase": "marketArms_advice",
+      "rumor": "marketArms_advice",
+      "choices": [
+        {
+          "phrase": "marketArms_browse",
+          "next": "trade",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "silly": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "marketArms_browse",
+          "next": "trade",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "dismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    },
+    "bye": {
+      "phrase": "marketArms_bye",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

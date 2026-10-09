@@ -1,0 +1,10 @@
+{
+  "id": "arrows",
+  "type": "ammunition",
+  "name": "Arrows",
+  "description": "A bundle of twenty arrows for a short bow.",
+  "price": 6,
+  "purchaseQuantity": 20,
+  "stackable": true,
+  "compatibleWeapon": "short_bow"
+}

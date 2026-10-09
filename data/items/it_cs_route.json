@@ -1,0 +1,39 @@
+{
+  "id": "it_cs_route",
+  "type": "dictionary",
+  "name": "Florence travel notes",
+  "from": "it",
+  "to": "cs",
+  "price": 3,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "luca_greet"
+    },
+    {
+      "type": "phrase",
+      "phrase": "luca_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "luca_test"
+    },
+    {
+      "type": "phrase",
+      "phrase": "luca_answer"
+    },
+    {
+      "type": "phrase",
+      "phrase": "luca_clue"
+    },
+    {
+      "type": "phrase",
+      "phrase": "luca_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "luca_bye"
+    }
+  ],
+  "description": "A limited Italian to Czech dictionary. Read it to study its entries."
+}

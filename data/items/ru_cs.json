@@ -1,0 +1,99 @@
+{
+  "id": "ru_cs",
+  "type": "dictionary",
+  "name": "Northern notes",
+  "from": "ru",
+  "to": "cs",
+  "price": 8,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "trade"
+    },
+    {
+      "type": "phrase",
+      "phrase": "lev_question"
+    },
+    {
+      "type": "phrase",
+      "phrase": "lev_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "lev_test"
+    },
+    {
+      "type": "phrase",
+      "phrase": "lev_help"
+    },
+    {
+      "type": "phrase",
+      "phrase": "lev_hint"
+    },
+    {
+      "type": "phrase",
+      "phrase": "lev_answer"
+    },
+    {
+      "type": "phrase",
+      "phrase": "lev_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "shopBrowse"
+    },
+    {
+      "type": "phrase",
+      "phrase": "shopLeave"
+    },
+    {
+      "type": "phrase",
+      "phrase": "askRumors"
+    },
+    {
+      "type": "phrase",
+      "phrase": "askLocalRumor"
+    },
+    {
+      "type": "phrase",
+      "phrase": "askTrailRumor"
+    },
+    {
+      "type": "phrase",
+      "phrase": "returnRumors"
+    },
+    {
+      "type": "phrase",
+      "phrase": "returnMain"
+    },
+    {
+      "type": "word",
+      "source": "ключ",
+      "translation": "klíč",
+      "forms": [
+        "ключа",
+        "ключом"
+      ]
+    },
+    {
+      "type": "verb",
+      "source": "искать",
+      "translation": "hledat",
+      "forms": [
+        "ищу",
+        "ищете",
+        "ищет"
+      ]
+    },
+    {
+      "type": "word",
+      "source": "звезда",
+      "translation": "hvězda",
+      "forms": [
+        "звезду",
+        "звезды"
+      ]
+    }
+  ],
+  "description": "A limited Russian to Czech dictionary. Read it to study its entries."
+}

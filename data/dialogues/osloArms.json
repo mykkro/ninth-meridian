@@ -1,0 +1,63 @@
+{
+  "id": "osloArms",
+  "start": "trade",
+  "nodes": {
+    "trade": {
+      "phrase": "osloArms_welcome",
+      "shop": true,
+      "choices": [
+        {
+          "phrase": "osloArms_ask",
+          "next": "advice",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "osloArms_leave",
+          "next": "bye",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "silly",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "dismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "advice": {
+      "phrase": "osloArms_advice",
+      "rumor": "osloArms_advice",
+      "choices": [
+        {
+          "phrase": "osloArms_browse",
+          "next": "trade",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "silly": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "osloArms_browse",
+          "next": "trade",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "dismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    },
+    "bye": {
+      "phrase": "osloArms_bye",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "herb_errand",
+  "title": "Marie · herbalist · errand",
+  "description": "An optional delivery for Marie · herbalist.",
+  "milestones": [
+    "herb_errand_started",
+    "herb_errand_done"
+  ],
+  "completion": "herb_errand_done",
+  "reward": {
+    "gold": 15,
+    "item": "healing_salve"
+  },
+  "fetchItem": "lavender",
+  "location": "lyon",
+  "giver": "marie",
+  "fetchCount": 1
+}

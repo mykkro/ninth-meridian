@@ -1,0 +1,12 @@
+{
+  "id": "stamina_potion",
+  "type": "potion",
+  "name": "Stamina potion",
+  "description": "A bottled remedy with an authored effect for future gameplay.",
+  "price": 7,
+  "purchaseQuantity": 1,
+  "stackable": true,
+  "effects": {
+    "restoreStamina": 20
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "bratislava",
+  "name": "Bratislava",
+  "country": "Slovakia",
+  "language": "sk",
+  "requires": "prague",
+  "description": "Below the castle, a caravan prepares to leave for the north.",
+  "npcs": [
+    "mira",
+    "slovakShop",
+    "dana",
+    "caravanFood",
+    "zuzana"
+  ],
+  "milestone": "bratislava",
+  "actions": [
+    {
+      "id": "flowers_errand_gather",
+      "label": "Pick flowers in the meadow",
+      "item": "flowers",
+      "count": 1,
+      "limit": 4,
+      "requires": {
+        "milestone": "flowers_errand_started"
+      }
+    }
+  ],
+  "coordinates": {
+    "lon": 17.1077,
+    "lat": 48.1486
+  },
+  "mapLabelOffset": [
+    -10,
+    18
+  ]
+}

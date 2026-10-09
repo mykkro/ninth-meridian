@@ -1,0 +1,14 @@
+{
+  "id": "short_bow",
+  "type": "weapon",
+  "name": "Short bow",
+  "description": "A weapon with an authored attack value for future combat.",
+  "price": 20,
+  "purchaseQuantity": 1,
+  "stackable": false,
+  "slot": "mainHand",
+  "stats": {
+    "attack": 3
+  },
+  "ammunition": "arrows"
+}

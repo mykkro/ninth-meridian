@@ -1,0 +1,22 @@
+{
+  "id": "krakow",
+  "name": "Kraków",
+  "country": "Poland",
+  "language": "pl",
+  "requires": "bratislava",
+  "description": "At the old gate, a watchmaker remembers a stranger with a star-shaped compass.",
+  "npcs": [
+    "zofia",
+    "polishShop",
+    "krakowArms"
+  ],
+  "milestone": "krakow",
+  "coordinates": {
+    "lon": 19.945,
+    "lat": 50.0647
+  },
+  "mapLabelOffset": [
+    9,
+    -4
+  ]
+}

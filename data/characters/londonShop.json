@@ -1,0 +1,12 @@
+{
+  "id": "londonShop",
+  "name": "London · bookseller",
+  "language": "en",
+  "dialogue": "londonShop",
+  "stock": [
+    "en_cs_route",
+    "scroll_en",
+    "scroll_native"
+  ],
+  "description": "London · bookseller. Speaks English."
+}

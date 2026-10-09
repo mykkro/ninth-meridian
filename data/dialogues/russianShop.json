@@ -1,0 +1,184 @@
+{
+  "id": "russianShop",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "trade",
+      "choices": [
+        {
+          "phrase": "shopSilly",
+          "next": "rebuke",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "shopBrowse",
+          "next": "trade",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "shopRude",
+          "next": "dismiss",
+          "quality": "rude"
+        },
+        {
+          "phrase": "askRumors",
+          "next": "rumors",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_sillySpoon",
+          "next": "banterSpoon",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "rebuke": {
+      "phrase": "shopRebuke",
+      "choices": [
+        {
+          "phrase": "shopBrowse",
+          "next": "trade",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "shopRude",
+          "next": "dismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "trade": {
+      "phrase": "trade",
+      "shop": true,
+      "choices": [
+        {
+          "phrase": "shopLeave",
+          "next": "bye",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "dismiss": {
+      "phrase": "shopDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    },
+    "bye": {
+      "phrase": "shopBye",
+      "outcome": "success",
+      "choices": []
+    },
+    "rumors": {
+      "phrase": "rumorMenu",
+      "choices": [
+        {
+          "phrase": "askLocalRumor",
+          "next": "rumorLocal",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "askTrailRumor",
+          "next": "rumorTrail",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "returnMain",
+          "next": "greeting",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "rumorLocal": {
+      "phrase": "russianShop_rumorLocal",
+      "rumor": "russianShop_rumorLocal",
+      "choices": [
+        {
+          "phrase": "returnRumors",
+          "next": "rumors",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "returnMain",
+          "next": "greeting",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "rumorTrail": {
+      "phrase": "russianShop_rumorTrail",
+      "rumor": "russianShop_rumorTrail",
+      "choices": [
+        {
+          "phrase": "returnRumors",
+          "next": "rumors",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "returnMain",
+          "next": "greeting",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "banterSpoon": {
+      "phrase": "banter_spoonRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterCheese": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterDismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    }
+  }
+}

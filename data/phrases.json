@@ -1,0 +1,1947 @@
+{
+  "welcome": {
+    "cs": "Vítej, poutníku. Hledáš ztraceného kartografa?",
+    "en": "Welcome, traveller. Are you looking for the missing cartographer?"
+  },
+  "czechClue": {
+    "cs": "Na mapě je znamení devátého poledníku. Jdi do Bratislavy.",
+    "en": "The map bears the mark of the ninth meridian. Go to Bratislava."
+  },
+  "trade": {
+    "cs": "Mám slovníky a překladové svitky. Co potřebuješ?",
+    "sk": "Mám slovníky a prekladové zvitky. Čo potrebuješ?",
+    "pl": "Mam słowniki i zwoje tłumaczeń. Czego potrzebujesz?",
+    "uk": "У мене є словники та сувої перекладу. Що тобі потрібно?",
+    "ru": "У меня есть словари и свитки перевода. Что тебе нужно?",
+    "en": "I have dictionaries and translation scrolls. What do you need?"
+  },
+  "slovakClue": {
+    "sk": "Kartograf tu nechal kľúč. V Krakove hľadaj ženu pri starej bráne.",
+    "cs": "Kartograf tu nechal klíč. V Krakově hledej ženu u staré brány.",
+    "en": "The cartographer left a key here. In Kraków, look for the woman by the old gate."
+  },
+  "recruit": {
+    "sk": "Poznám poľštinu aj ukrajinčinu. Môžem cestovať s tebou.",
+    "cs": "Znám polštinu i ukrajinštinu. Mohu cestovat s tebou.",
+    "en": "I know Polish and Ukrainian. I can travel with you."
+  },
+  "polishClue": {
+    "pl": "Klucz otwiera skrzynię we Lwowie. Zapytaj archiwistę o srebrną gwiazdę.",
+    "sk": "Kľúč otvára truhlicu vo Ľvove. Spýtaj sa archivára na striebornú hviezdu.",
+    "cs": "Klíč otevírá truhlu ve Lvově. Zeptej se archiváře na stříbrnou hvězdu.",
+    "en": "The key opens a chest in Lviv. Ask the archivist about the silver star."
+  },
+  "ukrainianClue": {
+    "uk": "Срібна зірка — частина астролябії. Наступний слід веде до Новгорода.",
+    "sk": "Strieborná hviezda je časť astrolábu. Ďalšia stopa vedie do Novgorodu.",
+    "cs": "Stříbrná hvězda je část astrolábu. Další stopa vede do Novgorodu.",
+    "en": "The silver star is part of the astrolabe. The next clue leads to Novgorod."
+  },
+  "russianClue": {
+    "ru": "Картограф жив. Он ищет обсерваторию, где встречаются девять меридианов.",
+    "cs": "Kartograf žije. Hledá observatoř, kde se setkává devět poledníků.",
+    "en": "The cartographer is alive. He seeks the observatory where nine meridians meet."
+  },
+  "bridge": {
+    "it": "La stella indica la strada.",
+    "es": "La estrella indica el camino.",
+    "cs": "Hvězda ukazuje cestu.",
+    "en": "The star points the way."
+  },
+  "ada_question": {
+    "cs": "Co tě ke mně přivádí? Hledáš mapu, nebo člověka?",
+    "en": "What brings you here? Are you looking for a map or a person?"
+  },
+  "ada_ask": {
+    "cs": "Hledám kartografa Eliáše. Zanechal mi dopis.",
+    "en": "I am looking for Eliáš the cartographer. He left me a letter."
+  },
+  "ada_silly": {
+    "cs": "Moje boty chtějí koupit měsíc.",
+    "en": "My boots want to buy the moon."
+  },
+  "ada_rude": {
+    "cs": "Dej mi mapu a nezdržuj mě.",
+    "en": "Give me the map and stop wasting my time."
+  },
+  "ada_test": {
+    "cs": "Dopis nestačí. Jaké znamení nakreslil pod podpisem?",
+    "en": "A letter is not enough. What symbol did he draw below his signature?"
+  },
+  "ada_hint": {
+    "cs": "Pod podpisem je hvězda s devíti cípy. Byl to jeho tajný znak.",
+    "en": "Below the signature is a nine-pointed star. It was his secret sign."
+  },
+  "ada_help": {
+    "cs": "Mohu si dopis ještě jednou prohlédnout?",
+    "en": "May I look at the letter again?"
+  },
+  "ada_answer": {
+    "cs": "Hvězdu s devíti cípy.",
+    "en": "A nine-pointed star."
+  },
+  "ada_wrong": {
+    "cs": "Tančící zelí se zlatou korunou.",
+    "en": "A dancing cabbage with a golden crown."
+  },
+  "ada_accept": {
+    "cs": "Děkuji. Vezmu mapu a vydám se do Bratislavy.",
+    "en": "Thank you. I will take the map and go to Bratislava."
+  },
+  "ada_rebuke": {
+    "cs": "To nedává smysl. Soustřeď se; jde o život mého přítele.",
+    "en": "That makes no sense. Pay attention; my friend’s life is at stake."
+  },
+  "ada_dismiss": {
+    "cs": "Takto se mnou nemluv. Odejdi z mé dílny.",
+    "en": "Do not speak to me like that. Leave my workshop."
+  },
+  "ada_bye": {
+    "cs": "Opatruj mapu. Ať tě hvězda dovede k Eliášovi.",
+    "en": "Keep the map safe. May the star lead you to Eliáš."
+  },
+  "mira_question": {
+    "cs": "Vítej u karavany. Koho hledáš?",
+    "en": "Welcome to the caravan. Who are you looking for?",
+    "sk": "Vitaj pri karaváne. Koho hľadáš?"
+  },
+  "mira_ask": {
+    "cs": "Hledám kartografa Eliáše. Mám jeho mapu.",
+    "en": "I am looking for Eliáš the cartographer. I have his map.",
+    "sk": "Hľadám kartografa Eliáša. Mám jeho mapu."
+  },
+  "mira_silly": {
+    "cs": "Můj klobouk je králem všech ryb.",
+    "en": "My hat is the king of all fish.",
+    "sk": "Môj klobúk je kráľom všetkých rýb."
+  },
+  "mira_rude": {
+    "cs": "Dej mi klíč, jinak ti vezmu koně.",
+    "en": "Give me the key or I will take your horses.",
+    "sk": "Daj mi kľúč, inak ti vezmem kone."
+  },
+  "mira_test": {
+    "cs": "Řekl mi, že jde na sever. Které město je na tvé mapě?",
+    "en": "He told me he was going north. Which city is on your map?",
+    "sk": "Povedal mi, že ide na sever. Ktoré mesto je na tvojej mape?"
+  },
+  "mira_hint": {
+    "cs": "Na okraji mapy je napsáno: Krakov, stará brána.",
+    "en": "At the edge of the map it says: Kraków, old gate.",
+    "sk": "Na okraji mapy je napísané: Krakov, stará brána."
+  },
+  "mira_help": {
+    "cs": "Pomůžeš mi přečíst mapu?",
+    "en": "Will you help me read the map?",
+    "sk": "Pomôžeš mi prečítať mapu?"
+  },
+  "mira_answer": {
+    "cs": "Krakov. Budu hledat starou bránu.",
+    "en": "Kraków. I will look for the old gate.",
+    "sk": "Krakov. Budem hľadať starú bránu."
+  },
+  "mira_wrong": {
+    "cs": "Město pod mořem, kde žijí létající brambory.",
+    "en": "The city under the sea where flying potatoes live.",
+    "sk": "Mesto pod morom, kde bývajú lietajúce zemiaky."
+  },
+  "mira_accept": {
+    "cs": "Děkuji za klíč. Půjdu do Krakova.",
+    "en": "Thank you for the key. I will go to Kraków.",
+    "sk": "Ďakujem za kľúč. Pôjdem do Krakova."
+  },
+  "mira_rebuke": {
+    "cs": "To jsou nesmysly. Pokud chceš pomoc, odpovídej vážně.",
+    "en": "That is nonsense. If you want help, answer seriously.",
+    "sk": "To sú nezmysly. Ak chceš pomoc, odpovedaj vážne."
+  },
+  "mira_dismiss": {
+    "cs": "Vyhrožuješ mi? Odejdi. Karavana ti nepomůže.",
+    "en": "Are you threatening me? Leave. The caravan will not help you.",
+    "sk": "Vyhrážaš sa mi? Odíď. Karavána ti nepomôže."
+  },
+  "mira_bye": {
+    "cs": "Půjdu s tebou. V Krakově se zeptáme na kartografa.",
+    "en": "I will go with you. In Kraków we will ask about the cartographer.",
+    "sk": "Pôjdem s tebou. V Krakove sa spýtame na kartografa."
+  },
+  "mira_join": {
+    "cs": "Pojď se mnou, prosím. Tvá pomoc se mi bude hodit.",
+    "en": "Please come with me. Your help will be useful.",
+    "sk": "Poď so mnou, prosím. Tvoja pomoc sa mi zíde."
+  },
+  "mira_alone": {
+    "cs": "Děkuji, ale raději půjdu sám.",
+    "en": "Thank you, but I would rather go alone.",
+    "sk": "Ďakujem, ale radšej pôjdem sám."
+  },
+  "mira_soloBye": {
+    "cs": "Dobře. Šťastnou cestu a dávej pozor na klíč.",
+    "en": "All right. Safe travels, and take care of the key.",
+    "sk": "Dobre. Šťastnú cestu a dávaj pozor na kľúč."
+  },
+  "zofia_question": {
+    "cs": "Dobrý den. Hledáš hodinky, nebo zprávu?",
+    "en": "Good day. Are you looking for a watch or a message?",
+    "pl": "Dzień dobry. Szukasz zegarka czy wiadomości?",
+    "sk": "Dobrý deň. Hľadáš hodinky alebo správu?"
+  },
+  "zofia_ask": {
+    "cs": "Hledám zprávu od kartografa Eliáše.",
+    "en": "I am looking for a message from Eliáš the cartographer.",
+    "pl": "Szukam wiadomości od kartografa Eliáša.",
+    "sk": "Hľadám správu od kartografa Eliáša."
+  },
+  "zofia_silly": {
+    "cs": "Moje hodinky jedí polévku vidličkou.",
+    "en": "My watch eats soup with a fork.",
+    "pl": "Mój zegarek je zupę widelcem.",
+    "sk": "Moje hodinky jedia polievku vidličkou."
+  },
+  "zofia_rude": {
+    "cs": "Mluv rychle. Nemám čas na tvé hloupé otázky.",
+    "en": "Speak quickly. I have no time for your stupid questions.",
+    "pl": "Mów szybko. Nie mam czasu na twoje głupie pytania.",
+    "sk": "Hovor rýchlo. Nemám čas na tvoje hlúpe otázky."
+  },
+  "zofia_test": {
+    "cs": "Něco nechal u průvodkyně v Bratislavě. Co ti dala?",
+    "en": "He left something with the guide in Bratislava. What did she give you?",
+    "pl": "Zostawił coś u przewodniczki w Bratysławie. Co ci dała?",
+    "sk": "Niečo nechal u sprievodkyne v Bratislave. Čo ti dala?"
+  },
+  "zofia_hint": {
+    "cs": "V jeho dopise se píše o mosazném klíči od archivu.",
+    "en": "His letter mentions a brass archive key.",
+    "pl": "W jego liście jest mowa o mosiężnym kluczu do archiwum.",
+    "sk": "V jeho liste sa píše o mosadznom kľúči od archívu."
+  },
+  "zofia_help": {
+    "cs": "Můžeš mi připomenout, co hledáme?",
+    "en": "Can you remind me what we are looking for?",
+    "pl": "Czy możesz przypomnieć mi, czego szukamy?",
+    "sk": "Môžeš mi pripomenúť, čo hľadáme?"
+  },
+  "zofia_answer": {
+    "cs": "Mosazný klíč. Mám ho u sebe.",
+    "en": "A brass key. I have it with me.",
+    "pl": "Mosiężny klucz. Mam go przy sobie.",
+    "sk": "Mosadzný kľúč. Mám ho pri sebe."
+  },
+  "zofia_wrong": {
+    "cs": "Zlatou rybu, která opravuje hodiny.",
+    "en": "A golden fish that repairs clocks.",
+    "pl": "Złotą rybę, która naprawia zegary.",
+    "sk": "Zlatú rybu, ktorá opravuje hodiny."
+  },
+  "zofia_accept": {
+    "cs": "Děkuji. Zeptám se archiváře ve Lvově na stříbrnou hvězdu.",
+    "en": "Thank you. I will ask the archivist in Lviv about the silver star.",
+    "pl": "Dziękuję. Zapytam archiwistę we Lwowie o srebrną gwiazdę.",
+    "sk": "Ďakujem. Spýtam sa archivára vo Ľvove na striebornú hviezdu."
+  },
+  "zofia_rebuke": {
+    "cs": "Nedělej si legraci ze zmizení člověka. Zkus odpovědět znovu.",
+    "en": "Do not joke about a missing person. Try answering again.",
+    "pl": "Nie żartuj z zaginięcia człowieka. Spróbuj odpowiedzieć jeszcze raz.",
+    "sk": "Nerob si žarty zo zmiznutia človeka. Skús odpovedať znova."
+  },
+  "zofia_dismiss": {
+    "cs": "Nebudu pomáhat někomu tak nezdvořilému. Odejdi.",
+    "en": "I will not help someone so rude. Leave.",
+    "pl": "Nie będę pomagać komuś tak nieuprzejmemu. Wyjdź.",
+    "sk": "Nebudem pomáhať niekomu takému nezdvorilému. Odíď."
+  },
+  "zofia_bye": {
+    "cs": "Hodně štěstí. Archivář ten klíč pozná.",
+    "en": "Good luck. The archivist will recognise that key.",
+    "pl": "Powodzenia. Archiwista rozpozna ten klucz.",
+    "sk": "Veľa šťastia. Archivár ten kľúč spozná."
+  },
+  "oles_question": {
+    "cs": "Vítejte v archivu. Co hledáte?",
+    "en": "Welcome to the archive. What are you looking for?",
+    "uk": "Вітаю в архіві. Що ви шукаєте?",
+    "sk": "Vitajte v archíve. Čo hľadáte?"
+  },
+  "oles_ask": {
+    "cs": "Hledám stříbrnou hvězdu, kterou zanechal kartograf.",
+    "en": "I am looking for the silver star the cartographer left.",
+    "uk": "Я шукаю срібну зірку, яку залишив картограф.",
+    "sk": "Hľadám striebornú hviezdu, ktorú zanechal kartograf."
+  },
+  "oles_silly": {
+    "cs": "Chci naučit vaši truhlu zpívat.",
+    "en": "I want to teach your chest to sing.",
+    "uk": "Я хочу навчити вашу скриню співати.",
+    "sk": "Chcem naučiť vašu truhlicu spievať."
+  },
+  "oles_rude": {
+    "cs": "Dejte mi všechny vaše poklady!",
+    "en": "Give me all your treasures!",
+    "uk": "Віддайте мені всі ваші скарби!",
+    "sk": "Dajte mi všetky vaše poklady!"
+  },
+  "oles_test": {
+    "cs": "Truhla je zamčená. Máte klíč od kartografa?",
+    "en": "The chest is locked. Do you have the cartographer’s key?",
+    "uk": "Скриня замкнена. У вас є ключ від картографа?",
+    "sk": "Truhlica je zamknutá. Máte kľúč od kartografa?"
+  },
+  "oles_hint": {
+    "cs": "Je potřeba mosazný klíč. Podívejte se do své brašny.",
+    "en": "You need a brass key. Look in your satchel.",
+    "uk": "Потрібен латунний ключ. Подивіться у свою торбу.",
+    "sk": "Potrebujete mosadzný kľúč. Pozrite sa do svojej tašky."
+  },
+  "oles_help": {
+    "cs": "Jaký klíč je potřeba?",
+    "en": "Which key do I need?",
+    "uk": "Який саме ключ потрібен?",
+    "sk": "Aký kľúč potrebujem?"
+  },
+  "oles_answer": {
+    "cs": "Ano, tady je mosazný klíč.",
+    "en": "Yes, here is the brass key.",
+    "uk": "Так, ось латунний ключ.",
+    "sk": "Áno, tu je mosadzný kľúč."
+  },
+  "oles_wrong": {
+    "cs": "Ne, ale mám neviditelnou lžíci.",
+    "en": "No, but I have an invisible spoon.",
+    "uk": "Ні, але в мене є невидима ложка.",
+    "sk": "Nie, ale mám neviditeľnú lyžicu."
+  },
+  "oles_accept": {
+    "cs": "Děkuji. Vezmu hvězdu a pojedu do Novgorodu.",
+    "en": "Thank you. I will take the star and go to Novgorod.",
+    "uk": "Дякую. Я візьму зірку й поїду до Новгорода.",
+    "sk": "Ďakujem. Vezmem hviezdu a pôjdem do Novgorodu."
+  },
+  "oles_rebuke": {
+    "cs": "Tohle je archiv, ne cirkus. Odpovídejte vážně.",
+    "en": "This is an archive, not a circus. Answer seriously.",
+    "uk": "Це архів, а не цирк. Відповідайте серйозно.",
+    "sk": "Toto je archív, nie cirkus. Odpovedajte vážne."
+  },
+  "oles_dismiss": {
+    "cs": "Zavolám stráž. Okamžitě odejděte.",
+    "en": "I will call the guard. Leave immediately.",
+    "uk": "Я покличу охорону. Негайно вийдіть.",
+    "sk": "Zavolám stráž. Okamžite odíďte."
+  },
+  "oles_bye": {
+    "cs": "Opatrujte hvězdu. Pomůže vám najít observatoř.",
+    "en": "Keep the star safe. It will help you find the observatory.",
+    "uk": "Бережіть зірку. Вона допоможе знайти обсерваторію.",
+    "sk": "Opatrujte hviezdu. Pomôže vám nájsť observatórium."
+  },
+  "lev_question": {
+    "cs": "Vítejte. Přišli jste kvůli hvězdám, nebo kvůli kartografovi?",
+    "en": "Welcome. Have you come for the stars or for the cartographer?",
+    "ru": "Добро пожаловать. Вы пришли ради звёзд или ради картографа?"
+  },
+  "lev_ask": {
+    "cs": "Hledám kartografa. Mám stříbrnou hvězdu.",
+    "en": "I am looking for the cartographer. I have a silver star.",
+    "ru": "Я ищу картографа. У меня есть серебряная звезда."
+  },
+  "lev_silly": {
+    "cs": "Moje polévka se chce stát souhvězdím.",
+    "en": "My soup wants to become a constellation.",
+    "ru": "Мой суп хочет стать созвездием."
+  },
+  "lev_rude": {
+    "cs": "Odpovězte, starče, jinak rozbiju váš dalekohled.",
+    "en": "Answer, old man, or I will smash your telescope.",
+    "ru": "Отвечайте, старик, иначе я разобью ваш телескоп."
+  },
+  "lev_test": {
+    "cs": "Co jste našli ve lvovském archivu? Ukažte mi to.",
+    "en": "What did you find in the Lviv archive? Show me.",
+    "ru": "Что вы нашли в архиве Львова? Покажите мне."
+  },
+  "lev_hint": {
+    "cs": "Dopis popisuje stříbrnou hvězdu, část astrolábu.",
+    "en": "The letter describes a silver star, part of an astrolabe.",
+    "ru": "В письме описана серебряная звезда, часть астролябии."
+  },
+  "lev_help": {
+    "cs": "Jak vypadá hledaný předmět?",
+    "en": "What does the object look like?",
+    "ru": "Как выглядит нужный предмет?"
+  },
+  "lev_answer": {
+    "cs": "Tady je stříbrná hvězda z truhly.",
+    "en": "Here is the silver star from the chest.",
+    "ru": "Вот серебряная звезда из сундука."
+  },
+  "lev_wrong": {
+    "cs": "Tady je měsíc. Schoval jsem ho do kapsy.",
+    "en": "Here is the moon. I hid it in my pocket.",
+    "ru": "Вот луна. Я спрятал её в кармане."
+  },
+  "lev_accept": {
+    "cs": "Zapíšu si tuto stopu a budu dál hledat observatoř.",
+    "en": "I will record this clue and continue searching for the observatory.",
+    "ru": "Я запишу эту подсказку и продолжу поиски обсерватории."
+  },
+  "lev_rebuke": {
+    "cs": "Neplýtvejte mým časem na výmysly. Zamyslete se znovu.",
+    "en": "Do not waste my time with inventions. Think again.",
+    "ru": "Не тратьте моё время на выдумки. Подумайте ещё раз."
+  },
+  "lev_dismiss": {
+    "cs": "Odejděte. Po takových výhrůžkách rozhovor končí.",
+    "en": "Leave. After threats like that, this conversation is over.",
+    "ru": "Уходите. После таких угроз разговор окончен."
+  },
+  "lev_bye": {
+    "cs": "Tři cesty jsou otevřené: Anglie; Německo, Nizozemsko a Dánsko; Itálie, Francie a Španělsko. Získej čočku, prstenec a sluneční kotouč. Všechny cesty vedou do Řecka.",
+    "en": "Three paths are open: England; Germany, the Netherlands and Denmark; Italy, France and Spain. Gather the lens, ring and sun disc. All paths lead to Greece.",
+    "ru": "Три пути открыты: Англия; Германия, Нидерланды и Дания; Италия, Франция и Испания. Собери линзу, кольцо и солнечный диск. Все пути ведут в Грецию."
+  },
+  "shopBrowse": {
+    "cs": "Rád bych si prohlédl vaše slovníky a svitky.",
+    "sk": "Rád by som si pozrel vaše slovníky a zvitky.",
+    "pl": "Chciałbym obejrzeć wasze słowniki i zwoje.",
+    "uk": "Я хотів би переглянути ваші словники та сувої.",
+    "ru": "Я хотел бы посмотреть ваши словари и свитки.",
+    "en": "I would like to browse your dictionaries and scrolls."
+  },
+  "shopSilly": {
+    "cs": "Prodáváte boty pro mraky?",
+    "sk": "Predávate topánky pre oblaky?",
+    "pl": "Czy sprzedajecie buty dla chmur?",
+    "uk": "Ви продаєте черевики для хмар?",
+    "ru": "Вы продаёте ботинки для облаков?",
+    "en": "Do you sell boots for clouds?"
+  },
+  "shopRude": {
+    "cs": "Dejte mi všechno zadarmo, hned!",
+    "sk": "Dajte mi všetko zadarmo, hneď!",
+    "pl": "Dajcie mi wszystko za darmo, natychmiast!",
+    "uk": "Дайте мені все безкоштовно, негайно!",
+    "ru": "Дайте мне всё бесплатно, немедленно!",
+    "en": "Give me everything for free, now!"
+  },
+  "shopRebuke": {
+    "cs": "Boty pro mraky? Tady prodáváme knihy. Zkus to znovu.",
+    "sk": "Topánky pre oblaky? Tu predávame knihy. Skús to znova.",
+    "pl": "Buty dla chmur? Tu sprzedajemy książki. Spróbuj jeszcze raz.",
+    "uk": "Черевики для хмар? Тут ми продаємо книжки. Спробуйте ще раз.",
+    "ru": "Ботинки для облаков? Здесь мы продаём книги. Попробуйте ещё раз.",
+    "en": "Boots for clouds? We sell books here. Try again."
+  },
+  "shopDismiss": {
+    "cs": "Takové chování tu netrpím. Odejdi.",
+    "sk": "Takéto správanie tu netrpím. Odíď.",
+    "pl": "Nie toleruję takiego zachowania. Wyjdź.",
+    "uk": "Я не терплю такої поведінки. Вийдіть.",
+    "ru": "Я не терплю такого поведения. Уходите.",
+    "en": "I do not tolerate that behaviour. Leave."
+  },
+  "shopBye": {
+    "cs": "Děkuji za návštěvu. Šťastnou cestu.",
+    "sk": "Ďakujem za návštevu. Šťastnú cestu.",
+    "pl": "Dziękuję za wizytę. Szczęśliwej podróży.",
+    "uk": "Дякую за візит. Щасливої дороги.",
+    "ru": "Спасибо за визит. Счастливого пути.",
+    "en": "Thank you for visiting. Safe travels."
+  },
+  "shopLeave": {
+    "cs": "Děkuji, to je všechno. Na shledanou.",
+    "sk": "Ďakujem, to je všetko. Dovidenia.",
+    "pl": "Dziękuję, to wszystko. Do widzenia.",
+    "uk": "Дякую, це все. До побачення.",
+    "ru": "Спасибо, это всё. До свидания.",
+    "en": "Thank you, that is all. Goodbye."
+  },
+  "askRumors": {
+    "cs": "Co se tu povídá?",
+    "sk": "Čo sa tu povráva?",
+    "pl": "Co się tutaj mówi?",
+    "uk": "Що тут розповідають?",
+    "ru": "Что здесь рассказывают?",
+    "en": "What are people talking about?"
+  },
+  "askLocalRumor": {
+    "cs": "Pověz mi něco o zdejším kraji.",
+    "sk": "Povedz mi niečo o tunajšom kraji.",
+    "pl": "Opowiedz mi coś o tej okolicy.",
+    "uk": "Розкажіть мені щось про цей край.",
+    "ru": "Расскажите мне что-нибудь об этом крае.",
+    "en": "Tell me something about this place."
+  },
+  "askTrailRumor": {
+    "cs": "Slyšel jsi něco o kartografovi nebo hvězdě?",
+    "sk": "Počul si niečo o kartografovi alebo hviezde?",
+    "pl": "Czy słyszałeś coś o kartografie lub gwieździe?",
+    "uk": "Ви чули щось про картографа або зірку?",
+    "ru": "Вы слышали что-нибудь о картографе или звезде?",
+    "en": "Have you heard anything about the cartographer or the star?"
+  },
+  "returnRumors": {
+    "cs": "A co další pověsti?",
+    "sk": "A čo ďalšie chýry?",
+    "pl": "A jakie są inne pogłoski?",
+    "uk": "А які ще є чутки?",
+    "ru": "А какие ещё есть слухи?",
+    "en": "What other rumors are there?"
+  },
+  "returnMain": {
+    "cs": "Vraťme se k tomu, proč jsem přišel.",
+    "sk": "Vráťme sa k tomu, prečo som prišiel.",
+    "pl": "Wróćmy do powodu mojej wizyty.",
+    "uk": "Повернімося до мети мого візиту.",
+    "ru": "Вернёмся к цели моего визита.",
+    "en": "Let us return to why I came here."
+  },
+  "rumorMenu": {
+    "cs": "O zdejším kraji koluje spousta pověstí. Na co se chceš zeptat?",
+    "sk": "O tunajšom kraji koluje veľa chýrov. Na čo sa chceš spýtať?",
+    "pl": "O tej okolicy krąży wiele pogłosek. O co chcesz zapytać?",
+    "uk": "Про цей край ходить багато чуток. Про що ви хочете запитати?",
+    "ru": "Об этом крае ходит много слухов. О чём вы хотите спросить?",
+    "en": "Many stories circulate here. What would you like to ask about?"
+  },
+  "ada_rumorLocal": {
+    "cs": "Učni říkají, že dobrá mapa potřebuje okraje plné poznámek, ne jen krásné barvy.",
+    "en": "Apprentices say a good map needs margins full of notes, not just beautiful colours."
+  },
+  "ada_rumorTrail": {
+    "cs": "Prý Eliáš podepisoval soukromé dopisy hvězdou s devíti cípy. Zkontroluj svůj dopis.",
+    "en": "They say Eliáš signed private letters with a nine-pointed star. Check your letter."
+  },
+  "mira_rumorLocal": {
+    "cs": "Kupci říkají, že u ohně se člověk naučí více slov než za celý den mlčení.",
+    "en": "Merchants say you learn more words around a fire than in a whole day of silence.",
+    "sk": "Kupci vravia, že pri ohni sa človek naučí viac slov než za celý deň mlčania."
+  },
+  "mira_rumorTrail": {
+    "cs": "Prý Eliáš nechal zprávu u staré brány v Krakově. Žena, kterou hledáš, opravuje hodinky.",
+    "en": "Apparently Eliáš left a message by the old gate in Kraków. The woman you seek repairs watches.",
+    "sk": "Vraj Eliáš nechal správu pri starej bráne v Krakove. Žena, ktorú hľadáš, opravuje hodinky."
+  },
+  "zofia_rumorLocal": {
+    "cs": "Místní říkají, že každé hodiny v této ulici ukazují jiný čas. Já podezírám líné majitele.",
+    "en": "Locals say every clock on this street shows a different time. I suspect lazy owners.",
+    "pl": "Miejscowi mówią, że każdy zegar na tej ulicy pokazuje inną godzinę. Ja podejrzewam leniwych właścicieli.",
+    "sk": "Miestni hovoria, že každé hodiny na tejto ulici ukazujú iný čas. Ja podozrievam lenivých majiteľov."
+  },
+  "zofia_rumorTrail": {
+    "cs": "Archivář ve Lvově prý nevěří pouhým příběhům. Vezmi mosazný klíč, jinak truhlu neotevře.",
+    "en": "The archivist in Lviv supposedly distrusts mere stories. Bring the brass key or he will not open the chest.",
+    "pl": "Podobno archiwista we Lwowie nie ufa samym opowieściom. Zabierz mosiężny klucz, inaczej nie otworzy skrzyni.",
+    "sk": "Archivár vo Ľvove vraj neverí iba príbehom. Vezmi mosadzný kľúč, inak truhlicu neotvorí."
+  },
+  "oles_rumorLocal": {
+    "cs": "Říká se, že v podzemí archivu žije duch, který přerovnává knihy. Myslím, že je to naše kočka.",
+    "en": "They say a ghost in the archive cellar rearranges the books. I think it is our cat.",
+    "uk": "Кажуть, у підвалі архіву живе привид, який переставляє книжки. Я думаю, це наш кіт.",
+    "sk": "Hovorí sa, že v podzemí archívu žije duch, ktorý premiestňuje knihy. Myslím, že je to naša mačka."
+  },
+  "oles_rumorTrail": {
+    "cs": "Cestovatelé říkají, že astronom v Novgorodu pozná stříbrnou hvězdu. Cestou ji neprodávej.",
+    "en": "Travellers say the astronomer in Novgorod will recognise the silver star. Do not sell it along the way.",
+    "uk": "Мандрівники кажуть, що астроном у Новгороді впізнає срібну зірку. Не продавайте її дорогою.",
+    "sk": "Cestovatelia hovoria, že astronóm v Novgorode spozná striebornú hviezdu. Cestou ju nepredávaj."
+  },
+  "lev_rumorLocal": {
+    "cs": "Moji žáci tvrdí, že můj dalekohled vidí sny. Ve skutečnosti jen zapomínají čistit sklo.",
+    "en": "My students insist my telescope sees dreams. In fact, they simply forget to clean the glass.",
+    "ru": "Ученики уверяют, что мой телескоп видит сны. На самом деле они просто забывают протирать стекло."
+  },
+  "lev_rumorTrail": {
+    "cs": "Říká se, že devátý poledník není čára na běžné mapě, ale tajné znamení. Hledej stejné symboly v dopisech.",
+    "en": "They say the ninth meridian is not a line on an ordinary map but a secret sign. Look for matching symbols in the letters.",
+    "ru": "Говорят, девятый меридиан — не линия на обычной карте, а условный знак. Ищите одинаковые символы в письмах."
+  },
+  "pragueShop_rumorLocal": {
+    "cs": "Mezi knihkupci se říká: malý slovník, který opravdu přečteš, je lepší než velký, který necháš v brašně.",
+    "en": "Booksellers say a small phrasebook you actually read is better than a large one left in your satchel."
+  },
+  "pragueShop_rumorTrail": {
+    "cs": "Lidé se chystají za hranice bez slovníku. Já bych si před Bratislavou přečetl příhraniční slovník.",
+    "en": "People head across the border without a dictionary. I would read the border phrasebook before Bratislava."
+  },
+  "slovakShop_rumorLocal": {
+    "cs": "Pod hradem prý spí drak, který se živí ztracenými rukavicemi. Nevěřím tomu, ale rukavice mizí.",
+    "en": "A dragon supposedly sleeps beneath the castle and eats lost gloves. I doubt it, but gloves do disappear.",
+    "sk": "Vraj pod hradom spí drak, ktorý sa živí stratenými rukavicami. Neverím tomu, ale rukavice miznú."
+  },
+  "slovakShop_rumorTrail": {
+    "cs": "Slyšela jsem, že Mira zná polštinu i ukrajinštinu. Její poznámky ale budou slovensky.",
+    "en": "I heard Mira knows Polish and Ukrainian. Her notes will be in Slovak, though.",
+    "sk": "Počula som, že Mira pozná poľštinu aj ukrajinčinu. Jej poznámky však budú po slovensky."
+  },
+  "polishShop_rumorLocal": {
+    "cs": "Kupci radí: nejprve se zeptej na cenu, teprve potom otevři měšec. Ušetří to mnoho hádek.",
+    "en": "Merchants advise asking the price before opening your purse. It saves many arguments.",
+    "pl": "Kupcy radzą: najpierw zapytaj o cenę, dopiero potem otwieraj sakiewkę. To oszczędza wiele kłótni.",
+    "sk": "Kupci radia: najprv sa spýtaj na cenu, až potom otvor mešec. Ušetrí to veľa hádok."
+  },
+  "polishShop_rumorTrail": {
+    "cs": "Slyšel jsem, že stříbrná hvězda leží na dně studny. Zofia ale mluví o truhle v archivu. Komu věříš?",
+    "en": "I heard the silver star lies at the bottom of a well. But Zofia speaks of an archive chest. Whom do you believe?",
+    "pl": "Słyszałem, że srebrna gwiazda leży na dnie studni. Ale Zofia mówi o skrzyni w archiwum. Komu wierzysz?",
+    "sk": "Počul som, že strieborná hviezda leží na dne studne. Zofia však hovorí o truhlici v archíve. Komu veríš?"
+  },
+  "ukrainianShop_rumorLocal": {
+    "cs": "Čtenáři říkají, že na okrajích starých knih se někdy skrývá zajímavější příběh než v samotném textu.",
+    "en": "Readers say the margins of old books sometimes hide a more interesting story than the text itself.",
+    "uk": "Читачі кажуть, що на полях старих книжок іноді ховається цікавіша історія, ніж у самому тексті.",
+    "sk": "Čitatelia hovoria, že na okrajoch starých kníh sa niekedy skrýva zaujímavejší príbeh než v samotnom texte."
+  },
+  "ukrainianShop_rumorTrail": {
+    "cs": "Říká se, že další svědek mluví rusky. Severské poznámky obsahují užitečné otázky, ale ne všechny odpovědi.",
+    "en": "They say the next witness speaks Russian. The northern notes contain useful questions, but not every answer.",
+    "uk": "Кажуть, наступний свідок говорить російською. У північних нотатках є корисні питання, але не всі відповіді.",
+    "sk": "Hovorí sa, že ďalší svedok hovorí po rusky. Severské poznámky obsahujú užitočné otázky, ale nie všetky odpovede."
+  },
+  "russianShop_rumorLocal": {
+    "cs": "Milovníci knih říkají, že cizí slovo si snáze zapamatuješ, když si ho spojíš s tváří člověka, který ho řekl.",
+    "en": "Book lovers say a foreign word is easier to remember when linked to the face of the person who said it.",
+    "ru": "Книжники говорят: чужое слово легче запомнить, если связать его с лицом человека, который его произнёс."
+  },
+  "russianShop_rumorTrail": {
+    "cs": "Jeden kupec tvrdí, že kartograf zmizel navždy. Astronom od něj ale nedávno dostal dopis.",
+    "en": "A merchant insists the cartographer is gone forever. But the astronomer recently received a letter from him.",
+    "ru": "Один купец уверяет, что картограф исчез навсегда. Но астроном недавно получил от него письмо."
+  },
+  "bea_greet": {
+    "cs": "Opatství ukrývá křišťálovou čočku. Proč přicházíš?",
+    "en": "The abbey holds a crystal lens. Why have you come?"
+  },
+  "bea_ask": {
+    "cs": "Hledám kartografa a ztracený astroláb.",
+    "en": "I seek the cartographer and the lost astrolabe."
+  },
+  "bea_test": {
+    "cs": "Co Eliáš získal ve lvovském archivu?",
+    "en": "What did Eliáš recover in the Lviv archive?"
+  },
+  "bea_answer": {
+    "cs": "Stříbrnou hvězdu. Tady je.",
+    "en": "A silver star. Here it is."
+  },
+  "bea_clue": {
+    "cs": "Čočka patří ke stejnému přístroji. Odvez ji s dalšími dvěma relikviemi do Řecka.",
+    "en": "The lens belongs to the same instrument. Take it to Greece with the other two relics."
+  },
+  "bea_accept": {
+    "cs": "Děkuji. Čočku budu opatrovat.",
+    "en": "Thank you. I will keep the lens safe."
+  },
+  "bea_wrong": {
+    "cs": "Můj deštník spolkl observatoř.",
+    "en": "My umbrella swallowed the observatory."
+  },
+  "bea_rebuke": {
+    "cs": "To nedává smysl. Zkus to znovu.",
+    "en": "That makes no sense. Try again."
+  },
+  "bea_bye": {
+    "cs": "Ať se tři cesty setkají pod řeckým nebem.",
+    "en": "May the three paths meet under the Greek sky."
+  },
+  "londonShop_browse": {
+    "cs": "Mohu si prohlédnout vaše knihy?",
+    "en": "May I browse your books?"
+  },
+  "londonShop_leave": {
+    "cs": "Děkuji. Na shledanou.",
+    "en": "Thank you. Goodbye."
+  },
+  "otto_greet": {
+    "cs": "Hledáš prstenec astrolábu? Nejprve potřebuješ mou pečeť.",
+    "en": "You seek the astrolabe ring? First you need my seal.",
+    "de": "Du suchst den Ring des Astrolabiums? Zuerst brauchst du mein Siegel."
+  },
+  "otto_ask": {
+    "cs": "Sleduji stopu kartografa.",
+    "en": "I follow the cartographer’s trail.",
+    "de": "Ich folge der Spur des Kartografen."
+  },
+  "otto_test": {
+    "cs": "Jaké znamení nese jeho mapa?",
+    "en": "What symbol does his map bear?",
+    "de": "Welches Zeichen trägt seine Karte?"
+  },
+  "otto_answer": {
+    "cs": "Hvězdu s devíti cípy.",
+    "en": "A nine-pointed star.",
+    "de": "Einen Stern mit neun Spitzen."
+  },
+  "otto_clue": {
+    "cs": "Vezmi dílenskou pečeť. Navigátorka v Amsterdamu má další stopu.",
+    "en": "Take the workshop seal. A navigator in Amsterdam has the next clue.",
+    "de": "Nimm das Werkstattsiegel. Eine Navigatorin in Amsterdam hat den nächsten Hinweis."
+  },
+  "otto_accept": {
+    "cs": "Děkuji. Donesu pečeť do Amsterdamu.",
+    "en": "Thank you. I will bring the seal to Amsterdam.",
+    "de": "Danke. Ich bringe das Siegel nach Amsterdam."
+  },
+  "otto_wrong": {
+    "cs": "Moje boty mluví s měsícem.",
+    "en": "My boots speak to the moon.",
+    "de": "Meine Stiefel sprechen mit dem Mond."
+  },
+  "otto_rebuke": {
+    "cs": "To je nesmysl. Zkus to znovu.",
+    "en": "That is nonsense. Try again.",
+    "de": "Das ist Unsinn. Versuche es noch einmal."
+  },
+  "otto_bye": {
+    "cs": "Pečeť dobře opatruj.",
+    "en": "Keep the seal safe.",
+    "de": "Bewahre das Siegel gut auf."
+  },
+  "berlinShop_browse": {
+    "cs": "Mohu si prohlédnout vaše knihy?",
+    "en": "May I browse your books?",
+    "de": "Darf ich Ihre Bücher ansehen?"
+  },
+  "berlinShop_leave": {
+    "cs": "Děkuji. Na shledanou.",
+    "en": "Thank you. Goodbye.",
+    "de": "Danke. Auf Wiedersehen."
+  },
+  "sanne_greet": {
+    "cs": "Máš pečeť výrobce přístrojů z Berlína?",
+    "en": "Do you have the seal from the Berlin instrument maker?",
+    "nl": "Heb je het zegel van de instrumentmaker uit Berlijn?"
+  },
+  "sanne_ask": {
+    "cs": "Ano, hledám severní prstenec.",
+    "en": "Yes, I am looking for the northern ring.",
+    "nl": "Ja, ik zoek de noordelijke ring."
+  },
+  "sanne_test": {
+    "cs": "Ukaž mi pečeť, než ti dám námořní mapu.",
+    "en": "Show me the seal before I give you the sea chart.",
+    "nl": "Laat mij het zegel zien voordat ik je de zeekaart geef."
+  },
+  "sanne_answer": {
+    "cs": "Tady je dílenská pečeť.",
+    "en": "Here is the workshop seal.",
+    "nl": "Hier is het werkplaatszegel."
+  },
+  "sanne_clue": {
+    "cs": "Tato námořní mapa vede do Kodaně. Správce přístavu opatruje prstenec.",
+    "en": "This sea chart leads to Copenhagen. The harbour master keeps the ring.",
+    "nl": "Deze zeekaart leidt naar Kopenhagen. De havenmeester bewaart de ring."
+  },
+  "sanne_accept": {
+    "cs": "Děkuji. Vezmu mapu do Dánska.",
+    "en": "Thank you. I will take the chart to Denmark.",
+    "nl": "Dank je. Ik neem de kaart mee naar Denemarken."
+  },
+  "sanne_wrong": {
+    "cs": "Moje loď je z teplé polévky.",
+    "en": "My ship is made of warm soup.",
+    "nl": "Mijn schip bestaat uit warme soep."
+  },
+  "sanne_rebuke": {
+    "cs": "To nedává smysl. Zkus to znovu.",
+    "en": "That makes no sense. Try again.",
+    "nl": "Dat slaat nergens op. Probeer het opnieuw."
+  },
+  "sanne_bye": {
+    "cs": "Šťastnou cestu. Nezapomeň na mapu.",
+    "en": "Safe travels. Do not forget the chart.",
+    "nl": "Goede reis. Vergeet de kaart niet."
+  },
+  "amsterdamShop_browse": {
+    "cs": "Mohu si prohlédnout vaše knihy?",
+    "en": "May I browse your books?",
+    "nl": "Mag ik uw boeken bekijken?"
+  },
+  "amsterdamShop_leave": {
+    "cs": "Děkuji. Na shledanou.",
+    "en": "Thank you. Goodbye.",
+    "nl": "Dank u. Tot ziens."
+  },
+  "astrid_greet": {
+    "cs": "Vítej. Hledáš severní prstenec?",
+    "en": "Welcome. Are you looking for the northern ring?",
+    "da": "Velkommen. Leder du efter den nordlige ring?"
+  },
+  "astrid_ask": {
+    "cs": "Ano. Sleduji stopu z Berlína a Amsterdamu.",
+    "en": "Yes. I followed the trail from Berlin and Amsterdam.",
+    "da": "Ja. Jeg har fulgt sporet fra Berlin og Amsterdam."
+  },
+  "astrid_test": {
+    "cs": "Máš navigátorčinu námořní mapu?",
+    "en": "Do you have the navigator’s sea chart?",
+    "da": "Har du navigatørens søkort?"
+  },
+  "astrid_answer": {
+    "cs": "Tady je námořní mapa z Amsterdamu.",
+    "en": "Here is the sea chart from Amsterdam.",
+    "da": "Her er søkortet fra Amsterdam."
+  },
+  "astrid_clue": {
+    "cs": "Prstenec je tvůj. Získej čočku i sluneční kotouč a vydej se do Řecka.",
+    "en": "The ring is yours. Gather the lens and sun disc, and travel to Greece.",
+    "da": "Ringen er din. Saml linsen og solskiven, og rejs til Grækenland."
+  },
+  "astrid_accept": {
+    "cs": "Děkuji. Budu prstenec opatrovat.",
+    "en": "Thank you. I will keep the ring safe.",
+    "da": "Tak. Jeg vil passe på ringen."
+  },
+  "astrid_wrong": {
+    "cs": "Moje ryba umí opravovat hvězdy.",
+    "en": "My fish can repair stars.",
+    "da": "Min fisk kan reparere stjerner."
+  },
+  "astrid_rebuke": {
+    "cs": "To nedává smysl. Zkus to znovu.",
+    "en": "That makes no sense. Try again.",
+    "da": "Det giver ingen mening. Prøv igen."
+  },
+  "astrid_bye": {
+    "cs": "Ať tě moře bezpečně vede dál.",
+    "en": "May the sea carry you safely onward.",
+    "da": "Må havet føre dig sikkert videre."
+  },
+  "copenhagenShop_browse": {
+    "cs": "Mohu si prohlédnout vaše knihy?",
+    "en": "May I browse your books?",
+    "da": "Må jeg se på dine bøger?"
+  },
+  "copenhagenShop_leave": {
+    "cs": "Děkuji. Na shledanou.",
+    "en": "Thank you. Goodbye.",
+    "da": "Tak. Farvel."
+  },
+  "luca_greet": {
+    "cs": "Hledáš sluneční kotouč? Jeho tajemství je napsané latinsky.",
+    "en": "Are you looking for the sun disc? Its secret is written in Latin.",
+    "it": "Cerchi il disco solare? Il suo segreto è scritto in latino."
+  },
+  "luca_ask": {
+    "cs": "Chtěl bych číst kartografův rukopis.",
+    "en": "I would like to read the cartographer’s manuscript.",
+    "it": "Vorrei leggere il manoscritto del cartografo."
+  },
+  "luca_test": {
+    "cs": "Jakou část jsi našel ve Lvově?",
+    "en": "Which part did you find in Lviv?",
+    "it": "Quale parte hai trovato a Leopoli?"
+  },
+  "luca_answer": {
+    "cs": "Stříbrnou hvězdu.",
+    "en": "The silver star.",
+    "it": "La stella d’argento."
+  },
+  "luca_clue": {
+    "cs": "Vezmi kodex a latinský slovníček. Přečti obě stránky. Pak hledej Camille ve Francii.",
+    "en": "Take the codex and Latin glossary. Read both pages. Then find Camille in France.",
+    "it": "Prendi il codice e il glossario latino. Leggi entrambe le pagine. Poi cerca Camille in Francia."
+  },
+  "luca_accept": {
+    "cs": "Děkuji. Než vyrazím, prostuduji kodex.",
+    "en": "Thank you. I will study the codex before leaving.",
+    "it": "Grazie. Studierò il codice prima di partire."
+  },
+  "luca_wrong": {
+    "cs": "Můj klobouk chce sníst slunce.",
+    "en": "My hat wants to eat the sun.",
+    "it": "Il mio cappello vuole mangiare il sole."
+  },
+  "luca_rebuke": {
+    "cs": "To nedává smysl. Odpovídej pozorně.",
+    "en": "That makes no sense. Answer carefully.",
+    "it": "Non ha senso. Rispondi con attenzione."
+  },
+  "luca_bye": {
+    "cs": "Nezapomeň si přečíst slovníček.",
+    "en": "Do not forget to read the glossary.",
+    "it": "Non dimenticare di leggere il glossario."
+  },
+  "florenceShop_browse": {
+    "cs": "Mohu si prohlédnout vaše knihy?",
+    "en": "May I browse your books?",
+    "it": "Posso guardare i vostri libri?"
+  },
+  "florenceShop_leave": {
+    "cs": "Děkuji. Na shledanou.",
+    "en": "Thank you. Goodbye.",
+    "it": "Grazie. Arrivederci."
+  },
+  "camille_greet": {
+    "cs": "Italský rukopis mluví o slunečním kotouči. Přinesl jsi knihu?",
+    "en": "The Italian manuscript speaks of a sun disc. Have you brought the book?",
+    "fr": "Le manuscrit italien parle d’un disque solaire. Avez-vous apporté le livre?"
+  },
+  "camille_ask": {
+    "cs": "Ano. Hledám další zastávku výpravy.",
+    "en": "Yes. I seek the next stage of the voyage.",
+    "fr": "Oui. Je cherche la prochaine étape du voyage."
+  },
+  "camille_test": {
+    "cs": "Ukaž mi kodex, než ti dám tento dopis.",
+    "en": "Show me the codex before I give you this letter.",
+    "fr": "Montrez-moi le codex avant que je vous donne cette lettre."
+  },
+  "camille_answer": {
+    "cs": "Tady je kartografův kodex.",
+    "en": "Here is the cartographer’s codex.",
+    "fr": "Voici le codex du cartographe."
+  },
+  "camille_clue": {
+    "cs": "Tento dopis tě dovede do Toleda. K otevření truhly je potřeba rozluštit obě latinské stránky.",
+    "en": "This letter will lead you to Toledo. Opening the chest requires deciphering both Latin pages.",
+    "fr": "Cette lettre vous mènera à Tolède. Pour ouvrir le coffre, il faut déchiffrer les deux pages latines."
+  },
+  "camille_accept": {
+    "cs": "Děkuji. Dopis i kodex budu opatrovat.",
+    "en": "Thank you. I will keep the letter and codex.",
+    "fr": "Merci. Je garderai la lettre et le codex."
+  },
+  "camille_wrong": {
+    "cs": "Můj sýr zná všechna tajemství oblohy.",
+    "en": "My cheese knows all the secrets of the sky.",
+    "fr": "Mon fromage connaît tous les secrets du ciel."
+  },
+  "camille_rebuke": {
+    "cs": "To jsou hlouposti. Zkus to znovu.",
+    "en": "That is nonsense. Try again.",
+    "fr": "Ce sont des sottises. Réessayez."
+  },
+  "camille_bye": {
+    "cs": "Šťastnou cestu do Španělska.",
+    "en": "Safe travels to Spain.",
+    "fr": "Bonne route vers l’Espagne."
+  },
+  "lyonShop_browse": {
+    "cs": "Mohu si prohlédnout vaše knihy?",
+    "en": "May I browse your books?",
+    "fr": "Puis-je regarder vos livres?"
+  },
+  "lyonShop_leave": {
+    "cs": "Děkuji. Na shledanou.",
+    "en": "Thank you. Goodbye.",
+    "fr": "Merci. Au revoir."
+  },
+  "ines_greet": {
+    "cs": "Francouzský dopis ohlašuje tvůj příchod. Hledáš sluneční kotouč?",
+    "en": "The French letter announces your arrival. Are you seeking the sun disc?",
+    "es": "La carta francesa anuncia tu llegada. ¿Buscas el disco solar?"
+  },
+  "ines_ask": {
+    "cs": "Ano. Rozluštil jsem latinský kodex.",
+    "en": "Yes. I have deciphered the Latin codex.",
+    "es": "Sí. He descifrado el códice latino."
+  },
+  "ines_test": {
+    "cs": "Kde se mají sejít všechny tři části?",
+    "en": "Where must the three pieces come together?",
+    "es": "¿Dónde deben reunirse las tres piezas?"
+  },
+  "ines_answer": {
+    "cs": "V Řecku, pod athénským nebem.",
+    "en": "In Greece, beneath the sky of Athens.",
+    "es": "En Grecia, bajo el cielo de Atenas."
+  },
+  "ines_clue": {
+    "cs": "Správně. Vezmi sluneční kotouč. Čočka, prstenec a kotouč otevřou observatoř.",
+    "en": "Correct. Take the sun disc. The lens, ring and disc will open the observatory.",
+    "es": "Correcto. Toma el disco solar. La lente, el anillo y el disco abrirán el observatorio."
+  },
+  "ines_accept": {
+    "cs": "Děkuji. Donesu všechny tři části do Athén.",
+    "en": "Thank you. I will bring all three pieces to Athens.",
+    "es": "Gracias. Llevaré las tres piezas a Atenas."
+  },
+  "ines_wrong": {
+    "cs": "V kapse obří brambory.",
+    "en": "In the pocket of a giant potato.",
+    "es": "En el bolsillo de una patata gigante."
+  },
+  "ines_rebuke": {
+    "cs": "To nedává smysl. Zamysli se nad kodexem.",
+    "en": "That makes no sense. Think about the codex.",
+    "es": "Eso no tiene sentido. Piensa en el códice."
+  },
+  "ines_bye": {
+    "cs": "Ať se tři cesty stanou jedinou.",
+    "en": "May the three routes become one.",
+    "es": "Que las tres rutas se conviertan en una."
+  },
+  "toledoShop_browse": {
+    "cs": "Mohu si prohlédnout vaše knihy?",
+    "en": "May I browse your books?",
+    "es": "¿Puedo ver sus libros?"
+  },
+  "toledoShop_leave": {
+    "cs": "Děkuji. Na shledanou.",
+    "en": "Thank you. Goodbye.",
+    "es": "Gracias. Adiós."
+  },
+  "eleni_greet": {
+    "cs": "Vítej. Přinesl jsi všechny tři části astrolábu?",
+    "en": "Welcome. Have you brought the three parts of the astrolabe?",
+    "el": "Καλώς ήρθες. Έφερες τα τρία μέρη του αστρολάβου;"
+  },
+  "eleni_ask": {
+    "cs": "Ano. Prošel jsem všechny tři cesty.",
+    "en": "Yes. I followed all three routes.",
+    "el": "Ναι. Ακολούθησα και τους τρεις δρόμους."
+  },
+  "eleni_test": {
+    "cs": "Ukaž mi čočku, prstenec a sluneční kotouč.",
+    "en": "Show me the lens, ring and sun disc.",
+    "el": "Δείξε μου τον φακό, τον δακτύλιο και τον ηλιακό δίσκο."
+  },
+  "eleni_answer": {
+    "cs": "Tady jsou všechny tři části.",
+    "en": "Here are all three parts.",
+    "el": "Εδώ είναι και τα τρία μέρη."
+  },
+  "eleni_clue": {
+    "cs": "Astroláb je úplný. Eliáš na tebe čeká uvnitř observatoře.",
+    "en": "The astrolabe is complete. Eliáš awaits you inside the observatory.",
+    "el": "Ο αστρολάβος είναι πλήρης. Ο Ελιάς σε περιμένει μέσα στο παρατηρητήριο."
+  },
+  "eleni_accept": {
+    "cs": "Podělíme se o tyto vědomosti se všemi.",
+    "en": "We will share this knowledge with everyone.",
+    "el": "Θα μοιραστούμε αυτή τη γνώση με όλους."
+  },
+  "eleni_wrong": {
+    "cs": "Moje mapa je létající židle.",
+    "en": "My map is a flying chair.",
+    "el": "Ο χάρτης μου είναι μια ιπτάμενη καρέκλα."
+  },
+  "eleni_rebuke": {
+    "cs": "To nedává smysl. Zkus to znovu.",
+    "en": "That makes no sense. Try again.",
+    "el": "Αυτό δεν έχει νόημα. Προσπάθησε ξανά."
+  },
+  "eleni_bye": {
+    "el": "Ο Ελιάς βρέθηκε, αλλά το ταξίδι συνεχίζεται. Πήγαινε στη Νορβηγία, στη Σουηδία και στη Φινλανδία. Η τελευταία πύλη είναι στην Ιρλανδία.",
+    "cs": "Eliáš je nalezen, ale výprava pokračuje. Vydej se do Norska, Švédska a Finska. Poslední brána je v Irsku.",
+    "en": "Eliáš is found, but the voyage continues. Travel through Norway, Sweden and Finland. The last gate is in Ireland."
+  },
+  "athensShop_browse": {
+    "cs": "Mohu si prohlédnout vaše knihy?",
+    "en": "May I browse your books?",
+    "el": "Μπορώ να δω τα βιβλία σας;"
+  },
+  "athensShop_leave": {
+    "cs": "Děkuji. Na shledanou.",
+    "en": "Thank you. Goodbye.",
+    "el": "Ευχαριστώ. Αντίο."
+  },
+  "latin_page1": {
+    "la": "Tres partes sunt: lens, anulus, discus. Quid portas?",
+    "cs": "Jsou tři části: čočka, prstenec, kotouč. Co neseš?",
+    "en": "There are three parts: lens, ring, disc. What do you carry?"
+  },
+  "latin_list": {
+    "la": "Lens, anulus et discus.",
+    "cs": "Čočka, prstenec a kotouč.",
+    "en": "Lens, ring and disc."
+  },
+  "latin_silly": {
+    "la": "Tres pisces cantant.",
+    "cs": "Tři ryby zpívají.",
+    "en": "Three fish sing."
+  },
+  "latin_page2": {
+    "la": "Tres viae in Graecia conveniunt. Quae terra est finis itineris?",
+    "cs": "Tři cesty se setkávají v Řecku. Která země je cílem výpravy?",
+    "en": "Three paths meet in Greece. Which land is the journey’s destination?"
+  },
+  "latin_greece": {
+    "la": "Graecia est finis itineris.",
+    "cs": "Řecko je cílem výpravy.",
+    "en": "Greece is the journey’s destination."
+  },
+  "latin_wrong": {
+    "la": "Luna est finis itineris.",
+    "cs": "Měsíc je cílem výpravy.",
+    "en": "The moon is the journey’s destination."
+  },
+  "latin_retry": {
+    "la": "Non recte. Lege iterum.",
+    "cs": "Nesprávně. Čti znovu.",
+    "en": "Incorrect. Read again."
+  },
+  "latin_reread": {
+    "la": "Iterum legere volo.",
+    "cs": "Chci číst znovu.",
+    "en": "I want to read again."
+  },
+  "latin_final": {
+    "la": "Litterae intellectae sunt. Discum in Hispania quaere; deinde Athenas pete.",
+    "cs": "Text je rozluštěn. Hledej kotouč ve Španělsku; potom se vydej do Athén.",
+    "en": "The text is deciphered. Seek the disc in Spain; then head to Athens."
+  },
+  "bea_joke_eels": {
+    "cs": "Moje vznášedlo je plné úhořů.",
+    "en": "My hovercraft is full of eels."
+  },
+  "bea_joke_reply": {
+    "cs": "Tak ho drž dál od opatství. Naši mniši už mají dost kluzkých problémů.",
+    "en": "Then keep it out of the abbey. Our monks already have enough slippery problems."
+  },
+  "otto_joke_eels": {
+    "cs": "Moje vznášedlo je plné úhořů.",
+    "en": "My hovercraft is full of eels.",
+    "de": "Mein Luftkissenboot ist voller Aale."
+  },
+  "otto_joke_reply": {
+    "cs": "Opravuji astroláby, ne přepravníky úhořů. Zkusme to znovu.",
+    "en": "I repair astrolabes, not eel transporters. Let us try again.",
+    "de": "Ich repariere Astrolabien, keine Aaltransporter. Versuchen wir es noch einmal."
+  },
+  "camille_joke_eels": {
+    "cs": "Moje vznášedlo je plné úhořů.",
+    "en": "My hovercraft is full of eels.",
+    "fr": "Mon aéroglisseur est plein d’anguilles."
+  },
+  "camille_joke_reply": {
+    "cs": "Úhoři budou muset počkat venku. V archivu je už tak dost vlhko.",
+    "en": "The eels must wait outside. The archives are damp enough already.",
+    "fr": "Les anguilles devront attendre dehors. Les archives sont déjà assez humides."
+  },
+  "ines_joke_eels": {
+    "cs": "Moje vznášedlo je plné úhořů.",
+    "en": "My hovercraft is full of eels.",
+    "es": "Mi aerodeslizador está lleno de anguilas."
+  },
+  "ines_joke_reply": {
+    "cs": "Úhoři nejsou jednou ze tří relikvií. Vraťme se ke slunečnímu kotouči.",
+    "en": "Eels are not one of the three relics. Let us return to the sun disc.",
+    "es": "Las anguilas no son una de las tres reliquias. Volvamos al disco solar."
+  },
+  "joke_frog": {
+    "eo": "Bonvolu alsendi la pordiston; ŝajne estas rano en mia bideo.",
+    "cs": "Pošlete prosím vrátného; v mém bidetu je zřejmě žába.",
+    "en": "Please send the porter; there seems to be a frog in my bidet.",
+    "es": "Envíe al portero, por favor; parece que hay una rana en mi bidé."
+  },
+  "ines_frog_reply": {
+    "es": "No sé qué idioma es ese, pero la rana no guarda el disco solar. Empecemos de nuevo.",
+    "cs": "Nevím, co je to za jazyk, ale žába sluneční kotouč nehlídá. Začněme znovu.",
+    "en": "I do not know that language, but the frog is not guarding the sun disc. Let us start again."
+  },
+  "ingrid_greet": {
+    "cs": "Vítej. Máš obnovený astroláb?",
+    "en": "Welcome. Do you have the restored astrolabe?",
+    "no": "Velkommen. Har du den gjenreiste astrolabien?"
+  },
+  "ingrid_ask": {
+    "cs": "Ano. Hledám poslední bránu v Irsku.",
+    "en": "Yes. I seek the final gate in Ireland.",
+    "no": "Ja. Jeg søker den siste porten i Irland."
+  },
+  "ingrid_clue": {
+    "cs": "Dones severní znamení do Stockholmu. Tamní kartograf zná další zastávku.",
+    "en": "Take the northern token to Stockholm. A mapmaker there knows the next stage.",
+    "no": "Ta nordmerket til Stockholm. En karttegner der kjenner neste etappe."
+  },
+  "ingrid_accept": {
+    "cs": "Děkuji. Vydám se do Švédska.",
+    "en": "Thank you. I will travel to Sweden.",
+    "no": "Takk. Jeg reiser til Sverige."
+  },
+  "ingrid_bye": {
+    "cs": "Sleduj světlo, ale naslouchej také lidem.",
+    "en": "Follow the light, but listen to people too.",
+    "no": "Følg lyset, men lytt også til menneskene."
+  },
+  "ingrid_browse": {
+    "cs": "Mohu si prohlédnout knihy?",
+    "en": "May I browse the books?",
+    "no": "Kan jeg se på bøkene?"
+  },
+  "erik_greet": {
+    "cs": "Máš znamení z Norska?",
+    "en": "Do you have the token from Norway?",
+    "sv": "Har du märket från Norge?"
+  },
+  "erik_ask": {
+    "cs": "Ano. Potřebuji cestu do Finska.",
+    "en": "Yes. I need the route to Finland.",
+    "sv": "Ja. Jag behöver vägen till Finland."
+  },
+  "erik_clue": {
+    "cs": "Tady je mapa polární záře. Dones ji Aino do Helsinek.",
+    "en": "Here is the aurora chart. Take it to Aino in Helsinki.",
+    "sv": "Här är norrskenskartan. Ta den till Aino i Helsingfors."
+  },
+  "erik_accept": {
+    "cs": "Děkuji. Donesu mapu do Helsinek.",
+    "en": "Thank you. I will take the chart to Helsinki.",
+    "sv": "Tack. Jag tar kartan till Helsingfors."
+  },
+  "erik_bye": {
+    "cs": "Poslední část výpravy vyžaduje trpělivost.",
+    "en": "The final part of the voyage requires patience.",
+    "sv": "Den sista delen av resan kräver tålamod."
+  },
+  "erik_browse": {
+    "cs": "Mohu si prohlédnout knihy?",
+    "en": "May I browse the books?",
+    "sv": "Kan jag titta på böckerna?"
+  },
+  "aino_greet": {
+    "cs": "Přinesl jsi mapu polární záře ze Švédska?",
+    "en": "Did you bring the aurora chart from Sweden?",
+    "fi": "Toitko revontulikartan Ruotsista?"
+  },
+  "aino_ask": {
+    "cs": "Ano. Hledám poslední bránu v Irsku.",
+    "en": "Yes. I seek the final gate in Ireland.",
+    "fi": "Kyllä. Etsin Irlannin viimeistä porttia."
+  },
+  "aino_clue": {
+    "cs": "Mapa odhaluje význam tohoto klíče. Dones jej do Galway v Irsku.",
+    "en": "The chart reveals the meaning of this key. Take it to Galway in Ireland.",
+    "fi": "Kartta paljastaa tämän avaimen merkityksen. Vie se Galwayhin Irlantiin."
+  },
+  "aino_accept": {
+    "cs": "Děkuji. Donesu klíč do Irska.",
+    "en": "Thank you. I will take the key to Ireland.",
+    "fi": "Kiitos. Vien avaimen Irlantiin."
+  },
+  "aino_bye": {
+    "cs": "Můžeš navštívit také Maďarsko, ale není to povinné.",
+    "en": "You can also visit Hungary, but it is optional.",
+    "fi": "Voit käydä myös Unkarissa, mutta se ei ole pakollista."
+  },
+  "aino_browse": {
+    "cs": "Mohu si prohlédnout knihy?",
+    "en": "May I browse the books?",
+    "fi": "Voinko katsoa kirjoja?"
+  },
+  "eszter_greet": {
+    "cs": "Přinesl jsi obnovený astroláb?",
+    "en": "Have you brought the restored astrolabe?",
+    "hu": "Elhoztad a helyreállított asztrolábiumot?"
+  },
+  "eszter_ask": {
+    "cs": "Ano. Prosím o radu pro poslední cestu.",
+    "en": "Yes. I ask for advice for the final journey.",
+    "hu": "Igen. Tanácsot kérek az utolsó utazáshoz."
+  },
+  "eszter_clue": {
+    "cs": "Tento kompas je dar. Tvá cesta do Irska vede přes Finsko.",
+    "en": "This compass is a gift. Your route to Ireland leads through Finland.",
+    "hu": "Ez az iránytű ajándék. Írországba Finnországon át vezet az utad."
+  },
+  "eszter_accept": {
+    "cs": "Děkuji. Budu kompas opatrovat.",
+    "en": "Thank you. I will keep the compass safe.",
+    "hu": "Köszönöm. Megőrzöm az iránytűt."
+  },
+  "eszter_bye": {
+    "cs": "Ne každá odbočka je nutná, ale každá tě může něco naučit.",
+    "en": "Not every detour is necessary, but each can teach you something.",
+    "hu": "Nem minden kitérő szükséges, de mindegyik taníthat valamit."
+  },
+  "eszter_browse": {
+    "cs": "Mohu si prohlédnout knihy?",
+    "en": "May I browse the books?",
+    "hu": "Megnézhetem a könyveket?"
+  },
+  "niamh_greet": {
+    "cs": "Máš klíč z Finska?",
+    "en": "Do you have the key from Finland?",
+    "ga": "An bhfuil an eochair ón bhFionlainn agat?"
+  },
+  "niamh_ask": {
+    "cs": "Ano. Jsem připraven na poslední krok.",
+    "en": "Yes. I am ready for the final step.",
+    "ga": "Tá. Táim réidh don chéim dheireanach."
+  },
+  "niamh_clue": {
+    "cs": "Klíč otevírá bránu. Není tu zlatý poklad, ale knihovna jazyků.",
+    "en": "The key opens the gate. This is no hoard of gold, but a library of languages.",
+    "ga": "Osclaíonn an eochair an geata. Ní taisce óir atá anseo, ach leabharlann na dteangacha."
+  },
+  "niamh_accept": {
+    "cs": "Podělím se o tyto vědomosti se všemi.",
+    "en": "I will share this knowledge with everyone.",
+    "ga": "Roinnfidh mé an t-eolas seo le gach duine."
+  },
+  "niamh_bye": {
+    "cs": "Tvá výprava je dokončena. Vítej doma, poutníku.",
+    "en": "Your voyage is complete. Welcome home, traveller.",
+    "ga": "Tá do thuras críochnaithe. Fáilte abhaile, a thaistealaí."
+  },
+  "niamh_browse": {
+    "cs": "Mohu si prohlédnout knihy?",
+    "en": "May I browse the books?",
+    "ga": "An féidir liom na leabhair a fheiceáil?"
+  },
+  "salt_errand_offer": {
+    "cs": "Potřebuji sůl od Dany v Bratislavě. Přineseš ji?",
+    "en": "I need salt from Dana in Bratislava. Will you bring it?"
+  },
+  "salt_errand_accept": {
+    "cs": "Přinesu ti sůl.",
+    "en": "I will bring the salt."
+  },
+  "salt_errand_turnin": {
+    "cs": "Tady je sůl.",
+    "en": "Here is the salt."
+  },
+  "salt_errand_thanks": {
+    "cs": "Děkuji. Tady máš mince a cestovní boty.",
+    "en": "Thank you. Here are coins and travelling boots."
+  },
+  "salt_errand_wisdom": {
+    "cs": "Chléb chutná lépe, když ho sdílíš.",
+    "en": "Bread tastes better when shared."
+  },
+  "salt_errand_supply": {
+    "cs": "Boris potřebuje sůl? Vezmi mu tento sáček.",
+    "en": "Boris needs salt? Take him this bag.",
+    "sk": "Boris potrebuje soľ? Vezmi mu toto vrecko."
+  },
+  "salt_errand_take": {
+    "cs": "Vezmu sůl Borisovi.",
+    "en": "I will take the salt to Boris.",
+    "sk": "Vezmem soľ Borisovi."
+  },
+  "salt_errand_wisdomAsk": {
+    "cs": "Máš nějakou radu?",
+    "en": "Do you have any advice?"
+  },
+  "herb_errand_offer": {
+    "cs": "Přines mi levanduli od Rosy z Florencie a odměním tě.",
+    "en": "Bring me lavender from Rosa in Florence and I will reward you.",
+    "fr": "Rapportez-moi de la lavande de Rosa à Florence, et je vous récompenserai."
+  },
+  "herb_errand_accept": {
+    "cs": "Přinesu ti levanduli.",
+    "en": "I will bring the lavender.",
+    "fr": "Je vous apporterai la lavande."
+  },
+  "herb_errand_turnin": {
+    "cs": "Tady je levandule.",
+    "en": "Here is the lavender.",
+    "fr": "Voici la lavande."
+  },
+  "herb_errand_thanks": {
+    "cs": "Děkuji. Vezmi mince a tři kelímky masti.",
+    "en": "Thank you. Take these coins and three pots of salve.",
+    "fr": "Merci. Prenez ces pièces et trois pots de baume."
+  },
+  "herb_errand_wisdom": {
+    "cs": "Rostliny rostou svým tempem, ne naším.",
+    "en": "Plants grow at their own pace, not ours.",
+    "fr": "Les plantes poussent à leur rythme, pas au nôtre."
+  },
+  "herb_errand_supply": {
+    "cs": "Marie hledá levanduli? Dones jí tento svazek.",
+    "en": "Marie wants lavender? Take her this bunch.",
+    "it": "Marie cerca la lavanda? Portale questo mazzetto."
+  },
+  "herb_errand_take": {
+    "cs": "Donesu levanduli Marii.",
+    "en": "I will take the lavender to Marie.",
+    "it": "Porterò la lavanda a Marie."
+  },
+  "herb_errand_wisdomAsk": {
+    "cs": "Máš nějakou radu?",
+    "en": "Do you have any advice?",
+    "fr": "Avez-vous un conseil?"
+  },
+  "rope_errand_offer": {
+    "cs": "Potřebuji lano od Freji z Kodaně. Pomůžeš mi?",
+    "en": "I need rope from Freja in Copenhagen. Can you help?",
+    "el": "Χρειάζομαι σχοινί από τη Φρέγια στην Κοπεγχάγη. Μπορείς να βοηθήσεις;"
+  },
+  "rope_errand_accept": {
+    "cs": "Přinesu ti lano.",
+    "en": "I will bring the rope.",
+    "el": "Θα σου φέρω το σχοινί."
+  },
+  "rope_errand_turnin": {
+    "cs": "Tady je lano.",
+    "en": "Here is the rope.",
+    "el": "Εδώ είναι το σχοινί."
+  },
+  "rope_errand_thanks": {
+    "cs": "Děkuji. Vezmi tyto mince a kompas.",
+    "en": "Thank you. Take these coins and the compass.",
+    "el": "Ευχαριστώ. Πάρε αυτά τα νομίσματα και την πυξίδα."
+  },
+  "rope_errand_wisdom": {
+    "cs": "Moře nikdy nespěchá.",
+    "en": "The sea never hurries.",
+    "el": "Η θάλασσα δεν βιάζεται ποτέ."
+  },
+  "rope_errand_supply": {
+    "cs": "Petros potřebuje lano? Dones mu tento svitek lana.",
+    "en": "Petros needs rope? Take him this coil.",
+    "da": "Petros mangler reb? Tag denne rulle til ham."
+  },
+  "rope_errand_take": {
+    "cs": "Donesu lano Petrosovi.",
+    "en": "I will take the rope to Petros.",
+    "da": "Jeg tager rebet til Petros."
+  },
+  "rope_errand_wisdomAsk": {
+    "cs": "Máš nějakou radu?",
+    "en": "Do you have any advice?",
+    "el": "Έχεις κάποια συμβουλή;"
+  },
+  "ore_errand_offer": {
+    "cs": "Potřebuji rudu od Liv ze Stockholmu. Přineseš ji?",
+    "en": "I need ore from Liv in Stockholm. Can you fetch it?",
+    "no": "Jeg trenger malm fra Liv i Stockholm. Kan du hente den?"
+  },
+  "ore_errand_accept": {
+    "cs": "Přinesu rudu.",
+    "en": "I will fetch the ore.",
+    "no": "Jeg skal hente malmen."
+  },
+  "ore_errand_turnin": {
+    "cs": "Tady je ruda.",
+    "en": "Here is the ore.",
+    "no": "Her er malmen."
+  },
+  "ore_errand_thanks": {
+    "cs": "Děkuji. Tady jsou mince a teplý plášť.",
+    "en": "Thank you. Here are coins and a warm cloak.",
+    "no": "Takk. Her er mynter og en varm kappe."
+  },
+  "ore_errand_wisdom": {
+    "cs": "I nejsilnější železo potřebuje čas v ohni.",
+    "en": "Even the strongest iron needs time in the fire.",
+    "no": "Selv det sterkeste jernet trenger tid i ilden."
+  },
+  "ore_errand_supply": {
+    "cs": "Bjørn potřebuje rudu? Dones mu tento sáček.",
+    "en": "Bjørn needs ore? Take him this bag.",
+    "sv": "Bjørn behöver malm? Ta den här påsen till honom."
+  },
+  "ore_errand_take": {
+    "cs": "Donesu rudu Bjørnovi.",
+    "en": "I will take the ore to Bjørn.",
+    "sv": "Jag tar malmen till Bjørn."
+  },
+  "ore_errand_wisdomAsk": {
+    "cs": "Máš nějakou radu?",
+    "en": "Do you have any advice?",
+    "no": "Har du et råd?"
+  },
+  "banter_sillySpoon": {
+    "cs": "Má lžíce byla zvolena králem. Kde bude korunovace?",
+    "en": "My spoon has been elected king. Where is the coronation?",
+    "sk": "Moja lyžica bola zvolená za kráľa. Kde bude korunovácia?",
+    "pl": "Moja łyżka została wybrana królem. Gdzie będzie koronacja?",
+    "uk": "Мою ложку обрали королем. Де буде коронація?",
+    "ru": "Мою ложку избрали королём. Где будет коронация?",
+    "de": "Mein Löffel wurde zum König gewählt. Wo findet die Krönung statt?",
+    "nl": "Mijn lepel is tot koning gekozen. Waar is de kroning?",
+    "da": "Min ske er blevet valgt til konge. Hvor er kroningen?",
+    "it": "Il mio cucchiaio è stato eletto re. Dove sarà l’incoronazione?",
+    "fr": "Ma cuillère a été élue reine. Où aura lieu le couronnement?",
+    "es": "Mi cuchara ha sido elegida reina. ¿Dónde será la coronación?",
+    "el": "Το κουτάλι μου εκλέχθηκε βασιλιάς. Πού θα γίνει η στέψη;",
+    "no": "Skjeen min er valgt til konge. Hvor er kroningen?",
+    "sv": "Min sked har valts till kung. Var är kröningen?",
+    "fi": "Lusikkani on valittu kuninkaaksi. Missä kruunajaiset ovat?",
+    "hu": "A kanalamat királlyá választották. Hol lesz a koronázás?",
+    "ga": "Toghadh mo spúnóg ina rí. Cá mbeidh an corónú?"
+  },
+  "banter_sillyCheese": {
+    "cs": "Mohu zaplatit neviditelným sýrem?",
+    "en": "May I pay with invisible cheese?",
+    "sk": "Môžem zaplatiť neviditeľným syrom?",
+    "pl": "Czy mogę zapłacić niewidzialnym serem?",
+    "uk": "Чи можна заплатити невидимим сиром?",
+    "ru": "Можно заплатить невидимым сыром?",
+    "de": "Kann ich mit unsichtbarem Käse bezahlen?",
+    "nl": "Mag ik met onzichtbare kaas betalen?",
+    "da": "Må jeg betale med usynlig ost?",
+    "it": "Posso pagare con del formaggio invisibile?",
+    "fr": "Puis-je payer avec du fromage invisible?",
+    "es": "¿Puedo pagar con queso invisible?",
+    "el": "Μπορώ να πληρώσω με αόρατο τυρί;",
+    "no": "Kan jeg betale med usynlig ost?",
+    "sv": "Kan jag betala med osynlig ost?",
+    "fi": "Voinko maksaa näkymättömällä juustolla?",
+    "hu": "Fizethetek láthatatlan sajttal?",
+    "ga": "An féidir liom íoc le cáis dhofheicthe?"
+  },
+  "banter_rudeDemand": {
+    "cs": "Přestaň mluvit a dej mi všechno, co máš.",
+    "en": "Stop talking and give me everything you have.",
+    "sk": "Prestaň hovoriť a daj mi všetko, čo máš.",
+    "pl": "Przestań mówić i daj mi wszystko, co masz.",
+    "uk": "Припини говорити й віддай мені все, що маєш.",
+    "ru": "Прекрати говорить и отдай мне всё, что у тебя есть.",
+    "de": "Hör auf zu reden und gib mir alles, was du hast.",
+    "nl": "Stop met praten en geef me alles wat je hebt.",
+    "da": "Hold op med at tale og giv mig alt, hvad du har.",
+    "it": "Smetti di parlare e dammi tutto quello che hai.",
+    "fr": "Arrête de parler et donne-moi tout ce que tu as.",
+    "es": "Deja de hablar y dame todo lo que tienes.",
+    "el": "Σταμάτα να μιλάς και δώσε μου ό,τι έχεις.",
+    "no": "Slutt å snakke og gi meg alt du har.",
+    "sv": "Sluta prata och ge mig allt du har.",
+    "fi": "Lopeta puhuminen ja anna minulle kaikki, mitä sinulla on.",
+    "hu": "Ne beszélj tovább, és add ide mindenedet.",
+    "ga": "Stop ag caint agus tabhair dom gach rud atá agat."
+  },
+  "banter_rudeInsult": {
+    "cs": "Tvoje rady jsou k ničemu. Radši mlč.",
+    "en": "Your advice is worthless. Just be quiet.",
+    "sk": "Tvoje rady sú nanič. Radšej mlč.",
+    "pl": "Twoje rady są bezwartościowe. Lepiej milcz.",
+    "uk": "Твої поради нічого не варті. Краще мовчи.",
+    "ru": "Твои советы ничего не стоят. Лучше молчи.",
+    "de": "Deine Ratschläge sind wertlos. Sei lieber still.",
+    "nl": "Je advies is waardeloos. Wees maar stil.",
+    "da": "Dine råd er værdiløse. Ti hellere stille.",
+    "it": "I tuoi consigli non valgono niente. Stai zitto.",
+    "fr": "Tes conseils ne valent rien. Tais-toi.",
+    "es": "Tus consejos no valen nada. Mejor cállate.",
+    "el": "Οι συμβουλές σου δεν αξίζουν τίποτα. Καλύτερα να σωπάσεις.",
+    "no": "Rådene dine er verdiløse. Vær heller stille.",
+    "sv": "Dina råd är värdelösa. Var hellre tyst.",
+    "fi": "Neuvosi ovat arvottomia. Ole mieluummin hiljaa.",
+    "hu": "A tanácsaid semmit sem érnek. Inkább hallgass.",
+    "ga": "Ní fiú faic do chomhairle. Bí ciúin."
+  },
+  "banter_spoonRebuke": {
+    "cs": "Nejdřív obstarej své lžíci pas. Pak se vrať k rozumné otázce.",
+    "en": "First get your spoon a passport. Then come back with a sensible question.",
+    "sk": "Najprv vybav svojej lyžici pas. Potom sa vráť s rozumnou otázkou.",
+    "pl": "Najpierw załatw swojej łyżce paszport. Potem wróć z rozsądnym pytaniem.",
+    "uk": "Спочатку зроби своїй ложці паспорт. Потім повернися з розумним питанням.",
+    "ru": "Сначала получи для своей ложки паспорт. Потом вернись с разумным вопросом.",
+    "de": "Besorg deinem Löffel zuerst einen Reisepass. Komm dann mit einer vernünftigen Frage zurück.",
+    "nl": "Regel eerst een paspoort voor je lepel. Kom dan terug met een verstandige vraag.",
+    "da": "Skaf først din ske et pas. Kom så tilbage med et fornuftigt spørgsmål.",
+    "it": "Prima procurati un passaporto per il tuo cucchiaio. Poi torna con una domanda sensata.",
+    "fr": "Obtiens d’abord un passeport pour ta cuillère. Puis reviens avec une question sensée.",
+    "es": "Primero consigue un pasaporte para tu cuchara. Luego vuelve con una pregunta sensata.",
+    "el": "Πρώτα βγάλε διαβατήριο για το κουτάλι σου. Μετά γύρισε με μια λογική ερώτηση.",
+    "no": "Skaff først skjeen din et pass. Kom så tilbake med et fornuftig spørsmål.",
+    "sv": "Skaffa först ett pass åt din sked. Kom sedan tillbaka med en vettig fråga.",
+    "fi": "Hanki ensin lusikallesi passi. Palaa sitten järkevän kysymyksen kanssa.",
+    "hu": "Előbb szerezz útlevelet a kanaladnak. Aztán térj vissza egy értelmes kérdéssel.",
+    "ga": "Faigh pas do do spúnóg ar dtús. Ansin tar ar ais le ceist chiallmhar."
+  },
+  "banter_cheeseRebuke": {
+    "cs": "Neviditelný sýr neberu. Zkus použít skutečná slova.",
+    "en": "I do not accept invisible cheese. Try using real words.",
+    "sk": "Neviditeľný syr neberiem. Skús použiť skutočné slová.",
+    "pl": "Nie przyjmuję niewidzialnego sera. Spróbuj użyć prawdziwych słów.",
+    "uk": "Невидимого сиру я не приймаю. Спробуй говорити справжніми словами.",
+    "ru": "Невидимый сыр я не принимаю. Попробуй использовать настоящие слова.",
+    "de": "Unsichtbaren Käse nehme ich nicht an. Versuche es mit echten Worten.",
+    "nl": "Ik accepteer geen onzichtbare kaas. Probeer echte woorden te gebruiken.",
+    "da": "Jeg tager ikke imod usynlig ost. Prøv at bruge rigtige ord.",
+    "it": "Non accetto formaggio invisibile. Prova a usare parole vere.",
+    "fr": "Je n’accepte pas le fromage invisible. Essaie d’utiliser de vrais mots.",
+    "es": "No acepto queso invisible. Intenta usar palabras de verdad.",
+    "el": "Δεν δέχομαι αόρατο τυρί. Δοκίμασε να χρησιμοποιήσεις πραγματικές λέξεις.",
+    "no": "Jeg tar ikke imot usynlig ost. Prøv å bruke ekte ord.",
+    "sv": "Jag tar inte emot osynlig ost. Försök använda riktiga ord.",
+    "fi": "En hyväksy näkymätöntä juustoa. Yritä käyttää oikeita sanoja.",
+    "hu": "Nem fogadok el láthatatlan sajtot. Próbálj valódi szavakat használni.",
+    "ga": "Ní ghlacaim le cáis dhofheicthe. Bain triail as fíorfhocail."
+  },
+  "banter_rudeDismiss": {
+    "cs": "Urážky ani výhrůžky tu nestrpím. Rozhovor končí.",
+    "en": "I will not tolerate insults or threats. This conversation is over.",
+    "sk": "Urážky ani vyhrážky tu nestrpím. Rozhovor sa končí.",
+    "pl": "Nie toleruję obelg ani gróźb. Rozmowa jest skończona.",
+    "uk": "Я не терплю образ чи погроз. Розмову закінчено.",
+    "ru": "Я не терплю оскорблений или угроз. Разговор окончен.",
+    "de": "Beleidigungen oder Drohungen dulde ich nicht. Das Gespräch ist beendet.",
+    "nl": "Ik tolereer geen beledigingen of bedreigingen. Dit gesprek is voorbij.",
+    "da": "Jeg tolererer ikke fornærmelser eller trusler. Samtalen er slut.",
+    "it": "Non tollero insulti o minacce. La conversazione è finita.",
+    "fr": "Je ne tolère ni insultes ni menaces. Cette conversation est terminée.",
+    "es": "No tolero insultos ni amenazas. Esta conversación ha terminado.",
+    "el": "Δεν ανέχομαι προσβολές ή απειλές. Η συζήτηση τελείωσε.",
+    "no": "Jeg tolererer ikke fornærmelser eller trusler. Samtalen er over.",
+    "sv": "Jag tolererar inte förolämpningar eller hot. Samtalet är slut.",
+    "fi": "En siedä loukkauksia tai uhkauksia. Keskustelu on ohi.",
+    "hu": "Nem tűröm a sértéseket vagy a fenyegetéseket. A beszélgetés véget ért.",
+    "ga": "Ní ghlacaim le maslaí ná bagairtí. Tá an comhrá thart."
+  },
+  "banter_startOver": {
+    "cs": "Promiň. Začněme znovu.",
+    "en": "Sorry. Let us start again.",
+    "sk": "Prepáč. Začnime znova.",
+    "pl": "Przepraszam. Zacznijmy od nowa.",
+    "uk": "Вибачте. Почнімо знову.",
+    "ru": "Извините. Начнём сначала.",
+    "de": "Entschuldigung. Fangen wir noch einmal an.",
+    "nl": "Sorry. Laten we opnieuw beginnen.",
+    "da": "Undskyld. Lad os begynde igen.",
+    "it": "Mi dispiace. Ricominciamo.",
+    "fr": "Pardon. Recommençons.",
+    "es": "Lo siento. Empecemos de nuevo.",
+    "el": "Συγγνώμη. Ας αρχίσουμε ξανά.",
+    "no": "Unnskyld. La oss begynne på nytt.",
+    "sv": "Förlåt. Låt oss börja om.",
+    "fi": "Anteeksi. Aloitetaan uudestaan.",
+    "hu": "Bocsánat. Kezdjük újra.",
+    "ga": "Tá brón orm. Tosaímis arís."
+  },
+  "marketGeneral_welcome": {
+    "cs": "Vítej v mém obchodě. Prohlédni si nabídku.",
+    "en": "Welcome to my shop. Browse my wares."
+  },
+  "marketGeneral_ask": {
+    "cs": "Co doporučuješ na cestu?",
+    "en": "What do you recommend for the journey?"
+  },
+  "marketGeneral_advice": {
+    "cs": "Zásoby se hodí na dlouhé cesty. Lovci si berou luk a náhradní šípy; ranhojiči zase obvazy a lektvary.",
+    "en": "Supplies help on long journeys. Hunters carry bows and spare arrows; healers carry bandages and potions."
+  },
+  "marketGeneral_browse": {
+    "cs": "Podívám se na nabídku.",
+    "en": "I will browse the wares."
+  },
+  "marketGeneral_leave": {
+    "cs": "Děkuji, na shledanou.",
+    "en": "Thank you, goodbye."
+  },
+  "marketGeneral_bye": {
+    "cs": "Šťastnou cestu.",
+    "en": "Safe travels."
+  },
+  "marketFood_welcome": {
+    "cs": "Vítej v mém obchodě. Prohlédni si nabídku.",
+    "en": "Welcome to my shop. Browse my wares."
+  },
+  "marketFood_ask": {
+    "cs": "Co doporučuješ na cestu?",
+    "en": "What do you recommend for the journey?"
+  },
+  "marketFood_advice": {
+    "cs": "Zásoby se hodí na dlouhé cesty. Lovci si berou luk a náhradní šípy; ranhojiči zase obvazy a lektvary.",
+    "en": "Supplies help on long journeys. Hunters carry bows and spare arrows; healers carry bandages and potions."
+  },
+  "marketFood_browse": {
+    "cs": "Podívám se na nabídku.",
+    "en": "I will browse the wares."
+  },
+  "marketFood_leave": {
+    "cs": "Děkuji, na shledanou.",
+    "en": "Thank you, goodbye."
+  },
+  "marketFood_bye": {
+    "cs": "Šťastnou cestu.",
+    "en": "Safe travels."
+  },
+  "marketArms_welcome": {
+    "cs": "Vítej v mém obchodě. Prohlédni si nabídku.",
+    "en": "Welcome to my shop. Browse my wares."
+  },
+  "marketArms_ask": {
+    "cs": "Co doporučuješ na cestu?",
+    "en": "What do you recommend for the journey?"
+  },
+  "marketArms_advice": {
+    "cs": "Zásoby se hodí na dlouhé cesty. Lovci si berou luk a náhradní šípy; ranhojiči zase obvazy a lektvary.",
+    "en": "Supplies help on long journeys. Hunters carry bows and spare arrows; healers carry bandages and potions."
+  },
+  "marketArms_browse": {
+    "cs": "Podívám se na nabídku.",
+    "en": "I will browse the wares."
+  },
+  "marketArms_leave": {
+    "cs": "Děkuji, na shledanou.",
+    "en": "Thank you, goodbye."
+  },
+  "marketArms_bye": {
+    "cs": "Šťastnou cestu.",
+    "en": "Safe travels."
+  },
+  "caravanFood_welcome": {
+    "cs": "Vítej v mém obchodě. Prohlédni si nabídku.",
+    "en": "Welcome to my shop. Browse my wares.",
+    "sk": "Vitaj v mojom obchode. Pozri si ponuku."
+  },
+  "caravanFood_ask": {
+    "cs": "Co doporučuješ na cestu?",
+    "en": "What do you recommend for the journey?",
+    "sk": "Čo odporúčaš na cestu?"
+  },
+  "caravanFood_advice": {
+    "cs": "Zásoby se hodí na dlouhé cesty. Lovci si berou luk a náhradní šípy; ranhojiči zase obvazy a lektvary.",
+    "en": "Supplies help on long journeys. Hunters carry bows and spare arrows; healers carry bandages and potions.",
+    "sk": "Zásoby sa hodia na dlhé cesty. Lovci nosia luk a náhradné šípy; liečitelia obväzy a elixíry."
+  },
+  "caravanFood_browse": {
+    "cs": "Podívám se na nabídku.",
+    "en": "I will browse the wares.",
+    "sk": "Pozriem si ponuku."
+  },
+  "caravanFood_leave": {
+    "cs": "Děkuji, na shledanou.",
+    "en": "Thank you, goodbye.",
+    "sk": "Ďakujem, dovidenia."
+  },
+  "caravanFood_bye": {
+    "cs": "Šťastnou cestu.",
+    "en": "Safe travels.",
+    "sk": "Šťastnú cestu."
+  },
+  "krakowArms_welcome": {
+    "cs": "Vítej v mém obchodě. Prohlédni si nabídku.",
+    "en": "Welcome to my shop. Browse my wares.",
+    "pl": "Witaj w moim sklepie. Obejrzyj ofertę."
+  },
+  "krakowArms_ask": {
+    "cs": "Co doporučuješ na cestu?",
+    "en": "What do you recommend for the journey?",
+    "pl": "Co polecasz na podróż?"
+  },
+  "krakowArms_advice": {
+    "cs": "Zásoby se hodí na dlouhé cesty. Lovci si berou luk a náhradní šípy; ranhojiči zase obvazy a lektvary.",
+    "en": "Supplies help on long journeys. Hunters carry bows and spare arrows; healers carry bandages and potions.",
+    "pl": "Zapasy pomagają w długich podróżach. Myśliwi noszą łuki i zapasowe strzały; uzdrowiciele bandaże i mikstury."
+  },
+  "krakowArms_browse": {
+    "cs": "Podívám se na nabídku.",
+    "en": "I will browse the wares.",
+    "pl": "Obejrzę ofertę."
+  },
+  "krakowArms_leave": {
+    "cs": "Děkuji, na shledanou.",
+    "en": "Thank you, goodbye.",
+    "pl": "Dziękuję, do widzenia."
+  },
+  "krakowArms_bye": {
+    "cs": "Šťastnou cestu.",
+    "en": "Safe travels.",
+    "pl": "Szczęśliwej podróży."
+  },
+  "berlinGeneral_welcome": {
+    "cs": "Vítej v mém obchodě. Prohlédni si nabídku.",
+    "en": "Welcome to my shop. Browse my wares.",
+    "de": "Willkommen in meinem Laden. Sieh dir meine Waren an."
+  },
+  "berlinGeneral_ask": {
+    "cs": "Co doporučuješ na cestu?",
+    "en": "What do you recommend for the journey?",
+    "de": "Was empfiehlst du für die Reise?"
+  },
+  "berlinGeneral_advice": {
+    "cs": "Zásoby se hodí na dlouhé cesty. Lovci si berou luk a náhradní šípy; ranhojiči zase obvazy a lektvary.",
+    "en": "Supplies help on long journeys. Hunters carry bows and spare arrows; healers carry bandages and potions.",
+    "de": "Vorräte helfen auf langen Reisen. Jäger tragen Bögen und Ersatzpfeile; Heiler tragen Verbände und Tränke."
+  },
+  "berlinGeneral_browse": {
+    "cs": "Podívám se na nabídku.",
+    "en": "I will browse the wares.",
+    "de": "Ich sehe mir die Waren an."
+  },
+  "berlinGeneral_leave": {
+    "cs": "Děkuji, na shledanou.",
+    "en": "Thank you, goodbye.",
+    "de": "Danke, auf Wiedersehen."
+  },
+  "berlinGeneral_bye": {
+    "cs": "Šťastnou cestu.",
+    "en": "Safe travels.",
+    "de": "Gute Reise."
+  },
+  "florenceFood_welcome": {
+    "cs": "Vítej v mém obchodě. Prohlédni si nabídku.",
+    "en": "Welcome to my shop. Browse my wares.",
+    "it": "Benvenuto nel mio negozio. Guarda la mia merce."
+  },
+  "florenceFood_ask": {
+    "cs": "Co doporučuješ na cestu?",
+    "en": "What do you recommend for the journey?",
+    "it": "Cosa consigli per il viaggio?"
+  },
+  "florenceFood_advice": {
+    "cs": "Zásoby se hodí na dlouhé cesty. Lovci si berou luk a náhradní šípy; ranhojiči zase obvazy a lektvary.",
+    "en": "Supplies help on long journeys. Hunters carry bows and spare arrows; healers carry bandages and potions.",
+    "it": "Le provviste aiutano nei lunghi viaggi. I cacciatori portano archi e frecce di scorta; i guaritori bende e pozioni."
+  },
+  "florenceFood_browse": {
+    "cs": "Podívám se na nabídku.",
+    "en": "I will browse the wares.",
+    "it": "Darò un’occhiata alla merce."
+  },
+  "florenceFood_leave": {
+    "cs": "Děkuji, na shledanou.",
+    "en": "Thank you, goodbye.",
+    "it": "Grazie, arrivederci."
+  },
+  "florenceFood_bye": {
+    "cs": "Šťastnou cestu.",
+    "en": "Safe travels.",
+    "it": "Buon viaggio."
+  },
+  "toledoPotions_welcome": {
+    "cs": "Vítej v mém obchodě. Prohlédni si nabídku.",
+    "en": "Welcome to my shop. Browse my wares.",
+    "es": "Bienvenido a mi tienda. Mira mis productos."
+  },
+  "toledoPotions_ask": {
+    "cs": "Co doporučuješ na cestu?",
+    "en": "What do you recommend for the journey?",
+    "es": "¿Qué recomiendas para el viaje?"
+  },
+  "toledoPotions_advice": {
+    "cs": "Zásoby se hodí na dlouhé cesty. Lovci si berou luk a náhradní šípy; ranhojiči zase obvazy a lektvary.",
+    "en": "Supplies help on long journeys. Hunters carry bows and spare arrows; healers carry bandages and potions.",
+    "es": "Las provisiones ayudan en viajes largos. Los cazadores llevan arcos y flechas de repuesto; los curanderos vendas y pociones."
+  },
+  "toledoPotions_browse": {
+    "cs": "Podívám se na nabídku.",
+    "en": "I will browse the wares.",
+    "es": "Miraré los productos."
+  },
+  "toledoPotions_leave": {
+    "cs": "Děkuji, na shledanou.",
+    "en": "Thank you, goodbye.",
+    "es": "Gracias, adiós."
+  },
+  "toledoPotions_bye": {
+    "cs": "Šťastnou cestu.",
+    "en": "Safe travels.",
+    "es": "Buen viaje."
+  },
+  "athensPotions_welcome": {
+    "cs": "Vítej v mém obchodě. Prohlédni si nabídku.",
+    "en": "Welcome to my shop. Browse my wares.",
+    "el": "Καλώς ήρθες στο κατάστημά μου. Δες τα προϊόντα μου."
+  },
+  "athensPotions_ask": {
+    "cs": "Co doporučuješ na cestu?",
+    "en": "What do you recommend for the journey?",
+    "el": "Τι προτείνεις για το ταξίδι;"
+  },
+  "athensPotions_advice": {
+    "cs": "Zásoby se hodí na dlouhé cesty. Lovci si berou luk a náhradní šípy; ranhojiči zase obvazy a lektvary.",
+    "en": "Supplies help on long journeys. Hunters carry bows and spare arrows; healers carry bandages and potions.",
+    "el": "Οι προμήθειες βοηθούν στα μεγάλα ταξίδια. Οι κυνηγοί έχουν τόξα και εφεδρικά βέλη· οι θεραπευτές επιδέσμους και φίλτρα."
+  },
+  "athensPotions_browse": {
+    "cs": "Podívám se na nabídku.",
+    "en": "I will browse the wares.",
+    "el": "Θα δω τα προϊόντα."
+  },
+  "athensPotions_leave": {
+    "cs": "Děkuji, na shledanou.",
+    "en": "Thank you, goodbye.",
+    "el": "Ευχαριστώ, αντίο."
+  },
+  "athensPotions_bye": {
+    "cs": "Šťastnou cestu.",
+    "en": "Safe travels.",
+    "el": "Καλό ταξίδι."
+  },
+  "osloArms_welcome": {
+    "cs": "Vítej v mém obchodě. Prohlédni si nabídku.",
+    "en": "Welcome to my shop. Browse my wares.",
+    "no": "Velkommen til butikken min. Se på varene mine."
+  },
+  "osloArms_ask": {
+    "cs": "Co doporučuješ na cestu?",
+    "en": "What do you recommend for the journey?",
+    "no": "Hva anbefaler du for reisen?"
+  },
+  "osloArms_advice": {
+    "cs": "Zásoby se hodí na dlouhé cesty. Lovci si berou luk a náhradní šípy; ranhojiči zase obvazy a lektvary.",
+    "en": "Supplies help on long journeys. Hunters carry bows and spare arrows; healers carry bandages and potions.",
+    "no": "Forsyninger hjelper på lange reiser. Jegere har buer og ekstra piler; helbredere har bandasjer og eliksirer."
+  },
+  "osloArms_browse": {
+    "cs": "Podívám se na nabídku.",
+    "en": "I will browse the wares.",
+    "no": "Jeg vil se på varene."
+  },
+  "osloArms_leave": {
+    "cs": "Děkuji, na shledanou.",
+    "en": "Thank you, goodbye.",
+    "no": "Takk, farvel."
+  },
+  "osloArms_bye": {
+    "cs": "Šťastnou cestu.",
+    "en": "Safe travels.",
+    "no": "God reise."
+  },
+  "galwayGeneral_welcome": {
+    "cs": "Vítej v mém obchodě. Prohlédni si nabídku.",
+    "en": "Welcome to my shop. Browse my wares.",
+    "ga": "Fáilte go dtí mo shiopa. Féach ar mo chuid earraí."
+  },
+  "galwayGeneral_ask": {
+    "cs": "Co doporučuješ na cestu?",
+    "en": "What do you recommend for the journey?",
+    "ga": "Cad a mholann tú don turas?"
+  },
+  "galwayGeneral_advice": {
+    "cs": "Zásoby se hodí na dlouhé cesty. Lovci si berou luk a náhradní šípy; ranhojiči zase obvazy a lektvary.",
+    "en": "Supplies help on long journeys. Hunters carry bows and spare arrows; healers carry bandages and potions.",
+    "ga": "Cuidíonn soláthairtí ar thurais fhada. Bíonn boghanna agus saigheada breise ag sealgairí; bíonn bindealáin agus deochanna leighis ag lucht leighis."
+  },
+  "galwayGeneral_browse": {
+    "cs": "Podívám se na nabídku.",
+    "en": "I will browse the wares.",
+    "ga": "Féachfaidh mé ar na hearraí."
+  },
+  "galwayGeneral_leave": {
+    "cs": "Děkuji, na shledanou.",
+    "en": "Thank you, goodbye.",
+    "ga": "Go raibh maith agat, slán."
+  },
+  "galwayGeneral_bye": {
+    "cs": "Šťastnou cestu.",
+    "en": "Safe travels.",
+    "ga": "Turas slán."
+  },
+  "wood_errand_offer": {
+    "cs": "Potřebuji tři kusy dřeva. Nasbírej je u lesa za městem a vrať se.",
+    "en": "I need three pieces of wood. Gather them at the forest edge and return."
+  },
+  "wood_errand_accept": {
+    "cs": "Nasbírám ti tři kusy dřeva.",
+    "en": "I will gather three pieces of wood."
+  },
+  "wood_errand_turnin": {
+    "cs": "Tady jsou tři kusy dřeva.",
+    "en": "Here are three pieces of wood."
+  },
+  "wood_errand_thanks": {
+    "cs": "Děkuji. Tady máš dvanáct mincí a dvě pochodně.",
+    "en": "Thank you. Here are twelve coins and two torches."
+  },
+  "flowers_errand_offer": {
+    "cs": "Potřebuji dvě luční květiny. Nasbírej je na louce a vrať se.",
+    "en": "I need two meadow flowers. Pick them in the meadow and return.",
+    "sk": "Potrebujem dva lúčne kvety. Nazbieraj ich na lúke a vráť sa."
+  },
+  "flowers_errand_accept": {
+    "cs": "Nasbírám ti dvě květiny.",
+    "en": "I will gather two flowers.",
+    "sk": "Nazbieram ti dva kvety."
+  },
+  "flowers_errand_turnin": {
+    "cs": "Tady jsou dvě květiny.",
+    "en": "Here are two flowers.",
+    "sk": "Tu sú dva kvety."
+  },
+  "flowers_errand_thanks": {
+    "cs": "Děkuji. Tady máš deset mincí a léčivý lektvar.",
+    "en": "Thank you. Here are ten coins and a healing potion.",
+    "sk": "Ďakujem. Tu máš desať mincí a liečivý elixír."
+  }
+}

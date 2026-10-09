@@ -1,0 +1,18 @@
+{
+  "id": "ore_errand",
+  "title": "Bjørn · smith · errand",
+  "description": "An optional delivery for Bjørn · smith.",
+  "milestones": [
+    "ore_errand_started",
+    "ore_errand_done"
+  ],
+  "completion": "ore_errand_done",
+  "reward": {
+    "gold": 24,
+    "item": "warm_cloak"
+  },
+  "fetchItem": "ore",
+  "location": "oslo",
+  "giver": "bjorn",
+  "fetchCount": 1
+}

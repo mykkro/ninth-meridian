@@ -1,0 +1,128 @@
+{
+  "id": "erik",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "erik_greet",
+      "choices": [
+        {
+          "phrase": "erik_ask",
+          "next": "clue",
+          "quality": "sensible",
+          "requires": {
+            "item": "north_token"
+          }
+        },
+        {
+          "phrase": "erik_browse",
+          "next": "trade",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_sillySpoon",
+          "next": "banterSpoon",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "clue": {
+      "phrase": "erik_clue",
+      "choices": [
+        {
+          "phrase": "erik_accept",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "sweden"
+            },
+            {
+              "type": "give",
+              "item": "aurora_chart"
+            }
+          ]
+        }
+      ]
+    },
+    "bye": {
+      "phrase": "erik_bye",
+      "outcome": "success",
+      "choices": []
+    },
+    "trade": {
+      "phrase": "erik_greet",
+      "shop": true,
+      "choices": [
+        {
+          "phrase": "erik_ask",
+          "next": "clue",
+          "quality": "sensible",
+          "requires": {
+            "item": "north_token"
+          }
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterSpoon": {
+      "phrase": "banter_spoonRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterCheese": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterDismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    }
+  }
+}

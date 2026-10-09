@@ -1,0 +1,9 @@
+{
+  "id": "torch",
+  "type": "resource",
+  "name": "Torch",
+  "description": "A basic supply for future exploration and crafting.",
+  "price": 2,
+  "purchaseQuantity": 1,
+  "stackable": true
+}

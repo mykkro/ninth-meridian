@@ -1,0 +1,172 @@
+{
+  "id": "petros",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "rope_errand_offer",
+      "choices": [
+        {
+          "phrase": "rope_errand_accept",
+          "next": "task",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "rope_errand_started"
+            }
+          ]
+        },
+        {
+          "phrase": "rope_errand_wisdomAsk",
+          "next": "wisdom",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "rope_errand_turnin",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "item": "rope",
+            "milestone": "rope_errand_started"
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "rope_errand",
+              "gold": 20,
+              "take": [
+                {
+                  "item": "rope",
+                  "count": 1
+                }
+              ],
+              "items": [
+                {
+                  "item": "brass_compass",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "rope_errand_done"
+            }
+          ]
+        },
+        {
+          "phrase": "banter_sillySpoon",
+          "next": "banterSpoon",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "task": {
+      "phrase": "rope_errand_offer",
+      "choices": [
+        {
+          "phrase": "rope_errand_turnin",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "item": "rope"
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "rope_errand",
+              "gold": 20,
+              "take": [
+                {
+                  "item": "rope",
+                  "count": 1
+                }
+              ],
+              "items": [
+                {
+                  "item": "brass_compass",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "rope_errand_done"
+            }
+          ]
+        }
+      ]
+    },
+    "wisdom": {
+      "phrase": "rope_errand_wisdom",
+      "rumor": "rope_errand_wisdom",
+      "choices": [
+        {
+          "phrase": "rope_errand_accept",
+          "next": "task",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "rope_errand_started"
+            }
+          ]
+        }
+      ]
+    },
+    "done": {
+      "phrase": "rope_errand_thanks",
+      "outcome": "success",
+      "choices": []
+    },
+    "banterSpoon": {
+      "phrase": "banter_spoonRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterCheese": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterDismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    }
+  }
+}

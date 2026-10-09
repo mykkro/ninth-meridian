@@ -1,0 +1,7 @@
+{
+  "id": "wood",
+  "type": "resource",
+  "name": "Firewood",
+  "description": "Gathered branches for local crafting and delivery.",
+  "stackable": true
+}

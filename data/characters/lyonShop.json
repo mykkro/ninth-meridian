@@ -1,0 +1,12 @@
+{
+  "id": "lyonShop",
+  "name": "Lyon · bookseller",
+  "language": "fr",
+  "dialogue": "lyonShop",
+  "stock": [
+    "fr_cs_route",
+    "scroll_en",
+    "scroll_native"
+  ],
+  "description": "Lyon · bookseller. Speaks French."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "lyon",
+  "name": "Lyon",
+  "country": "France",
+  "language": "fr",
+  "requires": "italy",
+  "description": "The southern disc",
+  "npcs": [
+    "camille",
+    "lyonShop",
+    "marie"
+  ],
+  "milestone": "france",
+  "coordinates": {
+    "lon": 4.8357,
+    "lat": 45.764
+  },
+  "mapLabelOffset": [
+    9,
+    -9
+  ]
+}

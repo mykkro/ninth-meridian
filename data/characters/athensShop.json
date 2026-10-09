@@ -1,0 +1,12 @@
+{
+  "id": "athensShop",
+  "name": "Athens · bookseller",
+  "language": "el",
+  "dialogue": "athensShop",
+  "stock": [
+    "el_cs_route",
+    "scroll_en",
+    "scroll_native"
+  ],
+  "description": "Athens · bookseller. Speaks Greek."
+}

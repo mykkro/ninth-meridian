@@ -1,0 +1,229 @@
+{
+  "id": "zofia",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "zofia_question",
+      "choices": [
+        {
+          "phrase": "zofia_silly",
+          "next": "rebuke",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "zofia_ask",
+          "next": "test",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "zofia_rude",
+          "next": "dismiss",
+          "quality": "rude"
+        },
+        {
+          "phrase": "askRumors",
+          "next": "rumors",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_sillySpoon",
+          "next": "banterSpoon",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "test": {
+      "phrase": "zofia_test",
+      "choices": [
+        {
+          "phrase": "zofia_help",
+          "next": "hint",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "zofia_wrong",
+          "next": "rebuke",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "zofia_answer",
+          "next": "clue",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "hint": {
+      "phrase": "zofia_hint",
+      "choices": [
+        {
+          "phrase": "zofia_answer",
+          "next": "clue",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "zofia_wrong",
+          "next": "dismiss",
+          "quality": "nonsense"
+        }
+      ]
+    },
+    "rebuke": {
+      "phrase": "zofia_rebuke",
+      "choices": [
+        {
+          "phrase": "zofia_ask",
+          "next": "test",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "zofia_rude",
+          "next": "dismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "clue": {
+      "phrase": "polishClue",
+      "choices": [
+        {
+          "phrase": "zofia_accept",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "krakow"
+            }
+          ]
+        },
+        {
+          "phrase": "zofia_rude",
+          "next": "dismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "dismiss": {
+      "phrase": "zofia_dismiss",
+      "outcome": "dismissed",
+      "choices": []
+    },
+    "bye": {
+      "phrase": "zofia_bye",
+      "outcome": "success",
+      "choices": []
+    },
+    "rumors": {
+      "phrase": "rumorMenu",
+      "choices": [
+        {
+          "phrase": "askLocalRumor",
+          "next": "rumorLocal",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "askTrailRumor",
+          "next": "rumorTrail",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "returnMain",
+          "next": "greeting",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "rumorLocal": {
+      "phrase": "zofia_rumorLocal",
+      "rumor": "zofia_rumorLocal",
+      "choices": [
+        {
+          "phrase": "returnRumors",
+          "next": "rumors",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "returnMain",
+          "next": "greeting",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "rumorTrail": {
+      "phrase": "zofia_rumorTrail",
+      "rumor": "zofia_rumorTrail",
+      "choices": [
+        {
+          "phrase": "returnRumors",
+          "next": "rumors",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "returnMain",
+          "next": "greeting",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "banterSpoon": {
+      "phrase": "banter_spoonRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterCheese": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterDismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    }
+  }
+}

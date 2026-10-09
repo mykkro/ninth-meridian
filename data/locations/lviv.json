@@ -1,0 +1,21 @@
+{
+  "id": "lviv",
+  "name": "Lviv",
+  "country": "Ukraine",
+  "language": "uk",
+  "requires": "krakow",
+  "description": "In a candlelit archive, a locked chest holds a piece of the sky.",
+  "npcs": [
+    "oles",
+    "ukrainianShop"
+  ],
+  "milestone": "lviv",
+  "coordinates": {
+    "lon": 24.0316,
+    "lat": 49.8429
+  },
+  "mapLabelOffset": [
+    9,
+    -9
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "it_es",
+  "type": "dictionary",
+  "name": "Italian → Spanish fragment",
+  "from": "it",
+  "to": "es",
+  "price": 5,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "bridge"
+    },
+    {
+      "type": "word",
+      "source": "stella",
+      "translation": "estrella",
+      "forms": [
+        "stelle"
+      ]
+    },
+    {
+      "type": "verb",
+      "source": "indicare",
+      "translation": "indicar",
+      "forms": [
+        "indica"
+      ]
+    }
+  ],
+  "description": "A limited Italian to Spanish dictionary. Read it to study its entries."
+}

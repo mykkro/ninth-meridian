@@ -1,0 +1,11 @@
+const assert=require('node:assert/strict');
+const {world}=require('./fixtures.cjs');
+const Engine=require('../engine.js');
+const g=new Engine(world);g.state.milestones=[...world.quest.milestones];
+g.travel('london');assert.ok(g.visibleChoices().some(({choice})=>choice.easterEgg==='hovercraft-eels'));
+const index=g.node.choices.findIndex(c=>c.easterEgg==='hovercraft-eels');g.choose(index);assert.equal(g.nodeId,'jokeEels');assert.equal(g.ended,false);assert.equal(g.state.inventory.lens,undefined);
+g.choose(0);assert.equal(g.nodeId,'test');
+g.open('bea');g.state.knowledge.en=60;assert.ok(!g.visibleChoices().some(({choice})=>choice.easterEgg));
+g.travel('toledo');const frog=g.node.choices.findIndex(c=>c.easterEgg==='frog-bidet');g.cast('scroll_en');assert.ok(g.notes('joke_frog','eo').some(n=>n.language==='en'));
+g.choose(frog);assert.equal(g.lastResponse.language,'eo');assert.ok(g.lastResponse.notes.some(n=>n.language==='en'));assert.equal(g.nodeId,'jokeFrog');assert.equal(g.state.inventory.disc,undefined);g.choose(0);assert.equal(g.nodeId,'test');
+console.log('Passed: Easter egg visibility, reactions, recovery, mixed-language response, translation, and no relic reward.');

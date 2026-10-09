@@ -1,0 +1,100 @@
+{
+  "id": "zuzana",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "flowers_errand_offer",
+      "choices": [
+        {
+          "phrase": "flowers_errand_accept",
+          "next": "task",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "flowers_errand_started"
+            }
+          ]
+        },
+        {
+          "phrase": "flowers_errand_turnin",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "flowers_errand_started",
+            "quantities": {
+              "flowers": 2
+            }
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "flowers_errand",
+              "gold": 10,
+              "take": [
+                {
+                  "item": "flowers",
+                  "count": 2
+                }
+              ],
+              "items": [
+                {
+                  "item": "health_potion",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "flowers_errand_done"
+            }
+          ]
+        }
+      ]
+    },
+    "task": {
+      "phrase": "flowers_errand_offer",
+      "choices": [
+        {
+          "phrase": "flowers_errand_turnin",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "flowers_errand_started",
+            "quantities": {
+              "flowers": 2
+            }
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "flowers_errand",
+              "gold": 10,
+              "take": [
+                {
+                  "item": "flowers",
+                  "count": 2
+                }
+              ],
+              "items": [
+                {
+                  "item": "health_potion",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "flowers_errand_done"
+            }
+          ]
+        }
+      ]
+    },
+    "done": {
+      "phrase": "flowers_errand_thanks",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "galwayGeneral",
+  "start": "trade",
+  "nodes": {
+    "trade": {
+      "phrase": "galwayGeneral_welcome",
+      "shop": true,
+      "choices": [
+        {
+          "phrase": "galwayGeneral_ask",
+          "next": "advice",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "galwayGeneral_leave",
+          "next": "bye",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "silly",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "dismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "advice": {
+      "phrase": "galwayGeneral_advice",
+      "rumor": "galwayGeneral_advice",
+      "choices": [
+        {
+          "phrase": "galwayGeneral_browse",
+          "next": "trade",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "silly": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "galwayGeneral_browse",
+          "next": "trade",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "dismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    },
+    "bye": {
+      "phrase": "galwayGeneral_bye",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

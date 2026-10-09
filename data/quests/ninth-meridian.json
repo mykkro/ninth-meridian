@@ -1,0 +1,68 @@
+{
+  "id": "ninth-meridian",
+  "title": "The Ninth Meridian",
+  "description": "Find the five witnesses of the vanished cartographer and recover the pieces of the Concordance Astrolabe.",
+  "milestones": [
+    "prague",
+    "bratislava",
+    "krakow",
+    "lviv",
+    "novgorod",
+    "britain",
+    "germany",
+    "netherlands",
+    "denmark",
+    "italy",
+    "latin_deciphered",
+    "france",
+    "spain",
+    "greece",
+    "norway",
+    "sweden",
+    "finland",
+    "hungary",
+    "ireland"
+  ],
+  "branches": [
+    {
+      "id": "western",
+      "title": "The western lens",
+      "locations": [
+        "london"
+      ],
+      "item": "lens"
+    },
+    {
+      "id": "northern",
+      "title": "The northern ring",
+      "locations": [
+        "berlin",
+        "amsterdam",
+        "copenhagen"
+      ],
+      "item": "ring"
+    },
+    {
+      "id": "southern",
+      "title": "The southern disc",
+      "locations": [
+        "florence",
+        "lyon",
+        "toledo"
+      ],
+      "item": "disc"
+    }
+  ],
+  "finalMilestone": "ireland",
+  "epilogue": {
+    "locations": [
+      "oslo",
+      "stockholm",
+      "helsinki",
+      "galway"
+    ],
+    "optional": [
+      "budapest"
+    ]
+  }
+}

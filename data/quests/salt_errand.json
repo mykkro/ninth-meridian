@@ -1,0 +1,18 @@
+{
+  "id": "salt_errand",
+  "title": "Boris · baker · errand",
+  "description": "An optional delivery for Boris · baker.",
+  "milestones": [
+    "salt_errand_started",
+    "salt_errand_done"
+  ],
+  "completion": "salt_errand_done",
+  "reward": {
+    "gold": 18,
+    "item": "river_boots"
+  },
+  "fetchItem": "salt",
+  "location": "prague",
+  "giver": "boris",
+  "fetchCount": 1
+}

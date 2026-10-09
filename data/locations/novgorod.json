@@ -1,0 +1,21 @@
+{
+  "id": "novgorod",
+  "name": "Novgorod",
+  "country": "Russia",
+  "language": "ru",
+  "requires": "lviv",
+  "description": "A northern manuscript reveals that the trail is only beginning.",
+  "npcs": [
+    "lev",
+    "russianShop"
+  ],
+  "milestone": "novgorod",
+  "coordinates": {
+    "lon": 31.275,
+    "lat": 58.522
+  },
+  "mapLabelOffset": [
+    9,
+    -9
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "scroll_native",
+  "type": "scroll",
+  "name": "Scroll of the mother tongue",
+  "target": "native",
+  "price": 14,
+  "description": "A single-use scroll that translates an exchange into your native language."
+}

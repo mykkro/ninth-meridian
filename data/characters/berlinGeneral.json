@@ -1,0 +1,15 @@
+{
+  "id": "berlinGeneral",
+  "name": "Greta · outfitter",
+  "description": "A local general seller offering RPG supplies.",
+  "language": "de",
+  "dialogue": "berlinGeneral",
+  "specialty": "general",
+  "stock": [
+    "torch",
+    "bandage",
+    "travel_rope",
+    "leather_armor",
+    "leather_boots"
+  ]
+}

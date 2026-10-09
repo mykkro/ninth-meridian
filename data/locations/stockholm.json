@@ -1,0 +1,33 @@
+{
+  "id": "stockholm",
+  "name": "Stockholm",
+  "country": "Sweden",
+  "language": "sv",
+  "requires": "norway",
+  "description": "The last road to Ireland",
+  "npcs": [
+    "erik",
+    "liv"
+  ],
+  "milestone": "sweden",
+  "actions": [
+    {
+      "id": "gather_ore",
+      "label": "Collect loose ore near the quarry",
+      "item": "ore",
+      "count": 1,
+      "limit": 3,
+      "requires": {
+        "milestone": "ore_errand_started"
+      }
+    }
+  ],
+  "coordinates": {
+    "lon": 18.0686,
+    "lat": 59.3293
+  },
+  "mapLabelOffset": [
+    10,
+    16
+  ]
+}

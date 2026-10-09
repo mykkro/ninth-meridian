@@ -1,0 +1,106 @@
+{
+  "id": "sk_cs",
+  "type": "dictionary",
+  "name": "Border phrasebook",
+  "from": "sk",
+  "to": "cs",
+  "price": 12,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "trade"
+    },
+    {
+      "type": "phrase",
+      "phrase": "slovakClue"
+    },
+    {
+      "type": "phrase",
+      "phrase": "recruit"
+    },
+    {
+      "type": "phrase",
+      "phrase": "mira_question"
+    },
+    {
+      "type": "phrase",
+      "phrase": "mira_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "mira_test"
+    },
+    {
+      "type": "phrase",
+      "phrase": "mira_help"
+    },
+    {
+      "type": "phrase",
+      "phrase": "mira_hint"
+    },
+    {
+      "type": "phrase",
+      "phrase": "mira_answer"
+    },
+    {
+      "type": "phrase",
+      "phrase": "mira_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "mira_join"
+    },
+    {
+      "type": "phrase",
+      "phrase": "mira_alone"
+    },
+    {
+      "type": "phrase",
+      "phrase": "shopBrowse"
+    },
+    {
+      "type": "phrase",
+      "phrase": "shopLeave"
+    },
+    {
+      "type": "phrase",
+      "phrase": "askRumors"
+    },
+    {
+      "type": "phrase",
+      "phrase": "askLocalRumor"
+    },
+    {
+      "type": "phrase",
+      "phrase": "askTrailRumor"
+    },
+    {
+      "type": "phrase",
+      "phrase": "returnRumors"
+    },
+    {
+      "type": "phrase",
+      "phrase": "returnMain"
+    },
+    {
+      "type": "word",
+      "source": "kľúč",
+      "translation": "klíč",
+      "forms": [
+        "kľúča",
+        "kľúčom"
+      ]
+    },
+    {
+      "type": "verb",
+      "source": "hľadať",
+      "translation": "hledat",
+      "forms": [
+        "hľadám",
+        "hľadáš",
+        "hľadaj"
+      ]
+    }
+  ],
+  "description": "A limited Slovak to Czech dictionary. Read it to study its entries."
+}

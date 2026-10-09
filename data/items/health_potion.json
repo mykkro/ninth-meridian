@@ -1,0 +1,12 @@
+{
+  "id": "health_potion",
+  "type": "potion",
+  "name": "Minor healing potion",
+  "description": "A bottled remedy with an authored effect for future gameplay.",
+  "price": 9,
+  "purchaseQuantity": 1,
+  "stackable": true,
+  "effects": {
+    "restoreHealth": 25
+  }
+}

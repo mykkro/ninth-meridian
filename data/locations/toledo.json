@@ -1,0 +1,22 @@
+{
+  "id": "toledo",
+  "name": "Toledo",
+  "country": "Spain",
+  "language": "es",
+  "requires": "france",
+  "description": "The southern disc",
+  "npcs": [
+    "ines",
+    "toledoShop",
+    "toledoPotions"
+  ],
+  "milestone": "spain",
+  "coordinates": {
+    "lon": -4.0273,
+    "lat": 39.8628
+  },
+  "mapLabelOffset": [
+    9,
+    -9
+  ]
+}

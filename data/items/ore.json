@@ -1,0 +1,6 @@
+{
+  "id": "ore",
+  "type": "resource",
+  "name": "Bag of ore",
+  "description": "A delivery item for an optional local errand."
+}

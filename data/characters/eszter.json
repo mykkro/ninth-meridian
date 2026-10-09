@@ -1,0 +1,12 @@
+{
+  "id": "eszter",
+  "name": "Eszter · travelling scholar",
+  "description": "A guide on the final road to Ireland.",
+  "language": "hu",
+  "dialogue": "eszter",
+  "stock": [
+    "eszter_notes",
+    "scroll_en",
+    "scroll_native"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "berlinShop",
+  "name": "Berlin · bookseller",
+  "language": "de",
+  "dialogue": "berlinShop",
+  "stock": [
+    "de_cs_route",
+    "scroll_en",
+    "scroll_native"
+  ],
+  "description": "Berlin · bookseller. Speaks German."
+}

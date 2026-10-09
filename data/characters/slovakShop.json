@@ -1,0 +1,12 @@
+{
+  "id": "slovakShop",
+  "name": "Eva · bookseller",
+  "language": "sk",
+  "dialogue": "slovakShop",
+  "stock": [
+    "pl_sk",
+    "scroll_en",
+    "scroll_native"
+  ],
+  "description": "Eva · bookseller. Speaks Slovak."
+}

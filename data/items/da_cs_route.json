@@ -1,0 +1,39 @@
+{
+  "id": "da_cs_route",
+  "type": "dictionary",
+  "name": "Copenhagen travel notes",
+  "from": "da",
+  "to": "cs",
+  "price": 3,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "astrid_greet"
+    },
+    {
+      "type": "phrase",
+      "phrase": "astrid_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "astrid_test"
+    },
+    {
+      "type": "phrase",
+      "phrase": "astrid_answer"
+    },
+    {
+      "type": "phrase",
+      "phrase": "astrid_clue"
+    },
+    {
+      "type": "phrase",
+      "phrase": "astrid_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "astrid_bye"
+    }
+  ],
+  "description": "A limited Danish to Czech dictionary. Read it to study its entries."
+}

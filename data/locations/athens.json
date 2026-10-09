@@ -1,0 +1,34 @@
+{
+  "id": "athens",
+  "name": "Athens",
+  "country": "Greece",
+  "language": "el",
+  "requires": {
+    "items": [
+      "lens",
+      "ring",
+      "disc"
+    ],
+    "milestones": [
+      "britain",
+      "denmark",
+      "spain"
+    ]
+  },
+  "description": "The reunion",
+  "npcs": [
+    "eleni",
+    "athensShop",
+    "petros",
+    "athensPotions"
+  ],
+  "milestone": "greece",
+  "coordinates": {
+    "lon": 23.7275,
+    "lat": 37.9838
+  },
+  "mapLabelOffset": [
+    9,
+    -9
+  ]
+}

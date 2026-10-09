@@ -1,0 +1,155 @@
+{
+  "id": "otto",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "otto_greet",
+      "choices": [
+        {
+          "phrase": "otto_ask",
+          "next": "test",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "otto_wrong",
+          "next": "rebuke",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "otto_joke_eels",
+          "next": "jokeEels",
+          "quality": "nonsense",
+          "easterEgg": "hovercraft-eels"
+        },
+        {
+          "phrase": "banter_sillySpoon",
+          "next": "banterSpoon",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "test": {
+      "phrase": "otto_test",
+      "choices": [
+        {
+          "phrase": "otto_wrong",
+          "next": "rebuke",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "otto_answer",
+          "next": "clue",
+          "quality": "sensible",
+          "requires": {
+            "item": "map"
+          }
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "rebuke": {
+      "phrase": "otto_rebuke",
+      "choices": [
+        {
+          "phrase": "otto_ask",
+          "next": "test",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "clue": {
+      "phrase": "otto_clue",
+      "choices": [
+        {
+          "phrase": "otto_accept",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "germany"
+            },
+            {
+              "type": "give",
+              "item": "seal"
+            }
+          ]
+        }
+      ]
+    },
+    "bye": {
+      "phrase": "otto_bye",
+      "outcome": "success",
+      "choices": []
+    },
+    "jokeEels": {
+      "phrase": "otto_joke_reply",
+      "choices": [
+        {
+          "phrase": "otto_ask",
+          "next": "test",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "banterSpoon": {
+      "phrase": "banter_spoonRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterCheese": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterDismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    }
+  }
+}

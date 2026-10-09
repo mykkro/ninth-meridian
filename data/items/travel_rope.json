@@ -1,0 +1,9 @@
+{
+  "id": "travel_rope",
+  "type": "resource",
+  "name": "Travel rope",
+  "description": "A basic supply for future exploration and crafting.",
+  "price": 5,
+  "purchaseQuantity": 1,
+  "stackable": true
+}

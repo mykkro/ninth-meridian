@@ -1,0 +1,12 @@
+{
+  "id": "bandage",
+  "type": "consumable",
+  "name": "Bandage",
+  "description": "A one-use supply with an authored effect for future gameplay.",
+  "price": 3,
+  "purchaseQuantity": 1,
+  "stackable": true,
+  "effects": {
+    "restoreHealth": 10
+  }
+}

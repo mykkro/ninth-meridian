@@ -1,0 +1,63 @@
+{
+  "id": "marketGeneral",
+  "start": "trade",
+  "nodes": {
+    "trade": {
+      "phrase": "marketGeneral_welcome",
+      "shop": true,
+      "choices": [
+        {
+          "phrase": "marketGeneral_ask",
+          "next": "advice",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "marketGeneral_leave",
+          "next": "bye",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "silly",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "dismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "advice": {
+      "phrase": "marketGeneral_advice",
+      "rumor": "marketGeneral_advice",
+      "choices": [
+        {
+          "phrase": "marketGeneral_browse",
+          "next": "trade",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "silly": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "marketGeneral_browse",
+          "next": "trade",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "dismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    },
+    "bye": {
+      "phrase": "marketGeneral_bye",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

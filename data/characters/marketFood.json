@@ -1,0 +1,14 @@
+{
+  "id": "marketFood",
+  "name": "Lenka · food stall",
+  "description": "A local food seller offering RPG supplies.",
+  "language": "cs",
+  "dialogue": "marketFood",
+  "specialty": "food",
+  "stock": [
+    "bread",
+    "cheese",
+    "dried_meat",
+    "travel_rations"
+  ]
+}

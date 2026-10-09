@@ -1,0 +1,12 @@
+{
+  "id": "erik",
+  "name": "Erik · aurora cartographer",
+  "description": "A guide on the final road to Ireland.",
+  "language": "sv",
+  "dialogue": "erik",
+  "stock": [
+    "erik_notes",
+    "scroll_en",
+    "scroll_native"
+  ]
+}

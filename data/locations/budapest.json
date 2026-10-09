@@ -1,0 +1,20 @@
+{
+  "id": "budapest",
+  "name": "Budapest",
+  "country": "Hungary",
+  "language": "hu",
+  "requires": "greece",
+  "description": "The last road to Ireland",
+  "npcs": [
+    "eszter"
+  ],
+  "milestone": "hungary",
+  "coordinates": {
+    "lon": 19.0402,
+    "lat": 47.4979
+  },
+  "mapLabelOffset": [
+    10,
+    16
+  ]
+}

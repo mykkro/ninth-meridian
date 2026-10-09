@@ -1,0 +1,13 @@
+{
+  "id": "athensPotions",
+  "name": "Daphne · potion seller",
+  "description": "A local potions seller offering RPG supplies.",
+  "language": "el",
+  "dialogue": "athensPotions",
+  "specialty": "potions",
+  "stock": [
+    "health_potion",
+    "stamina_potion",
+    "antidote"
+  ]
+}

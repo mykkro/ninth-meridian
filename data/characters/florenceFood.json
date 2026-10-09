@@ -1,0 +1,14 @@
+{
+  "id": "florenceFood",
+  "name": "Paola · grocer",
+  "description": "A local food seller offering RPG supplies.",
+  "language": "it",
+  "dialogue": "florenceFood",
+  "specialty": "food",
+  "stock": [
+    "bread",
+    "cheese",
+    "dried_meat",
+    "travel_rations"
+  ]
+}

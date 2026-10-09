@@ -1,0 +1,15 @@
+{
+  "id": "galwayGeneral",
+  "name": "Aoife · general store",
+  "description": "A local general seller offering RPG supplies.",
+  "language": "ga",
+  "dialogue": "galwayGeneral",
+  "specialty": "general",
+  "stock": [
+    "travel_rations",
+    "torch",
+    "bandage",
+    "health_potion",
+    "arrows"
+  ]
+}

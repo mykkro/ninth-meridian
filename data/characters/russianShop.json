@@ -1,0 +1,11 @@
+{
+  "id": "russianShop",
+  "name": "Anna · bookseller",
+  "language": "ru",
+  "dialogue": "russianShop",
+  "stock": [
+    "scroll_en",
+    "scroll_native"
+  ],
+  "description": "Anna · bookseller. Speaks Russian."
+}

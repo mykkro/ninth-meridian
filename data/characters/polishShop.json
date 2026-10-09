@@ -1,0 +1,11 @@
+{
+  "id": "polishShop",
+  "name": "Jan · bookseller",
+  "language": "pl",
+  "dialogue": "polishShop",
+  "stock": [
+    "scroll_en",
+    "scroll_native"
+  ],
+  "description": "Jan · bookseller. Speaks Polish."
+}

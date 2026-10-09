@@ -1,0 +1,31 @@
+{
+  "id": "aino_notes",
+  "type": "dictionary",
+  "name": "Helsinki field notes",
+  "description": "A limited local-language phrasebook for the final journey.",
+  "from": "fi",
+  "to": "cs",
+  "price": 3,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "aino_greet"
+    },
+    {
+      "type": "phrase",
+      "phrase": "aino_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "aino_clue"
+    },
+    {
+      "type": "phrase",
+      "phrase": "aino_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "aino_bye"
+    }
+  ]
+}

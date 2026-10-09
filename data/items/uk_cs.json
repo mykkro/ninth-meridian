@@ -1,0 +1,46 @@
+{
+  "id": "uk_cs",
+  "type": "dictionary",
+  "name": "Archive word notes",
+  "from": "uk",
+  "to": "cs",
+  "entries": [
+    {
+      "type": "word",
+      "source": "ключ",
+      "translation": "klíč",
+      "forms": [
+        "ключа"
+      ]
+    },
+    {
+      "type": "word",
+      "source": "зірка",
+      "translation": "hvězda",
+      "forms": [
+        "зірку",
+        "зірки"
+      ]
+    },
+    {
+      "type": "verb",
+      "source": "шукати",
+      "translation": "hledat",
+      "forms": [
+        "шукаю",
+        "шукаєте"
+      ]
+    },
+    {
+      "type": "verb",
+      "source": "відкрити",
+      "translation": "otevřít",
+      "forms": [
+        "відкриває",
+        "відкрийте"
+      ]
+    }
+  ],
+  "price": 4,
+  "description": "A limited Ukrainian to Czech dictionary. Read it to study its entries."
+}

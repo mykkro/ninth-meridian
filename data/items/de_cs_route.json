@@ -1,0 +1,39 @@
+{
+  "id": "de_cs_route",
+  "type": "dictionary",
+  "name": "Berlin travel notes",
+  "from": "de",
+  "to": "cs",
+  "price": 3,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "otto_greet"
+    },
+    {
+      "type": "phrase",
+      "phrase": "otto_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "otto_test"
+    },
+    {
+      "type": "phrase",
+      "phrase": "otto_answer"
+    },
+    {
+      "type": "phrase",
+      "phrase": "otto_clue"
+    },
+    {
+      "type": "phrase",
+      "phrase": "otto_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "otto_bye"
+    }
+  ],
+  "description": "A limited German to Czech dictionary. Read it to study its entries."
+}

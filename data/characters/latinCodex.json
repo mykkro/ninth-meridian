@@ -1,0 +1,10 @@
+{
+  "id": "latinCodex",
+  "name": "Codex · Latin manuscript",
+  "language": "la",
+  "dialogue": "latinCodex",
+  "requires": {
+    "item": "codex"
+  },
+  "description": "Codex · Latin manuscript. Speaks Latin."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "leather_boots",
+  "type": "equipment",
+  "name": "Leather boots",
+  "description": "Equipment with metadata for future exploration and combat.",
+  "price": 10,
+  "purchaseQuantity": 1,
+  "stackable": false,
+  "slot": "feet",
+  "stats": {
+    "defense": 1
+  }
+}

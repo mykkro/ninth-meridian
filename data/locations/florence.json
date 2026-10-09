@@ -1,0 +1,36 @@
+{
+  "id": "florence",
+  "name": "Florence",
+  "country": "Italy",
+  "language": "it",
+  "requires": "novgorod",
+  "description": "The southern disc",
+  "npcs": [
+    "luca",
+    "florenceShop",
+    "latinCodex",
+    "rosa",
+    "florenceFood"
+  ],
+  "milestone": "italy",
+  "actions": [
+    {
+      "id": "gather_lavender",
+      "label": "Gather lavender in the garden",
+      "item": "lavender",
+      "count": 1,
+      "limit": 3,
+      "requires": {
+        "milestone": "herb_errand_started"
+      }
+    }
+  ],
+  "coordinates": {
+    "lon": 11.2558,
+    "lat": 43.7696
+  },
+  "mapLabelOffset": [
+    9,
+    -9
+  ]
+}

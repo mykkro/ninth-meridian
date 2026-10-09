@@ -1,0 +1,63 @@
+{
+  "id": "florenceFood",
+  "start": "trade",
+  "nodes": {
+    "trade": {
+      "phrase": "florenceFood_welcome",
+      "shop": true,
+      "choices": [
+        {
+          "phrase": "florenceFood_ask",
+          "next": "advice",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "florenceFood_leave",
+          "next": "bye",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "silly",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "dismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "advice": {
+      "phrase": "florenceFood_advice",
+      "rumor": "florenceFood_advice",
+      "choices": [
+        {
+          "phrase": "florenceFood_browse",
+          "next": "trade",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "silly": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "florenceFood_browse",
+          "next": "trade",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "dismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    },
+    "bye": {
+      "phrase": "florenceFood_bye",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

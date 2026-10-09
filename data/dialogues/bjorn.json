@@ -1,0 +1,172 @@
+{
+  "id": "bjorn",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "ore_errand_offer",
+      "choices": [
+        {
+          "phrase": "ore_errand_accept",
+          "next": "task",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "ore_errand_started"
+            }
+          ]
+        },
+        {
+          "phrase": "ore_errand_wisdomAsk",
+          "next": "wisdom",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "ore_errand_turnin",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "item": "ore",
+            "milestone": "ore_errand_started"
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "ore_errand",
+              "gold": 24,
+              "take": [
+                {
+                  "item": "ore",
+                  "count": 1
+                }
+              ],
+              "items": [
+                {
+                  "item": "warm_cloak",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "ore_errand_done"
+            }
+          ]
+        },
+        {
+          "phrase": "banter_sillySpoon",
+          "next": "banterSpoon",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_sillyCheese",
+          "next": "banterCheese",
+          "quality": "nonsense"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "task": {
+      "phrase": "ore_errand_offer",
+      "choices": [
+        {
+          "phrase": "ore_errand_turnin",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "item": "ore"
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "ore_errand",
+              "gold": 24,
+              "take": [
+                {
+                  "item": "ore",
+                  "count": 1
+                }
+              ],
+              "items": [
+                {
+                  "item": "warm_cloak",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "ore_errand_done"
+            }
+          ]
+        }
+      ]
+    },
+    "wisdom": {
+      "phrase": "ore_errand_wisdom",
+      "rumor": "ore_errand_wisdom",
+      "choices": [
+        {
+          "phrase": "ore_errand_accept",
+          "next": "task",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "ore_errand_started"
+            }
+          ]
+        }
+      ]
+    },
+    "done": {
+      "phrase": "ore_errand_thanks",
+      "outcome": "success",
+      "choices": []
+    },
+    "banterSpoon": {
+      "phrase": "banter_spoonRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeDemand",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterCheese": {
+      "phrase": "banter_cheeseRebuke",
+      "choices": [
+        {
+          "phrase": "banter_startOver",
+          "next": "greeting",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "banter_rudeInsult",
+          "next": "banterDismiss",
+          "quality": "rude"
+        }
+      ]
+    },
+    "banterDismiss": {
+      "phrase": "banter_rudeDismiss",
+      "outcome": "dismissed",
+      "choices": []
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "niamh",
+  "name": "Niamh · final gatekeeper",
+  "description": "A guide on the final road to Ireland.",
+  "language": "ga",
+  "dialogue": "niamh",
+  "stock": [
+    "niamh_notes",
+    "scroll_en",
+    "scroll_native"
+  ]
+}

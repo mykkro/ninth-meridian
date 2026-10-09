@@ -1,0 +1,31 @@
+{
+  "id": "erik_notes",
+  "type": "dictionary",
+  "name": "Stockholm field notes",
+  "description": "A limited local-language phrasebook for the final journey.",
+  "from": "sv",
+  "to": "cs",
+  "price": 3,
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "erik_greet"
+    },
+    {
+      "type": "phrase",
+      "phrase": "erik_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "erik_clue"
+    },
+    {
+      "type": "phrase",
+      "phrase": "erik_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "erik_bye"
+    }
+  ]
+}
