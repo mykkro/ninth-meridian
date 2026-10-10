@@ -10,7 +10,8 @@
     "slovakShop",
     "dana",
     "caravanFood",
-    "zuzana"
+    "zuzana",
+    "bratislava_innkeeper"
   ],
   "milestone": "bratislava",
   "actions": [
@@ -35,5 +36,6 @@
   ],
   "loreBooks": [
     "lore_crowns"
-  ]
+  ],
+  "innkeeper": "bratislava_innkeeper"
 }

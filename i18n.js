@@ -262,3 +262,5 @@ Object.assign(UI_CS,{"Character":"Postava"});
 Object.assign(UI_CS,{"City":"Město"});
 
 Object.assign(UI_CS,{"Companions":"Společníci"});
+
+Object.assign(UI_CS,{"Inn":"Hostinec","For overnight waiting, rent a room at an inn.":"Na noc si pronajmi pokoj v hostinci.","Travel to a city inn to stay overnight.":"Pro přenocování navštiv městský hostinec.","Keeper of the local inn.":"Hostinský místního hostince."});

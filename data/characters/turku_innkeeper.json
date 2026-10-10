@@ -1,0 +1,8 @@
+{
+  "id": "turku_innkeeper",
+  "name": "Matti · innkeeper",
+  "language": "fi",
+  "dialogue": "innkeeper",
+  "innkeeper": true,
+  "description": "Keeper of the local inn."
+}

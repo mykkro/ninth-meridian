@@ -7,7 +7,8 @@
   "description": "The archive smells of dust and candle wax. Tiny warding marks have been scratched beneath its oldest shelves.",
   "npcs": [
     "oles",
-    "ukrainianShop"
+    "ukrainianShop",
+    "lviv_innkeeper"
   ],
   "milestone": "lviv",
   "coordinates": {
@@ -21,5 +22,6 @@
   "loreBooks": [
     "lore_invaders",
     "lore_eastern_letters"
-  ]
+  ],
+  "innkeeper": "lviv_innkeeper"
 }

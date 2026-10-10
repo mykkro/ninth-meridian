@@ -1,0 +1,8 @@
+{
+  "id": "copenhagen_innkeeper",
+  "name": "Jens · innkeeper",
+  "language": "da",
+  "dialogue": "innkeeper",
+  "innkeeper": true,
+  "description": "Keeper of the local inn."
+}

@@ -1,0 +1,8 @@
+{
+  "id": "amsterdam_innkeeper",
+  "name": "Pieter · innkeeper",
+  "language": "nl",
+  "dialogue": "innkeeper",
+  "innkeeper": true,
+  "description": "Keeper of the local inn."
+}

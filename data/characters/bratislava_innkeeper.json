@@ -1,0 +1,8 @@
+{
+  "id": "bratislava_innkeeper",
+  "name": "Ján · innkeeper",
+  "language": "sk",
+  "dialogue": "innkeeper",
+  "innkeeper": true,
+  "description": "Keeper of the local inn."
+}

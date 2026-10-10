@@ -111,7 +111,29 @@
       "characters/anselm.json",
       "characters/isadora.json",
       "characters/katalin.json",
-      "characters/malachy.json"
+      "characters/malachy.json",
+      "characters/prague_innkeeper.json",
+      "characters/bratislava_innkeeper.json",
+      "characters/krakow_innkeeper.json",
+      "characters/lviv_innkeeper.json",
+      "characters/novgorod_innkeeper.json",
+      "characters/london_innkeeper.json",
+      "characters/berlin_innkeeper.json",
+      "characters/amsterdam_innkeeper.json",
+      "characters/copenhagen_innkeeper.json",
+      "characters/florence_innkeeper.json",
+      "characters/lyon_innkeeper.json",
+      "characters/toledo_innkeeper.json",
+      "characters/athens_innkeeper.json",
+      "characters/oslo_innkeeper.json",
+      "characters/stockholm_innkeeper.json",
+      "characters/turku_innkeeper.json",
+      "characters/budapest_innkeeper.json",
+      "characters/galway_innkeeper.json",
+      "characters/leipzig_innkeeper.json",
+      "characters/hamburg_innkeeper.json",
+      "characters/bologna_innkeeper.json",
+      "characters/venice_innkeeper.json"
     ],
     "items": [
       "items/sk_cs.json",
@@ -328,7 +350,8 @@
       "dialogues/eeva.json",
       "dialogues/balint.json",
       "dialogues/brendan.json",
-      "dialogues/riddle_sage.json"
+      "dialogues/riddle_sage.json",
+      "dialogues/innkeeper.json"
     ],
     "phrases": [
       "phrases.json",
@@ -337,7 +360,8 @@
       "farewell-phrases.json",
       "finale-phrases.json",
       "consequence-phrases.json",
-      "riddle-phrases.json"
+      "riddle-phrases.json",
+      "hospitality-phrases.json"
     ],
     "riddles": [
       "riddles/echo.json",

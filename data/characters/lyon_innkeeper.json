@@ -1,0 +1,8 @@
+{
+  "id": "lyon_innkeeper",
+  "name": "Étienne · innkeeper",
+  "language": "fr",
+  "dialogue": "innkeeper",
+  "innkeeper": true,
+  "description": "Keeper of the local inn."
+}

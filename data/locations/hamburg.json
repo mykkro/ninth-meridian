@@ -7,7 +7,8 @@
   "description": "Bells count the harbour watches. A ferryman and a tide keeper hold different halves of the same account. White cords hang above a few cabin doors; no two sailors explain them alike.",
   "npcs": [
     "hannes",
-    "marta"
+    "marta",
+    "hamburg_innkeeper"
   ],
   "milestone": "hamburg_verified",
   "coordinates": {
@@ -17,5 +18,6 @@
   "mapLabelOffset": [
     10,
     -10
-  ]
+  ],
+  "innkeeper": "hamburg_innkeeper"
 }

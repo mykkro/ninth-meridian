@@ -1,0 +1,8 @@
+{
+  "id": "venice_innkeeper",
+  "name": "Marco · innkeeper",
+  "language": "it",
+  "dialogue": "innkeeper",
+  "innkeeper": true,
+  "description": "Keeper of the local inn."
+}

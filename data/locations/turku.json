@@ -7,7 +7,8 @@
   "description": "The medieval port of Turku; the last clue before Ireland.",
   "npcs": [
     "aino",
-    "eeva"
+    "eeva",
+    "turku_innkeeper"
   ],
   "milestone": "finland",
   "coordinates": {
@@ -35,5 +36,6 @@
   },
   "loreBooks": [
     "lore_western_tides"
-  ]
+  ],
+  "innkeeper": "turku_innkeeper"
 }

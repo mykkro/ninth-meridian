@@ -13,7 +13,8 @@
     "marketArms",
     "janek",
     "tereza",
-    "radovan"
+    "radovan",
+    "prague_innkeeper"
   ],
   "milestone": "prague",
   "actions": [
@@ -43,5 +44,6 @@
     "lore_alchemy",
     "lore_crowns",
     "lore_dawn_workshop"
-  ]
+  ],
+  "innkeeper": "prague_innkeeper"
 }

@@ -7,7 +7,8 @@
   "description": "A glass workshop faces the lagoon. A boat pilot remembers which way the cartographer held his mirror. Beside the quay, a patron examines Matteo’s drawing of a diving bell while a glassworker argues about how much pressure its window could bear.",
   "npcs": [
     "nadia",
-    "vittorio"
+    "vittorio",
+    "venice_innkeeper"
   ],
   "milestone": "venice_verified",
   "coordinates": {
@@ -25,5 +26,6 @@
   },
   "loreBooks": [
     "lore_western_tides"
-  ]
+  ],
+  "innkeeper": "venice_innkeeper"
 }

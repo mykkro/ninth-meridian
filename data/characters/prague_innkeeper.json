@@ -1,0 +1,8 @@
+{
+  "id": "prague_innkeeper",
+  "name": "Václav · innkeeper",
+  "language": "cs",
+  "dialogue": "innkeeper",
+  "innkeeper": true,
+  "description": "Keeper of the local inn."
+}

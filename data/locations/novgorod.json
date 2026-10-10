@@ -7,7 +7,8 @@
   "description": "A northern manuscript reveals that the trail is only beginning.",
   "npcs": [
     "lev",
-    "russianShop"
+    "russianShop",
+    "novgorod_innkeeper"
   ],
   "milestone": "novgorod",
   "coordinates": {
@@ -21,5 +22,6 @@
   "loreBooks": [
     "lore_invaders",
     "lore_eastern_letters"
-  ]
+  ],
+  "innkeeper": "novgorod_innkeeper"
 }

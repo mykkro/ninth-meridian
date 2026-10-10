@@ -8,7 +8,8 @@
   "npcs": [
     "erik",
     "liv",
-    "ylva"
+    "ylva",
+    "stockholm_innkeeper"
   ],
   "milestone": "sweden",
   "actions": [
@@ -46,5 +47,6 @@
   },
   "loreBooks": [
     "lore_alchemy"
-  ]
+  ],
+  "innkeeper": "stockholm_innkeeper"
 }

@@ -10,7 +10,8 @@
     "berlinShop",
     "berlinGeneral",
     "sofie",
-    "anselm"
+    "anselm",
+    "berlin_innkeeper"
   ],
   "milestone": "germany",
   "coordinates": {
@@ -23,5 +24,6 @@
   ],
   "riddleBooks": [
     "riddle_tools"
-  ]
+  ],
+  "innkeeper": "berlin_innkeeper"
 }

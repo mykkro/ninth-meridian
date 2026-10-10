@@ -21,7 +21,8 @@
     "athensShop",
     "petros",
     "athensPotions",
-    "thalia"
+    "thalia",
+    "athens_innkeeper"
   ],
   "milestone": "greece",
   "coordinates": {
@@ -49,5 +50,6 @@
   },
   "loreBooks": [
     "lore_dawn_workshop"
-  ]
+  ],
+  "innkeeper": "athens_innkeeper"
 }

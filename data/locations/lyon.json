@@ -13,7 +13,8 @@
   "npcs": [
     "camille",
     "lyonShop",
-    "marie"
+    "marie",
+    "lyon_innkeeper"
   ],
   "milestone": "france",
   "coordinates": {
@@ -23,5 +24,6 @@
   "mapLabelOffset": [
     9,
     -9
-  ]
+  ],
+  "innkeeper": "lyon_innkeeper"
 }

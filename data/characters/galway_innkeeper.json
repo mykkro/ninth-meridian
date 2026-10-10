@@ -1,0 +1,8 @@
+{
+  "id": "galway_innkeeper",
+  "name": "Donnchadh · innkeeper",
+  "language": "ga",
+  "dialogue": "innkeeper",
+  "innkeeper": true,
+  "description": "Keeper of the local inn."
+}

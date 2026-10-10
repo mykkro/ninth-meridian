@@ -8,7 +8,8 @@
   "npcs": [
     "bea",
     "londonShop",
-    "rowan"
+    "rowan",
+    "london_innkeeper"
   ],
   "milestone": "britain",
   "coordinates": {
@@ -23,5 +24,6 @@
     "lore_alchemy",
     "lore_crowns",
     "lore_western_tides"
-  ]
+  ],
+  "innkeeper": "london_innkeeper"
 }

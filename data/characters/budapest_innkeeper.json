@@ -1,0 +1,8 @@
+{
+  "id": "budapest_innkeeper",
+  "name": "Gábor · innkeeper",
+  "language": "hu",
+  "dialogue": "innkeeper",
+  "innkeeper": true,
+  "description": "Keeper of the local inn."
+}

@@ -8,7 +8,8 @@
   "npcs": [
     "zofia",
     "polishShop",
-    "krakowArms"
+    "krakowArms",
+    "krakow_innkeeper"
   ],
   "milestone": "krakow",
   "coordinates": {
@@ -22,5 +23,6 @@
   "loreBooks": [
     "lore_invaders",
     "lore_eastern_letters"
-  ]
+  ],
+  "innkeeper": "krakow_innkeeper"
 }

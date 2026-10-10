@@ -1,0 +1,11 @@
+{
+  "id": "innkeeper",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "inn_greeting",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

@@ -8,7 +8,8 @@
   "npcs": [
     "paolo",
     "chiara",
-    "isadora"
+    "isadora",
+    "bologna_innkeeper"
   ],
   "milestone": "bologna_verified",
   "coordinates": {
@@ -30,5 +31,6 @@
   "loreBooks": [
     "lore_alchemy",
     "lore_dawn_workshop"
-  ]
+  ],
+  "innkeeper": "bologna_innkeeper"
 }

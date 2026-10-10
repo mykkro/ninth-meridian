@@ -8,7 +8,8 @@
   "npcs": [
     "astrid",
     "copenhagenShop",
-    "freja"
+    "freja",
+    "copenhagen_innkeeper"
   ],
   "milestone": "denmark",
   "coordinates": {
@@ -23,5 +24,6 @@
   "realmContext": {
     "en": "Christian I rules Denmark and Norway in 1453. The Kalmar Union remains the framework for Nordic royal claims, but Sweden is ruled by the rival Charles VIII. Copenhagen is a royal centre, and Sound tolls make Baltic passage politically sensitive. Catholic clergy and noble councils wield influence. Grain ships sail cautiously amid the competing crowns.",
     "cs": "Kristián I. roku 1453 vládne Dánsku a Norsku. Kalmarská unie zůstává rámcem severských panovnických nároků, ale Švédsku vládne soupeřící Karel VIII. Kodaň je královským centrem a cla v Öresundu činí baltskou plavbu politicky citlivou. Katolické duchovenstvo a šlechtické rady mají značný vliv. Obilné lodě plují opatrně mezi soupeřícími korunami."
-  }
+  },
+  "innkeeper": "copenhagen_innkeeper"
 }

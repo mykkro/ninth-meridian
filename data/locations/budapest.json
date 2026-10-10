@@ -8,7 +8,8 @@
   "npcs": [
     "eszter",
     "balint",
-    "katalin"
+    "katalin",
+    "budapest_innkeeper"
   ],
   "milestone": "hungary",
   "coordinates": {
@@ -104,5 +105,6 @@
     "lore_crowns",
     "lore_dawn_workshop",
     "lore_eastern_letters"
-  ]
+  ],
+  "innkeeper": "budapest_innkeeper"
 }

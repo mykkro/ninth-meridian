@@ -1,0 +1,8 @@
+{
+  "id": "oslo_innkeeper",
+  "name": "Håkon · innkeeper",
+  "language": "no",
+  "dialogue": "innkeeper",
+  "innkeeper": true,
+  "description": "Keeper of the local inn."
+}

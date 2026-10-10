@@ -1,0 +1,8 @@
+{
+  "id": "leipzig_innkeeper",
+  "name": "Heinrich · innkeeper",
+  "language": "de",
+  "dialogue": "innkeeper",
+  "innkeeper": true,
+  "description": "Keeper of the local inn."
+}

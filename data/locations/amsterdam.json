@@ -12,7 +12,8 @@
   "description": "Cargo waits beneath shuttered warehouses. Escort fees have risen since the Baltic fighting began; a dockhand quietly unties a white cord from an abandoned berth.",
   "npcs": [
     "sanne",
-    "amsterdamShop"
+    "amsterdamShop",
+    "amsterdam_innkeeper"
   ],
   "milestone": "netherlands",
   "coordinates": {
@@ -30,5 +31,6 @@
   },
   "loreBooks": [
     "lore_western_tides"
-  ]
+  ],
+  "innkeeper": "amsterdam_innkeeper"
 }

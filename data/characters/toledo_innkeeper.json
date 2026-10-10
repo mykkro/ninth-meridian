@@ -1,0 +1,8 @@
+{
+  "id": "toledo_innkeeper",
+  "name": "Diego · innkeeper",
+  "language": "es",
+  "dialogue": "innkeeper",
+  "innkeeper": true,
+  "description": "Keeper of the local inn."
+}

@@ -1,0 +1,8 @@
+{
+  "id": "bologna_innkeeper",
+  "name": "Giulio · innkeeper",
+  "language": "it",
+  "dialogue": "innkeeper",
+  "innkeeper": true,
+  "description": "Keeper of the local inn."
+}
