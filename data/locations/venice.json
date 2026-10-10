@@ -17,5 +17,13 @@
   "mapLabelOffset": [
     10,
     -10
+  ],
+  "realm": "Republic of Venice",
+  "realmContext": {
+    "en": "The Republic of Venice is led by an elected doge, whose authority is balanced by the Great Council and other magistracies. Merchants and shipowners bind the lagoon to distant ports. Catholic churches stand beside glass workshops and warehouses. Competition for eastern trade sharpens every bargain; pilots of the Silent Tide know which witnesses reached the harbour unseen.",
+    "cs": "Benátskou republiku vede volený dóže, jehož moc vyvažuje Velká rada a další úřady. Kupci a majitelé lodí spojují lagunu se vzdálenými přístavy. Katolické chrámy stojí vedle sklářských dílen a skladišť. Soupeření o východní obchod zostřuje každé vyjednávání; lodivodi Tichého přílivu vědí, kteří svědkové dorazili do přístavu nepozorovaně."
+  },
+  "loreBooks": [
+    "lore_western_tides"
   ]
 }

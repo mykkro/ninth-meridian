@@ -7,7 +7,8 @@
   "description": "The last road to Ireland",
   "npcs": [
     "erik",
-    "liv"
+    "liv",
+    "ylva"
   ],
   "milestone": "sweden",
   "actions": [
@@ -20,6 +21,14 @@
       "requires": {
         "milestone": "ore_errand_started"
       }
+    },
+    {
+      "id": "archive_shelves_gather",
+      "label": "Collect fallen timber by the archive",
+      "item": "wood",
+      "count": 1,
+      "limit": 4,
+      "requires": "archive_shelves_started"
     }
   ],
   "coordinates": {
@@ -29,5 +38,13 @@
   "mapLabelOffset": [
     10,
     16
+  ],
+  "realm": "Kingdom of Sweden",
+  "realmContext": {
+    "en": "Charles VIII rules Sweden in 1453, opposing Christian I of Denmark and Norway. The Kalmar Union’s shared crown is disputed, not securely united. Stockholm is a fortified trading town connected to Baltic and Hanseatic merchants. Catholic churches and monasteries remain active. Copper cargoes, shipping dues, and the rival royal claims make the harbour politically tense.",
+    "cs": "Karel VIII. roku 1453 vládne Švédsku proti Kristiánovi I. Dánskému a Norskému. Společná koruna Kalmarské unie je sporná, nikoli pevně sjednocená. Stockholm je opevněné obchodní město spojené s baltskými a hanzovními kupci. Katolické chrámy a kláštery zůstávají činné. Náklady mědi, lodní cla a soupeřící panovnické nároky vyvolávají v přístavu napětí."
+  },
+  "loreBooks": [
+    "lore_alchemy"
   ]
 }

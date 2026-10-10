@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict');
 const {assembleWorld}=require('../content.js');
 const World=assembleWorld(require('./fixtures.cjs').worldData,require('./fixtures.cjs').dialogueData);
-const Engine=require('../engine.js');
+const Engine=require('./story-engine.cjs');
 const {investigateCountry}=require('./regional-routes.cjs');
 function say(g,phrase){const index=g.node.choices.findIndex(c=>c.phrase===phrase);assert.ok(index>=0,`Missing ${phrase}`);g.choose(index);}
 function finish(g,id){say(g,id+'_ask');say(g,id+'_answer');say(g,id+'_accept');}

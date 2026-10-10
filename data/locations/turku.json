@@ -1,0 +1,39 @@
+{
+  "id": "turku",
+  "name": "Turku",
+  "country": "Finland",
+  "language": "fi",
+  "requires": "sweden",
+  "description": "The medieval port of Turku; the last clue before Ireland.",
+  "npcs": [
+    "aino",
+    "eeva"
+  ],
+  "milestone": "finland",
+  "coordinates": {
+    "lon": 22.2666,
+    "lat": 60.4518
+  },
+  "mapLabelOffset": [
+    9,
+    -9
+  ],
+  "actions": [
+    {
+      "id": "pilgrim_remedy_gather",
+      "label": "Gather herbs from the pilgrim garden",
+      "item": "lavender",
+      "count": 1,
+      "limit": 6,
+      "requires": "pilgrim_remedy_started"
+    }
+  ],
+  "realm": "Österland · Kingdom of Sweden",
+  "realmContext": {
+    "en": "Österland, the eastern lands of the Swedish realm, is not a separate Finnish kingdom. In 1453 it shares Charles VIII’s crown. Turku, known in Swedish as Åbo, is an established medieval port and episcopal centre. Catholic institutions, merchants, and the castle shape its life. Fishermen still avoid certain shore stones, while pilgrims wait for passage along the Baltic routes.",
+    "cs": "Österland, východní země švédské říše, není samostatným finským královstvím. Roku 1453 náleží ke koruně Karla VIII. Turku, švédsky Åbo, je zavedeným středověkým přístavem a biskupským centrem. Jeho život utvářejí katolické instituce, kupci a hrad. Rybáři se stále vyhýbají některým pobřežním kamenům a poutníci čekají na plavbu po baltských trasách."
+  },
+  "loreBooks": [
+    "lore_western_tides"
+  ]
+}

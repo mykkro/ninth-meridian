@@ -1,0 +1,35 @@
+{
+  "id": "riddle_tools",
+  "name": "The Traveller’s Instruments",
+  "type": "reference",
+  "title": {
+    "en": "The Traveller’s Instruments",
+    "cs": "Poutníkovy nástroje",
+    "de": "Die Instrumente des Reisenden",
+    "it": "Gli strumenti del viandante",
+    "hu": "Az utazó eszközei",
+    "ga": "Uirlisí an Taistealaí"
+  },
+  "pages": [
+    {
+      "title": {
+        "en": "Signs and directions",
+        "cs": "Znamení a směry"
+      },
+      "text": {
+        "en": "Ink can mark a whole river on a dry sheet. A navigator carries another guide: a magnetised needle floating or balanced on a pivot. It seeks north even beneath clouds.",
+        "cs": "Inkoust může vyznačit celou řeku na suchém listu. Plavec má i jiného průvodce: zmagnetizovanou jehlu plovoucí na vodě či vyváženou na čepu. Hledá sever i pod mraky."
+      }
+    },
+    {
+      "title": {
+        "en": "Keeping the hours",
+        "cs": "Měření hodin"
+      },
+      "text": {
+        "en": "Wax feeds a flame at the cost of its own height. Glassmakers join two bulbs by a narrow passage; dry sand falls between them. Neither instrument can serve forever without tending.",
+        "cs": "Vosk živí plamen za cenu vlastní výšky. Skláři spojují dvě baňky úzkým průchodem; mezi nimi padá suchý písek. Ani jeden nástroj neslouží věčně bez péče."
+      }
+    }
+  ]
+}

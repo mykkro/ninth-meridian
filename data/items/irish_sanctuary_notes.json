@@ -1,0 +1,174 @@
+{
+  "id": "irish_sanctuary_notes",
+  "type": "dictionary",
+  "name": "Irish sanctuary phrasebook",
+  "description": "A pilgrim’s Irish–Czech notes covering the three sanctuary investigations. Earned by helping Eeva in Turku.",
+  "from": "ga",
+  "to": "cs",
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "sanctuary_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "sanctuary_study"
+    },
+    {
+      "type": "phrase",
+      "phrase": "sanctuary_retry"
+    },
+    {
+      "type": "phrase",
+      "phrase": "sanctuary_confirm"
+    },
+    {
+      "type": "phrase",
+      "phrase": "sanctuary_recorded"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ash-temple_intro"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ash-temple_puzzle"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ash-temple_answer"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ash-temple_wrong"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ash-temple_hint"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ash-temple_solved"
+    },
+    {
+      "type": "phrase",
+      "phrase": "tide-shrine_intro"
+    },
+    {
+      "type": "phrase",
+      "phrase": "tide-shrine_puzzle"
+    },
+    {
+      "type": "phrase",
+      "phrase": "tide-shrine_answer"
+    },
+    {
+      "type": "phrase",
+      "phrase": "tide-shrine_wrong"
+    },
+    {
+      "type": "phrase",
+      "phrase": "tide-shrine_hint"
+    },
+    {
+      "type": "phrase",
+      "phrase": "tide-shrine_solved"
+    },
+    {
+      "type": "phrase",
+      "phrase": "star-abbey_intro"
+    },
+    {
+      "type": "phrase",
+      "phrase": "star-abbey_puzzle"
+    },
+    {
+      "type": "phrase",
+      "phrase": "star-abbey_answer"
+    },
+    {
+      "type": "phrase",
+      "phrase": "star-abbey_wrong"
+    },
+    {
+      "type": "phrase",
+      "phrase": "star-abbey_hint"
+    },
+    {
+      "type": "phrase",
+      "phrase": "star-abbey_solved"
+    },
+    {
+      "type": "phrase",
+      "phrase": "consequence_leave"
+    },
+    {
+      "type": "phrase",
+      "phrase": "consequence_depart"
+    },
+    {
+      "type": "phrase",
+      "phrase": "recovery_confirm"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ash_restitution_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ash_restitution_task"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ash_restitution_repaired"
+    },
+    {
+      "type": "phrase",
+      "phrase": "tide_restitution_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "tide_restitution_task"
+    },
+    {
+      "type": "phrase",
+      "phrase": "tide_restitution_repaired"
+    },
+    {
+      "type": "phrase",
+      "phrase": "abbey_restitution_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "abbey_restitution_task"
+    },
+    {
+      "type": "phrase",
+      "phrase": "abbey_restitution_repaired"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ash_restitution_failure"
+    },
+    {
+      "type": "phrase",
+      "phrase": "tide_restitution_failure"
+    },
+    {
+      "type": "phrase",
+      "phrase": "abbey_restitution_failure"
+    },
+    {
+      "type": "phrase",
+      "phrase": "niamh_bargain"
+    },
+    {
+      "type": "phrase",
+      "phrase": "niamh_monopoly"
+    },
+    {
+      "type": "phrase",
+      "phrase": "galway_restitution_failure"
+    }
+  ]
+}

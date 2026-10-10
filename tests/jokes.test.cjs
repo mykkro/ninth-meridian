@@ -1,6 +1,6 @@
 const assert=require('node:assert/strict');
 const {world}=require('./fixtures.cjs');
-const Engine=require('../engine.js');
+const Engine=require('./story-engine.cjs');
 const g=new Engine(world);g.state.milestones=[...world.quest.milestones];
 g.travel('london');assert.ok(g.visibleChoices().some(({choice})=>choice.easterEgg==='hovercraft-eels'));
 const index=g.node.choices.findIndex(c=>c.easterEgg==='hovercraft-eels');g.choose(index);assert.equal(g.nodeId,'jokeEels');assert.equal(g.ended,false);assert.equal(g.state.inventory.lens,undefined);

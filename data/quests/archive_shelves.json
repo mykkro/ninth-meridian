@@ -1,0 +1,19 @@
+{
+  "id": "archive_shelves",
+  "title": "Shelves for the sea archive",
+  "description": "Two pieces of timber will save these sea records from the damp. In return, take my Swedish archive phrasebook.",
+  "milestones": [
+    "archive_shelves_started",
+    "archive_shelves_done"
+  ],
+  "completion": "archive_shelves_done",
+  "fetchItem": "wood",
+  "fetchCount": 2,
+  "location": "stockholm",
+  "giver": "ylva",
+  "reward": {
+    "gold": 40,
+    "item": "baltic_archive_notes",
+    "count": 1
+  }
+}

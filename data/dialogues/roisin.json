@@ -1,0 +1,145 @@
+{
+  "id": "roisin",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "tide-shrine_intro",
+      "contexts": [
+        {
+          "requires": {
+            "setbacks": [
+              "tide_restitution"
+            ]
+          },
+          "phrase": "tide_restitution_failure"
+        },
+        {
+          "requires": "tide-shrine_verified",
+          "phrase": "tide-shrine_solved"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "sanctuary_ask",
+          "next": "evidence",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "sanctuary_recorded",
+          "next": "recorded",
+          "quality": "sensible",
+          "requires": "tide-shrine_verified"
+        }
+      ]
+    },
+    "evidence": {
+      "phrase": "tide-shrine_intro",
+      "choices": [
+        {
+          "phrase": "sanctuary_study",
+          "next": "puzzle",
+          "quality": "sensible",
+          "requires": {
+            "item": "tide-shrine_evidence"
+          }
+        }
+      ]
+    },
+    "puzzle": {
+      "phrase": "tide-shrine_puzzle",
+      "choices": [
+        {
+          "phrase": "tide-shrine_wrong",
+          "next": "hint",
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "tide_restitution"
+            ],
+            "withoutMilestones": [
+              "tide-shrine_verified"
+            ]
+          },
+          "effects": [
+            {
+              "type": "setback",
+              "id": "tide_restitution"
+            }
+          ],
+          "practice": false,
+          "visibleWhen": {
+            "withoutMilestones": [
+              "tide-shrine_verified"
+            ]
+          }
+        },
+        {
+          "phrase": "consequence_leave",
+          "quality": "sensible",
+          "next": "studyLater"
+        },
+        {
+          "phrase": "tide-shrine_answer",
+          "next": "solved",
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "tide_restitution"
+            ]
+          }
+        }
+      ]
+    },
+    "hint": {
+      "phrase": "tide_restitution_failure",
+      "outcome": "dismissed",
+      "choices": []
+    },
+    "solved": {
+      "phrase": "tide-shrine_solved",
+      "choices": [
+        {
+          "phrase": "sanctuary_confirm",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "reward",
+              "id": "tide-shrine_reward",
+              "items": [
+                {
+                  "item": "tide-shrine_seal",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "tide-shrine_verified"
+            }
+          ],
+          "requires": {
+            "withoutSetbacks": [
+              "tide_restitution"
+            ]
+          }
+        }
+      ]
+    },
+    "bye": {
+      "phrase": "tide-shrine_solved",
+      "outcome": "success",
+      "choices": []
+    },
+    "recorded": {
+      "phrase": "tide-shrine_solved",
+      "outcome": "success",
+      "choices": []
+    },
+    "studyLater": {
+      "phrase": "tide-shrine_intro",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

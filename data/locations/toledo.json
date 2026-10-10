@@ -18,5 +18,10 @@
   "mapLabelOffset": [
     9,
     -9
-  ]
+  ],
+  "realm": "Crown of Castile",
+  "realmContext": {
+    "en": "Toledo belongs to the Crown of Castile, ruled by John II in 1453. Castile and Aragon are separate crowns, and the kingdom of Granada still survives to the south. Catholic institutions dominate public life; Jewish and Muslim communities face varying restrictions and pressures. Court rivalries, frontier obligations, and merchant privileges complicate every tax demand.",
+    "cs": "Toledo patří ke Kastilské koruně, které roku 1453 vládne Jan II. Kastilie a Aragonie mají oddělené koruny a na jihu stále existuje Granadské království. Veřejnému životu dominují katolické instituce; židovské a muslimské obce čelí různým omezením a tlakům. Dvorské soupeření, pohraniční povinnosti a kupecké výsady komplikují každý požadavek na daně."
+  }
 }

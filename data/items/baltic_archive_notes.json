@@ -1,0 +1,46 @@
+{
+  "id": "baltic_archive_notes",
+  "type": "dictionary",
+  "name": "Baltic archive phrasebook",
+  "description": "Swedish–Czech notes for archive work and Erik’s aurora chart. Earned by repairing Ylva’s shelves.",
+  "from": "sv",
+  "to": "cs",
+  "entries": [
+    {
+      "type": "phrase",
+      "phrase": "erik_greet"
+    },
+    {
+      "type": "phrase",
+      "phrase": "erik_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "erik_clue"
+    },
+    {
+      "type": "phrase",
+      "phrase": "erik_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "erik_bye"
+    },
+    {
+      "type": "phrase",
+      "phrase": "archive_shelves_offer"
+    },
+    {
+      "type": "phrase",
+      "phrase": "archive_shelves_accept"
+    },
+    {
+      "type": "phrase",
+      "phrase": "archive_shelves_deliver"
+    },
+    {
+      "type": "phrase",
+      "phrase": "archive_shelves_done"
+    }
+  ]
+}

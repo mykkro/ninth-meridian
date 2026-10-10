@@ -4,8 +4,8 @@
     "en": "Welcome, traveller. Are you looking for the missing cartographer?"
   },
   "czechClue": {
-    "cs": "Na mapě je znamení devátého poledníku. Jdi do Bratislavy.",
-    "en": "The map bears the mark of the ninth meridian. Go to Bratislava."
+    "cs": "Na mapě je znamení devátého poledníku. Jdi do Prešpurku.",
+    "en": "The map bears the mark of the ninth meridian. Go to Pressburg."
   },
   "trade": {
     "cs": "Mám slovníky a překladové svitky. Co potřebuješ?",
@@ -85,8 +85,8 @@
     "en": "A dancing cabbage with a golden crown."
   },
   "ada_accept": {
-    "cs": "Děkuji. Vezmu mapu a vydám se do Bratislavy.",
-    "en": "Thank you. I will take the map and go to Bratislava."
+    "cs": "Děkuji. Vezmu mapu a vydám se do Prešpurku.",
+    "en": "Thank you. I will take the map and go to Pressburg."
   },
   "ada_rebuke": {
     "cs": "To nedává smysl. Soustřeď se; jde o život mého přítele.",
@@ -205,10 +205,10 @@
     "sk": "Hovor rýchlo. Nemám čas na tvoje hlúpe otázky."
   },
   "zofia_test": {
-    "cs": "Něco nechal u průvodkyně v Bratislavě. Co ti dala?",
-    "en": "He left something with the guide in Bratislava. What did she give you?",
-    "pl": "Zostawił coś u przewodniczki w Bratysławie. Co ci dała?",
-    "sk": "Niečo nechal u sprievodkyne v Bratislave. Čo ti dala?"
+    "cs": "Něco nechal u průvodkyně v Prešpurku. Co ti dala?",
+    "en": "He left something with the guide in Pressburg. What did she give you?",
+    "pl": "Zostawił coś u przewodniczki w Preszburgu. Co ci dała?",
+    "sk": "Niečo nechal u sprievodkyne v Prešporku. Čo ti dala?"
   },
   "zofia_hint": {
     "cs": "V jeho dopise se píše o mosazném klíči od archivu.",
@@ -397,7 +397,7 @@
     "ru": "Уходите. После таких угроз разговор окончен."
   },
   "lev_bye": {
-    "cs": "Tři cesty jsou otevřené: Anglie; Německo, Nizozemsko a Dánsko; Itálie, Francie a Španělsko. Získej čočku, prstenec a sluneční kotouč. Všechny cesty vedou do Řecka.",
+    "cs": "Tři cesty jsou otevřené: Anglie; Německo, Holandsko a Dánsko; Itálie, Francie a Španělsko. Získej čočku, prstenec a sluneční kotouč. Všechny cesty vedou do Řecka.",
     "en": "Three paths are open: England; Germany, the Netherlands and Denmark; Italy, France and Spain. Gather the lens, ring and sun disc. All paths lead to Greece.",
     "ru": "Три пути открыты: Англия; Германия, Нидерланды и Дания; Италия, Франция и Испания. Собери линзу, кольцо и солнечный диск. Все пути ведут в Грецию."
   },
@@ -536,10 +536,10 @@
     "sk": "Archivár vo Ľvove vraj neverí iba príbehom. Vezmi mosadzný kľúč, inak truhlicu neotvorí."
   },
   "oles_rumorLocal": {
-    "cs": "Prý domácí duch přerovnává knihy ve sklepě archivu. Vinil jsem naši kočku, dokud jsem nenašel svazek na polici, kam nedosáhne.",
-    "en": "They say a house spirit rearranges the books in the archive cellar. I blamed our cat, until I found a volume on a shelf she cannot reach.",
-    "uk": "Кажуть, домовик переставляє книжки в підвалі архіву. Я звинувачував нашого кота, доки не знайшов том на полиці, до якої він не дістанеться.",
-    "sk": "Vraj domáci duch premiestňuje knihy v pivnici archívu. Vinil som našu mačku, kým som nenašiel zväzok na polici, kam nedosiahne."
+    "en": "A refugee brought a Mongol summons demanding tribute. Another counted scouts at the river crossings. The seals match, though the witnesses never met. We copy their accounts before anyone can burn them.",
+    "cs": "Uprchlík přinesl mongolskou výzvu požadující tribut. Jiný počítal zvědy u brodů. Pečeti souhlasí, přestože se svědkové nikdy nesetkali. Opisujeme jejich svědectví, než je někdo stihne spálit.",
+    "uk": "Біженець приніс монгольську вимогу данини. Інший бачив розвідників біля переправ. Печатки збігаються, хоча свідки ніколи не зустрічалися. Ми переписуємо їхні свідчення, поки хтось їх не спалив.",
+    "sk": "Utečenec priniesol mongolskú výzvu požadujúcu tribút. Iný počítal zvedov pri brodoch. Pečate súhlasia, hoci sa svedkovia nikdy nestretli. Opisujeme ich svedectvá, skôr než ich niekto spáli."
   },
   "oles_rumorTrail": {
     "cs": "Cestovatelé říkají, že astronom v Novgorodu pozná stříbrnou hvězdu. Cestou ji neprodávej.",
@@ -548,9 +548,9 @@
     "sk": "Cestovatelia hovoria, že astronóm v Novgorode spozná striebornú hviezdu. Cestou ju nepredávaj."
   },
   "lev_rumorLocal": {
-    "cs": "Dřevorubci mluví o lešijovi, který si půjčuje známé hlasy. Mapuji hvězdy, ne lesní duchy; přesto bych v noci za voláním z cesty nesešel.",
-    "en": "Woodcutters speak of a leshy that borrows familiar voices. I chart the stars, not forest spirits; still, I would not follow a call off the road at night.",
-    "ru": "Дровосеки говорят о лешем, который подражает знакомым голосам. Я составляю карты звёзд, а не лесных духов; всё же ночью не сошёл бы с дороги на зов."
+    "en": "The courier’s Mongol seal is genuine. Their commanders demand submission, and scouts are counting our crossings. The hosts are still far east; that distance is the time we have left to prepare.",
+    "cs": "Poslova mongolská pečeť je pravá. Jejich velitelé žádají podrobení a zvědové počítají naše brody. Vojska jsou stále daleko na východě; ta vzdálenost je čas, který nám zbývá na přípravu.",
+    "ru": "Монгольская печать гонца подлинная. Их военачальники требуют покорности, а разведчики считают наши переправы. Войска ещё далеко на востоке; это расстояние — время, которое осталось нам на подготовку."
   },
   "lev_rumorTrail": {
     "cs": "Říká se, že devátý poledník není čára na běžné mapě, ale tajné znamení. Hledej stejné symboly v dopisech.",
@@ -562,8 +562,8 @@
     "en": "Booksellers say a small phrasebook you actually read is better than a large one left in your satchel."
   },
   "pragueShop_rumorTrail": {
-    "cs": "Lidé se chystají za hranice bez slovníku. Já bych si před Bratislavou přečetl příhraniční slovník.",
-    "en": "People head across the border without a dictionary. I would read the border phrasebook before Bratislava."
+    "cs": "Lidé se chystají za hranice bez slovníku. Já bych si před Prešpurkem přečetl příhraniční slovník.",
+    "en": "People head across the border without a dictionary. I would read the border phrasebook before Pressburg."
   },
   "slovakShop_rumorLocal": {
     "cs": "Převozník říká, že mu po soumraku pod lodí klepe vodník. Slyšela jsem to také, ale uvolněná prkna znějí skoro stejně.",
@@ -1143,9 +1143,9 @@
     "no": "Ja. Jeg søker den siste porten i Irland."
   },
   "ingrid_clue": {
-    "cs": "Dones severní znamení do Stockholmu. Tamní kartograf zná další zastávku.",
-    "en": "Take the northern token to Stockholm. A mapmaker there knows the next stage.",
-    "no": "Ta nordmerket til Stockholm. En karttegner der kjenner neste etappe."
+    "cs": "Dones severní znamení do Stockholmu. Tamní kartograf zná další zastávku. U severní brány visí těla prázdných ptačích klecí. Muži v měděných maskách kupují jména svědků; neposkytuj jim seznam těch, kteří ti pomohli.",
+    "en": "Take the northern token to Stockholm. A mapmaker there knows the next stage. Empty birdcages hang at the northern gate. Men in copper masks buy witnesses’ names; never give them the list of those who helped you.",
+    "no": "Ta nordmerket til Stockholm. En karttegner der kjenner neste etappe. Tomme fuglebur henger ved nordporten. Menn med kobbermasker kjøper vitners navn. Ikke gi dem navnene på hjelperne dine."
   },
   "ingrid_accept": {
     "cs": "Děkuji. Vydám se do Švédska.",
@@ -1173,14 +1173,14 @@
     "sv": "Ja. Jag behöver vägen till Finland."
   },
   "erik_clue": {
-    "cs": "Tady je mapa polární záře. Dones ji Aino do Helsinek.",
-    "en": "Here is the aurora chart. Take it to Aino in Helsinki.",
-    "sv": "Här är norrskenskartan. Ta den till Aino i Helsingfors."
+    "cs": "Tady je mapa polární záře. Dones ji Aino do Helsinek. Na každé mapě se někdo pokusil vyškrábat jednu hvězdu. Archivář zmizel poté, co prodal kopii registru. Úhledný záznam ještě nemusí být pravdivý.",
+    "en": "Here is the aurora chart. Take it to Aino in Turku. Someone has tried to scrape one star from every chart. An archivist vanished after selling a register copy. A tidy record need not be a truthful one.",
+    "sv": "Här är norrskenskartan. Ta den till Aino i Åbo. Någon har skrapat bort en stjärna från varje karta. En arkivarie försvann efter att ha sålt en kopia av registret. Ett prydligt dokument behöver inte vara sant."
   },
   "erik_accept": {
     "cs": "Děkuji. Donesu mapu do Helsinek.",
-    "en": "Thank you. I will take the chart to Helsinki.",
-    "sv": "Tack. Jag tar kartan till Helsingfors."
+    "en": "Thank you. I will take the chart to Turku.",
+    "sv": "Tack. Jag tar kartan till Åbo."
   },
   "erik_bye": {
     "cs": "Poslední část výpravy vyžaduje trpělivost.",
@@ -1203,9 +1203,9 @@
     "fi": "Kyllä. Etsin Irlannin viimeistä porttia."
   },
   "aino_clue": {
-    "cs": "Mapa odhaluje význam tohoto klíče. Dones jej do Galway v Irsku.",
-    "en": "The chart reveals the meaning of this key. Take it to Galway in Ireland.",
-    "fi": "Kartta paljastaa tämän avaimen merkityksen. Vie se Galwayhin Irlantiin."
+    "cs": "Mapa odhaluje význam tohoto klíče. Dones jej do Gaillimh v Irsku. Z přístavu přišla bedna popela a prázdný seznam pasažérů. Hlasy někdo maže z papíru dřív, než zmizí lidé. V Irsku rozhoduj podle důkazů, ne podle slibované ochrany.",
+    "en": "The chart reveals the meaning of this key. Take it to Gaillimh in Ireland. A chest of ash and a blank passenger list arrived from the harbour. Someone erases voices from paper before people disappear. In Ireland, follow evidence rather than promises of protection.",
+    "fi": "Kartta paljastaa tämän avaimen merkityksen. Vie se Gaillimhhin Irlantiin. Satamasta tuli arkku tuhkaa ja tyhjä matkustajaluettelo. Joku poistaa nimet ennen kuin ihmiset katoavat. Irlannissa seuraa todisteita, älä suojelulupauksia."
   },
   "aino_accept": {
     "cs": "Děkuji. Donesu klíč do Irska.",
@@ -1233,9 +1233,9 @@
     "hu": "Igen. Tanácsot kérek az utolsó utazáshoz."
   },
   "eszter_clue": {
-    "cs": "Tento kompas je dar. Tvá cesta do Irska vede přes Finsko.",
-    "en": "This compass is a gift. Your route to Ireland leads through Finland.",
-    "hu": "Ez az iránytű ajándék. Írországba Finnországon át vezet az utad."
+    "en": "This compass is a gift. Sail for Ireland through Turku. Eastern reports agree: Mongol hosts are gathering. Some scholars believe the western city’s inventors and magicians left arts beyond ours, perhaps our only defence against Europe’s subjugation. It is a theory, not a promise. Find the city before anyone claims its power.",
+    "cs": "Tento kompas je dar. Do Irska pluj přes Turku. Zprávy z východu se shodují: mongolská vojska se shromažďují. Někteří učenci věří, že vynálezci a mágové západního města zanechali znalosti přesahující naše možnosti, snad jedinou obranu před podrobením Evropy. Je to teorie, ne příslib. Najdi město, než si někdo přivlastní jeho moc.",
+    "hu": "Ez az iránytű ajándék. Turkun át hajózz Írországba. A keleti jelentések szerint mongol seregek gyülekeznek. Egyes tudósok úgy vélik, a nyugati város feltalálói és mágusai a miénknél fejlettebb tudást hagytak hátra, talán Európa egyetlen védelmét a leigázás ellen. Ez elmélet, nem ígéret. Találd meg a várost, mielőtt valaki kisajátítja az erejét."
   },
   "eszter_accept": {
     "cs": "Děkuji. Budu kompas opatrovat.",
@@ -1263,19 +1263,19 @@
     "ga": "Tá. Táim réidh don chéim dheireanach."
   },
   "niamh_clue": {
-    "cs": "Klíč otevírá bránu. Není tu zlatý poklad, ale knihovna jazyků. Přikryté misky se nedotýkej. Někteří zde skládají zemi sliby, o kterých nemluví nahlas.",
-    "en": "The key opens the gate. This is no hoard of gold, but a library of languages. Leave the covered bowl untouched. Some here keep vows to the earth that they do not speak aloud.",
-    "ga": "Osclaíonn an eochair an geata. Ní taisce óir atá anseo, ach leabharlann na dteangacha. Ná bain leis an mbabhla clúdaithe. Tugann daoine anseo gealltanais don talamh nach labhraíonn siad os ard fúthu."
+    "en": "The key opens only the outer gate. Three sanctuaries hold the seals of welcome, testimony, and concordance. Search them in any order, listen to their keepers, and bring all three seals back with the astrolabe. A patron in a copper mask offers protection, but demands the refuge register and sole control of the voices. Once signed, his charter can be annulled only with Eszter’s independent counterseal in Buda. Read the price before you answer.",
+    "cs": "Klíč otevírá jen vnější bránu. Tři svatyně uchovávají pečeti přijetí, svědectví a porozumění. Prohledej je v libovolném pořadí, vyslechni jejich správce a přines všechny tři pečeti zpět spolu s astrolábem. Patron v měděné masce nabízí ochranu, ale požaduje registr uprchlíků a výhradní moc nad hlasy. Po podpisu lze jeho listinu zrušit jen s Eszteřinou nezávislou protipečetí v Budíně. Než odpovíš, přečti si cenu.",
+    "ga": "Ní osclaíonn an eochair ach an geata seachtrach. Tá trí shéala sna tearmainn: fáilte, fianaise agus comhthuiscint. Tabhair ar ais iad leis an réaltroláb. Tairgeann pátrún le masc copair cosaint. Iarrann sé clár na ndídeanaithe agus smacht ar na guthanna. Ní chealófar a chonradh ach le frithshéala Eszter i mBuda. Léigh an praghas."
   },
   "niamh_accept": {
-    "cs": "Podělím se o tyto vědomosti se všemi.",
-    "en": "I will share this knowledge with everyone.",
-    "ga": "Roinnfidh mé an t-eolas seo le gach duine."
+    "en": "The three seals are here. Let us open the library to every voice.",
+    "cs": "Všechny tři pečeti jsou zde. Otevřeme knihovnu každému hlasu.",
+    "ga": "Tá na trí shéala anseo. Osclaímis an leabharlann do gach guth."
   },
   "niamh_bye": {
-    "cs": "Tvá výprava je dokončena. Vítej doma, poutníku.",
-    "en": "Your voyage is complete. Welcome home, traveller.",
-    "ga": "Tá do thuras críochnaithe. Fáilte abhaile, a thaistealaí."
+    "en": "The astrolabe shines over the open library. Eliáš steps from the courtyard with the sailors and the families they sheltered. Your journey has restored more than an instrument: these voices can finally tell their own stories.",
+    "cs": "Astroláb září nad otevřenou knihovnou. Eliáš přichází z nádvoří s námořníky a rodinami, kterým poskytli útočiště. Tvá cesta obnovila víc než přístroj: tyto hlasy konečně mohou vyprávět vlastní příběhy.",
+    "ga": "Tá an leabharlann oscailte. Tagann Eliáš isteach leis na mairnéalaigh agus na teaghlaigh. Is féidir le gach guth a scéal féin a insint anois."
   },
   "niamh_browse": {
     "cs": "Mohu si prohlédnout knihy?",
@@ -1283,8 +1283,8 @@
     "ga": "An féidir liom na leabhair a fheiceáil?"
   },
   "salt_errand_offer": {
-    "cs": "Potřebuji sůl od Dany v Bratislavě. Přineseš ji?",
-    "en": "I need salt from Dana in Bratislava. Will you bring it?"
+    "cs": "Potřebuji sůl od Dany v Prešpurku. Přineseš ji?",
+    "en": "I need salt from Dana in Pressburg. Will you bring it?"
   },
   "salt_errand_accept": {
     "cs": "Přinesu ti sůl.",

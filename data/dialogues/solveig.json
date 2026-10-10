@@ -1,0 +1,106 @@
+{
+  "id": "solveig",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "winter_stores_offer",
+      "contexts": [
+        {
+          "requires": "winter_stores_done",
+          "phrase": "winter_stores_done"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "winter_stores_accept",
+          "next": "task",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "winter_stores_started"
+            }
+          ]
+        },
+        {
+          "phrase": "winter_stores_deliver",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "winter_stores_started",
+            "quantities": {
+              "ore": 2
+            }
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "winter_stores",
+              "gold": 40,
+              "take": [
+                {
+                  "item": "ore",
+                  "count": 2
+                }
+              ],
+              "items": [
+                {
+                  "item": "travel_rations",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "winter_stores_done"
+            }
+          ]
+        }
+      ]
+    },
+    "task": {
+      "phrase": "winter_stores_offer",
+      "choices": [
+        {
+          "phrase": "winter_stores_deliver",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "winter_stores_started",
+            "quantities": {
+              "ore": 2
+            }
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "winter_stores",
+              "gold": 40,
+              "take": [
+                {
+                  "item": "ore",
+                  "count": 2
+                }
+              ],
+              "items": [
+                {
+                  "item": "travel_rations",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "winter_stores_done"
+            }
+          ]
+        }
+      ]
+    },
+    "done": {
+      "phrase": "winter_stores_done",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "leipzig_restitution",
+  "kind": "recovery",
+  "title": "The seized Leipzig register",
+  "description": "Your accusation closed Konrad’s workshop. Travel to Buda in Hungary, recover the exile archive’s duplicate, and ask Eszter to certify a retraction. Then return to Leipzig and verify the original evidence.",
+  "delayDays": 3,
+  "location": "budapest",
+  "giver": "eszter",
+  "sourceLocation": "budapest",
+  "sourceAction": "leipzig_restitution_search",
+  "repairItem": "leipzig_restitution_proof"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "riddle_nature",
+  "name": "On Light and Returning Voices",
+  "type": "reference",
+  "title": {
+    "en": "On Light and Returning Voices",
+    "cs": "O světle a vracejících se hlasech",
+    "de": "Über Licht und wiederkehrende Stimmen",
+    "it": "Sulla luce e sulle voci che ritornano",
+    "hu": "A fényről és a visszatérő hangokról",
+    "ga": "Faoin Solas agus na Guthanna a Fhilleann"
+  },
+  "pages": [
+    {
+      "title": {
+        "en": "Light and stone",
+        "cs": "Světlo a kámen"
+      },
+      "text": {
+        "en": "A cliff sends a traveller’s cry back a moment later. Soft earth and open fields swallow it. Light travels differently: when a body blocks it, the dark outline depends on the number and position of the lamps.",
+        "cs": "Skála vrací poutníkovo volání o chvíli později. Měkká půda a otevřená pole je pohlcují. Světlo se chová jinak: když mu tělo brání v cestě, tmavý obrys závisí na počtu a poloze lamp."
+      }
+    },
+    {
+      "title": {
+        "en": "What is absent",
+        "cs": "Co chybí"
+      },
+      "text": {
+        "en": "The mason measures stone; the gravedigger measures the space left after stone and earth are removed. In the cloister, the rule of quiet holds only until someone utters a word.",
+        "cs": "Kameník měří kámen; hrobník měří prostor, který zůstane po odebrání kamene a země. Klášterní pravidlo mlčení platí jen do chvíle, kdy někdo vysloví slovo."
+      }
+    }
+  ]
+}

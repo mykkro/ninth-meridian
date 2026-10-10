@@ -1,6 +1,6 @@
 {
   "id": "londonShop",
-  "name": "London · bookseller",
+  "name": "Edmund · bookseller",
   "language": "en",
   "dialogue": "londonShop",
   "stock": [
@@ -8,5 +8,5 @@
     "scroll_en",
     "scroll_native"
   ],
-  "description": "London · bookseller. Speaks English."
+  "description": "Edmund · bookseller. Speaks English."
 }

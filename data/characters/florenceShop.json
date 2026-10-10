@@ -1,6 +1,6 @@
 {
   "id": "florenceShop",
-  "name": "Florence · bookseller",
+  "name": "Giovanni · bookseller",
   "language": "it",
   "dialogue": "florenceShop",
   "stock": [
@@ -9,5 +9,5 @@
     "scroll_native",
     "latin_glossary"
   ],
-  "description": "Florence · bookseller. Speaks Italian."
+  "description": "Giovanni · bookseller. Speaks Italian."
 }

@@ -165,6 +165,22 @@
     {
       "type": "phrase",
       "phrase": "german_route_complete"
+    },
+    {
+      "type": "phrase",
+      "phrase": "consequence_leave"
+    },
+    {
+      "type": "phrase",
+      "phrase": "consequence_depart"
+    },
+    {
+      "type": "phrase",
+      "phrase": "leipzig_restitution_failure"
+    },
+    {
+      "type": "phrase",
+      "phrase": "hamburg_restitution_failure"
     }
   ],
   "description": "A limited German to Czech dictionary. Read it to study its entries."

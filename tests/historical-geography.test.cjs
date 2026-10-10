@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const {world}=require('./fixtures.cjs');const heraldry=require('../heraldry.js');
+const briefs=require('../data/country-context.json');const place=id=>world.locations.find(place=>place.id===id);
+assert.equal(place('helsinki'),undefined);assert.equal(place('turku').name,'Turku');assert.deepEqual(place('turku').coordinates,{lon:22.2666,lat:60.4518});assert.equal(place('turku').country,'Finland');
+assert.equal(place('toledo').realm,'Crown of Castile');assert.equal(place('amsterdam').realm,'County of Holland');assert.equal(place('copenhagen').realm,'Kingdom of Denmark · Kalmar Union');assert.equal(place('oslo').realm,'Kingdom of Norway · Kalmar Union');assert.equal(place('stockholm').realm,'Kingdom of Sweden');assert.equal(place('turku').realm,'Österland · Kingdom of Sweden');assert.equal(place('athens').realm,'Duchy of Athens');
+for(const text of Object.values(briefs).flatMap(brief=>Object.values(brief)))assert.ok(!/Lutheran|Lutersk|protestant/i.test(text),'No established Reformation institutions in 1453');
+assert.match(briefs.Denmark.en,/Christian I/);assert.match(briefs.Sweden.en,/Charles VIII/);assert.match(briefs.Netherlands.en,/1433/);
+for(const location of world.locations)for(const path of [heraldry.country(location.realm||location.country),heraldry.city(location.id)])assert.ok(fs.existsSync(path),path);
+const context={};vm.createContext(context);vm.runInContext(fs.readFileSync('i18n.js','utf8')+";globalThis.example=cityNames(cityNames('Turku', 'en'),'en');globalThis.castile=t('Crown of Castile');",context);assert.equal(context.example,'Turku / Åbo');assert.equal(context.castile,'Kastilská koruna');
+const Engine=require('../engine.js'),game=new Engine(world);assert.equal(game.currentDate,'1453-05-01T00:00:00.000Z');game.state.location='turku';game.state.milestones=['finland'];assert.ok(game.transportOptions('galway').some(option=>option.id==='boat'));assert.ok(!game.transportOptions('galway').some(option=>option.id==='horse'));
+assert.ok(world.companions.sigrid.route.includes('turku'));assert.ok(!world.companions.sigrid.route.includes('helsinki'));
+console.log('Passed: 1453 realms, Turku migration and coordinates, Nordic crowns, Reformation cleanup, crests, idempotent city labels, companion routes, and island passage.');

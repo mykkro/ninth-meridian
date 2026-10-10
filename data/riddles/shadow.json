@@ -1,0 +1,27 @@
+{
+  "id": "shadow",
+  "question": {
+    "en": "I follow your feet in sunlight, but carry no weight. A lamp can give you two of me. What am I?",
+    "cs": "Na slunci sleduji tvé kroky, ale nic nevážím. Lampa ti může dát dva ze mě. Co jsem?"
+  },
+  "answers": [
+    {
+      "en": "A footprint",
+      "cs": "Stopa"
+    },
+    {
+      "en": "A shadow",
+      "cs": "Stín"
+    },
+    {
+      "en": "A reflection",
+      "cs": "Odraz"
+    }
+  ],
+  "correct": 1,
+  "stake": 100,
+  "explanation": {
+    "en": "Two lights may cast two dark shapes from a single traveller.",
+    "cs": "Dvě světla mohou vrhat dva tmavé tvary od jediného poutníka."
+  }
+}

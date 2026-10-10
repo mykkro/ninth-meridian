@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict');
 const {world}=require('./fixtures.cjs');
 const {assembleWorld}=require('../content.js');
-const Engine=require('../engine.js');
+const Engine=require('./story-engine.cjs');
 const clone=value=>JSON.parse(JSON.stringify(value));
 function say(game,phrase){const index=game.node.choices.findIndex(choice=>choice.phrase===phrase);assert.ok(index>=0,`Missing ${phrase}`);game.choose(index);}
 function recruit(game,id){game.open(id);if(id==='mira'){say(game,'mira_ask');say(game,'mira_answer');say(game,'mira_accept');say(game,'mira_join');}else say(game,'companion_join');}
@@ -58,7 +58,7 @@ for(const test of [
  {id:'sofie',route:['berlin','amsterdam','copenhagen'],waiting:'copenhagen',reason:'arrival'},
  {id:'lucia',route:['florence','lyon','toledo','athens'],waiting:'toledo',reason:'departure'},
  {id:'rowan',route:['london','athens'],waiting:'athens',reason:'arrival'},
- {id:'sigrid',route:['oslo','stockholm','helsinki','galway'],waiting:'galway',reason:'arrival'}
+ {id:'sigrid',route:['oslo','stockholm','turku','galway'],waiting:'galway',reason:'arrival'}
 ]){
  const local=unlocked();local.travel(test.route[0]);recruit(local,test.id);
  for(const destination of test.route.slice(1))local.travel(destination);

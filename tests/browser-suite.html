@@ -26,11 +26,11 @@ function load(path,parent=location.href){
 }
 (async()=>{
  let failed=0;
- for(const name of ['engine','content','dictionaries','rumors','branches','continuation','shops','gathering','banter','jokes','map','companions','regions']){
+ for(const name of ['engine','content','dictionaries','rumors','branches','continuation','shops','gathering','banter','jokes','map','companions','regions','finale']){
   try{await load(`./${name}.test.cjs`);messages.push(`PASS ${name}`);}
   catch(error){failed++;messages.push(`FAIL ${name}: ${error.stack}`);}
  }
- messages.push(failed?`${failed} suite(s) failed`:'ALL 13 SUITES PASSED');
+ messages.push(failed?`${failed} suite(s) failed`:'ALL 14 SUITES PASSED');
  output.textContent=messages.join('\n');output.dataset.status=failed?'failed':'passed';
 })();
 </script>

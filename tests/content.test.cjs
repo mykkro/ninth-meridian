@@ -11,7 +11,7 @@ invalid=clone(worldData);invalid.items.sk_cs.entries.push({type:'phrase',phrase:
 invalid=clone(dialogueData);invalid.dialogues.ada.nodes.greeting.choices[0].quality='incorrect-tag';assert.throws(()=>assembleWorld(worldData,invalid));
 async function testLoading(){
  const requested=[];
- const world=await loadWorld(async path=>{requested.push(path);assert.ok(files[path],`Unknown file ${path}`);return {ok:true,json:async()=>clone(files[path])};});
+ const world=await loadWorld(async (path,options)=>{assert.equal(options.cache,'no-cache','Content revalidates after updates');requested.push(path);assert.ok(files[path],`Unknown file ${path}`);return {ok:true,json:async()=>clone(files[path])};});
  assert.equal(requested.length,Object.keys(files).length);assert.ok(world.phrases.mira_ask.sk);assert.equal(world.companions.mira.native,'sk');
  const duplicate=clone(bundles);duplicate.characters[1].id=duplicate.characters[0].id;assert.throws(()=>assembleContent(manifest,duplicate));
  const badManifest=clone(manifest);badManifest.content.items[0]='../outside.json';assert.throws(()=>assembleContent(badManifest,bundles));

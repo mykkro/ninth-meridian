@@ -1,0 +1,36 @@
+{
+  "id": "irish_sanctuaries",
+  "kind": "investigation",
+  "title": "The three Irish sanctuaries",
+  "description": "Search the Teampall na Fuinseoige, the Scrín na Taoide, and the Mainistir na Naoi Réalta in any order. Examine each site, compare the evidence with its keeper, and return all three seals to Niamh in Gaillimh.",
+  "started": "ireland_started",
+  "completion": "ireland",
+  "location": "galway",
+  "giver": "niamh",
+  "milestones": [
+    "ireland_started",
+    "ash-temple_verified",
+    "tide-shrine_verified",
+    "star-abbey_verified"
+  ],
+  "steps": [
+    {
+      "location": "ash-temple",
+      "giver": "ciaran",
+      "milestone": "ash-temple_verified",
+      "label": "Recover the seal of welcome"
+    },
+    {
+      "location": "tide-shrine",
+      "giver": "roisin",
+      "milestone": "tide-shrine_verified",
+      "label": "Recover the seal of testimony"
+    },
+    {
+      "location": "star-abbey",
+      "giver": "fintan",
+      "milestone": "star-abbey_verified",
+      "label": "Recover the seal of concordance"
+    }
+  ]
+}

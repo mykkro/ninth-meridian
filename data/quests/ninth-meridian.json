@@ -1,7 +1,7 @@
 {
   "id": "ninth-meridian",
   "title": "The Ninth Meridian",
-  "description": "Find the five witnesses of the vanished cartographer and recover the pieces of the Concordance Astrolabe.",
+  "description": "Follow the vanished cartographer across Europe, restore the Concordance Astrolabe, and uncover the three Irish sanctuary seals to open the library of languages.",
   "milestones": [
     "prague",
     "bratislava",
@@ -23,7 +23,12 @@
     "hungary",
     "ireland",
     "german_route",
-    "italian_route"
+    "italian_route",
+    "ireland_started",
+    "ash-temple_verified",
+    "tide-shrine_verified",
+    "star-abbey_verified",
+    "westward_departure"
   ],
   "branches": [
     {
@@ -61,16 +66,35 @@
       ]
     }
   ],
-  "finalMilestone": "ireland",
+  "finalMilestone": "westward_departure",
   "epilogue": {
     "locations": [
       "oslo",
       "stockholm",
-      "helsinki",
-      "galway"
+      "turku",
+      "galway",
+      "ash-temple",
+      "tide-shrine",
+      "star-abbey"
     ],
     "optional": [
       "budapest"
+    ]
+  },
+  "resolutionMilestone": "ireland",
+  "departureRequires": {
+    "milestones": [
+      "ireland",
+      "ash-temple_verified",
+      "tide-shrine_verified",
+      "star-abbey_verified"
+    ],
+    "items": [
+      "astrolabe",
+      "irish_key",
+      "ash-temple_seal",
+      "tide-shrine_seal",
+      "star-abbey_seal"
     ]
   }
 }

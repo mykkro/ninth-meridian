@@ -8,7 +8,9 @@ A browser RPG prototype about an epic voyage through Europe, where understanding
 
 See [the design document](docs/design.md) for the game philosophy, gameplay systems, content structures, runtime state, and development direction.
 
-Country labels have medieval flavor—Bohemia, Upper Hungary, the Holy Roman Empire, Ruthenia, and other kingdoms and regions—while the map uses today's borders. These are story names rather than a reconstruction of one historical year.
+Six lore books cover alchemy, broken crowns, the eastern invaders, western tides, Aurelith’s workshops, and letters from the threatened eastern roads. They live in [data/books.json](data/books.json): three original volumes have three pages and three longer volumes have six pages, with two paragraphs per page in all 20 game languages. Local library copies can be read in their original language. Short books can be interpreted by a compatible travelling companion or translated with a scroll; heavy six-page tomes must be left with a paid library scholar for three days, then collected for full translations. See [lore book details](docs/lore-books.md).
+
+Country labels have medieval flavor—Bohemia, Upper Hungary, the Holy Roman Empire, Kyivan Rus, the Novgorod Republic, and other kingdoms and regions—while the map uses today's borders. These are story names rather than a reconstruction of one historical year.
 
 Drag the minimap with the left mouse button to pan, and use the wheel to zoom around the pointer. **Reset view** restores the discovered-region view. City clicks still travel; dragging over a city does not. Zoom buttons and keyboard city activation remain available.
 
@@ -20,11 +22,11 @@ Talk to Ada about Eliáš, ask for a hint or identify the nine-pointed star, and
 
 ## Country investigations
 
-Germany now branches from Berlin to Leipzig and Hamburg; Italy branches from Florence to Bologna and Venice. Visit the two cities in either order. Each has a witness and an expert, with a choice between checking written records and reconstructing physical evidence. Record the witness account, solve the discrepancy, then return both city findings to Otto or Luca. Amsterdam and Lyon open after that return visit. Each city pays eight coins once. Sofie and Lucia accompany these detours, and the existing German/Italian notes include the new phrases. The journal lists each lead and provides visit buttons.
+Germany now branches from Berlin to Leipzig and Hamburg; Italy branches from Florence to Bologna and Venice. Visit the two cities in either order. Each has a witness and an expert, with a choice between checking written records and reconstructing physical evidence. Record the witness account, solve the discrepancy, then return both city findings to Otto or Luca. Amsterdam and Lyon open after that return visit. Each city pays eight coins once. Klara and Lucia accompany these detours, and the existing German/Italian notes include the new phrases. The journal lists each lead and provides visit buttons.
 
 ## Three relic routes and the Greek reunion
 
-The prototype now has 22 destinations, a playable reunion, and a final journey to Ireland. Novgorod unlocks three independent starting destinations: London, Berlin, and Florence. You can switch between branches and revisit earlier locations without losing progress.
+The prototype now has 25 destinations, a playable reunion, and a final journey to Ireland. Novgorod unlocks three independent starting destinations: London, Berlin, and Florence. You can switch between branches and revisit earlier locations without losing progress.
 
 | Route | Journey | Evidence and reward |
 | --- | --- | --- |
@@ -64,13 +66,63 @@ New destinations have local-language quest NPCs and booksellers, with affordable
 
 ## Beyond Greece: the last road to Ireland
 
-The Greek reunion grants the restored astrolabe and unlocks Oslo, Norway. Ingrid gives a northern token; Erik in Stockholm, Sweden exchanges its evidence for an aurora chart; Aino in Helsinki, Finland gives the key to the last Irish gate. Niamh in Galway speaks Irish and welcomes you to the library of languages. **Ireland is the final destination and the only full-voyage completion milestone.** Greece now ends the relic-gathering phase.
+The Greek reunion grants the restored astrolabe and unlocks Oslo, Norway. Ingrid gives a northern token; Erik in Stockholm, Sweden exchanges its evidence for an aurora chart; Aino in Turku, Finland gives the key to the last Irish gate. Niamh in Gaillimh speaks Irish and opens three sanctuary leads after seeing the restored astrolabe and Irish key. Search the Teampall na Fuinseoige, Scrín na Taoide, and Mainistir na Naoi Réalta in any order: collect physical evidence, solve the keeper’s puzzle, and earn a seal. Bring all three seals back to Niamh to open the library of languages. **Ireland resolves the mysteries; embarking west from Gaillimh concludes the story.** Greece now ends the relic-gathering phase.
 
 Budapest, Hungary is unlocked after Greece as an optional detour. Eszter offers wisdom and a scholar's compass, but visiting Hungary is never required for Ireland. The new guides also sell limited dictionaries and translation scrolls through their dialogue options. Norwegian, Swedish, Finnish, Hungarian, and Irish all use the existing knowledge and translation rules.
 
+## Sages, wagers, and library clues
+
+Radovan in Prague, Anselm in Berlin, Isadora in Bologna, Katalin in Budapest, and Malachy in Gaillimh offer ten optional riddles. Each wager costs **one silver coin**. A correct answer pays two silver including the original stake; a wrong answer loses the stake. The terms appear before payment, and each riddle allows one answer per voyage. Closing the conversation or travelling away preserves an unfinished wager; finish it with the original sage before betting elsewhere. These encounters use a shared tongue, displayed in the chosen Czech or English interface language.
+
+The five cities have free library shelves containing three reference books: *On Light and Returning Voices*, *The Traveller’s Instruments*, and *Leaves, Names and Memory*. Their observations give clues to the riddles. Books stay in their libraries and do not grant money or main-quest progress. Completed wagers and library consultations appear in the event journal.
+
+Riddles are registered in `content.riddles`, with bilingual questions, answer options, explanations, a correct-answer index, and a copper-denominated stake. Sage characters list their riddle IDs; locations list reference-book IDs in `riddleBooks`. Reference items contain bilingual page titles and text. Validation rejects missing translations, invalid stakes/answers, reused riddles, and broken library references. `tests/riddles.test.cjs` covers settlement and replay protection; `tests/riddles-ui.html` exercises the actual wager and library controls.
+
+## Dangerous choices and restitution
+
+The closing chapters now include copper-masked patrons buying witnesses’ names, emptied refuges, mutilated manuscripts, and a library register that can be used to threaten its readers. Comic banter remains in earlier encounters; Athens and the northern/final main characters use sober dialogue.
+
+Evidence-based answers can become signed orders. The prompt explains the stakes before commitment, and **I need time to study** exits without changing funds, days, or progress. Reckless answers remain visible even with fluent language knowledge; choosing them grants no practice points. A second answer or conversation replay cannot clear the resulting obstruction.
+
+| Mistake | Consequence | Required restitution |
+| --- | --- | --- |
+| Leipzig: accuse the printer before reconciling the proofs | Workshop sealed; apprentice detained; 3 days lost | Find the witness duplicate in Buda’s exile archive and have Eszter certify a retraction |
+| Hamburg: authorize arrest using the clock instead of tide evidence | Ferryman detained; witnesses scattered; 4 days lost | Recover a harbour counter-record in Buda and bring it to Eszter |
+| Bologna: cut the solar leaf to force its sequence | Original text destroyed; 3 days lost | Find Buda’s old copy and have Eszter reconstruct it |
+| Venice: force the plate to match its reflection | Mirror cracked; 4 days lost | Recover the calibration duplicate in Buda and have Eszter certify a replacement |
+| Teampall na Fuinseoige: turn the refuge over to wardens | Families expelled; seal withheld; 5 days lost | Find the displaced families in Gaillimh and bring their testimony to Niamh |
+| Tide shrine: condemn the rescue account | Róisín detained; causeway closed; 5 days lost | Search the shrine’s low-tide shelter for another deposition; return it to Niamh |
+| Star abbey: burn the other languages | Archive damaged; seal withheld; 6 days lost | Recover the hidden palimpsest in the abbey and bring it to Niamh |
+| Gaillimh: surrender the refuge register or authorize one voice to rule | Library barred; copied register threatens families; 7 days lost | Sail to a mainland port, find Buda’s independent counterseal, and have Eszter annul the agreement |
+
+Early mistakes open Buda/Budapest before Greece, and the route remains available after restitution. Eszter’s phrasebook accompanies those cases. Recovery evidence is consumed when the damage is repaired; a repeated mistake starts a fresh recovery source, preventing an exhausted-source dead end. Settled investigations and completed finales cannot be sabotaged by replay. Every active obstruction appears in **Consequences and restitution**, with source and return buttons. The conclusion remembers repaired harms rather than presenting an untouched happy ending.
+
+Run `node tests/consequences.test.cjs` for persistent obstructions, all early cases in both investigation methods, recovery before Greece, repeat recovery, Irish crises, final betrayals, transport rules, and content validation. Open `/tests/consequences-ui.html` for an end-to-end browser check of the journal, travel, evidence, restitution, blocked replay, and scarred Czech/English ending.
+
+## Gaillimh conclusion and late-game errands
+
+Opening the library reveals a western sea chart. The three sanctuary inscriptions and restored astrolabe together point toward a lost land named Aurelith. **Continue exploring** postpones departure; the journal's **Prepare the westward voyage** returns to Gaillimh with normal boat travel when necessary. **Sail west** is available only in Gaillimh after the library resolution, all three sanctuary verifications and seals, and restitution for every active harm. Optional resource errands and riddles are not required.
+
+Embarking records `westward_departure`, the story's completion milestone. A second illustrated screen ends with the ship leaving Ireland and an uncertain shape beyond the mist; arrival at Aurelith remains unwritten. **Revisit Europe** preserves the exploration checkpoint, and **View the ending** reopens the final scene. Neither action repeats departure. **Return to title** preserves the in-memory voyage and offers **Continue voyage**; **A new voyage** explicitly resets progress. Refreshing the page still resets the prototype. The original generated illustration and its prompt are saved in `assets/westward-ending.png` and `assets/westward-ending.prompt.md`.
+
+Six optional local errands add bounded gathering sources, consumed deliveries, and one-time rewards:
+
+| City | Task | Reward (plus 40 copper) |
+| --- | --- | --- |
+| Athens | Thalia’s harbour lights: 2 salt | 2 native translation scrolls |
+| Oslo | Solveig’s winter stores: 2 ore | 3 travel rations |
+| Stockholm | Ylva’s archive shelves: 2 wood | Swedish–Czech Baltic archive phrasebook |
+| Turku | Eeva’s pilgrim remedy: 3 lavender | Irish–Czech sanctuary phrasebook, covering all three finale investigations |
+| Budapest | Bálint’s garden remedy: 3 flowers | 2 healing salves |
+| Gaillimh | Brendan’s refuge shelters: 2 rope | 3 travel rations |
+
+Speak to each giver to unlock their local gathering source. None of these errands is required for the finale. Sanctuary travel stays on the Irish landmass; leaving Ireland still requires returning to Gaillimh for a boat. New portraits, heraldic markers, translated location descriptions, and journal leads are included.
+
+Run `node tests/finale.test.cjs` for all six sanctuary orders, evidence and seal gates, safe study exits, transport rules, replay protection, resource deliveries, phrasebook rewards, and reset. Open `/tests/finale-ui.html` for browser checks of the sanctuary UI, ending, title, resume, Czech copy, and fresh voyage controls.
+
 ## RPG shops and supplies
 
-Eleven additional sellers offer general supplies, food, weapons, or remedies. Prague has a general store, food stall, and arms merchant; Bratislava and Florence have food sellers; Kraków and Oslo have weapon sellers; Berlin has an outfitter; Toledo and Athens have potion sellers; Galway has a general store. They speak their local language, provide supply advice, and can rebuke nonsense or dismiss rude customers.
+Eleven additional sellers offer general supplies, food, weapons, or remedies. Prague has a general store, food stall, and arms merchant; Bratislava and Florence have food sellers; Kraków and Oslo have weapon sellers; Berlin has an outfitter; Toledo and Athens have potion sellers; Gaillimh has a general store. They speak their local language, provide supply advice, and can rebuke nonsense or dismiss rude customers.
 
 The 17 new items include bread, cheese, dried meat, rations, a water flask, rope, torches, bandages, healing and stamina potions, antidote, arrows, an iron sword, short bow, shield, leather armour, and boots. Arrow purchases give **20 arrows for 6 coins**; other purchases give one item. Food, potions, ammunition, and basic supplies stack. New weapons and wearable equipment use `"stackable": false` so duplicate purchases are blocked. Purchases require a shop node, the seller's stock listing, and enough coins.
 
@@ -87,9 +139,9 @@ The companion panel always offers **Talk to companion**, including away from the
 | Tereza, travelling teacher | Prague | Slovak and Polish → Czech | Leaves on arrival in Bratislava; travels only between Prague and Bratislava |
 | Mira, caravan guide | Bratislava, after her clue | Polish and Ukrainian → Slovak | Accompanies the Bratislava–Krakow–Lviv–Novgorod route; leaves before going beyond it |
 | Rowan, wandering librarian | London | English, French, Irish → Czech | Leaves on arrival in Athens or before departing for the northern finale |
-| Sofie, workshop interpreter | Berlin | German, Dutch, Danish, English → Czech | Also visits Leipzig and Hamburg; travels Berlin–Amsterdam–Copenhagen; leaves on arrival in Copenhagen |
+| Klara, workshop interpreter | Berlin | German, Dutch, Danish, English → Czech | Also visits Leipzig and Hamburg; travels Berlin–Amsterdam–Copenhagen; leaves on arrival in Copenhagen |
 | Lucia, manuscript scholar | Florence | Italian, French, Spanish, Latin → Czech | Also visits Bologna and Venice; travels Florence–Lyon–Toledo; leaves before going beyond that route |
-| Sigrid, northern courier | Oslo | Norwegian, Swedish, Finnish, English, Irish → Czech | Travels Oslo–Stockholm–Helsinki–Galway; leaves on arrival in Galway |
+| Sigrid, northern courier | Oslo | Norwegian, Swedish, Finnish, English, Irish → Czech | Travels Oslo–Stockholm–Turku–Gaillimh; leaves on arrival in Gaillimh |
 
 Departures show the companion's farewell and waiting city. **Known companions** records where people you have met can be found. A dismissed companion waits in the current city; a companion leaving before travel stays in the departure city, and one leaving on arrival stays at the destination. They appear in that city's NPC list when you return and can be recruited again. The original home listing moves with them. Re-recruiting does not remove their route limits. Clicking the current destination again does not trigger another arrival.
 
@@ -153,7 +205,7 @@ Current story structure and future expansion ideas:
 1. **The broken map:** Czechia → Slovakia → Poland → Ukraine → Russia. Find the mentor’s trail, a brass key, and a silver star. Implemented prologue.
 2. **The three paths:** England; Germany → Netherlands → Denmark; Italy → France → Spain with a Latin codex. Gather the crystal lens, northern ring, and sun disc. Implemented independent branches.
 3. **The observatory:** Athens, Greece. Reunite the three relics, restore the astrolabe, and find Eliáš. Implemented reunion.
-4. **The last road:** Norway → Sweden → Finland → Ireland, with an optional Hungarian detour. Open the library of languages in Galway. Implemented final phase.
+4. **The last road:** Norway → Sweden → Finland → Ireland, with an optional Hungarian detour. Open the library of languages in Gaillimh. Implemented final phase.
 4. **Future expansion:** add Ireland’s English–Irish manuscripts, Portugal’s maritime archives, Baltic detours, a rival collector’s forgery, and more evidence-based choices about the discovery.
 
 This is a fictional, timeless Europe, rather than a representation of present travel conditions. Future chapters should research local voices and have dialogue reviewed by fluent speakers. The prototype’s short authored translations are sample content.
@@ -325,4 +377,24 @@ Select an NPC or choose **Open conversation** to open the dialogue modal. It con
 The opening splash uses assets/voyage-cover.png and introduces the player as the missing cartographer's apprentice, explains the witness and astrolabe quest, and offers Czech/English text. Begin your voyage enters the game; starting a new voyage returns to the introduction. Dialogue lines, choices, scroll controls, and the conversation log stay exclusively inside the dialogue modal, including after it closes. The dialogue UI browser check also verifies the splash and absence of inline choices.
 
 
-Destination buttons, map markers, companion visits, and journal travel shortcuts now open **Arrange transport** before moving. Hire a carriage or horse; port-to-port routes also offer boat passage. Island routes include a ferry transfer in the land fare. Quotes show payment and journey duration; cancelling changes neither funds nor date. Paying subtracts the fare, advances the calendar, and records the transport in the journal. Time uses a fictional distance-based travel model, with faster horses and boats. Starting funds are temporarily generous for testing: **10 gold** (100,000 copper). One European currency uses **1 gold = 100 silver = 10,000 copper**; the legacy `state.gold` field and authored item/reward values store copper units. Earning from errands and investigations still adds to the same purse. No separate production economy is enabled yet. Engine `travel(id, transport)` accepts `carriage`, `horse`, or `boat`; omitting transport defaults to a paid carriage for existing scripted callers. UI travel always requires selecting a quote.
+Destination buttons, map markers, companion visits, and journal travel shortcuts now open **Arrange transport** before moving. Hire a carriage or horse; port-to-port routes also offer boat passage. Sea crossings require explicit boat passage between port cities; travel overland to a port first. Boats also offer a faster alternative between mainland ports, including Hamburg. Hamburg opens after Novgorod so the London branch remains reachable independently. Horse hire charges for one horse per traveller (two with a companion who joins the journey); one carriage carries the party. Quotes show payment and journey duration; cancelling changes neither funds nor date. Paying subtracts the fare, advances the calendar, and records the transport in the journal. Time uses a fictional distance-based travel model, with faster horses and boats. Starting funds are temporarily generous for testing: **10 gold** (100,000 copper). One European currency uses **1 gold = 100 silver = 10,000 copper**; the legacy `state.gold` field and authored item/reward values store copper units. Earning from errands and investigations still adds to the same purse. No separate production economy is enabled yet. Engine `travel(id, transport)` accepts `carriage`, `horse`, or `boat`; omitting transport defaults to a paid carriage for existing scripted callers. UI travel always requires selecting a quote.
+
+Realm headings and destination/map tooltips distinguish the Republic of Florence, Republic of Venice, and the Papal States around Bologna. Each has its own bilingual brief and game crest. Bologna’s brief explains Sante Bentivoglio’s local rule under papal arrangements in 1453. Modern `country` keys continue to control map geometry and travel; optional location `realm` and `realmContext` fields supply the local state title and brief.
+
+Historical geography uses the **1453** setting: Toledo is in the Crown of Castile; Amsterdam is in the County of Holland under Burgundy. Northern briefs explain the contested Kalmar Union and Österland’s place in the Swedish realm. **Turku / Åbo** replaces the anachronistic Helsinki destination, including its coordinates, boat routes, companions, dictionaries, and dialogue directions. The characters and mystery remain fictional; political briefs no longer describe Lutheran reforms in the fifteenth century.
+
+Inventory, the quest log, and the journal open from separate compact sidebar buttons. The quest log groups accepted quests into active, in-progress, and finished sections. Tales and Rumors has its own dialog. The journal retains dated events and conversation archives; outstanding tome translations appear in the inventory dialog.
+
+Open **Character** from the sidebar or press **C** to see Eliáš’s gold, location, languages, and reputation with known cities, countries, and people. Press C again to close it. The shortcut leaves text inputs and other dialogs undisturbed. `/tests/character-ui.html` checks the controls, standings, localization, and reset.
+
+Open **City** from the sidebar for the current city’s history, city and country reputation, and active local quests. Quest buttons open the corresponding quest-log details. The large center panel remains available. `/tests/city-ui.html` checks local filtering, navigation, localization, and destination changes.
+
+**Speech / Předčítání** toggles optional reading aloud (off initially; preference saved). Click a dialogue reply to select and hear it, or click a book paragraph/title in either its original or translated edition. Book passages also accept Enter/Space when focused. New playback replaces the previous passage; switching speech off or closing a dialog stops it. Irish, Latin, and Esperanto are excluded. Other languages require a matching installed browser/OS voice; unsupported languages never use an unrelated fallback voice. Voice quality and availability depend on the device, not a guaranteed tier.
+
+`speech.js` separates `VoyageSpeech` from `BrowserSpeechProvider`. A future provider can be installed with `setProvider(provider)` and implements `supports(language)`, `speak(text, language)`, and `cancel()`; an optional `available()` reports API availability. Language exclusions remain enforced by the wrapper. The browser provider uses `getVoices()` and the UI refreshes on `voiceschanged`. `tests/speech.test.cjs` checks provider behavior and `tests/speech-ui.html` checks clicks with mocked speech (real audio must be checked on a device with voices installed).
+
+Voice selection: `speech.listVoices('en')` lists matching voices; `speech.setVoicePreferences('en', {voiceId: 'provider voice ID', gender: 'female'})` sets defaults, and `speech.speak(text, 'en', {variant: 'voice name', voiceId: undefined})` can override them. Options are passed to future providers. Browser voices expose no standard gender metadata (`gender` is null); the browser provider does not guess gender or change pitch to simulate it. An explicit missing or wrong-language voice is rejected.
+
+On Windows 11, run `tools/install-win-languages.ps1` in an elevated Windows PowerShell window to install Basic and TextToSpeech capabilities. `-WhatIf` previews without downloads; `-Languages en-GB,cs-CZ` selects a subset. Existing capabilities are skipped, unavailable features and actual failures are reported, and restart requirements are shown. Optional `-IncludeDisplayLanguagePack` also installs full packs without changing display-language defaults. The default excludes Irish, Latin, and Esperanto. If execution policy blocks this reviewed local script, use a process-only invocation: `powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\tools\install-win-languages.ps1 -WhatIf` (omit `-WhatIf` to install). Browser voices are not guaranteed to include every Windows voice.
+
+City references use the passage language, including historical Pressburg forms (Polish Preszburg, French Presbourg, Hungarian Pozsony) and local exonyms such as French Londres. `LOCAL_CITY_NAMES` in `i18n.js` covers whole names and authored case forms without changing location IDs. `tests/city-names.test.cjs` checks multilingual inflection and word boundaries.

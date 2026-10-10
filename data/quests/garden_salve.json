@@ -1,0 +1,19 @@
+{
+  "id": "garden_salve",
+  "title": "The physician’s garden",
+  "description": "Three flowers will finish the remedy for weary travellers. I will prepare two healing salves for you as well.",
+  "milestones": [
+    "garden_salve_started",
+    "garden_salve_done"
+  ],
+  "completion": "garden_salve_done",
+  "fetchItem": "flowers",
+  "fetchCount": 3,
+  "location": "budapest",
+  "giver": "balint",
+  "reward": {
+    "gold": 40,
+    "item": "healing_salve",
+    "count": 2
+  }
+}

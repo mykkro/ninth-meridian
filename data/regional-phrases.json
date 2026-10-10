@@ -81,9 +81,9 @@
     "de": "Die beiden Drucke widersprechen sich. Wir können den Versandbericht lesen oder die spiegelverkehrte Druckplatte untersuchen. Welche Spur prüfst du?"
   },
   "leipzig_puzzleA": {
-    "en": "The red proof says south, the blue proof says north. Only the blue parcel was dispatched. Which direction belongs on our route?",
-    "cs": "Červený nátisk ukazuje jih, modrý sever. Odeslán byl jen modrý balík. Který směr patří do naší trasy?",
-    "de": "Der rote Probedruck zeigt Süden, der blaue Norden. Nur das blaue Paket wurde verschickt. Welche Richtung gehört zu unserer Route?"
+    "en": "The red proof says south, the blue proof says north. Only the blue parcel was dispatched. Which direction belongs on our route? Your answer will become an order. An accusation or destructive instruction cannot be undone by trying another reply; you may leave to study first.",
+    "cs": "Červený nátisk ukazuje jih, modrý sever. Odeslán byl jen modrý balík. Který směr patří do naší trasy? Tvá odpověď se stane příkazem. Obvinění či ničivý pokyn neodvoláš jinou odpovědí; můžeš nejprve odejít a studovat.",
+    "de": "Der rote Probedruck zeigt Süden, der blaue Norden. Nur das blaue Paket wurde verschickt. Welche Richtung gehört zu unserer Route? Deine Antwort wird zum Befehl. Eine Anklage oder Zerstörung lässt sich nicht mit einer zweiten Antwort zurücknehmen. Du darfst zuerst prüfen."
   },
   "leipzig_answerA": {
     "en": "Follow the blue proof north to Hamburg.",
@@ -91,9 +91,9 @@
     "de": "Wir folgen dem blauen Probedruck nach Norden nach Hamburg."
   },
   "leipzig_puzzleB": {
-    "en": "The plate shows the star on the left; its paper impression shows it on the right. Should we copy the plate or the finished impression?",
-    "cs": "Na desce je hvězda vlevo, na papírovém otisku vpravo. Máme opsat desku, nebo hotový otisk?",
-    "de": "Auf der Platte steht der Stern links, auf dem Papierabdruck rechts. Kopieren wir die Platte oder den fertigen Abdruck?"
+    "en": "The plate shows the star on the left; its paper impression shows it on the right. Should we copy the plate or the finished impression? Your answer will become an order. An accusation or destructive instruction cannot be undone by trying another reply; you may leave to study first.",
+    "cs": "Na desce je hvězda vlevo, na papírovém otisku vpravo. Máme opsat desku, nebo hotový otisk? Tvá odpověď se stane příkazem. Obvinění či ničivý pokyn neodvoláš jinou odpovědí; můžeš nejprve odejít a studovat.",
+    "de": "Auf der Platte steht der Stern links, auf dem Papierabdruck rechts. Kopieren wir die Platte oder den fertigen Abdruck? Deine Antwort wird zum Befehl. Eine Anklage oder Zerstörung lässt sich nicht mit einer zweiten Antwort zurücknehmen. Du darfst zuerst prüfen."
   },
   "leipzig_answerB": {
     "en": "Use the paper impression: the plate is mirrored.",
@@ -101,9 +101,9 @@
     "de": "Wir verwenden den Papierabdruck: Die Platte ist spiegelverkehrt."
   },
   "leipzig_wrong": {
-    "en": "Both versions must be equally reliable.",
-    "cs": "Obě verze musí být stejně spolehlivé.",
-    "de": "Beide Versionen müssen gleich zuverlässig sein."
+    "en": "Seal the workshop for forgery; we can accept either print afterward.",
+    "cs": "Zapečetit dílnu kvůli padělání; potom můžeme přijmout kterýkoli nátisk.",
+    "de": "Versiegelt die Werkstatt wegen Fälschung; danach genügt uns jeder Druck."
   },
   "leipzig_hint": {
     "en": "A printing plate reverses an image. Compare the delivery record with the copy that actually left the workshop.",
@@ -131,9 +131,9 @@
     "de": "Das Liegebuch nennt eine Zeit; die Stufen zeigen den Wasserstand. Wir können die schriftliche Wache prüfen oder die Überfahrt anhand der Hafenmarken rekonstruieren."
   },
   "hamburg_puzzleA": {
-    "en": "The first watch records falling water, the second rising water, the third high water. Which watch matches the ferryman?",
-    "cs": "První hlídka zapsala klesající vodu, druhá stoupající, třetí plný příliv. Která odpovídá převozníkovi?",
-    "de": "Die erste Wache notiert sinkendes Wasser, die zweite steigendes, die dritte Hochwasser. Welche passt zum Fährmann?"
+    "en": "The first watch records falling water, the second rising water, the third high water. Which watch matches the ferryman? Your answer will become an order. An accusation or destructive instruction cannot be undone by trying another reply; you may leave to study first.",
+    "cs": "První hlídka zapsala klesající vodu, druhá stoupající, třetí plný příliv. Která odpovídá převozníkovi? Tvá odpověď se stane příkazem. Obvinění či ničivý pokyn neodvoláš jinou odpovědí; můžeš nejprve odejít a studovat.",
+    "de": "Die erste Wache notiert sinkendes Wasser, die zweite steigendes, die dritte Hochwasser. Welche passt zum Fährmann? Deine Antwort wird zum Befehl. Eine Anklage oder Zerstörung lässt sich nicht mit einer zweiten Antwort zurücknehmen. Du darfst zuerst prüfen."
   },
   "hamburg_answerA": {
     "en": "The second watch, while the water was rising.",
@@ -141,9 +141,9 @@
     "de": "Die zweite Wache, als das Wasser stieg."
   },
   "hamburg_puzzleB": {
-    "en": "The western landing is dry at low tide. The eastern steps are flooded at high tide. Which landing matches a rising-water departure from the stone steps?",
-    "cs": "Západní přístaviště je za odlivu suché. Východní schody příliv zatopí. Které přístaviště odpovídá odjezdu od kamenných schodů při stoupající vodě?",
-    "de": "Der westliche Anleger ist bei Niedrigwasser trocken. Die östlichen Stufen werden bei Hochwasser überflutet. Welcher Anleger passt zur Abfahrt von den Steinstufen bei steigendem Wasser?"
+    "en": "The western landing is dry at low tide. The eastern steps are flooded at high tide. Which landing matches a rising-water departure from the stone steps? Your answer will become an order. An accusation or destructive instruction cannot be undone by trying another reply; you may leave to study first.",
+    "cs": "Západní přístaviště je za odlivu suché. Východní schody příliv zatopí. Které přístaviště odpovídá odjezdu od kamenných schodů při stoupající vodě? Tvá odpověď se stane příkazem. Obvinění či ničivý pokyn neodvoláš jinou odpovědí; můžeš nejprve odejít a studovat.",
+    "de": "Der westliche Anleger ist bei Niedrigwasser trocken. Die östlichen Stufen werden bei Hochwasser überflutet. Welcher Anleger passt zur Abfahrt von den Steinstufen bei steigendem Wasser? Deine Antwort wird zum Befehl. Eine Anklage oder Zerstörung lässt sich nicht mit einer zweiten Antwort zurücknehmen. Du darfst zuerst prüfen."
   },
   "hamburg_answerB": {
     "en": "The eastern landing, before the steps were submerged.",
@@ -151,9 +151,9 @@
     "de": "Der östliche Anleger, bevor die Stufen überflutet wurden."
   },
   "hamburg_wrong": {
-    "en": "Ignore the tide and use the church clock.",
-    "cs": "Příliv ignorujeme a použijeme kostelní hodiny.",
-    "de": "Wir ignorieren die Gezeiten und verwenden die Kirchenuhr."
+    "en": "Authorize the ferryman’s arrest using the church clock; the tide marks can wait.",
+    "cs": "Povolit zatčení převozníka podle kostelních hodin; přílivové značky mohou počkat.",
+    "de": "Verhaftet den Fährmann nach der Kirchenuhr; die Gezeitenmarken können warten."
   },
   "hamburg_hint": {
     "en": "The witness spoke about rising water and stone steps, not a church service. Match both details before choosing.",
@@ -181,9 +181,9 @@
     "it": "Possiamo ricostruire il testo seguendo le ore, oppure la rilegatura seguendo i fori. Quale metodo usiamo?"
   },
   "bologna_puzzleA": {
-    "en": "The table must follow a single day. Where does the sunrise leaf belong relative to noon and sunset?",
-    "cs": "Tabulka má sledovat jediný den. Kam patří list s východem slunce vůči poledni a západu?",
-    "it": "La tavola deve seguire un solo giorno. Dove va il foglio dell’alba rispetto al mezzogiorno e al tramonto?"
+    "en": "The table must follow a single day. Where does the sunrise leaf belong relative to noon and sunset? Your answer will become an order. An accusation or destructive instruction cannot be undone by trying another reply; you may leave to study first.",
+    "cs": "Tabulka má sledovat jediný den. Kam patří list s východem slunce vůči poledni a západu? Tvá odpověď se stane příkazem. Obvinění či ničivý pokyn neodvoláš jinou odpovědí; můžeš nejprve odejít a studovat.",
+    "it": "La tavola deve seguire un solo giorno. Dove va il foglio dell’alba rispetto al mezzogiorno e al tramonto? La tua risposta diventa un ordine. Un’accusa o una distruzione non si cancella con un’altra risposta. Puoi prima studiare."
   },
   "bologna_answerA": {
     "en": "Sunrise first, noon second, sunset last.",
@@ -191,9 +191,9 @@
     "it": "Prima l’alba, poi il mezzogiorno, infine il tramonto."
   },
   "bologna_puzzleB": {
-    "en": "The binding holes count one, two, three. The loose leaf has one hole. Which position restores the sequence?",
-    "cs": "Dírky ve vazbě tvoří řadu jedna, dvě, tři. Volný list má jednu dírku. Která pozice obnoví pořadí?",
-    "it": "I fori della rilegatura seguono uno, due, tre. Il foglio sciolto ha un foro. Quale posizione ricostruisce la sequenza?"
+    "en": "The binding holes count one, two, three. The loose leaf has one hole. Which position restores the sequence? Your answer will become an order. An accusation or destructive instruction cannot be undone by trying another reply; you may leave to study first.",
+    "cs": "Dírky ve vazbě tvoří řadu jedna, dvě, tři. Volný list má jednu dírku. Která pozice obnoví pořadí? Tvá odpověď se stane příkazem. Obvinění či ničivý pokyn neodvoláš jinou odpovědí; můžeš nejprve odejít a studovat.",
+    "it": "I fori della rilegatura seguono uno, due, tre. Il foglio sciolto ha un foro. Quale posizione ricostruisce la sequenza? La tua risposta diventa un ordine. Un’accusa o una distruzione non si cancella con un’altra risposta. Puoi prima studiare."
   },
   "bologna_answerB": {
     "en": "Put the one-hole leaf before the two-hole leaf.",
@@ -201,9 +201,9 @@
     "it": "Mettiamo il foglio con un foro prima di quello con due."
   },
   "bologna_wrong": {
-    "en": "The loose leaf must belong at the end.",
-    "cs": "Volný list musí patřit na konec.",
-    "it": "Il foglio sciolto deve andare alla fine."
+    "en": "Cut away the first binding mark and fasten the loose leaf at the end.",
+    "cs": "Odříznout první značku vazby a upevnit volný list na konec.",
+    "it": "Tagliate il primo segno della legatura e fissate il foglio in fondo."
   },
   "bologna_hint": {
     "en": "Compare the student’s sunrise with the first puncture mark. Both the day and the binding have a beginning.",
@@ -231,9 +231,9 @@
     "it": "Possiamo identificare la lastra dalla ricevuta della bottega, oppure verificare come inverte il simbolo del sole. Quale prova preferisci?"
   },
   "venice_puzzleA": {
-    "en": "One receipt says clear window glass; the other says reflecting plate. Which object matches the pilot’s account?",
-    "cs": "Jedna účtenka uvádí čiré okenní sklo, druhá odraznou desku. Který předmět odpovídá výpovědi lodivodky?",
-    "it": "Una ricevuta dice vetro trasparente da finestra; l’altra dice lastra riflettente. Quale oggetto corrisponde al racconto della pilota?"
+    "en": "One receipt says clear window glass; the other says reflecting plate. Which object matches the pilot’s account? Your answer will become an order. An accusation or destructive instruction cannot be undone by trying another reply; you may leave to study first.",
+    "cs": "Jedna účtenka uvádí čiré okenní sklo, druhá odraznou desku. Který předmět odpovídá výpovědi lodivodky? Tvá odpověď se stane příkazem. Obvinění či ničivý pokyn neodvoláš jinou odpovědí; můžeš nejprve odejít a studovat.",
+    "it": "Una ricevuta dice vetro trasparente da finestra; l’altra dice lastra riflettente. Quale oggetto corrisponde al racconto della pilota? La tua risposta diventa un ordine. Un’accusa o una distruzione non si cancella con un’altra risposta. Puoi prima studiare."
   },
   "venice_answerA": {
     "en": "The reflecting plate: it makes a reversed image.",
@@ -241,9 +241,9 @@
     "it": "La lastra riflettente: crea un’immagine invertita."
   },
   "venice_puzzleB": {
-    "en": "The etched sun is physically on the right and appears on the left in the mirror. Which side should we record for the actual instrument?",
-    "cs": "Vyryté slunce je skutečně vpravo a v zrcadle vypadá jako vlevo. Kterou stranu zapíšeme pro skutečný přístroj?",
-    "it": "Il sole inciso è fisicamente a destra e appare a sinistra nello specchio. Quale lato annotiamo per lo strumento reale?"
+    "en": "The etched sun is physically on the right and appears on the left in the mirror. Which side should we record for the actual instrument? Your answer will become an order. An accusation or destructive instruction cannot be undone by trying another reply; you may leave to study first.",
+    "cs": "Vyryté slunce je skutečně vpravo a v zrcadle vypadá jako vlevo. Kterou stranu zapíšeme pro skutečný přístroj? Tvá odpověď se stane příkazem. Obvinění či ničivý pokyn neodvoláš jinou odpovědí; můžeš nejprve odejít a studovat.",
+    "it": "Il sole inciso è fisicamente a destra e appare a sinistra nello specchio. Quale lato annotiamo per lo strumento reale? La tua risposta diventa un ordine. Un’accusa o una distruzione non si cancella con un’altra risposta. Puoi prima studiare."
   },
   "venice_answerB": {
     "en": "Record the actual right edge, not the reflected left edge.",
@@ -251,9 +251,9 @@
     "it": "Annotiamo il bordo destro reale, non quello sinistro riflesso."
   },
   "venice_wrong": {
-    "en": "A reflection preserves every direction unchanged.",
-    "cs": "Odraz zachovává všechny směry beze změny.",
-    "it": "Un riflesso conserva tutte le direzioni senza cambiamenti."
+    "en": "Force the plate left to match its reflection; if it resists, break the mounting.",
+    "cs": "Otočit desku vlevo podle odrazu; pokud klade odpor, rozlomit uchycení.",
+    "it": "Forzate la lastra a sinistra come il riflesso; se resiste, spezzate il supporto."
   },
   "venice_hint": {
     "en": "The witness distinguished the real etched edge from its reflection. A mirror image is evidence, but it needs interpretation.",

@@ -10,7 +10,7 @@ const g=new Engine(World);
 g.state.native='en';g.state.knowledge.cs=0;
 assert.throws(()=>g.travel('krakow'));
 say(g,'rude');assert.equal(g.node.outcome,'dismissed');assert.equal(g.ended,true);assert.equal(g.state.milestones.length,0);assert.throws(()=>g.choose(0));
-g.open('ada');say(g,'silly');assert.equal(g.nodeId,'rebuke');say(g,'ask');say(g,'help');assert.equal(g.nodeId,'hint');say(g,'answer');say(g,'accept');assert.equal(g.state.inventory.map,1);assert.equal(g.node.outcome,'success');
+while(g.canHelpCommunity())g.helpCommunity();g.open('ada');say(g,'silly');assert.equal(g.nodeId,'rebuke');say(g,'ask');say(g,'help');assert.equal(g.nodeId,'hint');say(g,'answer');say(g,'accept');assert.equal(g.state.inventory.map,1);assert.equal(g.node.outcome,'success');
 g.state.native='cs';g.state.knowledge.cs=100;
 browse(g,'pragueShop');g.buy('sk_cs');g.read('sk_cs');
 g.travel('bratislava');assert.equal(g.notes()[0].language,'cs');

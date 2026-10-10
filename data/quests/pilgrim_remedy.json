@@ -1,0 +1,19 @@
+{
+  "id": "pilgrim_remedy",
+  "title": "A remedy for the pilgrims",
+  "description": "Gather three herbs for the pilgrims waiting to sail. A traveller left an Irish sanctuary phrasebook; I will give it to you in thanks.",
+  "milestones": [
+    "pilgrim_remedy_started",
+    "pilgrim_remedy_done"
+  ],
+  "completion": "pilgrim_remedy_done",
+  "fetchItem": "lavender",
+  "fetchCount": 3,
+  "location": "turku",
+  "giver": "eeva",
+  "reward": {
+    "gold": 40,
+    "item": "irish_sanctuary_notes",
+    "count": 1
+  }
+}

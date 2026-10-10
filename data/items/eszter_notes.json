@@ -26,6 +26,78 @@
     {
       "type": "phrase",
       "phrase": "eszter_bye"
+    },
+    {
+      "type": "phrase",
+      "phrase": "leipzig_restitution_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "leipzig_restitution_task"
+    },
+    {
+      "type": "phrase",
+      "phrase": "leipzig_restitution_repaired"
+    },
+    {
+      "type": "phrase",
+      "phrase": "hamburg_restitution_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "hamburg_restitution_task"
+    },
+    {
+      "type": "phrase",
+      "phrase": "hamburg_restitution_repaired"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bologna_restitution_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bologna_restitution_task"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bologna_restitution_repaired"
+    },
+    {
+      "type": "phrase",
+      "phrase": "venice_restitution_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "venice_restitution_task"
+    },
+    {
+      "type": "phrase",
+      "phrase": "venice_restitution_repaired"
+    },
+    {
+      "type": "phrase",
+      "phrase": "galway_restitution_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "galway_restitution_task"
+    },
+    {
+      "type": "phrase",
+      "phrase": "galway_restitution_repaired"
+    },
+    {
+      "type": "phrase",
+      "phrase": "consequence_leave"
+    },
+    {
+      "type": "phrase",
+      "phrase": "consequence_depart"
+    },
+    {
+      "type": "phrase",
+      "phrase": "recovery_confirm"
     }
   ]
 }

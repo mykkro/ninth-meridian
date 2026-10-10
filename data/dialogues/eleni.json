@@ -14,26 +14,6 @@
           "phrase": "eleni_wrong",
           "next": "rebuke",
           "quality": "nonsense"
-        },
-        {
-          "phrase": "banter_sillySpoon",
-          "next": "banterSpoon",
-          "quality": "nonsense"
-        },
-        {
-          "phrase": "banter_sillyCheese",
-          "next": "banterCheese",
-          "quality": "nonsense"
-        },
-        {
-          "phrase": "banter_rudeDemand",
-          "next": "banterDismiss",
-          "quality": "rude"
-        },
-        {
-          "phrase": "banter_rudeInsult",
-          "next": "banterDismiss",
-          "quality": "rude"
         }
       ]
     },
@@ -56,16 +36,6 @@
               "disc"
             ]
           }
-        },
-        {
-          "phrase": "banter_sillyCheese",
-          "next": "banterCheese",
-          "quality": "nonsense"
-        },
-        {
-          "phrase": "banter_rudeInsult",
-          "next": "banterDismiss",
-          "quality": "rude"
         }
       ]
     },
@@ -102,41 +72,6 @@
     "bye": {
       "phrase": "eleni_bye",
       "outcome": "success",
-      "choices": []
-    },
-    "banterSpoon": {
-      "phrase": "banter_spoonRebuke",
-      "choices": [
-        {
-          "phrase": "banter_startOver",
-          "next": "greeting",
-          "quality": "sensible"
-        },
-        {
-          "phrase": "banter_rudeDemand",
-          "next": "banterDismiss",
-          "quality": "rude"
-        }
-      ]
-    },
-    "banterCheese": {
-      "phrase": "banter_cheeseRebuke",
-      "choices": [
-        {
-          "phrase": "banter_startOver",
-          "next": "greeting",
-          "quality": "sensible"
-        },
-        {
-          "phrase": "banter_rudeInsult",
-          "next": "banterDismiss",
-          "quality": "rude"
-        }
-      ]
-    },
-    "banterDismiss": {
-      "phrase": "banter_rudeDismiss",
-      "outcome": "dismissed",
       "choices": []
     }
   }

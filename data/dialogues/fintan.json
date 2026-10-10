@@ -1,0 +1,145 @@
+{
+  "id": "fintan",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "star-abbey_intro",
+      "contexts": [
+        {
+          "requires": {
+            "setbacks": [
+              "abbey_restitution"
+            ]
+          },
+          "phrase": "abbey_restitution_failure"
+        },
+        {
+          "requires": "star-abbey_verified",
+          "phrase": "star-abbey_solved"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "sanctuary_ask",
+          "next": "evidence",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "sanctuary_recorded",
+          "next": "recorded",
+          "quality": "sensible",
+          "requires": "star-abbey_verified"
+        }
+      ]
+    },
+    "evidence": {
+      "phrase": "star-abbey_intro",
+      "choices": [
+        {
+          "phrase": "sanctuary_study",
+          "next": "puzzle",
+          "quality": "sensible",
+          "requires": {
+            "item": "star-abbey_evidence"
+          }
+        }
+      ]
+    },
+    "puzzle": {
+      "phrase": "star-abbey_puzzle",
+      "choices": [
+        {
+          "phrase": "star-abbey_answer",
+          "next": "solved",
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "abbey_restitution"
+            ]
+          }
+        },
+        {
+          "phrase": "consequence_leave",
+          "quality": "sensible",
+          "next": "studyLater"
+        },
+        {
+          "phrase": "star-abbey_wrong",
+          "next": "hint",
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "abbey_restitution"
+            ],
+            "withoutMilestones": [
+              "star-abbey_verified"
+            ]
+          },
+          "effects": [
+            {
+              "type": "setback",
+              "id": "abbey_restitution"
+            }
+          ],
+          "practice": false,
+          "visibleWhen": {
+            "withoutMilestones": [
+              "star-abbey_verified"
+            ]
+          }
+        }
+      ]
+    },
+    "hint": {
+      "phrase": "abbey_restitution_failure",
+      "outcome": "dismissed",
+      "choices": []
+    },
+    "solved": {
+      "phrase": "star-abbey_solved",
+      "choices": [
+        {
+          "phrase": "sanctuary_confirm",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "reward",
+              "id": "star-abbey_reward",
+              "items": [
+                {
+                  "item": "star-abbey_seal",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "star-abbey_verified"
+            }
+          ],
+          "requires": {
+            "withoutSetbacks": [
+              "abbey_restitution"
+            ]
+          }
+        }
+      ]
+    },
+    "bye": {
+      "phrase": "star-abbey_solved",
+      "outcome": "success",
+      "choices": []
+    },
+    "recorded": {
+      "phrase": "star-abbey_solved",
+      "outcome": "success",
+      "choices": []
+    },
+    "studyLater": {
+      "phrase": "star-abbey_intro",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "id": "ciaran",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "ash-temple_intro",
+      "contexts": [
+        {
+          "requires": {
+            "setbacks": [
+              "ash_restitution"
+            ]
+          },
+          "phrase": "ash_restitution_failure"
+        },
+        {
+          "requires": "ash-temple_verified",
+          "phrase": "ash-temple_solved"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "sanctuary_ask",
+          "next": "evidence",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "sanctuary_recorded",
+          "next": "recorded",
+          "quality": "sensible",
+          "requires": "ash-temple_verified"
+        }
+      ]
+    },
+    "evidence": {
+      "phrase": "ash-temple_intro",
+      "choices": [
+        {
+          "phrase": "sanctuary_study",
+          "next": "puzzle",
+          "quality": "sensible",
+          "requires": {
+            "item": "ash-temple_evidence"
+          }
+        }
+      ]
+    },
+    "puzzle": {
+      "phrase": "ash-temple_puzzle",
+      "choices": [
+        {
+          "phrase": "ash-temple_answer",
+          "next": "solved",
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "ash_restitution"
+            ]
+          }
+        },
+        {
+          "phrase": "consequence_leave",
+          "quality": "sensible",
+          "next": "studyLater"
+        },
+        {
+          "phrase": "ash-temple_wrong",
+          "next": "hint",
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "ash_restitution"
+            ],
+            "withoutMilestones": [
+              "ash-temple_verified"
+            ]
+          },
+          "effects": [
+            {
+              "type": "setback",
+              "id": "ash_restitution"
+            }
+          ],
+          "practice": false,
+          "visibleWhen": {
+            "withoutMilestones": [
+              "ash-temple_verified"
+            ]
+          }
+        }
+      ]
+    },
+    "hint": {
+      "phrase": "ash_restitution_failure",
+      "outcome": "dismissed",
+      "choices": []
+    },
+    "solved": {
+      "phrase": "ash-temple_solved",
+      "choices": [
+        {
+          "phrase": "sanctuary_confirm",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "reward",
+              "id": "ash-temple_reward",
+              "items": [
+                {
+                  "item": "ash-temple_seal",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "ash-temple_verified"
+            }
+          ],
+          "requires": {
+            "withoutSetbacks": [
+              "ash_restitution"
+            ]
+          }
+        }
+      ]
+    },
+    "bye": {
+      "phrase": "ash-temple_solved",
+      "outcome": "success",
+      "choices": []
+    },
+    "recorded": {
+      "phrase": "ash-temple_solved",
+      "outcome": "success",
+      "choices": []
+    },
+    "studyLater": {
+      "phrase": "ash-temple_intro",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

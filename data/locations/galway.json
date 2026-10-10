@@ -1,13 +1,15 @@
 {
   "id": "galway",
-  "name": "Galway",
+  "name": "Gaillimh",
   "country": "Ireland",
   "language": "ga",
   "requires": "finland",
   "description": "Salt air drifts through the library courtyard. Between two shelves, a whisper stops before you can make out its language. Fresh earth lies in a shallow bowl beneath an unmarked lintel; someone quietly covers it when you approach.",
   "npcs": [
     "niamh",
-    "galwayGeneral"
+    "galwayGeneral",
+    "brendan",
+    "malachy"
   ],
   "milestone": "ireland",
   "coordinates": {
@@ -17,5 +19,37 @@
   "mapLabelOffset": [
     9,
     -9
+  ],
+  "actions": [
+    {
+      "id": "refuge_rope_gather",
+      "label": "Salvage rope from the refuge store",
+      "item": "rope",
+      "count": 1,
+      "limit": 4,
+      "requires": "refuge_rope_started"
+    },
+    {
+      "id": "ash_restitution_search",
+      "label": "Find the displaced families in Gaillimh’s refuge courtyard",
+      "item": "ash_restitution_proof",
+      "count": 1,
+      "limit": 1,
+      "requires": {
+        "setbacks": [
+          "ash_restitution"
+        ]
+      }
+    }
+  ],
+  "riddleBooks": [
+    "riddle_nature",
+    "riddle_words"
+  ],
+  "loreBooks": [
+    "lore_crowns",
+    "lore_invaders",
+    "lore_western_tides",
+    "lore_eastern_letters"
   ]
 }

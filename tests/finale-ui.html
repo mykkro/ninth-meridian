@@ -1,0 +1,56 @@
+<!doctype html><meta charset="utf-8"><title>Irish finale screen checks</title>
+<pre id="results">Running</pre><iframe id="game" title="Voyage"></iframe>
+<style>iframe{width:100%;height:900px;border:0}</style>
+<script>
+const results=document.getElementById('results'),frame=document.getElementById('game');
+const assert=(value,message)=>{if(!value)throw Error(message);};
+async function run(){
+ let html=await (await fetch('../index.html')).text();
+ const capture='<script>const OriginalEngine=DialogueEngine;window.DialogueEngine=class extends OriginalEngine{constructor(world){super(world);window.testVoyage=this;}};<\/script>';
+ html=html.replace('<head>','<head><base href="'+new URL('../',location.href).href+'">');
+ html=html.replace(/(<script src="engine\.js[^>]*><\/script>)/,'$1'+capture);
+ frame.srcdoc=html;
+ for(let n=0;n<200&&!frame.contentDocument?.getElementById('load-status')?.hidden;n++)await new Promise(resolve=>setTimeout(resolve,50));
+ const doc=frame.contentDocument,game=frame.contentWindow.testVoyage;
+ assert(doc.getElementById('load-status').hidden,'Game loads');assert(game,'Test captures engine without changing production code');
+ doc.getElementById('begin-voyage').click();
+ const language=doc.getElementById('ui-language');language.value='en';
+ const render=()=>language.dispatchEvent(new Event('change'));
+ const say=id=>{const index=game.visibleChoices().findIndex(({choice})=>choice.phrase===id);assert(index>=0,'Response exists: '+id);const button=doc.querySelectorAll('#choices button')[index];assert(!button.disabled,'Response available: '+id);button.click();};
+ game.state.milestones=['greece','norway','sweden','finland'];game.state.inventory.astrolabe=1;game.state.inventory.irish_key=1;game.state.location='turku';game.travel('galway','boat');render();
+ doc.querySelector('#npcs button').click();say('niamh_ask');
+ assert(doc.querySelector('#choices button').disabled,'Cannot complete before investigating sanctuaries');say('niamh_search');
+ for(const id of ['tide-shrine','ash-temple','star-abbey']){
+  game.travel(id,'carriage');render();doc.querySelector('#npcs button').click();say('sanctuary_ask');
+  doc.getElementById('dialogue-modal').close();
+  doc.querySelector('#exploration button').click();assert(game.state.inventory[id+'_evidence']===1,'Evidence collected through UI');
+  doc.getElementById('open-dialogue').click();say('sanctuary_study');say(id+'_answer');say('sanctuary_confirm');
+ }
+ game.travel('galway','carriage');game.open('niamh');render();doc.getElementById('open-dialogue').click();say('niamh_ask');say('niamh_accept');
+ const conclusion=doc.getElementById('voyage-conclusion');assert(conclusion.open,'Conclusion opens automatically');assert(!doc.getElementById('dialogue-modal').open,'Conversation closes under ending screen');
+ assert(conclusion.querySelector('h2').textContent==='The western chart','Resolution reveals western chart');
+ assert(conclusion.textContent.includes('Aurelith')&&!game.state.milestones.includes('westward_departure'),'Lost land revealed before departure');
+ assert(conclusion.querySelectorAll('dd').length===3,'Ending displays voyage summary');
+ assert(doc.activeElement===conclusion.querySelector('h2'),'Focus starts on narrative title without scrolling away from artwork');
+ await conclusion.querySelector('.conclusion-art').decode();assert(conclusion.querySelector('.conclusion-art').naturalWidth>1000,'Generated conclusion art loads');
+ if(new URLSearchParams(location.search).has('preview')){results.dataset.status='passed';results.textContent='PASS: finale preview';return;}
+ const completedState=JSON.stringify(game.state);
+ conclusion.querySelectorAll('button')[1].click();assert(!conclusion.open,'Continue exploring closes conclusion');assert(JSON.stringify(game.state)===completedState,'Continue preserves voyage');
+ doc.querySelector('#npcs button').click();say('niamh_ask');say('niamh_accept');assert(!conclusion.open,'Replay does not reopen conclusion');
+ doc.getElementById('dialogue-modal').close();doc.querySelector('.westward-lead button').click();assert(conclusion.open,'Journal reopens departure after postponing');
+ doc.getElementById('embark-west').click();assert(game.state.milestones.includes('westward_departure'),'Sailing explicitly concludes story');assert(conclusion.querySelector('h2').textContent==='West, beyond the known world','Departure changes ending');assert(conclusion.textContent.includes('You sail on.')&&!doc.getElementById('embark-west'),'Open ending leaves arrival unknown and prevents replay departure');
+ const stateAtTitle=JSON.stringify(game.state);conclusion.querySelectorAll('button')[1].click();
+ assert(!doc.getElementById('splash').hidden,'Return to title shows splash');assert(!conclusion.open,'Ending closes');assert(doc.querySelector('main').hasAttribute('inert'),'Hidden gameplay is inert');
+ assert(doc.getElementById('begin-voyage').textContent==='Continue voyage','Title offers resume');assert(JSON.stringify(game.state)===stateAtTitle,'Return to title preserves progress');
+ const titleLanguage=doc.getElementById('splash-language');titleLanguage.value='cs';titleLanguage.dispatchEvent(new Event('change'));
+ assert(doc.getElementById('begin-voyage').textContent==='Pokračovat ve výpravě','Resume translates on title');
+ doc.getElementById('begin-voyage').click();assert(doc.getElementById('splash').hidden,'Resume enters game');assert(game.state.milestones.includes('ireland'),'Resume retains ending milestone');
+ language.value='cs';render();doc.querySelector('.westward-lead button').click();
+ assert(conclusion.querySelector('h2').textContent==='Na západ, za hranice známého světa','Ending translates into Czech');assert(conclusion.textContent.includes('Aurelith')&&conclusion.querySelector('.conclusion-art').alt.includes('ztracené město'),'Czech story and image description');
+ conclusion.querySelectorAll('button')[1].click();doc.getElementById('title-new-voyage').click();
+ assert(game.state.location==='prague'&&!game.state.milestones.length,'Explicit new voyage resets state');assert(doc.getElementById('title-new-voyage').hidden,'Fresh title hides redundant new-voyage control');
+ assert(doc.getElementById('begin-voyage').textContent==='Vydej se na cestu','Fresh title offers start');
+ results.dataset.status='passed';results.textContent='PASS: sanctuary gates, Aurelith chart, generated art, postponing departure, journal return, explicit westward open ending, summary, focus, replay, title, Czech text, resume, and reset.';
+}
+run().catch(error=>{results.dataset.status='failed';results.textContent=error.stack;});
+</script>

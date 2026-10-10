@@ -1,0 +1,11 @@
+{
+  "id": "riddle_sage",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "sage_greeting",
+      "outcome": "dismissed",
+      "choices": []
+    }
+  }
+}

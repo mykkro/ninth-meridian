@@ -1,0 +1,34 @@
+{
+  "sage_greeting": {
+    "en": "A wager of wit? Read the library first if you wish. I ask in my own language; answer in the same tongue. One answer settles the wager.",
+    "cs": "Sázka na důvtip? Chceš-li, nejprve si pročti knihovnu. Ptám se svým jazykem; odpověz stejnou řečí. Sázku rozhodne jediná odpověď.",
+    "de": "Eine Wette auf deinen Scharfsinn? Lies zuerst in der Bibliothek, wenn du möchtest. Ich frage in meiner Sprache; antworte in derselben. Eine Antwort entscheidet die Wette.",
+    "it": "Una scommessa d’ingegno? Leggi prima in biblioteca, se vuoi. Chiedo nella mia lingua; rispondi nella stessa. Una risposta decide la scommessa.",
+    "hu": "Fogadjunk az eszedre? Ha szeretnéd, előbb olvass a könyvtárban. A saját nyelvemen kérdezek; ugyanazon válaszolj. Egy válasz eldönti a fogadást.",
+    "ga": "Geall ar do thuiscint? Léigh sa leabharlann ar dtús más mian leat. Cuirim ceist i mo theanga féin; freagair sa teanga chéanna. Socraíonn freagra amháin an geall."
+  },
+  "sage_correct": {
+    "en": "Correct. Your stake is returned with an equal prize.",
+    "cs": "Správně. Tvůj vklad se vrací se stejně velkou výhrou.",
+    "de": "Richtig. Du erhältst deinen Einsatz und einen gleich hohen Gewinn.",
+    "it": "Giusto. Ricevi la tua puntata e un premio dello stesso valore.",
+    "hu": "Helyes. Visszakapod a tétedet és ugyanekkora nyereményt.",
+    "ga": "Ceart. Faigheann tú do gheall ar ais agus duais den luach céanna."
+  },
+  "sage_incorrect": {
+    "en": "Incorrect. I keep your stake.",
+    "cs": "Nesprávně. Tvůj vklad si ponechávám.",
+    "de": "Falsch. Ich behalte deinen Einsatz.",
+    "it": "Sbagliato. Tengo la tua puntata.",
+    "hu": "Helytelen. Megtartom a tétedet.",
+    "ga": "Mícheart. Coinním do gheall."
+  },
+  "sage_finished": {
+    "en": "You have answered all my riddles. Your victories and losses stand until a new voyage.",
+    "cs": "Na všechny mé hádanky už padla odpověď. Výhry i prohry platí až do nové výpravy.",
+    "de": "Du hast alle meine Rätsel beantwortet. Gewinne und Verluste gelten bis zu einer neuen Reise.",
+    "it": "Hai risposto a tutti i miei indovinelli. Vittorie e sconfitte restano fino a un nuovo viaggio.",
+    "hu": "Minden találós kérdésemre válaszoltál. Győzelmeid és vereségeid egy új utazásig érvényesek.",
+    "ga": "D’fhreagair tú mo chuid tomhas go léir. Fanann na buanna agus na caillteanais go dtí turas nua."
+  }
+}

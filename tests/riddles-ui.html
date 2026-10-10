@@ -1,0 +1,36 @@
+<!doctype html><meta charset="utf-8"><title>Riddle and library checks</title>
+<pre id="results">Running</pre><iframe id="game" title="Voyage"></iframe>
+<style>iframe{width:100%;height:1000px;border:0}</style>
+<script>
+const results=document.getElementById('results'),frame=document.getElementById('game');
+const assert=(value,message)=>{if(!value)throw Error(message);};
+async function run(){
+ let html=await(await fetch('../index.html')).text();
+ html=html.replace('<head>','<head><base href="'+new URL('../',location.href).href+'">');
+ html=html.replace(/(<script src="engine\.js[^>]*><\/script>)/,'$1<script>const OriginalEngine=DialogueEngine;window.DialogueEngine=class extends OriginalEngine{constructor(world){super(world);window.testVoyage=this;}};<\/script>');frame.srcdoc=html;
+ for(let n=0;n<200&&!frame.contentDocument?.getElementById('load-status')?.hidden;n++)await new Promise(resolve=>setTimeout(resolve,50));
+ const doc=frame.contentDocument,win=frame.contentWindow,game=win.testVoyage;
+ assert(game&&doc.getElementById('load-status').hidden,'Game loads');doc.getElementById('begin-voyage').click();
+ const language=doc.getElementById('ui-language');language.value='en';const render=()=>language.dispatchEvent(new Event('change'));render();
+ const click=(parent,text)=>{const b=[...parent.querySelectorAll('button')].find(b=>b.textContent===text);assert(b&&!b.disabled,'Enabled button: '+text);b.click();};
+ const sage=()=>click(doc.getElementById('npcs'),'Radovan · riddle sage');
+ const shelf=doc.getElementById('library-shelf');assert(shelf.textContent.includes('freely'),'Library is visibly free');const gold=game.state.gold;
+ click(shelf,'On Light and Returning Voices');const reader=doc.querySelector('.book-reader');assert(reader.open&&reader.textContent.includes('cliff'),'Library clue opens');click(reader,'Next page');assert(reader.textContent.includes('gravedigger'),'Reference page turns');click(reader,'Close book');assert(game.state.gold===gold,'Clues cost nothing');
+ sage();const dialog=doc.getElementById('sage-modal');assert(dialog.open&&dialog.textContent.includes('Stake 1 silver')&&dialog.textContent.includes('No second attempt'),'Terms before wager');assert(!dialog.querySelector('.riddle-question'),'Question waits for stake');
+ click(dialog,'Place wager');assert(game.state.gold===gold-100&&dialog.querySelector('.riddle-question'),'Stake paid and question revealed');dialog.close();sage();assert(dialog.querySelector('.riddle-question')&&!dialog.textContent.includes('Place wager'),'Reopening retains question');
+ dialog.querySelector('[data-answer="1"]').click();assert(game.state.gold===gold-100&&dialog.textContent.includes('Nesprávně')&&dialog.textContent.includes('Net change: −1 silver'),'Wrong loses stake once');assert(!dialog.querySelector('.riddle-answers'),'Answers removed after loss');
+ click(dialog,'Place wager');assert(dialog.querySelector('.riddle-question').textContent.includes('Na slunci'),'Next riddle differs');dialog.querySelector('[data-answer="1"]').click();assert(game.state.gold===gold&&dialog.textContent.includes('Správně')&&dialog.textContent.includes('Na všechny mé hádanky'),'Correct pays stake and prize');dialog.close();sage();assert(!dialog.textContent.includes('Place wager'),'No farming completed riddles');
+ dialog.close();language.value='cs';render();click(doc.getElementById('npcs'),'Radovan · mudrc hádanek');assert(dialog.textContent.includes('Na všechny mé hádanky'),'Czech sage text');dialog.close();click(doc.getElementById('library-shelf'),'O světle a vracejících se hlasech');assert(reader.textContent.includes('Skála vrací'),'Czech library text');click(reader,'Zavřít knihu');
+ game.reset();game.state.gold=99;render();click(doc.getElementById('npcs'),'Radovan · mudrc hádanek');const wager=[...dialog.querySelectorAll('button')].find(b=>b.textContent==='Vsadit');assert(wager.disabled&&dialog.textContent.includes('nemáš dost'),'Insufficient funds explained');dialog.close();
+ for(const [sageId,npc]of Object.entries(game.world.npcs).filter(([,npc])=>npc.riddles)){
+  game.reset();game.state.location=game.world.locations.find(place=>place.npcs.includes(sageId)).id;language.value='en';render();const name=npc.name.split(' · ')[0];[...doc.querySelectorAll('#npcs button')].find(button=>button.textContent.startsWith(name+' ·')).click();
+  const intro=dialog.querySelector('.sage-introduction');assert(intro.lang===npc.language&&intro.textContent===game.world.phrases.sage_greeting[npc.language],'Local intro '+sageId);language.value='cs';render();assert(dialog.querySelector('.sage-introduction').textContent===intro.textContent,'UI language never changes spoken language');click(dialog,'Vsadit');
+  const riddle=game.world.riddles[game.riddleState().active.riddle];assert(dialog.querySelector('.riddle-question').lang===npc.language&&dialog.querySelector('.riddle-question').textContent===riddle.question[npc.language],'Local question');for(const answer of dialog.querySelectorAll('.riddle-answer'))assert(answer.lang===npc.language,'Answers spoken locally');
+  if(sageId==='anselm'){const scroll=[...dialog.querySelectorAll('.riddle-translation-tools button')].find(button=>button.textContent.includes(win.t(game.world.items.scroll_native.name)));scroll.click();assert(game.state.inventory.scroll_native===0&&dialog.querySelector('.riddle-question').textContent===riddle.question.de,'Scroll preserves German question');assert(dialog.querySelector('.riddle-question').parentElement.querySelector('.note[lang="cs"]'),'Scroll translation note');dialog.close();[...doc.querySelectorAll('#npcs button')].find(button=>button.textContent.startsWith(name+' ·')).click();assert(dialog.querySelector('.riddle-question').parentElement.querySelector('.note[lang="cs"]'),'Pending translation persists');}
+  if(sageId==='malachy'){game.state.companions=['sigrid'];render();assert(dialog.querySelector('.riddle-question').parentElement.querySelector('.note[lang="cs"]'),'Interpreter helps with Irish');assert(dialog.querySelector('.riddle-question').lang==='ga','Irish original retained');}
+  dialog.querySelector('[data-answer="'+riddle.correct+'"]').click();assert(dialog.querySelector('.wager-result').lang===npc.language,'Local result');dialog.close();
+ }
+ assert(!doc.getElementById('notice').textContent,'No action errors');results.textContent='PASS: library clues, wager terms, payouts, no farming, affordability, five local introductions/questions/answers/results, UI language independence, scroll persistence, and interpreter notes.';
+}
+run().catch(error=>{results.textContent='FAIL: '+error.stack;});
+</script>

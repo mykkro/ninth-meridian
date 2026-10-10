@@ -12,7 +12,8 @@
     "marketFood",
     "marketArms",
     "janek",
-    "tereza"
+    "tereza",
+    "radovan"
   ],
   "milestone": "prague",
   "actions": [
@@ -34,5 +35,13 @@
   "mapLabelOffset": [
     -10,
     -9
+  ],
+  "riddleBooks": [
+    "riddle_nature"
+  ],
+  "loreBooks": [
+    "lore_alchemy",
+    "lore_crowns",
+    "lore_dawn_workshop"
   ]
 }

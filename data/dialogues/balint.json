@@ -1,0 +1,106 @@
+{
+  "id": "balint",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "garden_salve_offer",
+      "contexts": [
+        {
+          "requires": "garden_salve_done",
+          "phrase": "garden_salve_done"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "garden_salve_accept",
+          "next": "task",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "garden_salve_started"
+            }
+          ]
+        },
+        {
+          "phrase": "garden_salve_deliver",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "garden_salve_started",
+            "quantities": {
+              "flowers": 3
+            }
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "garden_salve",
+              "gold": 40,
+              "take": [
+                {
+                  "item": "flowers",
+                  "count": 3
+                }
+              ],
+              "items": [
+                {
+                  "item": "healing_salve",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "garden_salve_done"
+            }
+          ]
+        }
+      ]
+    },
+    "task": {
+      "phrase": "garden_salve_offer",
+      "choices": [
+        {
+          "phrase": "garden_salve_deliver",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "garden_salve_started",
+            "quantities": {
+              "flowers": 3
+            }
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "garden_salve",
+              "gold": 40,
+              "take": [
+                {
+                  "item": "flowers",
+                  "count": 3
+                }
+              ],
+              "items": [
+                {
+                  "item": "healing_salve",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "garden_salve_done"
+            }
+          ]
+        }
+      ]
+    },
+    "done": {
+      "phrase": "garden_salve_done",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

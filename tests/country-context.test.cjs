@@ -10,4 +10,5 @@ for(const country of countries){
     assert.ok(text.length>100&&text.length<650,`${country}: ${language} introduction must stay brief`);
   }
 }
+for(const location of world.locations.filter(place=>place.realm))for(const language of ['cs','en'])assert.ok(location.realmContext[language].length>100&&location.realmContext[language].length<650,`${location.id}: local realm brief`);
 console.log(`Passed: Czech/English introductions for all ${countries.size} countries.`);

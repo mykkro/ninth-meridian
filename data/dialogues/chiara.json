@@ -10,6 +10,16 @@
           "next": "methods",
           "quality": "sensible"
         }
+      ],
+      "contexts": [
+        {
+          "requires": {
+            "setbacks": [
+              "bologna_restitution"
+            ]
+          },
+          "phrase": "bologna_restitution_failure"
+        }
       ]
     },
     "methods": {
@@ -39,12 +49,46 @@
         {
           "phrase": "bologna_answerA",
           "next": "finding",
-          "quality": "sensible"
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "bologna_restitution"
+            ]
+          }
+        },
+        {
+          "phrase": "consequence_leave",
+          "quality": "sensible",
+          "next": "studyLater"
         },
         {
           "phrase": "bologna_wrong",
           "next": "hint",
-          "quality": "nonsense"
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "bologna_restitution"
+            ],
+            "withoutMilestones": [
+              "bologna_verified"
+            ]
+          },
+          "effects": [
+            {
+              "type": "setback",
+              "id": "bologna_restitution"
+            },
+            {
+              "type": "give",
+              "item": "eszter_notes"
+            }
+          ],
+          "practice": false,
+          "visibleWhen": {
+            "withoutMilestones": [
+              "bologna_verified"
+            ]
+          }
         }
       ]
     },
@@ -54,24 +98,53 @@
         {
           "phrase": "bologna_answerB",
           "next": "finding",
-          "quality": "sensible"
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "bologna_restitution"
+            ]
+          }
+        },
+        {
+          "phrase": "consequence_leave",
+          "quality": "sensible",
+          "next": "studyLater"
         },
         {
           "phrase": "bologna_wrong",
           "next": "hint",
-          "quality": "nonsense"
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "bologna_restitution"
+            ],
+            "withoutMilestones": [
+              "bologna_verified"
+            ]
+          },
+          "effects": [
+            {
+              "type": "setback",
+              "id": "bologna_restitution"
+            },
+            {
+              "type": "give",
+              "item": "eszter_notes"
+            }
+          ],
+          "practice": false,
+          "visibleWhen": {
+            "withoutMilestones": [
+              "bologna_verified"
+            ]
+          }
         }
       ]
     },
     "hint": {
-      "phrase": "bologna_hint",
-      "choices": [
-        {
-          "phrase": "regional_retry",
-          "next": "methods",
-          "quality": "sensible"
-        }
-      ]
+      "phrase": "bologna_restitution_failure",
+      "outcome": "dismissed",
+      "choices": []
     },
     "finding": {
       "phrase": "bologna_finding",
@@ -90,7 +163,12 @@
               "id": "bologna_investigation",
               "gold": 8
             }
-          ]
+          ],
+          "requires": {
+            "withoutSetbacks": [
+              "bologna_restitution"
+            ]
+          }
         },
         {
           "phrase": "regional_retry",
@@ -103,6 +181,11 @@
       "phrase": "regional_bye",
       "choices": [],
       "outcome": "success"
+    },
+    "studyLater": {
+      "phrase": "bologna_intro",
+      "outcome": "success",
+      "choices": []
     }
   }
 }

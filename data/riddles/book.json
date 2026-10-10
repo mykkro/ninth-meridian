@@ -1,0 +1,32 @@
+{
+  "id": "book",
+  "question": {
+    "en": "My leaves never grow on branches. Bound together, they preserve voices after their speakers die. What am I?",
+    "cs": "Mé listy nikdy nerostou na větvích. Svázané uchovávají hlasy i po smrti těch, kdo mluvili. Co jsem?",
+    "hu": "Leveleim sohasem ágakon nőnek. Összekötve megőrzik a hangokat azután is, hogy beszélőik meghaltak. Mi vagyok?"
+  },
+  "answers": [
+    {
+      "en": "A wreath",
+      "cs": "Věnec",
+      "hu": "Egy koszorú"
+    },
+    {
+      "en": "A tree",
+      "cs": "Strom",
+      "hu": "Egy fa"
+    },
+    {
+      "en": "A book",
+      "cs": "Kniha",
+      "hu": "Egy könyv"
+    }
+  ],
+  "correct": 2,
+  "stake": 100,
+  "explanation": {
+    "en": "A scribe calls a sheet a leaf; binding gathers the leaves.",
+    "cs": "Písař nazývá stránku listem; vazba shromažďuje listy.",
+    "hu": "A könyv lapjait leveleknek is nevezik; a kötés egybefogja őket."
+  }
+}

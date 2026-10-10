@@ -9,7 +9,8 @@
     "ingrid",
     "bjorn",
     "osloArms",
-    "sigrid"
+    "sigrid",
+    "solveig"
   ],
   "milestone": "norway",
   "coordinates": {
@@ -19,5 +20,20 @@
   "mapLabelOffset": [
     9,
     -9
-  ]
+  ],
+  "actions": [
+    {
+      "id": "winter_stores_gather",
+      "label": "Collect ore from the winter quarry",
+      "item": "ore",
+      "count": 1,
+      "limit": 4,
+      "requires": "winter_stores_started"
+    }
+  ],
+  "realm": "Kingdom of Norway · Kalmar Union",
+  "realmContext": {
+    "en": "Norway shares Christian I with Denmark under the union agreed in 1450. The wider Kalmar Union is contested by Sweden’s Charles VIII. Oslo is a medieval town with royal and episcopal institutions; Bergen is a major centre of the fish trade. Catholic clergy and local elites negotiate with royal officers and foreign merchants over dues and privileges.",
+    "cs": "Norsko sdílí s Dánskem Kristiána I. na základě unie dohodnuté roku 1450. Širší Kalmarskou unii zpochybňuje švédský Karel VIII. Oslo je středověké město s královskými a biskupskými institucemi; Bergen je významným centrem obchodu s rybami. Katolické duchovenstvo a místní elity vyjednávají s královskými úředníky a cizími kupci o clech a výsadách."
+  }
 }

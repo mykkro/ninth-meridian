@@ -1,0 +1,11 @@
+{
+  "id": "katalin",
+  "name": "Katalin · riddle sage",
+  "language": "hu",
+  "dialogue": "riddle_sage",
+  "description": "Katalin offers riddles in the local language. One stake, one answer.",
+  "riddles": [
+    "name",
+    "book"
+  ]
+}

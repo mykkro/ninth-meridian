@@ -1,0 +1,12 @@
+{
+  "id": "bologna_restitution",
+  "kind": "recovery",
+  "title": "The mutilated solar leaf",
+  "description": "You authorized cutting the solar leaf to fit the wrong sequence. Find its old copy in Buda’s manuscript chest and ask Eszter to reconstruct the text. Return to Chiara in Bologna afterward.",
+  "delayDays": 3,
+  "location": "budapest",
+  "giver": "eszter",
+  "sourceLocation": "budapest",
+  "sourceAction": "bologna_restitution_search",
+  "repairItem": "bologna_restitution_proof"
+}

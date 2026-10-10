@@ -1,7 +1,7 @@
 {
   "id": "niamh_notes",
   "type": "dictionary",
-  "name": "Galway field notes",
+  "name": "Gaillimh field notes",
   "description": "A limited local-language phrasebook for the final journey.",
   "from": "ga",
   "to": "cs",
@@ -26,6 +26,82 @@
     {
       "type": "phrase",
       "phrase": "niamh_bye"
+    },
+    {
+      "type": "phrase",
+      "phrase": "niamh_search"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ash_restitution_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ash_restitution_task"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ash_restitution_repaired"
+    },
+    {
+      "type": "phrase",
+      "phrase": "tide_restitution_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "tide_restitution_task"
+    },
+    {
+      "type": "phrase",
+      "phrase": "tide_restitution_repaired"
+    },
+    {
+      "type": "phrase",
+      "phrase": "abbey_restitution_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "abbey_restitution_task"
+    },
+    {
+      "type": "phrase",
+      "phrase": "abbey_restitution_repaired"
+    },
+    {
+      "type": "phrase",
+      "phrase": "consequence_leave"
+    },
+    {
+      "type": "phrase",
+      "phrase": "consequence_depart"
+    },
+    {
+      "type": "phrase",
+      "phrase": "recovery_confirm"
+    },
+    {
+      "type": "phrase",
+      "phrase": "ash_restitution_failure"
+    },
+    {
+      "type": "phrase",
+      "phrase": "tide_restitution_failure"
+    },
+    {
+      "type": "phrase",
+      "phrase": "abbey_restitution_failure"
+    },
+    {
+      "type": "phrase",
+      "phrase": "niamh_bargain"
+    },
+    {
+      "type": "phrase",
+      "phrase": "niamh_monopoly"
+    },
+    {
+      "type": "phrase",
+      "phrase": "galway_restitution_failure"
     }
   ]
 }

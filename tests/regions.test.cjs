@@ -21,10 +21,11 @@ for(const [id,next,base,companion]of [['german_route','amsterdam','germany','sof
    game.open(witness);say(game,'regional_ask');assert.ok(game.state.rumors.some(r=>r.id===city+'_evidence'));
    assert.ok(!game.state.milestones.includes(city+'_witness'));say(game,'regional_record');
    game.open(expert);say(game,'regional_investigate');const method=reverse?'field':'archive';say(game,'regional_'+method);
-   // Keep the recovery probe at beginner knowledge, where wrong replies are visible.
-   game.state.knowledge[world.npcs[expert].language]=0;
-   say(game,city+'_wrong');assert.equal(game.nodeId,'hint');assert.ok(!game.state.milestones.includes(city+'_verified'));
-   say(game,'regional_retry');say(game,'regional_'+method);say(game,city+'_answer'+(reverse?'B':'A'));
+   // Studying before committing is safe and preserves the travelling party.
+   const beforeStudy=game.state.voyageDay;
+   say(game,'consequence_leave');assert.equal(game.ended,true);assert.equal(game.state.voyageDay,beforeStudy);
+   assert.ok(!game.state.milestones.includes(city+'_verified'));
+   game.open(expert);say(game,'regional_investigate');say(game,'regional_'+method);say(game,city+'_answer'+(reverse?'B':'A'));
    assert.ok(game.phrase.cs);assert.ok(game.notes().some(note=>note.via===world.companions[companion].name));
    const gold=game.state.gold;say(game,'regional_confirm');assert.equal(game.state.gold,gold+8);
    assert.equal(game.state.milestones.filter(m=>m===city+'_verified').length,1);
@@ -50,4 +51,4 @@ for(const mutate of [q=>{q.steps[0].location='missing';},q=>{q.steps[0].giver='a
  const invalid=JSON.parse(JSON.stringify(world));mutate(invalid.quests.german_route);
  assert.throws(()=>assembleWorld(invalid,{phrases:invalid.phrases,dialogues:invalid.dialogues}));
 }
-console.log('Passed: two country investigations, both city orders, archive and physical routes, witness gates, wrong-answer recovery, return visits, companion continuity, solo translations, rewards, and reset.');
+console.log('Passed: two country investigations, both city orders, archive and physical routes, witness gates, safe study exits, return visits, companion continuity, solo translations, rewards, and reset.');

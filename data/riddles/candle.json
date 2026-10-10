@@ -1,0 +1,32 @@
+{
+  "id": "candle",
+  "question": {
+    "en": "I grow shorter as I work, and spend my body to give you light. What am I?",
+    "cs": "Při práci se zkracuji a své tělo vydávám za světlo. Co jsem?",
+    "it": "Mi accorcio mentre lavoro e consumo il mio corpo per darti luce. Che cosa sono?"
+  },
+  "answers": [
+    {
+      "en": "A candle",
+      "cs": "Svíčka",
+      "it": "Una candela"
+    },
+    {
+      "en": "A mirror",
+      "cs": "Zrcadlo",
+      "it": "Uno specchio"
+    },
+    {
+      "en": "A star",
+      "cs": "Hvězda",
+      "it": "Una stella"
+    }
+  ],
+  "correct": 0,
+  "stake": 100,
+  "explanation": {
+    "en": "The fuel and the body are the same wax.",
+    "cs": "Palivo i tělo tvoří tentýž vosk.",
+    "it": "Il combustibile e il corpo sono la stessa cera."
+  }
+}

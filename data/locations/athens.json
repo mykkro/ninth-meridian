@@ -20,7 +20,8 @@
     "eleni",
     "athensShop",
     "petros",
-    "athensPotions"
+    "athensPotions",
+    "thalia"
   ],
   "milestone": "greece",
   "coordinates": {
@@ -30,5 +31,23 @@
   "mapLabelOffset": [
     9,
     -9
+  ],
+  "actions": [
+    {
+      "id": "harbour_lights_gather",
+      "label": "Collect salt from the harbour pans",
+      "item": "salt",
+      "count": 1,
+      "limit": 4,
+      "requires": "harbour_lights_started"
+    }
+  ],
+  "realm": "Duchy of Athens",
+  "realmContext": {
+    "en": "Athens is the centre of the Duchy of Athens, a Latin lordship held by the Acciaioli family. The Orthodox population lives alongside Catholic rulers and religious houses. Ottoman pressure threatens the duchy and neighboring Greek lands. Scholars copy endangered manuscripts, while sailors carry uncertain reports from the eastern seas.",
+    "cs": "Athény jsou centrem Athénského vévodství, latinského panství rodu Acciaioli. Pravoslavné obyvatelstvo žije vedle katolických vládců a církevních domů. Osmanský tlak ohrožuje vévodství i sousední řecké země. Učenci opisují ohrožené rukopisy a námořníci přinášejí nejisté zprávy z východních moří."
+  },
+  "loreBooks": [
+    "lore_dawn_workshop"
   ]
 }

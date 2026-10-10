@@ -1,6 +1,7 @@
 const assert=require('node:assert/strict');
 const {world}=require('./fixtures.cjs');
-const Engine=require('../engine.js');
+const Engine=require('./story-engine.cjs');
+const {finishIreland}=require('./irish-finale.cjs');
 function say(g,id){const i=g.node.choices.findIndex(c=>c.phrase===id);assert.ok(i>=0,`Missing ${id}`);g.choose(i);}
 const g=new Engine(world);g.state.milestones=['france'];g.state.inventory.letter=1;
 g.travel('toledo');say(g,'ines_ask');assert.throws(()=>say(g,'ines_answer'));assert.ok(g.missingRequirements(g.node.choices.find(c=>c.phrase==='ines_answer').requires).some(r=>r.id==='latin_deciphered'));
@@ -9,7 +10,8 @@ for(const withHungary of [false,true]){
  const voyage=new Engine(world);assert.equal(voyage.canTravel('oslo'),false);voyage.state.milestones=['greece'];voyage.state.inventory.astrolabe=1;
  assert.equal(voyage.canTravel('galway'),false);
  if(withHungary){voyage.travel('budapest');say(voyage,'eszter_ask');say(voyage,'eszter_accept');assert.equal(voyage.state.inventory.scholar_compass,1);}
- for(const [place,npc]of [['oslo','ingrid'],['stockholm','erik'],['helsinki','aino'],['galway','niamh']]){voyage.travel(place);say(voyage,npc+'_ask');say(voyage,npc+'_accept');}
+ for(const [place,npc]of [['oslo','ingrid'],['stockholm','erik'],['turku','aino']]){voyage.travel(place);say(voyage,npc+'_ask');say(voyage,npc+'_accept');}
+ finishIreland(voyage,withHungary?['star-abbey','tide-shrine','ash-temple']:undefined);
  assert.ok(voyage.state.milestones.includes('ireland'));assert.equal(voyage.ended,true);assert.equal(voyage.state.milestones.includes('hungary'),withHungary);
  voyage.open('niamh');say(voyage,'niamh_ask');say(voyage,'niamh_accept');assert.equal(voyage.state.milestones.filter(id=>id==='ireland').length,1);
 }

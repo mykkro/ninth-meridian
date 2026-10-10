@@ -1,6 +1,6 @@
 {
   "id": "berlinShop",
-  "name": "Berlin · bookseller",
+  "name": "Friedrich · bookseller",
   "language": "de",
   "dialogue": "berlinShop",
   "stock": [
@@ -8,5 +8,5 @@
     "scroll_en",
     "scroll_native"
   ],
-  "description": "Berlin · bookseller. Speaks German."
+  "description": "Friedrich · bookseller. Speaks German."
 }

@@ -1,0 +1,11 @@
+{
+  "id": "malachy",
+  "name": "Malachy · riddle sage",
+  "language": "ga",
+  "dialogue": "riddle_sage",
+  "description": "Malachy offers riddles in the local language. One stake, one answer.",
+  "riddles": [
+    "silence",
+    "hole"
+  ]
+}

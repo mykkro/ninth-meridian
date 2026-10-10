@@ -1,0 +1,32 @@
+{
+  "id": "hole",
+  "question": {
+    "en": "The more earth you take from me, the larger I become. What am I?",
+    "cs": "Čím více země ze mě odebereš, tím větší budu. Co jsem?",
+    "ga": "Dá mhéad cré a thógann tú uaim, is ea is mó a éirím. Cad mé?"
+  },
+  "answers": [
+    {
+      "en": "A hole",
+      "cs": "Jáma",
+      "ga": "Poll"
+    },
+    {
+      "en": "A hill",
+      "cs": "Kopec",
+      "ga": "Cnoc"
+    },
+    {
+      "en": "A field",
+      "cs": "Pole",
+      "ga": "Páirc"
+    }
+  ],
+  "correct": 0,
+  "stake": 100,
+  "explanation": {
+    "en": "Removing material enlarges an empty space, not a mound.",
+    "cs": "Odebrání hmoty zvětšuje prázdný prostor, nikoli hromadu.",
+    "ga": "Méadaíonn baint ábhair an spás folamh, ní an carn."
+  }
+}

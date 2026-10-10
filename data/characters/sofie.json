@@ -1,11 +1,11 @@
 {
   "id": "sofie",
-  "name": "Sofie · workshop interpreter",
+  "name": "Klara · workshop interpreter",
   "language": "de",
   "dialogue": "sofie",
   "description": "A workshop interpreter who learned Czech in Prague. Translates German, Dutch, Danish, and English into Czech along the northern relic route.",
   "companion": {
-    "name": "Sofie",
+    "name": "Klara",
     "native": "de",
     "knows": [
       "de",

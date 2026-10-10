@@ -1,0 +1,27 @@
+{
+  "id": "echo",
+  "question": {
+    "en": "I have no tongue, yet return your words. I wake against stone and die in an open field. What am I?",
+    "cs": "Nemám jazyk, a přece vracím tvá slova. Probouzím se u skály a umírám v otevřeném poli. Co jsem?"
+  },
+  "answers": [
+    {
+      "en": "An echo",
+      "cs": "Ozvěna"
+    },
+    {
+      "en": "A bell",
+      "cs": "Zvon"
+    },
+    {
+      "en": "The wind",
+      "cs": "Vítr"
+    }
+  ],
+  "correct": 0,
+  "stake": 100,
+  "explanation": {
+    "en": "Stone returns a voice; a bell makes a voice of its own.",
+    "cs": "Skála hlas vrací; zvon vytváří vlastní hlas."
+  }
+}

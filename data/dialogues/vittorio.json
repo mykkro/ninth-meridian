@@ -10,6 +10,16 @@
           "next": "methods",
           "quality": "sensible"
         }
+      ],
+      "contexts": [
+        {
+          "requires": {
+            "setbacks": [
+              "venice_restitution"
+            ]
+          },
+          "phrase": "venice_restitution_failure"
+        }
       ]
     },
     "methods": {
@@ -37,14 +47,48 @@
       "phrase": "venice_puzzleA",
       "choices": [
         {
-          "phrase": "venice_answerA",
-          "next": "finding",
-          "quality": "sensible"
-        },
-        {
           "phrase": "venice_wrong",
           "next": "hint",
-          "quality": "nonsense"
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "venice_restitution"
+            ],
+            "withoutMilestones": [
+              "venice_verified"
+            ]
+          },
+          "effects": [
+            {
+              "type": "setback",
+              "id": "venice_restitution"
+            },
+            {
+              "type": "give",
+              "item": "eszter_notes"
+            }
+          ],
+          "practice": false,
+          "visibleWhen": {
+            "withoutMilestones": [
+              "venice_verified"
+            ]
+          }
+        },
+        {
+          "phrase": "consequence_leave",
+          "quality": "sensible",
+          "next": "studyLater"
+        },
+        {
+          "phrase": "venice_answerA",
+          "next": "finding",
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "venice_restitution"
+            ]
+          }
         }
       ]
     },
@@ -52,26 +96,55 @@
       "phrase": "venice_puzzleB",
       "choices": [
         {
-          "phrase": "venice_answerB",
-          "next": "finding",
-          "quality": "sensible"
-        },
-        {
           "phrase": "venice_wrong",
           "next": "hint",
-          "quality": "nonsense"
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "venice_restitution"
+            ],
+            "withoutMilestones": [
+              "venice_verified"
+            ]
+          },
+          "effects": [
+            {
+              "type": "setback",
+              "id": "venice_restitution"
+            },
+            {
+              "type": "give",
+              "item": "eszter_notes"
+            }
+          ],
+          "practice": false,
+          "visibleWhen": {
+            "withoutMilestones": [
+              "venice_verified"
+            ]
+          }
+        },
+        {
+          "phrase": "consequence_leave",
+          "quality": "sensible",
+          "next": "studyLater"
+        },
+        {
+          "phrase": "venice_answerB",
+          "next": "finding",
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "venice_restitution"
+            ]
+          }
         }
       ]
     },
     "hint": {
-      "phrase": "venice_hint",
-      "choices": [
-        {
-          "phrase": "regional_retry",
-          "next": "methods",
-          "quality": "sensible"
-        }
-      ]
+      "phrase": "venice_restitution_failure",
+      "outcome": "dismissed",
+      "choices": []
     },
     "finding": {
       "phrase": "venice_finding",
@@ -90,7 +163,12 @@
               "id": "venice_investigation",
               "gold": 8
             }
-          ]
+          ],
+          "requires": {
+            "withoutSetbacks": [
+              "venice_restitution"
+            ]
+          }
         },
         {
           "phrase": "regional_retry",
@@ -103,6 +181,11 @@
       "phrase": "regional_bye",
       "choices": [],
       "outcome": "success"
+    },
+    "studyLater": {
+      "phrase": "venice_intro",
+      "outcome": "success",
+      "choices": []
     }
   }
 }

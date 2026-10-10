@@ -1,0 +1,12 @@
+{
+  "id": "galway_restitution",
+  "kind": "recovery",
+  "title": "The betrayed library oath",
+  "description": "You surrendered the library’s voices to a masked patron. The doors are barred. Sail from Gaillimh to a mainland port, travel to Buda, recover the independent charter counterseal, and ask Eszter to annul the agreement before returning to Niamh.",
+  "delayDays": 7,
+  "location": "budapest",
+  "giver": "eszter",
+  "sourceLocation": "budapest",
+  "sourceAction": "galway_restitution_search",
+  "repairItem": "galway_restitution_proof"
+}

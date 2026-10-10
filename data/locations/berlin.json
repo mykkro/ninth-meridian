@@ -9,7 +9,8 @@
     "otto",
     "berlinShop",
     "berlinGeneral",
-    "sofie"
+    "sofie",
+    "anselm"
   ],
   "milestone": "germany",
   "coordinates": {
@@ -19,5 +20,8 @@
   "mapLabelOffset": [
     -10,
     -10
+  ],
+  "riddleBooks": [
+    "riddle_tools"
   ]
 }

@@ -1,0 +1,106 @@
+{
+  "id": "ylva",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "archive_shelves_offer",
+      "contexts": [
+        {
+          "requires": "archive_shelves_done",
+          "phrase": "archive_shelves_done"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "archive_shelves_accept",
+          "next": "task",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "archive_shelves_started"
+            }
+          ]
+        },
+        {
+          "phrase": "archive_shelves_deliver",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "archive_shelves_started",
+            "quantities": {
+              "wood": 2
+            }
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "archive_shelves",
+              "gold": 40,
+              "take": [
+                {
+                  "item": "wood",
+                  "count": 2
+                }
+              ],
+              "items": [
+                {
+                  "item": "baltic_archive_notes",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "archive_shelves_done"
+            }
+          ]
+        }
+      ]
+    },
+    "task": {
+      "phrase": "archive_shelves_offer",
+      "choices": [
+        {
+          "phrase": "archive_shelves_deliver",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "archive_shelves_started",
+            "quantities": {
+              "wood": 2
+            }
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "archive_shelves",
+              "gold": 40,
+              "take": [
+                {
+                  "item": "wood",
+                  "count": 2
+                }
+              ],
+              "items": [
+                {
+                  "item": "baltic_archive_notes",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "archive_shelves_done"
+            }
+          ]
+        }
+      ]
+    },
+    "done": {
+      "phrase": "archive_shelves_done",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

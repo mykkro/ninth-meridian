@@ -10,6 +10,16 @@
           "next": "methods",
           "quality": "sensible"
         }
+      ],
+      "contexts": [
+        {
+          "requires": {
+            "setbacks": [
+              "hamburg_restitution"
+            ]
+          },
+          "phrase": "hamburg_restitution_failure"
+        }
       ]
     },
     "methods": {
@@ -37,14 +47,48 @@
       "phrase": "hamburg_puzzleA",
       "choices": [
         {
-          "phrase": "hamburg_answerA",
-          "next": "finding",
-          "quality": "sensible"
-        },
-        {
           "phrase": "hamburg_wrong",
           "next": "hint",
-          "quality": "nonsense"
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "hamburg_restitution"
+            ],
+            "withoutMilestones": [
+              "hamburg_verified"
+            ]
+          },
+          "effects": [
+            {
+              "type": "setback",
+              "id": "hamburg_restitution"
+            },
+            {
+              "type": "give",
+              "item": "eszter_notes"
+            }
+          ],
+          "practice": false,
+          "visibleWhen": {
+            "withoutMilestones": [
+              "hamburg_verified"
+            ]
+          }
+        },
+        {
+          "phrase": "consequence_leave",
+          "quality": "sensible",
+          "next": "studyLater"
+        },
+        {
+          "phrase": "hamburg_answerA",
+          "next": "finding",
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "hamburg_restitution"
+            ]
+          }
         }
       ]
     },
@@ -52,26 +96,55 @@
       "phrase": "hamburg_puzzleB",
       "choices": [
         {
-          "phrase": "hamburg_answerB",
-          "next": "finding",
-          "quality": "sensible"
-        },
-        {
           "phrase": "hamburg_wrong",
           "next": "hint",
-          "quality": "nonsense"
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "hamburg_restitution"
+            ],
+            "withoutMilestones": [
+              "hamburg_verified"
+            ]
+          },
+          "effects": [
+            {
+              "type": "setback",
+              "id": "hamburg_restitution"
+            },
+            {
+              "type": "give",
+              "item": "eszter_notes"
+            }
+          ],
+          "practice": false,
+          "visibleWhen": {
+            "withoutMilestones": [
+              "hamburg_verified"
+            ]
+          }
+        },
+        {
+          "phrase": "consequence_leave",
+          "quality": "sensible",
+          "next": "studyLater"
+        },
+        {
+          "phrase": "hamburg_answerB",
+          "next": "finding",
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "hamburg_restitution"
+            ]
+          }
         }
       ]
     },
     "hint": {
-      "phrase": "hamburg_hint",
-      "choices": [
-        {
-          "phrase": "regional_retry",
-          "next": "methods",
-          "quality": "sensible"
-        }
-      ]
+      "phrase": "hamburg_restitution_failure",
+      "outcome": "dismissed",
+      "choices": []
     },
     "finding": {
       "phrase": "hamburg_finding",
@@ -90,7 +163,12 @@
               "id": "hamburg_investigation",
               "gold": 8
             }
-          ]
+          ],
+          "requires": {
+            "withoutSetbacks": [
+              "hamburg_restitution"
+            ]
+          }
         },
         {
           "phrase": "regional_retry",
@@ -103,6 +181,11 @@
       "phrase": "regional_bye",
       "choices": [],
       "outcome": "success"
+    },
+    "studyLater": {
+      "phrase": "hamburg_intro",
+      "outcome": "success",
+      "choices": []
     }
   }
 }

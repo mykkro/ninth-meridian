@@ -1,0 +1,19 @@
+{
+  "id": "harbour_lights",
+  "title": "Harbour lights",
+  "description": "The harbour lamps need two measures of salt. I can give you two translation scrolls for the northern voyage.",
+  "milestones": [
+    "harbour_lights_started",
+    "harbour_lights_done"
+  ],
+  "completion": "harbour_lights_done",
+  "fetchItem": "salt",
+  "fetchCount": 2,
+  "location": "athens",
+  "giver": "thalia",
+  "reward": {
+    "gold": 40,
+    "item": "scroll_native",
+    "count": 2
+  }
+}

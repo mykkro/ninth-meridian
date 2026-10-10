@@ -1,0 +1,53 @@
+<!doctype html><meta charset="utf-8"><title>Consequences and restitution checks</title>
+<pre id="results">Running</pre><iframe id="game" title="Voyage"></iframe>
+<style>iframe{width:100%;height:1000px;border:0}</style>
+<script>
+const results=document.getElementById('results'),frame=document.getElementById('game');
+const assert=(value,message)=>{if(!value)throw Error(message);};
+async function run(){
+ let html=await (await fetch('../index.html')).text();
+ const capture='<script>const OriginalEngine=DialogueEngine;window.DialogueEngine=class extends OriginalEngine{constructor(world){super(world);window.testVoyage=this;}};<\/script>';
+ html=html.replace('<head>','<head><base href="'+new URL('../',location.href).href+'">');
+ html=html.replace(/(<script src="engine\.js[^>]*><\/script>)/,'$1'+capture);frame.srcdoc=html;
+ for(let n=0;n<200&&!frame.contentDocument?.getElementById('load-status')?.hidden;n++)await new Promise(resolve=>setTimeout(resolve,50));
+ const doc=frame.contentDocument,win=frame.contentWindow,game=win.testVoyage;
+ assert(doc.getElementById('load-status').hidden&&game,'Game loads');doc.getElementById('begin-voyage').click();
+ const language=doc.getElementById('ui-language');language.value='en';const render=()=>language.dispatchEvent(new Event('change'));
+ const reply=id=>{const index=game.visibleChoices().findIndex(({choice})=>choice.phrase===id);assert(index>=0,'Response exists: '+id);return doc.querySelectorAll('#choices button')[index];};
+ const say=id=>{const button=reply(id);assert(!button.disabled,'Response enabled: '+id);button.click();assert(!doc.getElementById('notice').textContent,'No action error: '+id);};
+ const npc=id=>{const button=[...doc.querySelectorAll('#npcs button')].find(b=>b.textContent===win.t(game.world.npcs[id].name));assert(button,'NPC exists: '+id);button.click();};
+ const close=()=>{if(doc.getElementById('dialogue-modal').open)doc.getElementById('dialogue-modal').close();};
+ const finishTravel=async()=>{const dialog=doc.getElementById('travel-modal');assert(dialog.open,'Travel quote is open');const option=dialog.querySelector('.transport-option');assert(option&&!option.disabled,'Valid transport available');option.click();for(let n=0;n<50&&dialog.querySelector('.arrival-button')?.hidden;n++)await new Promise(resolve=>setTimeout(resolve,50));assert(!dialog.querySelector('.arrival-button').hidden,'Journey arrives');dialog.querySelector('.arrival-button').click();};
+ const travel=async id=>{const name=win.t(game.world.locations.find(place=>place.id===id).name);const button=[...doc.querySelectorAll('#locations button')].find(b=>b.textContent.startsWith(name+' ·'));assert(button&&!button.disabled,'Destination available: '+id);button.click();await finishTravel();};
+ const search=id=>{const quest=game.world.quests[id],action=game.gatheringActions().find(action=>action.id===quest.sourceAction);const button=[...doc.querySelectorAll('#exploration button')].find(b=>b.textContent.startsWith(win.t(action.label)));assert(button&&!button.disabled,'Recovery source is enabled');button.click();};
+ const direct=id=>game.choose(game.node.choices.findIndex(choice=>choice.phrase===id));
+
+ game.state.milestones=['novgorod','germany'];game.travel('leipzig');game.open('greta');direct('regional_ask');direct('regional_record');game.open('konrad');direct('regional_investigate');direct('regional_archive');render();doc.getElementById('open-dialogue').click();
+ doc.getElementById('scroll').value='scroll_en';doc.getElementById('cast').click();assert(doc.getElementById('conversation').textContent.includes('Your answer will become an order'),'In-story warning precedes commitment');
+ const day=game.state.voyageDay;say('leipzig_wrong');assert(game.ended&&game.state.voyageDay===day+3,'False accusation costs days and ends exchange');
+ assert(doc.querySelector('.recovery-quest').textContent.includes('The seized Leipzig register'),'Journal records concrete harm');
+ npc('konrad');say('regional_investigate');say('regional_archive');assert(reply('leipzig_answerA').disabled,'Replay cannot bypass consequence');assert(reply('leipzig_answerA').textContent.includes('Resolve before continuing'),'Blocked choice explains restitution');close();
+ const row=doc.querySelector('.recovery-quest');row.querySelector('button').click();await finishTravel();assert(game.state.location==='budapest','Journal route reaches Hungary before Greece');
+ npc('eszter');say('leipzig_restitution_ask');assert(reply('recovery_confirm').disabled,'Apology without evidence is insufficient');close();search('leipzig_restitution');
+ doc.querySelector('.recovery-quest button:last-child').click();say('leipzig_restitution_ask');say('recovery_confirm');
+ assert(!doc.querySelector('.recovery-quest'),'Resolved harm leaves active journal');assert(game.state.repairedSetbacks.includes('leipzig_restitution'),'Restitution remains remembered');close();
+ await travel('leipzig');npc('konrad');say('regional_investigate');say('regional_archive');say('leipzig_answerA');say('regional_confirm');close();
+
+ // Set up the last ceremony after playing the sanctuary investigations through the engine.
+ game.state.milestones.push('greece','norway','sweden','finland');game.state.inventory.astrolabe=1;game.state.inventory.irish_key=1;
+ game.travel('oslo');game.travel('galway','boat');game.open('niamh');direct('niamh_ask');direct('niamh_search');
+ for(const id of ['ash-temple','tide-shrine','star-abbey']){game.travel(id);direct('sanctuary_ask');game.gather(id+'_search');direct('sanctuary_study');direct(id+'_answer');direct('sanctuary_confirm');}
+ game.travel('galway');game.open('niamh');direct('niamh_ask');render();doc.getElementById('open-dialogue').click();
+ assert(!reply('niamh_bargain').disabled,'Masked patron offers a tempting bargain');say('niamh_bargain');
+ assert(!doc.getElementById('voyage-conclusion').open,'Betrayal prevents happy ending');assert(doc.querySelector('.recovery-quest').textContent.includes('Sail from Gaillimh'),'Journal preserves port-only recovery route');
+ npc('niamh');say('niamh_ask');assert(reply('niamh_accept').disabled,'Betrayal remains blocked on replay');close();
+ await travel('oslo');doc.querySelector('.recovery-quest button').click();await finishTravel();search('galway_restitution');npc('eszter');say('galway_restitution_ask');say('recovery_confirm');close();
+ await travel('oslo');await travel('galway');npc('niamh');say('niamh_ask');say('niamh_accept');
+ const conclusion=doc.getElementById('voyage-conclusion');assert(conclusion.open,'Ending is possible after actual restitution');assert(conclusion.textContent.includes('The register keeps the scars'),'Ending remembers earlier and final mistakes');assert(conclusion.querySelectorAll('.conclusion-scars li').length===2,'Ending names both repaired harms');
+ [...conclusion.querySelectorAll('button')].find(button=>button.textContent==='Continue exploring').click();language.value='cs';render();
+ assert(doc.getElementById('journal').textContent.includes('Následky a náprava'),'Recovery journal translates into Czech');
+ game.state.milestones=game.state.milestones.filter(id=>id!=='ireland');game.open('niamh');render();doc.getElementById('open-dialogue').click();say('niamh_ask');say('niamh_accept');assert(conclusion.textContent.includes('Registr uchovává jizvy'),'Scarred ending translates into Czech');
+ results.dataset.status='passed';results.textContent='PASS: warned choices, durable failures, blocked replay, recovery journal, pre-Greece Hungary journey, evidence collection, restitution, final betrayal, boat crossings, scarred ending, and Czech translation.';
+}
+run().catch(error=>{results.dataset.status='failed';results.textContent=error.stack;});
+</script>

@@ -1,6 +1,6 @@
 {
   "id": "lyonShop",
-  "name": "Lyon · bookseller",
+  "name": "Etienne · bookseller",
   "language": "fr",
   "dialogue": "lyonShop",
   "stock": [
@@ -8,5 +8,5 @@
     "scroll_en",
     "scroll_native"
   ],
-  "description": "Lyon · bookseller. Speaks French."
+  "description": "Etienne · bookseller. Speaks French."
 }

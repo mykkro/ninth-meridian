@@ -1,0 +1,19 @@
+﻿<!doctype html><meta charset="utf-8"><title>Sidebar person avatars</title><pre id="results">Running</pre><iframe id="game" title="Voyage"></iframe><style>iframe{width:100%;height:900px;border:0}</style>
+<script>
+const frame=document.getElementById('game'),results=document.getElementById('results'),assert=(value,message)=>{if(!value)throw Error(message);};
+async function run(){let html=await(await fetch('../index.html')).text();html=html.replace('<head>','<head><base href="'+new URL('../',location.href).href+'">').replace(/(<script src="engine\.js[^>]*><\/script>)/,'$1<script>const OriginalEngine=DialogueEngine;window.DialogueEngine=class extends OriginalEngine{constructor(world){super(world);window.testVoyage=this;}};<\/script>');frame.srcdoc=html;
+ for(let n=0;n<600&&!frame.contentDocument?.getElementById('load-status')?.hidden;n++)await new Promise(resolve=>setTimeout(resolve,50));
+ const doc=frame.contentDocument,game=frame.contentWindow.testVoyage;assert(game&&doc.getElementById('load-status').hidden,'Game loads');doc.getElementById('begin-voyage').click();
+
+ const language=doc.getElementById('ui-language'),render=()=>language.dispatchEvent(new Event('change'));language.value='en';game.state.metCompanions=['mira','rowan'];game.state.rumors=[{id:'test',npcId:'ada',phrase:'askRumors',language:'cs',scrollNotes:[]}];
+ const investigation=Object.values(game.world.quests).find(q=>q.kind==='investigation');game.state.milestones.push(investigation.started);
+ const recovery=Object.entries(game.world.quests).find(([id,q])=>q.kind==='recovery');game.state.setbacks.push(recovery[0]);render();
+ const icons=[...doc.querySelectorAll('.party-sidebar .person-reference .sidebar-avatar')];assert(icons.length>=5,'Avatars for companions, rumors and quest contacts');await Promise.all(icons.map(icon=>icon.decode()));
+ assert(doc.querySelector('#known-companions img[src="assets/avatars/mira.svg"]'),'Known companion Mira avatar');assert(doc.querySelector('#known-companions img[src="assets/avatars/rowan.svg"]'),'Known companion Rowan avatar');assert(doc.querySelector('#tales-rumors img[src="assets/avatars/ada.svg"]'),'Rumor speaker avatar');
+ const before=doc.querySelectorAll('.party-sidebar .person-reference img').length;language.value='cs';render();assert(doc.querySelectorAll('.party-sidebar .person-reference img').length===before,'Icons persist across language change');
+ const tabs=[...doc.querySelectorAll('.journal-tabs button')];tabs[1].click();assert(doc.querySelector('#journal summary img[src="assets/avatars/ada.svg"]'),'Conversation summary avatar');
+ game.logEvent('Companion departed',{companion:'mira'});doc.querySelectorAll('.journal-tabs button')[0].click();assert(doc.querySelector('#journal .journal-event img[src="assets/avatars/mira.svg"]'),'Event companion avatar');
+ results.dataset.status='passed';results.textContent='PASS: sidebar companion, rumor, quest contact, conversation and event avatars; image loading and UI language changes.';
+}run().catch(error=>{results.dataset.status='failed';results.textContent=error.stack;});
+</script>
+

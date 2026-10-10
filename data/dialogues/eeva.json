@@ -1,0 +1,106 @@
+{
+  "id": "eeva",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "pilgrim_remedy_offer",
+      "contexts": [
+        {
+          "requires": "pilgrim_remedy_done",
+          "phrase": "pilgrim_remedy_done"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "pilgrim_remedy_accept",
+          "next": "task",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "pilgrim_remedy_started"
+            }
+          ]
+        },
+        {
+          "phrase": "pilgrim_remedy_deliver",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "pilgrim_remedy_started",
+            "quantities": {
+              "lavender": 3
+            }
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "pilgrim_remedy",
+              "gold": 40,
+              "take": [
+                {
+                  "item": "lavender",
+                  "count": 3
+                }
+              ],
+              "items": [
+                {
+                  "item": "irish_sanctuary_notes",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "pilgrim_remedy_done"
+            }
+          ]
+        }
+      ]
+    },
+    "task": {
+      "phrase": "pilgrim_remedy_offer",
+      "choices": [
+        {
+          "phrase": "pilgrim_remedy_deliver",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "pilgrim_remedy_started",
+            "quantities": {
+              "lavender": 3
+            }
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "pilgrim_remedy",
+              "gold": 40,
+              "take": [
+                {
+                  "item": "lavender",
+                  "count": 3
+                }
+              ],
+              "items": [
+                {
+                  "item": "irish_sanctuary_notes",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "pilgrim_remedy_done"
+            }
+          ]
+        }
+      ]
+    },
+    "done": {
+      "phrase": "pilgrim_remedy_done",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

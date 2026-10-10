@@ -1,6 +1,6 @@
 {
   "id": "toledoShop",
-  "name": "Toledo · bookseller",
+  "name": "Alonso · bookseller",
   "language": "es",
   "dialogue": "toledoShop",
   "stock": [
@@ -8,5 +8,5 @@
     "scroll_en",
     "scroll_native"
   ],
-  "description": "Toledo · bookseller. Speaks Spanish."
+  "description": "Alonso · bookseller. Speaks Spanish."
 }

@@ -1,6 +1,6 @@
 {
   "id": "copenhagenShop",
-  "name": "Copenhagen · bookseller",
+  "name": "Mikkel · bookseller",
   "language": "da",
   "dialogue": "copenhagenShop",
   "stock": [
@@ -8,5 +8,5 @@
     "scroll_en",
     "scroll_native"
   ],
-  "description": "Copenhagen · bookseller. Speaks Danish."
+  "description": "Mikkel · bookseller. Speaks Danish."
 }

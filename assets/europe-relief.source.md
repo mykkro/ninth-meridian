@@ -1,6 +1,6 @@
 # European relief layer
 
-The active raster is the user-supplied `media/europe_relief_4096.jpg` (4096 × 4096), generated from EuroDEM 2023. Its SHA-256 matches `C:\Work\europe-dem\europe_relief_4096.jpg`: `CC7524EE76C1409C183F98429A282996AE5D7BC6887E8C3721FA13FD1BC2EAD0`. The original generation scripts and metadata are preserved in [docs/map-sources](../docs/map-sources/). Earlier rasters and the stylized relief SVG remain unused.
+The active raster is the user-supplied `media/europe_relief_4096.jpg` (4096 × 4096), generated from EuroDEM 2023. Its SHA-256 matches `C:\Work\europe-dem\europe_relief_4096.jpg`: `CC7524EE76C1409C183F98429A282996AE5D7BC6887E8C3721FA13FD1BC2EAD0`. The original generation scripts and metadata are preserved in [docs/map-sources](../docs/map-sources/). Obsolete earlier rasters, the stylized relief SVG, and the combined political/relief export were removed. The separate political SVG remains the input used to regenerate the active border data.
 
 ## Verified georeferencing
 

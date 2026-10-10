@@ -1,0 +1,32 @@
+{
+  "id": "map",
+  "question": {
+    "en": "I show rivers that cannot wet you and roads that cannot bear you. What am I?",
+    "cs": "Ukazuji řeky, které tě nenamočí, a cesty, které tě neunesou. Co jsem?",
+    "de": "Ich zeige Flüsse, die dich nicht nass machen, und Wege, die dich nicht tragen. Was bin ich?"
+  },
+  "answers": [
+    {
+      "en": "A bridge",
+      "cs": "Most",
+      "de": "Eine Brücke"
+    },
+    {
+      "en": "A map",
+      "cs": "Mapa",
+      "de": "Eine Karte"
+    },
+    {
+      "en": "A harbour",
+      "cs": "Přístav",
+      "de": "Ein Hafen"
+    }
+  ],
+  "correct": 1,
+  "stake": 100,
+  "explanation": {
+    "en": "A drawn river is a sign, not flowing water.",
+    "cs": "Nakreslená řeka je znamení, nikoli tekoucí voda.",
+    "de": "Ein gezeichneter Fluss ist ein Zeichen, kein fließendes Wasser."
+  }
+}

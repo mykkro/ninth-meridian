@@ -1,0 +1,35 @@
+{
+  "id": "riddle_words",
+  "name": "Leaves, Names and Memory",
+  "type": "reference",
+  "title": {
+    "en": "Leaves, Names and Memory",
+    "cs": "Listy, jména a paměť",
+    "de": "Blätter, Namen und Erinnerung",
+    "it": "Fogli, nomi e memoria",
+    "hu": "Lapok, nevek és emlékezet",
+    "ga": "Duilleoga, Ainmneacha agus Cuimhne"
+  },
+  "pages": [
+    {
+      "title": {
+        "en": "Words that belong to people",
+        "cs": "Slova, která patří lidem"
+      },
+      "text": {
+        "en": "A child receives a word by which others will call them. Ownership does not mean that the owner uses the word most. A secret, by contrast, is kept out of other mouths.",
+        "cs": "Dítě dostane slovo, kterým je ostatní budou volat. Vlastnictví neznamená, že vlastník slovo používá nejčastěji. Tajemství se naopak drží mimo cizí ústa."
+      }
+    },
+    {
+      "title": {
+        "en": "Leaves without branches",
+        "cs": "Listy bez větví"
+      },
+      "text": {
+        "en": "In a scriptorium, leaves are sheets of parchment. Stitch them together and they can carry the words of a dead teacher to a pupil not yet born.",
+        "cs": "V písařské dílně jsou listy stránky pergamenu. Sešij je a mohou přenést slova zemřelého učitele k žákovi, který se ještě nenarodil."
+      }
+    }
+  ]
+}

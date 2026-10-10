@@ -1,0 +1,19 @@
+{
+  "id": "winter_stores",
+  "title": "Winter stores",
+  "description": "Bring two pieces of ore for the storehouse hinges. Three packs of travel rations will be yours.",
+  "milestones": [
+    "winter_stores_started",
+    "winter_stores_done"
+  ],
+  "completion": "winter_stores_done",
+  "fetchItem": "ore",
+  "fetchCount": 2,
+  "location": "oslo",
+  "giver": "solveig",
+  "reward": {
+    "gold": 40,
+    "item": "travel_rations",
+    "count": 3
+  }
+}

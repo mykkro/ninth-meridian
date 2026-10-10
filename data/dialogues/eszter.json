@@ -6,6 +6,81 @@
       "phrase": "eszter_greet",
       "choices": [
         {
+          "phrase": "galway_restitution_ask",
+          "quality": "sensible",
+          "next": "galway_restitution_task",
+          "requires": {
+            "setbacks": [
+              "galway_restitution"
+            ]
+          },
+          "visibleWhen": {
+            "setbacks": [
+              "galway_restitution"
+            ]
+          }
+        },
+        {
+          "phrase": "venice_restitution_ask",
+          "quality": "sensible",
+          "next": "venice_restitution_task",
+          "requires": {
+            "setbacks": [
+              "venice_restitution"
+            ]
+          },
+          "visibleWhen": {
+            "setbacks": [
+              "venice_restitution"
+            ]
+          }
+        },
+        {
+          "phrase": "bologna_restitution_ask",
+          "quality": "sensible",
+          "next": "bologna_restitution_task",
+          "requires": {
+            "setbacks": [
+              "bologna_restitution"
+            ]
+          },
+          "visibleWhen": {
+            "setbacks": [
+              "bologna_restitution"
+            ]
+          }
+        },
+        {
+          "phrase": "hamburg_restitution_ask",
+          "quality": "sensible",
+          "next": "hamburg_restitution_task",
+          "requires": {
+            "setbacks": [
+              "hamburg_restitution"
+            ]
+          },
+          "visibleWhen": {
+            "setbacks": [
+              "hamburg_restitution"
+            ]
+          }
+        },
+        {
+          "phrase": "leipzig_restitution_ask",
+          "quality": "sensible",
+          "next": "leipzig_restitution_task",
+          "requires": {
+            "setbacks": [
+              "leipzig_restitution"
+            ]
+          },
+          "visibleWhen": {
+            "setbacks": [
+              "leipzig_restitution"
+            ]
+          }
+        },
+        {
           "phrase": "eszter_ask",
           "next": "clue",
           "quality": "sensible",
@@ -17,26 +92,6 @@
           "phrase": "eszter_browse",
           "next": "trade",
           "quality": "sensible"
-        },
-        {
-          "phrase": "banter_sillySpoon",
-          "next": "banterSpoon",
-          "quality": "nonsense"
-        },
-        {
-          "phrase": "banter_sillyCheese",
-          "next": "banterCheese",
-          "quality": "nonsense"
-        },
-        {
-          "phrase": "banter_rudeDemand",
-          "next": "banterDismiss",
-          "quality": "rude"
-        },
-        {
-          "phrase": "banter_rudeInsult",
-          "next": "banterDismiss",
-          "quality": "rude"
         }
       ]
     },
@@ -76,52 +131,192 @@
           "requires": {
             "item": "astrolabe"
           }
-        },
-        {
-          "phrase": "banter_sillyCheese",
-          "next": "banterCheese",
-          "quality": "nonsense"
-        },
-        {
-          "phrase": "banter_rudeInsult",
-          "next": "banterDismiss",
-          "quality": "rude"
         }
       ]
     },
-    "banterSpoon": {
-      "phrase": "banter_spoonRebuke",
+    "leipzig_restitution_task": {
+      "phrase": "leipzig_restitution_task",
       "choices": [
         {
-          "phrase": "banter_startOver",
-          "next": "greeting",
-          "quality": "sensible"
+          "phrase": "recovery_confirm",
+          "quality": "sensible",
+          "next": "leipzig_restitution_done",
+          "requires": {
+            "setbacks": [
+              "leipzig_restitution"
+            ],
+            "item": "leipzig_restitution_proof"
+          },
+          "effects": [
+            {
+              "type": "resolve",
+              "id": "leipzig_restitution"
+            }
+          ]
         },
         {
-          "phrase": "banter_rudeDemand",
-          "next": "banterDismiss",
-          "quality": "rude"
+          "phrase": "consequence_depart",
+          "quality": "sensible",
+          "next": "leipzig_restitution_leave"
         }
       ]
     },
-    "banterCheese": {
-      "phrase": "banter_cheeseRebuke",
+    "leipzig_restitution_done": {
+      "phrase": "leipzig_restitution_repaired",
+      "outcome": "success",
+      "choices": []
+    },
+    "leipzig_restitution_leave": {
+      "phrase": "leipzig_restitution_task",
+      "outcome": "success",
+      "choices": []
+    },
+    "hamburg_restitution_task": {
+      "phrase": "hamburg_restitution_task",
       "choices": [
         {
-          "phrase": "banter_startOver",
-          "next": "greeting",
-          "quality": "sensible"
+          "phrase": "recovery_confirm",
+          "quality": "sensible",
+          "next": "hamburg_restitution_done",
+          "requires": {
+            "setbacks": [
+              "hamburg_restitution"
+            ],
+            "item": "hamburg_restitution_proof"
+          },
+          "effects": [
+            {
+              "type": "resolve",
+              "id": "hamburg_restitution"
+            }
+          ]
         },
         {
-          "phrase": "banter_rudeInsult",
-          "next": "banterDismiss",
-          "quality": "rude"
+          "phrase": "consequence_depart",
+          "quality": "sensible",
+          "next": "hamburg_restitution_leave"
         }
       ]
     },
-    "banterDismiss": {
-      "phrase": "banter_rudeDismiss",
-      "outcome": "dismissed",
+    "hamburg_restitution_done": {
+      "phrase": "hamburg_restitution_repaired",
+      "outcome": "success",
+      "choices": []
+    },
+    "hamburg_restitution_leave": {
+      "phrase": "hamburg_restitution_task",
+      "outcome": "success",
+      "choices": []
+    },
+    "bologna_restitution_task": {
+      "phrase": "bologna_restitution_task",
+      "choices": [
+        {
+          "phrase": "recovery_confirm",
+          "quality": "sensible",
+          "next": "bologna_restitution_done",
+          "requires": {
+            "setbacks": [
+              "bologna_restitution"
+            ],
+            "item": "bologna_restitution_proof"
+          },
+          "effects": [
+            {
+              "type": "resolve",
+              "id": "bologna_restitution"
+            }
+          ]
+        },
+        {
+          "phrase": "consequence_depart",
+          "quality": "sensible",
+          "next": "bologna_restitution_leave"
+        }
+      ]
+    },
+    "bologna_restitution_done": {
+      "phrase": "bologna_restitution_repaired",
+      "outcome": "success",
+      "choices": []
+    },
+    "bologna_restitution_leave": {
+      "phrase": "bologna_restitution_task",
+      "outcome": "success",
+      "choices": []
+    },
+    "venice_restitution_task": {
+      "phrase": "venice_restitution_task",
+      "choices": [
+        {
+          "phrase": "recovery_confirm",
+          "quality": "sensible",
+          "next": "venice_restitution_done",
+          "requires": {
+            "setbacks": [
+              "venice_restitution"
+            ],
+            "item": "venice_restitution_proof"
+          },
+          "effects": [
+            {
+              "type": "resolve",
+              "id": "venice_restitution"
+            }
+          ]
+        },
+        {
+          "phrase": "consequence_depart",
+          "quality": "sensible",
+          "next": "venice_restitution_leave"
+        }
+      ]
+    },
+    "venice_restitution_done": {
+      "phrase": "venice_restitution_repaired",
+      "outcome": "success",
+      "choices": []
+    },
+    "venice_restitution_leave": {
+      "phrase": "venice_restitution_task",
+      "outcome": "success",
+      "choices": []
+    },
+    "galway_restitution_task": {
+      "phrase": "galway_restitution_task",
+      "choices": [
+        {
+          "phrase": "recovery_confirm",
+          "quality": "sensible",
+          "next": "galway_restitution_done",
+          "requires": {
+            "setbacks": [
+              "galway_restitution"
+            ],
+            "item": "galway_restitution_proof"
+          },
+          "effects": [
+            {
+              "type": "resolve",
+              "id": "galway_restitution"
+            }
+          ]
+        },
+        {
+          "phrase": "consequence_depart",
+          "quality": "sensible",
+          "next": "galway_restitution_leave"
+        }
+      ]
+    },
+    "galway_restitution_done": {
+      "phrase": "galway_restitution_repaired",
+      "outcome": "success",
+      "choices": []
+    },
+    "galway_restitution_leave": {
+      "phrase": "galway_restitution_task",
+      "outcome": "success",
       "choices": []
     }
   }

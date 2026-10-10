@@ -1,0 +1,242 @@
+{
+  "sanctuary_ask": {
+    "en": "What happened in this sanctuary?",
+    "cs": "Co se v této svatyni stalo?",
+    "ga": "Cad a tharla sa tearmann seo?"
+  },
+  "sanctuary_study": {
+    "en": "I will compare the evidence.",
+    "cs": "Porovnám nalezené důkazy.",
+    "ga": "Cuirfidh mé an fhianaise i gcomparáid."
+  },
+  "sanctuary_retry": {
+    "en": "Let me examine it again.",
+    "cs": "Prohlédnu si to znovu.",
+    "ga": "Lig dom féachaint air arís."
+  },
+  "sanctuary_confirm": {
+    "en": "I will carry this testimony to Gaillimh.",
+    "cs": "Donesu toto svědectví do Gaillimh.",
+    "ga": "Tabharfaidh mé an fhianaise seo go Gaillimh."
+  },
+  "sanctuary_recorded": {
+    "en": "This testimony is already in my journal.",
+    "cs": "Toto svědectví už mám v deníku.",
+    "ga": "Tá an fhianaise seo i mo dhialann cheana."
+  },
+  "ash-temple_intro": {
+    "en": "The door stayed closed to armed men, but a refugee child opened it with a greeting. Copy the carvings before you decide what the builders intended.",
+    "cs": "Dveře zůstaly zavřené ozbrojencům, ale dítě uprchlíků je otevřelo pozdravem. Než rozhodneš, co stavitelé zamýšleli, obkresli rytiny.",
+    "ga": "Dúnadh an doras ar na saighdiúirí. D’oscail páiste é le beannacht. Scrúdaigh na comharthaí."
+  },
+  "ash-temple_puzzle": {
+    "en": "Your rubbing shows three greetings, all pointing inward. Sword marks were scratched over them much later. What belongs to the original threshold? Your answer will become an order. An accusation or destructive instruction cannot be undone by trying another reply; you may leave to study first.",
+    "cs": "Otisk ukazuje tři pozdravy mířící dovnitř. Značky mečů do nich někdo vyryl až mnohem později. Co patří k původnímu prahu? Tvá odpověď se stane příkazem. Obvinění či ničivý pokyn neodvoláš jinou odpovědí; můžeš nejprve odejít a studovat.",
+    "ga": "Tá trí bheannacht ar an gcloch. Cuireadh na claimhte leo níos déanaí. Cad é an teachtaireacht bhunaidh? Beidh do fhreagra ina ordú. Ní chealóidh freagra eile cúiseamh ná scrios. Is féidir leat staidéar a dhéanamh ar dtús."
+  },
+  "ash-temple_answer": {
+    "en": "A welcome for strangers, not an order to conquer.",
+    "cs": "Přijetí cizinců, ne rozkaz dobývat.",
+    "ga": "Fáilte roimh strainséirí, ní ordú cogaidh."
+  },
+  "ash-temple_wrong": {
+    "en": "Give the threshold to the wardens; shelter can wait until the names are checked.",
+    "cs": "Předat práh strážcům; útočiště může počkat, dokud neprověří jména.",
+    "ga": "Tabhair an doras do na gardaí. Seiceáil na hainmneacha roimh dhídean."
+  },
+  "ash-temple_hint": {
+    "en": "The sword scratches cut through older letters. Read the older greeting, not the later threat.",
+    "cs": "Rýhy mečů protínají starší písmena. Čti původní pozdrav, ne pozdější hrozbu.",
+    "ga": "Tá na litreacha níos sine ná na claimhte. Léigh an bheannacht."
+  },
+  "ash-temple_solved": {
+    "en": "You have restored the first meaning. Take the seal of welcome: the library must offer shelter before it offers knowledge.",
+    "cs": "Obnovil jsi původní význam. Vezmi pečeť přijetí: knihovna musí nejprve nabídnout útočiště a teprve potom vědění.",
+    "ga": "Tá an bhrí cheart agat. Tóg séala na fáilte. Is tearmann í an leabharlann."
+  },
+  "tide-shrine_intro": {
+    "en": "People call the Silent Tide kidnappers. I saw the sailors lead families along the causeway. Study the tide marks; fear has changed the story.",
+    "cs": "Lidé nazývají Tichý příliv únosci. Viděla jsem námořníky vést rodiny po stezce. Prozkoumej přílivové značky; strach změnil celý příběh.",
+    "ga": "Deirtear gur fuadaithe iad. Chonaic mé mairnéalaigh ag cabhrú le teaghlaigh. Scrúdaigh an taoide."
+  },
+  "tide-shrine_puzzle": {
+    "en": "The slate records a low tide at the second bell. Footprints run from the boats toward shelter, and the ropes were untied rather than cut. What happened? Your answer will become an order. An accusation or destructive instruction cannot be undone by trying another reply; you may leave to study first.",
+    "cs": "Tabulka zaznamenává odliv při druhém zvonění. Stopy vedou od lodí k úkrytu a lana byla rozvázána, ne přeřezána. Co se stalo? Tvá odpověď se stane příkazem. Obvinění či ničivý pokyn neodvoláš jinou odpovědí; můžeš nejprve odejít a studovat.",
+    "ga": "Bhí lag trá ag an dara clog. Téann na lorganna i dtreo an tearmainn. Cad a tharla? Beidh do fhreagra ina ordú. Ní chealóidh freagra eile cúiseamh ná scrios. Is féidir leat staidéar a dhéanamh ar dtús."
+  },
+  "tide-shrine_answer": {
+    "en": "The sailors guided a planned evacuation at low tide.",
+    "cs": "Námořníci při odlivu vedli připravenou evakuaci.",
+    "ga": "Threoraigh na mairnéalaigh na teaghlaigh ag lag trá."
+  },
+  "tide-shrine_wrong": {
+    "en": "Declare them lost to a storm and seal the causeway; the witness is inventing a rescue.",
+    "cs": "Prohlásit je za ztracené v bouři a uzavřít stezku; svědkyně si záchranu vymýšlí.",
+    "ga": "Abair gur chaill stoirm iad. Dún an cosán. Tá an finné ag cumadh scéil."
+  },
+  "tide-shrine_hint": {
+    "en": "A storm would break ropes and scatter tracks. These knots were opened carefully, and the footsteps lead inland.",
+    "cs": "Bouře by potrhala lana a smetla stopy. Uzly někdo pečlivě rozvázal a stopy vedou do vnitrozemí.",
+    "ga": "Níor briseadh na rópaí. Téann na lorganna isteach ón bhfarraige."
+  },
+  "tide-shrine_solved": {
+    "en": "Take the seal of testimony. Some sailors chose secrecy to protect refugees; the evidence clears them of the accusation, not of every difficult choice.",
+    "cs": "Vezmi pečeť svědectví. Někteří námořníci zvolili utajení, aby chránili uprchlíky; důkazy je zbavují obvinění, ne odpovědnosti za každé těžké rozhodnutí.",
+    "ga": "Tóg séala na fianaise. Chosain na mairnéalaigh teaghlaigh faoi rún."
+  },
+  "star-abbey_intro": {
+    "en": "Eliáš left the last leaf here. Each language preserves a different part of the promise. Recover the hidden page before you try to complete it.",
+    "cs": "Eliáš tu zanechal poslední list. Každý jazyk uchovává jinou část slibu. Než jej zkusíš doplnit, najdi ukrytou stránku.",
+    "ga": "D’fhág Eliáš an leathanach anseo. Tá cuid den gheallúint i ngach teanga. Aimsigh an leathanach."
+  },
+  "star-abbey_puzzle": {
+    "en": "The fragments say: shelter the stranger; hear the witness; let no keeper silence another voice. What should the restored astrolabe do? Your answer will become an order. An accusation or destructive instruction cannot be undone by trying another reply; you may leave to study first.",
+    "cs": "Úlomky říkají: ukryj cizince; vyslechni svědka; ať žádný správce neumlčí jiný hlas. Co má obnovený astroláb dělat? Tvá odpověď se stane příkazem. Obvinění či ničivý pokyn neodvoláš jinou odpovědí; můžeš nejprve odejít a studovat.",
+    "ga": "Tabhair tearmann. Éist leis an bhfinné. Ná cuir aon ghuth ina thost. Cad ba cheart don réaltroláb a dhéanamh? Beidh do fhreagra ina ordú. Ní chealóidh freagra eile cúiseamh ná scrios. Is féidir leat staidéar a dhéanamh ar dtús."
+  },
+  "star-abbey_answer": {
+    "en": "Connect the voices and keep knowledge open to everyone.",
+    "cs": "Propojit hlasy a nechat vědění přístupné všem.",
+    "ga": "Na guthanna a nascadh agus eolas a roinnt le cách."
+  },
+  "star-abbey_wrong": {
+    "en": "Keep one authorized language; feed the other leaves to the lamps.",
+    "cs": "Ponechat jeden schválený jazyk; ostatními listy nakrmit lampy.",
+    "ga": "Coinnigh teanga údaraithe amháin. Dóigh na leathanaigh eile."
+  },
+  "star-abbey_hint": {
+    "en": "None of the fragments claims a throne. Their verbs are shelter, hear, and share.",
+    "cs": "Žádný úlomek si nenárokuje trůn. Jejich slovesa jsou ukrýt, vyslechnout a sdílet.",
+    "ga": "Ní iarrann na blúirí coróin. Iarrann siad tearmann agus éisteacht."
+  },
+  "star-abbey_solved": {
+    "en": "Take the seal of concordance. The ninth meridian is a meeting of voices, not a border. Niamh can now open the library with you.",
+    "cs": "Vezmi pečeť porozumění. Devátý poledník je místem setkání hlasů, ne hranicí. Niamh s tebou nyní může otevřít knihovnu.",
+    "ga": "Tóg séala na comhthuisceana. Is áit chruinnithe é an naoú fhadlíne. Fill ar Niamh."
+  },
+  "niamh_search": {
+    "en": "I will seek the three sanctuaries.",
+    "cs": "Vyhledám tři svatyně.",
+    "ga": "Lorgóidh mé na trí thearmann."
+  },
+  "harbour_lights_offer": {
+    "en": "The harbour lamps need two measures of salt. I can give you two translation scrolls for the northern voyage.",
+    "cs": "Přístavní lampy potřebují dvě odměrky soli. Mohu ti dát dva překladové svitky na severní cestu.",
+    "el": "Τα φανάρια χρειάζονται δύο μερίδες αλάτι. Θα σου δώσω δύο παπύρους μετάφρασης."
+  },
+  "harbour_lights_accept": {
+    "en": "I will gather what you need.",
+    "cs": "Nasbírám, co potřebuješ.",
+    "el": "Θα μαζέψω όσα χρειάζεσαι."
+  },
+  "harbour_lights_deliver": {
+    "en": "Here are the supplies we agreed on.",
+    "cs": "Tady jsou domluvené zásoby.",
+    "el": "Εδώ είναι οι προμήθειες."
+  },
+  "harbour_lights_done": {
+    "en": "Thank you. Your help has made this place safer; the promised reward is yours.",
+    "cs": "Děkuji. Díky tvé pomoci je tu bezpečněji; slíbená odměna je tvoje.",
+    "el": "Ευχαριστώ. Η ανταμοιβή είναι δική σου."
+  },
+  "winter_stores_offer": {
+    "en": "Bring two pieces of ore for the storehouse hinges. Three packs of travel rations will be yours.",
+    "cs": "Přines dva kusy rudy na panty skladiště. Dostaneš tři balíčky cestovních zásob.",
+    "no": "Ta med to stykker malm til hengslene. Du får tre pakker proviant."
+  },
+  "winter_stores_accept": {
+    "en": "I will gather what you need.",
+    "cs": "Nasbírám, co potřebuješ.",
+    "no": "Jeg skal samle det du trenger."
+  },
+  "winter_stores_deliver": {
+    "en": "Here are the supplies we agreed on.",
+    "cs": "Tady jsou domluvené zásoby.",
+    "no": "Her er forsyningene."
+  },
+  "winter_stores_done": {
+    "en": "Thank you. Your help has made this place safer; the promised reward is yours.",
+    "cs": "Děkuji. Díky tvé pomoci je tu bezpečněji; slíbená odměna je tvoje.",
+    "no": "Takk. Belønningen er din."
+  },
+  "archive_shelves_offer": {
+    "en": "Two pieces of timber will save these sea records from the damp. In return, take my Swedish archive phrasebook.",
+    "cs": "Dva kusy dřeva ochrání námořní záznamy před vlhkem. Na oplátku dostaneš můj švédský archivní slovník.",
+    "sv": "Två stycken trä skyddar sjöarkivet från fukten. Du får min svenska parlör."
+  },
+  "archive_shelves_accept": {
+    "en": "I will gather what you need.",
+    "cs": "Nasbírám, co potřebuješ.",
+    "sv": "Jag samlar det du behöver."
+  },
+  "archive_shelves_deliver": {
+    "en": "Here are the supplies we agreed on.",
+    "cs": "Tady jsou domluvené zásoby.",
+    "sv": "Här är förnödenheterna."
+  },
+  "archive_shelves_done": {
+    "en": "Thank you. Your help has made this place safer; the promised reward is yours.",
+    "cs": "Děkuji. Díky tvé pomoci je tu bezpečněji; slíbená odměna je tvoje.",
+    "sv": "Tack. Belöningen är din."
+  },
+  "pilgrim_remedy_offer": {
+    "en": "Gather three herbs for the pilgrims waiting to sail. A traveller left an Irish sanctuary phrasebook; I will give it to you in thanks.",
+    "cs": "Nasbírej tři byliny pro poutníky čekající na plavbu. Jeden cestovatel tu zanechal slovník irských svatyní; jako poděkování jej dostaneš.",
+    "fi": "Kerää kolme yrttiä merimatkaa odottaville pyhiinvaeltajille. Saat kiitokseksi iirin pyhäkköjen sanakirjan."
+  },
+  "pilgrim_remedy_accept": {
+    "en": "I will gather what you need.",
+    "cs": "Nasbírám, co potřebuješ.",
+    "fi": "Kerään tarvitsemasi tarvikkeet."
+  },
+  "pilgrim_remedy_deliver": {
+    "en": "Here are the supplies we agreed on.",
+    "cs": "Tady jsou domluvené zásoby.",
+    "fi": "Tässä ovat tarvikkeet."
+  },
+  "pilgrim_remedy_done": {
+    "en": "Thank you. Your help has made this place safer; the promised reward is yours.",
+    "cs": "Děkuji. Díky tvé pomoci je tu bezpečněji; slíbená odměna je tvoje.",
+    "fi": "Kiitos. Palkinto on sinun."
+  },
+  "garden_salve_offer": {
+    "en": "Three flowers will finish the remedy for weary travellers. I will prepare two healing salves for you as well.",
+    "cs": "Tři květiny dokončí lék pro unavené cestovatele. Připravím také dvě léčivé masti pro tebe.",
+    "hu": "Három virág kell a fáradt utazók gyógyszeréhez. Két gyógykenőcsöt készítek neked is."
+  },
+  "garden_salve_accept": {
+    "en": "I will gather what you need.",
+    "cs": "Nasbírám, co potřebuješ.",
+    "hu": "Összegyűjtöm, amire szükséged van."
+  },
+  "garden_salve_deliver": {
+    "en": "Here are the supplies we agreed on.",
+    "cs": "Tady jsou domluvené zásoby.",
+    "hu": "Itt vannak a készletek."
+  },
+  "garden_salve_done": {
+    "en": "Thank you. Your help has made this place safer; the promised reward is yours.",
+    "cs": "Děkuji. Díky tvé pomoci je tu bezpečněji; slíbená odměna je tvoje.",
+    "hu": "Köszönöm. A jutalom a tiéd."
+  },
+  "refuge_rope_offer": {
+    "en": "Bring two lengths of rope to raise shelters in the courtyard. The refuge will share three packs of rations with you.",
+    "cs": "Přines dva kusy lana pro přístřešky na nádvoří. Útočiště s tebou sdílí tři balíčky zásob.",
+    "ga": "Tabhair dhá rópa chun scáthláin a thógáil. Tabharfaimid trí phaca bia duit."
+  },
+  "refuge_rope_accept": {
+    "en": "I will gather what you need.",
+    "cs": "Nasbírám, co potřebuješ.",
+    "ga": "Baileoidh mé a bhfuil uait."
+  },
+  "refuge_rope_deliver": {
+    "en": "Here are the supplies we agreed on.",
+    "cs": "Tady jsou domluvené zásoby.",
+    "ga": "Seo iad na soláthairtí."
+  },
+  "refuge_rope_done": {
+    "en": "Thank you. Your help has made this place safer; the promised reward is yours.",
+    "cs": "Děkuji. Díky tvé pomoci je tu bezpečněji; slíbená odměna je tvoje.",
+    "ga": "Go raibh maith agat. Seo do luach saothair."
+  }
+}

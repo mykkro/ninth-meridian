@@ -1,6 +1,6 @@
 {
   "id": "amsterdamShop",
-  "name": "Amsterdam · bookseller",
+  "name": "Willem · bookseller",
   "language": "nl",
   "dialogue": "amsterdamShop",
   "stock": [
@@ -8,5 +8,5 @@
     "scroll_en",
     "scroll_native"
   ],
-  "description": "Amsterdam · bookseller. Speaks Dutch."
+  "description": "Willem · bookseller. Speaks Dutch."
 }

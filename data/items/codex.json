@@ -3,5 +3,11 @@
   "type": "book",
   "name": "Codex of three paths",
   "npc": "latinCodex",
-  "description": "A two-page Latin manuscript describing the three relics and their meeting place."
+  "description": "A two-page Latin manuscript describing the three relics and their meeting place.",
+  "sourceLanguage": "la",
+  "title": {
+    "la": "Codex trium viarum",
+    "en": "Codex of three paths",
+    "cs": "Kodex tří cest"
+  }
 }

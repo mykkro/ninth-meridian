@@ -10,6 +10,16 @@
           "next": "methods",
           "quality": "sensible"
         }
+      ],
+      "contexts": [
+        {
+          "requires": {
+            "setbacks": [
+              "leipzig_restitution"
+            ]
+          },
+          "phrase": "leipzig_restitution_failure"
+        }
       ]
     },
     "methods": {
@@ -39,12 +49,46 @@
         {
           "phrase": "leipzig_answerA",
           "next": "finding",
-          "quality": "sensible"
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "leipzig_restitution"
+            ]
+          }
+        },
+        {
+          "phrase": "consequence_leave",
+          "quality": "sensible",
+          "next": "studyLater"
         },
         {
           "phrase": "leipzig_wrong",
           "next": "hint",
-          "quality": "nonsense"
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "leipzig_restitution"
+            ],
+            "withoutMilestones": [
+              "leipzig_verified"
+            ]
+          },
+          "effects": [
+            {
+              "type": "setback",
+              "id": "leipzig_restitution"
+            },
+            {
+              "type": "give",
+              "item": "eszter_notes"
+            }
+          ],
+          "practice": false,
+          "visibleWhen": {
+            "withoutMilestones": [
+              "leipzig_verified"
+            ]
+          }
         }
       ]
     },
@@ -54,24 +98,53 @@
         {
           "phrase": "leipzig_answerB",
           "next": "finding",
-          "quality": "sensible"
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "leipzig_restitution"
+            ]
+          }
+        },
+        {
+          "phrase": "consequence_leave",
+          "quality": "sensible",
+          "next": "studyLater"
         },
         {
           "phrase": "leipzig_wrong",
           "next": "hint",
-          "quality": "nonsense"
+          "quality": "sensible",
+          "requires": {
+            "withoutSetbacks": [
+              "leipzig_restitution"
+            ],
+            "withoutMilestones": [
+              "leipzig_verified"
+            ]
+          },
+          "effects": [
+            {
+              "type": "setback",
+              "id": "leipzig_restitution"
+            },
+            {
+              "type": "give",
+              "item": "eszter_notes"
+            }
+          ],
+          "practice": false,
+          "visibleWhen": {
+            "withoutMilestones": [
+              "leipzig_verified"
+            ]
+          }
         }
       ]
     },
     "hint": {
-      "phrase": "leipzig_hint",
-      "choices": [
-        {
-          "phrase": "regional_retry",
-          "next": "methods",
-          "quality": "sensible"
-        }
-      ]
+      "phrase": "leipzig_restitution_failure",
+      "outcome": "dismissed",
+      "choices": []
     },
     "finding": {
       "phrase": "leipzig_finding",
@@ -90,7 +163,12 @@
               "id": "leipzig_investigation",
               "gold": 8
             }
-          ]
+          ],
+          "requires": {
+            "withoutSetbacks": [
+              "leipzig_restitution"
+            ]
+          }
         },
         {
           "phrase": "regional_retry",
@@ -103,6 +181,11 @@
       "phrase": "regional_bye",
       "choices": [],
       "outcome": "success"
+    },
+    "studyLater": {
+      "phrase": "leipzig_intro",
+      "outcome": "success",
+      "choices": []
     }
   }
 }

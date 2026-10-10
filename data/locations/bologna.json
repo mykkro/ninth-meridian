@@ -7,7 +7,8 @@
   "description": "Under the porticoes, a student traces a missing manuscript leaf to the university archive. Behind him, artist-engineer Caterina Bellandi demonstrates a geared brass hand; the fingers close neatly, but will not open again.",
   "npcs": [
     "paolo",
-    "chiara"
+    "chiara",
+    "isadora"
   ],
   "milestone": "bologna_verified",
   "coordinates": {
@@ -17,5 +18,17 @@
   "mapLabelOffset": [
     -10,
     18
+  ],
+  "riddleBooks": [
+    "riddle_tools"
+  ],
+  "realm": "Papal States",
+  "realmContext": {
+    "en": "Bologna belongs to the Papal States, but its civic institutions and the Bentivoglio family exercise extensive local power. In 1453 Sante Bentivoglio leads the city under arrangements with the papacy. University scholars, printers, and clerics dispute old manuscripts in the porticoes. The solar leaf must be reconstructed from evidence; a powerful patron’s seal cannot make a false reading true.",
+    "cs": "Boloňa patří k Papežskému státu, ale její městské instituce a rod Bentivoglio mají rozsáhlou místní moc. Roku 1453 vede město Sante Bentivoglio na základě dohod s papežstvím. Univerzitní učenci, tiskaři a duchovní se v podloubích přou o staré rukopisy. Sluneční list musí být obnoven podle důkazů; pečeť mocného mecenáše neudělá z chybného čtení pravdu."
+  },
+  "loreBooks": [
+    "lore_alchemy",
+    "lore_dawn_workshop"
   ]
 }

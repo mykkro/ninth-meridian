@@ -1,0 +1,12 @@
+{
+  "id": "hamburg_restitution",
+  "kind": "recovery",
+  "title": "The ferryman’s false warrant",
+  "description": "Your clock-only accusation put the ferryman in custody and scattered the witnesses. Recover a harbour counter-record in Buda, ask Eszter to clear the warrant, and return to Marta in Hamburg.",
+  "delayDays": 4,
+  "location": "budapest",
+  "giver": "eszter",
+  "sourceLocation": "budapest",
+  "sourceAction": "hamburg_restitution_search",
+  "repairItem": "hamburg_restitution_proof"
+}

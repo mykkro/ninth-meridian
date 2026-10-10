@@ -1,0 +1,13 @@
+const assert=require('node:assert/strict'),Engine=require('../engine.js'),{world}=require('./fixtures.cjs');
+const game=new Engine(world);game.state.location='london';game.state.companions=['rowan'];
+for(const id of ['lore_western_tides','lore_dawn_workshop','lore_eastern_letters'])assert.equal(world.items[id].scholarTranslationCost,300);
+const id='lore_western_tides';assert.deepEqual(game.bookLanguages(id).map(x=>x.language),['en'],'Companion cannot bypass scholar');
+let snapshot=JSON.stringify(game.state);assert.throws(()=>game.translateBook(id,'scroll_native'),/scholar/);assert.equal(JSON.stringify(game.state),snapshot);
+game.state.gold=299;snapshot=JSON.stringify(game.state);assert.throws(()=>game.hireBookScholar(id,'cs'),/coins/);assert.equal(JSON.stringify(game.state),snapshot);
+game.state.gold=300;const scrolls=game.state.inventory.scroll_native;assert.equal(game.hireBookScholar(id,'cs').target,'cs');assert.ok(game.bookAtScholar(id));assert.deepEqual(game.bookLanguages(id).map(x=>x.language),['en'],'No translation before collection');let pending=JSON.stringify(game.state);assert.throws(()=>game.collectScholarBook(id),/still/);assert.equal(JSON.stringify(game.state),pending);game.waitForScholar(id);game.waitForScholar(id);game.waitForScholar(id);assert.equal(game.collectScholarBook(id),'cs');assert.equal(game.bookAtScholar(id),null);assert.equal(game.state.gold,0);assert.equal(game.state.inventory.scroll_native,scrolls);assert.ok(game.bookLanguages(id).some(x=>x.language==='cs'&&x.via==='Scholar translation'));
+snapshot=JSON.stringify(game.state);assert.throws(()=>game.hireBookScholar(id,'cs'),/already/);assert.throws(()=>game.hireBookScholar(id,'xx'),/translation/);assert.equal(JSON.stringify(game.state),snapshot);
+game.state.location='prague';snapshot=JSON.stringify(game.state);assert.throws(()=>game.hireBookScholar(id,'de'),/another library/);assert.equal(JSON.stringify(game.state),snapshot);
+game.state.location='london';assert.ok(game.bookLanguages(id).some(x=>x.language==='cs'),'Saved after returning');game.state.gold=10000;
+for(const language of Object.keys(world.languages).filter(l=>!['en','cs'].includes(l))){game.hireBookScholar(id,language);game.state.voyageDay+=3;game.collectScholarBook(id);}assert.equal(game.bookLanguages(id).length,20);
+game.reset();assert.equal(game.state.scholarTranslations,undefined);assert.equal(game.state.scholarJobs,undefined);game.state.location='london';assert.deepEqual(game.bookLanguages(id).map(x=>x.language),['en']);
+console.log('Passed: paid long-book scholar translations, all 20 targets, no scroll/interpreter bypass, atomic payment, no double charge, local access, persistence and reset.');

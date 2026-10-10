@@ -1,0 +1,34 @@
+<!doctype html><meta charset="utf-8"><title>Journey layout and sea crossings</title>
+<pre id="results">Running</pre><iframe id="game" title="Voyage"></iframe><style>iframe{width:100%;height:900px;border:0}</style>
+<script>
+const frame=document.getElementById('game'),results=document.getElementById('results');
+const assert=(value,message)=>{if(!value)throw Error(message);};
+const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+async function run(){
+ let html=await(await fetch('../index.html')).text();
+ html=html.replace('<head>','<head><base href="'+new URL('../',location.href).href+'">').replace(/(<script src="engine\.js[^>]*><\/script>)/,'$1<script>const OriginalEngine=DialogueEngine;window.DialogueEngine=class extends OriginalEngine{constructor(world){super(world);window.testVoyage=this;}};<\/script>');frame.srcdoc=html;
+ for(let n=0;n<600&&!frame.contentDocument?.getElementById('load-status')?.hidden;n++)await pause(50);
+ const doc=frame.contentDocument,win=frame.contentWindow,game=win.testVoyage;assert(game&&doc.getElementById('load-status').hidden,'Game loads');doc.getElementById('begin-voyage').click();
+ game.state.milestones=[...game.world.quest.milestones];
+ const language=doc.getElementById('ui-language'),dialog=doc.getElementById('travel-modal');
+ const render=()=>language.dispatchEvent(new Event('change'));
+ const choose=id=>{const title=win.t(game.world.locations.find(place=>place.id===id).name);[...doc.querySelectorAll('#locations button')].find(button=>button.textContent.startsWith(title+' ·')).click();};
+ for(const locale of ['cs','en'])for(const width of [390,1000]){
+  frame.style.width=width+'px';language.value=locale;game.state.location='london';render();
+  choose('berlin');assert(!dialog.querySelector('.transport-option'),'London cannot travel directly to inland Berlin');dialog.close();
+  choose('hamburg');assert(dialog.querySelectorAll('.transport-option').length===1,'London offers only boat to mainland port');
+  dialog.querySelector('.transport-option').click();
+  const arrival=dialog.querySelector('.arrival-button'),image=dialog.querySelector('.journey-symbol');
+  assert(arrival.hidden,'Arrival initially hidden');assert(win.getComputedStyle(arrival).visibility==='hidden','Placeholder invisible');assert(arrival.getBoundingClientRect().height>0,'Placeholder reserves button height');
+  const before=dialog.getBoundingClientRect(),buttonBefore=arrival.getBoundingClientRect();
+  await image.decode();assert(image.src.endsWith('boat-painted.png'),'Detailed boat loads');await pause(1000);
+  const after=dialog.getBoundingClientRect(),buttonAfter=arrival.getBoundingClientRect();
+  assert(!arrival.hidden&&win.getComputedStyle(arrival).visibility==='visible','Arrival becomes visible');
+  for(const key of ['x','y','width','height'])assert(Math.abs(before[key]-after[key])<1,'No modal shift '+locale+' '+width+' '+key);
+  assert(Math.abs(buttonBefore.y-buttonAfter.y)<1,'Button position reserved');assert(doc.activeElement===arrival,'Arrival receives focus');arrival.click();
+  choose('berlin');assert(dialog.querySelectorAll('.transport-option').length===2,'Land transport available after disembarking');dialog.close();
+ }
+ game.state.location='galway';render();choose('london');assert(dialog.querySelectorAll('.transport-option').length===1,'Ireland to England requires boat');dialog.close();
+ results.dataset.status='passed';results.textContent='PASS: painted boat, invisible reserved arrival button, stable desktop/mobile layout in Czech/English, arrival focus, port-only island passage and land transport after disembarking.';
+}run().catch(error=>{results.dataset.status='failed';results.textContent=error.stack;});
+</script>

@@ -1,0 +1,32 @@
+{
+  "id": "name",
+  "question": {
+    "en": "I belong to you, but other people speak me more often than you do. What am I?",
+    "cs": "Patřím tobě, ale ostatní mě vyslovují častěji než ty. Co jsem?",
+    "hu": "Hozzád tartozom, de mások gyakrabban mondanak ki, mint te. Mi vagyok?"
+  },
+  "answers": [
+    {
+      "en": "Your name",
+      "cs": "Tvé jméno",
+      "hu": "A neved"
+    },
+    {
+      "en": "Your oath",
+      "cs": "Tvá přísaha",
+      "hu": "Az esküd"
+    },
+    {
+      "en": "Your secret",
+      "cs": "Tvé tajemství",
+      "hu": "A titkod"
+    }
+  ],
+  "correct": 0,
+  "stake": 100,
+  "explanation": {
+    "en": "The word used to call a person is theirs, even in another mouth.",
+    "cs": "Slovo, kterým voláme člověka, mu patří i v cizích ústech.",
+    "hu": "A szó, amellyel valakit megszólítanak, akkor is az övé, ha más mondja ki."
+  }
+}

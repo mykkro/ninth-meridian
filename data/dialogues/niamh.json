@@ -6,43 +6,139 @@
       "phrase": "niamh_greet",
       "choices": [
         {
+          "phrase": "abbey_restitution_ask",
+          "quality": "sensible",
+          "next": "abbey_restitution_task",
+          "requires": {
+            "setbacks": [
+              "abbey_restitution"
+            ]
+          },
+          "visibleWhen": {
+            "setbacks": [
+              "abbey_restitution"
+            ]
+          }
+        },
+        {
+          "phrase": "tide_restitution_ask",
+          "quality": "sensible",
+          "next": "tide_restitution_task",
+          "requires": {
+            "setbacks": [
+              "tide_restitution"
+            ]
+          },
+          "visibleWhen": {
+            "setbacks": [
+              "tide_restitution"
+            ]
+          }
+        },
+        {
+          "phrase": "ash_restitution_ask",
+          "quality": "sensible",
+          "next": "ash_restitution_task",
+          "requires": {
+            "setbacks": [
+              "ash_restitution"
+            ]
+          },
+          "visibleWhen": {
+            "setbacks": [
+              "ash_restitution"
+            ]
+          }
+        },
+        {
           "phrase": "niamh_ask",
           "next": "clue",
           "quality": "sensible",
           "requires": {
-            "item": "irish_key"
-          }
+            "items": [
+              "irish_key",
+              "astrolabe"
+            ]
+          },
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "ireland_started"
+            }
+          ]
         },
         {
           "phrase": "niamh_browse",
           "next": "trade",
           "quality": "sensible"
+        }
+      ],
+      "contexts": [
+        {
+          "requires": {
+            "setbacks": [
+              "galway_restitution"
+            ]
+          },
+          "phrase": "galway_restitution_failure"
         },
         {
-          "phrase": "banter_sillySpoon",
-          "next": "banterSpoon",
-          "quality": "nonsense"
-        },
-        {
-          "phrase": "banter_sillyCheese",
-          "next": "banterCheese",
-          "quality": "nonsense"
-        },
-        {
-          "phrase": "banter_rudeDemand",
-          "next": "banterDismiss",
-          "quality": "rude"
-        },
-        {
-          "phrase": "banter_rudeInsult",
-          "next": "banterDismiss",
-          "quality": "rude"
+          "requires": "ireland",
+          "phrase": "niamh_bye"
         }
       ]
     },
     "clue": {
       "phrase": "niamh_clue",
       "choices": [
+        {
+          "phrase": "niamh_bargain",
+          "quality": "sensible",
+          "next": "betrayal",
+          "requires": {
+            "milestones": [
+              "ash-temple_verified",
+              "tide-shrine_verified",
+              "star-abbey_verified"
+            ],
+            "items": [
+              "astrolabe",
+              "irish_key",
+              "ash-temple_seal",
+              "tide-shrine_seal",
+              "star-abbey_seal"
+            ],
+            "withoutMilestones": [
+              "ireland"
+            ],
+            "withoutSetbacks": [
+              "leipzig_restitution",
+              "hamburg_restitution",
+              "bologna_restitution",
+              "venice_restitution",
+              "ash_restitution",
+              "tide_restitution",
+              "abbey_restitution",
+              "galway_restitution"
+            ]
+          },
+          "effects": [
+            {
+              "type": "setback",
+              "id": "galway_restitution"
+            },
+            {
+              "type": "give",
+              "item": "eszter_notes"
+            }
+          ],
+          "practice": false,
+          "visibleWhen": {
+            "withoutMilestones": [
+              "ireland"
+            ]
+          }
+        },
         {
           "phrase": "niamh_accept",
           "next": "bye",
@@ -52,7 +148,84 @@
               "type": "milestone",
               "id": "ireland"
             }
-          ]
+          ],
+          "requires": {
+            "milestones": [
+              "ash-temple_verified",
+              "tide-shrine_verified",
+              "star-abbey_verified"
+            ],
+            "items": [
+              "astrolabe",
+              "irish_key",
+              "ash-temple_seal",
+              "tide-shrine_seal",
+              "star-abbey_seal"
+            ],
+            "withoutSetbacks": [
+              "leipzig_restitution",
+              "hamburg_restitution",
+              "bologna_restitution",
+              "venice_restitution",
+              "ash_restitution",
+              "tide_restitution",
+              "abbey_restitution",
+              "galway_restitution"
+            ]
+          }
+        },
+        {
+          "phrase": "niamh_monopoly",
+          "quality": "sensible",
+          "next": "betrayal",
+          "requires": {
+            "milestones": [
+              "ash-temple_verified",
+              "tide-shrine_verified",
+              "star-abbey_verified"
+            ],
+            "items": [
+              "astrolabe",
+              "irish_key",
+              "ash-temple_seal",
+              "tide-shrine_seal",
+              "star-abbey_seal"
+            ],
+            "withoutMilestones": [
+              "ireland"
+            ],
+            "withoutSetbacks": [
+              "leipzig_restitution",
+              "hamburg_restitution",
+              "bologna_restitution",
+              "venice_restitution",
+              "ash_restitution",
+              "tide_restitution",
+              "abbey_restitution",
+              "galway_restitution"
+            ]
+          },
+          "effects": [
+            {
+              "type": "setback",
+              "id": "galway_restitution"
+            },
+            {
+              "type": "give",
+              "item": "eszter_notes"
+            }
+          ],
+          "practice": false,
+          "visibleWhen": {
+            "withoutMilestones": [
+              "ireland"
+            ]
+          }
+        },
+        {
+          "phrase": "niamh_search",
+          "next": "search",
+          "quality": "sensible"
         }
       ]
     },
@@ -70,53 +243,138 @@
           "next": "clue",
           "quality": "sensible",
           "requires": {
-            "item": "irish_key"
-          }
-        },
-        {
-          "phrase": "banter_sillyCheese",
-          "next": "banterCheese",
-          "quality": "nonsense"
-        },
-        {
-          "phrase": "banter_rudeInsult",
-          "next": "banterDismiss",
-          "quality": "rude"
+            "items": [
+              "irish_key",
+              "astrolabe"
+            ]
+          },
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "ireland_started"
+            }
+          ]
         }
       ]
     },
-    "banterSpoon": {
-      "phrase": "banter_spoonRebuke",
+    "search": {
+      "phrase": "niamh_clue",
+      "outcome": "success",
+      "choices": []
+    },
+    "ash_restitution_task": {
+      "phrase": "ash_restitution_task",
       "choices": [
         {
-          "phrase": "banter_startOver",
-          "next": "greeting",
-          "quality": "sensible"
+          "phrase": "recovery_confirm",
+          "quality": "sensible",
+          "next": "ash_restitution_done",
+          "requires": {
+            "setbacks": [
+              "ash_restitution"
+            ],
+            "item": "ash_restitution_proof"
+          },
+          "effects": [
+            {
+              "type": "resolve",
+              "id": "ash_restitution"
+            }
+          ]
         },
         {
-          "phrase": "banter_rudeDemand",
-          "next": "banterDismiss",
-          "quality": "rude"
+          "phrase": "consequence_depart",
+          "quality": "sensible",
+          "next": "ash_restitution_leave"
         }
       ]
     },
-    "banterCheese": {
-      "phrase": "banter_cheeseRebuke",
+    "ash_restitution_done": {
+      "phrase": "ash_restitution_repaired",
+      "outcome": "success",
+      "choices": []
+    },
+    "ash_restitution_leave": {
+      "phrase": "ash_restitution_task",
+      "outcome": "success",
+      "choices": []
+    },
+    "tide_restitution_task": {
+      "phrase": "tide_restitution_task",
       "choices": [
         {
-          "phrase": "banter_startOver",
-          "next": "greeting",
-          "quality": "sensible"
+          "phrase": "recovery_confirm",
+          "quality": "sensible",
+          "next": "tide_restitution_done",
+          "requires": {
+            "setbacks": [
+              "tide_restitution"
+            ],
+            "item": "tide_restitution_proof"
+          },
+          "effects": [
+            {
+              "type": "resolve",
+              "id": "tide_restitution"
+            }
+          ]
         },
         {
-          "phrase": "banter_rudeInsult",
-          "next": "banterDismiss",
-          "quality": "rude"
+          "phrase": "consequence_depart",
+          "quality": "sensible",
+          "next": "tide_restitution_leave"
         }
       ]
     },
-    "banterDismiss": {
-      "phrase": "banter_rudeDismiss",
+    "tide_restitution_done": {
+      "phrase": "tide_restitution_repaired",
+      "outcome": "success",
+      "choices": []
+    },
+    "tide_restitution_leave": {
+      "phrase": "tide_restitution_task",
+      "outcome": "success",
+      "choices": []
+    },
+    "abbey_restitution_task": {
+      "phrase": "abbey_restitution_task",
+      "choices": [
+        {
+          "phrase": "recovery_confirm",
+          "quality": "sensible",
+          "next": "abbey_restitution_done",
+          "requires": {
+            "setbacks": [
+              "abbey_restitution"
+            ],
+            "item": "abbey_restitution_proof"
+          },
+          "effects": [
+            {
+              "type": "resolve",
+              "id": "abbey_restitution"
+            }
+          ]
+        },
+        {
+          "phrase": "consequence_depart",
+          "quality": "sensible",
+          "next": "abbey_restitution_leave"
+        }
+      ]
+    },
+    "abbey_restitution_done": {
+      "phrase": "abbey_restitution_repaired",
+      "outcome": "success",
+      "choices": []
+    },
+    "abbey_restitution_leave": {
+      "phrase": "abbey_restitution_task",
+      "outcome": "success",
+      "choices": []
+    },
+    "betrayal": {
+      "phrase": "galway_restitution_failure",
       "outcome": "dismissed",
       "choices": []
     }

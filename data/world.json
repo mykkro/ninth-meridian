@@ -97,7 +97,21 @@
       "characters/paolo.json",
       "characters/chiara.json",
       "characters/nadia.json",
-      "characters/vittorio.json"
+      "characters/vittorio.json",
+      "characters/ciaran.json",
+      "characters/roisin.json",
+      "characters/fintan.json",
+      "characters/thalia.json",
+      "characters/solveig.json",
+      "characters/ylva.json",
+      "characters/eeva.json",
+      "characters/balint.json",
+      "characters/brendan.json",
+      "characters/radovan.json",
+      "characters/anselm.json",
+      "characters/isadora.json",
+      "characters/katalin.json",
+      "characters/malachy.json"
     ],
     "items": [
       "items/sk_cs.json",
@@ -163,7 +177,26 @@
       "items/leather_armor.json",
       "items/leather_boots.json",
       "items/wood.json",
-      "items/flowers.json"
+      "items/flowers.json",
+      "items/ash-temple_evidence.json",
+      "items/ash-temple_seal.json",
+      "items/tide-shrine_evidence.json",
+      "items/tide-shrine_seal.json",
+      "items/star-abbey_evidence.json",
+      "items/star-abbey_seal.json",
+      "items/irish_sanctuary_notes.json",
+      "items/baltic_archive_notes.json",
+      "items/leipzig_restitution_proof.json",
+      "items/hamburg_restitution_proof.json",
+      "items/bologna_restitution_proof.json",
+      "items/venice_restitution_proof.json",
+      "items/ash_restitution_proof.json",
+      "items/tide_restitution_proof.json",
+      "items/abbey_restitution_proof.json",
+      "items/galway_restitution_proof.json",
+      "items/riddle_nature.json",
+      "items/riddle_tools.json",
+      "items/riddle_words.json"
     ],
     "locations": [
       "locations/prague.json",
@@ -181,13 +214,16 @@
       "locations/athens.json",
       "locations/oslo.json",
       "locations/stockholm.json",
-      "locations/helsinki.json",
+      "locations/turku.json",
       "locations/budapest.json",
       "locations/galway.json",
       "locations/leipzig.json",
       "locations/hamburg.json",
       "locations/bologna.json",
-      "locations/venice.json"
+      "locations/venice.json",
+      "locations/ash-temple.json",
+      "locations/tide-shrine.json",
+      "locations/star-abbey.json"
     ],
     "quests": [
       "quests/ninth-meridian.json",
@@ -198,7 +234,22 @@
       "quests/wood_errand.json",
       "quests/flowers_errand.json",
       "quests/german_route.json",
-      "quests/italian_route.json"
+      "quests/italian_route.json",
+      "quests/irish_sanctuaries.json",
+      "quests/harbour_lights.json",
+      "quests/winter_stores.json",
+      "quests/archive_shelves.json",
+      "quests/pilgrim_remedy.json",
+      "quests/garden_salve.json",
+      "quests/refuge_rope.json",
+      "quests/leipzig_restitution.json",
+      "quests/hamburg_restitution.json",
+      "quests/bologna_restitution.json",
+      "quests/venice_restitution.json",
+      "quests/ash_restitution.json",
+      "quests/tide_restitution.json",
+      "quests/abbey_restitution.json",
+      "quests/galway_restitution.json"
     ],
     "dialogues": [
       "dialogues/ada.json",
@@ -267,13 +318,41 @@
       "dialogues/paolo.json",
       "dialogues/chiara.json",
       "dialogues/nadia.json",
-      "dialogues/vittorio.json"
+      "dialogues/vittorio.json",
+      "dialogues/ciaran.json",
+      "dialogues/roisin.json",
+      "dialogues/fintan.json",
+      "dialogues/thalia.json",
+      "dialogues/solveig.json",
+      "dialogues/ylva.json",
+      "dialogues/eeva.json",
+      "dialogues/balint.json",
+      "dialogues/brendan.json",
+      "dialogues/riddle_sage.json"
     ],
     "phrases": [
       "phrases.json",
       "companion-phrases.json",
       "regional-phrases.json",
-      "farewell-phrases.json"
+      "farewell-phrases.json",
+      "finale-phrases.json",
+      "consequence-phrases.json",
+      "riddle-phrases.json"
+    ],
+    "riddles": [
+      "riddles/echo.json",
+      "riddles/shadow.json",
+      "riddles/map.json",
+      "riddles/compass.json",
+      "riddles/candle.json",
+      "riddles/hourglass.json",
+      "riddles/name.json",
+      "riddles/book.json",
+      "riddles/silence.json",
+      "riddles/hole.json"
+    ],
+    "books": [
+      "books.json"
     ]
   }
 }

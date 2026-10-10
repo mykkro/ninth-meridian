@@ -1,0 +1,11 @@
+{
+  "id": "anselm",
+  "name": "Anselm · riddle sage",
+  "language": "de",
+  "dialogue": "riddle_sage",
+  "description": "Anselm offers riddles in the local language. One stake, one answer.",
+  "riddles": [
+    "map",
+    "compass"
+  ]
+}

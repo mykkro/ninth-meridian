@@ -1,0 +1,11 @@
+{
+  "id": "isadora",
+  "name": "Isadora · riddle sage",
+  "language": "it",
+  "dialogue": "riddle_sage",
+  "description": "Isadora offers riddles in the local language. One stake, one answer.",
+  "riddles": [
+    "candle",
+    "hourglass"
+  ]
+}

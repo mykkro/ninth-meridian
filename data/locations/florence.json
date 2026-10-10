@@ -33,5 +33,10 @@
   "mapLabelOffset": [
     9,
     -9
-  ]
+  ],
+  "realm": "Republic of Florence",
+  "realmContext": {
+    "en": "The Republic of Florence is governed through the Signoria and civic councils. Merchant families, especially the Medici, wield influence through wealth and patronage rather than a ducal title. Catholic churches and workshops share the city with manuscript scholars. Rival patrons compete for discoveries, while the restored solar records promise a new clue to the cartographer’s route.",
+    "cs": "Florentskou republiku spravuje signorie a městské rady. Kupecké rody, zvláště Medicejové, získávají vliv bohatstvím a mecenášstvím, nikoli vévodským titulem. Katolické chrámy a dílny sdílejí město s učenci nad rukopisy. Soupeřící mecenáši soutěží o nové objevy; obnovené sluneční záznamy slibují další stopu kartografovy cesty."
+  }
 }

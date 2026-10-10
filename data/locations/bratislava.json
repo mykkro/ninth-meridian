@@ -32,5 +32,8 @@
   "mapLabelOffset": [
     -10,
     18
+  ],
+  "loreBooks": [
+    "lore_crowns"
   ]
 }

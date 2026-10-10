@@ -1,0 +1,106 @@
+{
+  "id": "brendan",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "refuge_rope_offer",
+      "contexts": [
+        {
+          "requires": "refuge_rope_done",
+          "phrase": "refuge_rope_done"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "refuge_rope_accept",
+          "next": "task",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "refuge_rope_started"
+            }
+          ]
+        },
+        {
+          "phrase": "refuge_rope_deliver",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "refuge_rope_started",
+            "quantities": {
+              "rope": 2
+            }
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "refuge_rope",
+              "gold": 40,
+              "take": [
+                {
+                  "item": "rope",
+                  "count": 2
+                }
+              ],
+              "items": [
+                {
+                  "item": "travel_rations",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "refuge_rope_done"
+            }
+          ]
+        }
+      ]
+    },
+    "task": {
+      "phrase": "refuge_rope_offer",
+      "choices": [
+        {
+          "phrase": "refuge_rope_deliver",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "refuge_rope_started",
+            "quantities": {
+              "rope": 2
+            }
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "refuge_rope",
+              "gold": 40,
+              "take": [
+                {
+                  "item": "rope",
+                  "count": 2
+                }
+              ],
+              "items": [
+                {
+                  "item": "travel_rations",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "refuge_rope_done"
+            }
+          ]
+        }
+      ]
+    },
+    "done": {
+      "phrase": "refuge_rope_done",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

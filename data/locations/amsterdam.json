@@ -22,5 +22,13 @@
   "mapLabelOffset": [
     -10,
     -8
+  ],
+  "realm": "County of Holland",
+  "realmContext": {
+    "en": "Amsterdam belongs to the County of Holland, held by Philip the Good, Duke of Burgundy, since 1433. Holland is one of the Burgundian Netherlands, not an independent Dutch nation-state. Catholic institutions and municipal privileges shape the port. Grain and maritime trade enrich merchants, while new dues provoke disputes with ducal officials. Dockside whispers mention the Silent Tide.",
+    "cs": "Amsterdam patří k Holandskému hrabství, které od roku 1433 drží burgundský vévoda Filip Dobrý. Holandsko je součástí Burgundského Nizozemí, nikoli samostatným nizozemským národním státem. Přístav utvářejí katolické instituce a městské výsady. Obchod s obilím a námořní náklady bohatí kupce; nová cla vyvolávají spory s vévodskými úředníky. Přístavní šeptanda zmiňuje Tichý příliv."
+  },
+  "loreBooks": [
+    "lore_western_tides"
   ]
 }

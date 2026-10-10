@@ -18,5 +18,9 @@
   "mapLabelOffset": [
     9,
     -4
+  ],
+  "loreBooks": [
+    "lore_invaders",
+    "lore_eastern_letters"
   ]
 }

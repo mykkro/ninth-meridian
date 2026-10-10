@@ -1,0 +1,49 @@
+{
+  "id": "star-abbey",
+  "name": "Mainistir na Naoi Réalta",
+  "country": "Ireland",
+  "language": "ga",
+  "requires": "ireland_started",
+  "description": "Nine lamps illuminate a ruined abbey archive. Fragments in different languages surround an empty astrolabe socket. One shelf has been turned toward the wall to hide a final line.",
+  "npcs": [
+    "fintan"
+  ],
+  "milestone": "star-abbey_verified",
+  "coordinates": {
+    "lon": -8.75,
+    "lat": 53.38
+  },
+  "mapLabelOffset": [
+    9,
+    -9
+  ],
+  "actions": [
+    {
+      "id": "star-abbey_search",
+      "label": "Recover the hidden archive leaf",
+      "item": "star-abbey_evidence",
+      "count": 1,
+      "limit": 1,
+      "requires": "ireland_started"
+    },
+    {
+      "id": "abbey_restitution_search",
+      "label": "Retrieve the hidden palimpsest behind the abbey’s wall shelf",
+      "item": "abbey_restitution_proof",
+      "count": 1,
+      "limit": 1,
+      "requires": {
+        "setbacks": [
+          "abbey_restitution"
+        ]
+      }
+    }
+  ],
+  "loreBooks": [
+    "lore_alchemy",
+    "lore_crowns",
+    "lore_invaders",
+    "lore_western_tides",
+    "lore_dawn_workshop"
+  ]
+}

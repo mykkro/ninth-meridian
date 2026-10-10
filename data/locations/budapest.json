@@ -6,7 +6,9 @@
   "requires": "greece",
   "description": "The last road to Ireland passes wagons bound for the southern forts. A soldier stitches his torn sleeve while a child sleeps beside a refugee cart.",
   "npcs": [
-    "eszter"
+    "eszter",
+    "balint",
+    "katalin"
   ],
   "milestone": "hungary",
   "coordinates": {
@@ -16,5 +18,91 @@
   "mapLabelOffset": [
     10,
     16
+  ],
+  "actions": [
+    {
+      "id": "garden_salve_gather",
+      "label": "Gather flowers from the physician’s garden",
+      "item": "flowers",
+      "count": 1,
+      "limit": 6,
+      "requires": "garden_salve_started"
+    },
+    {
+      "id": "leipzig_restitution_search",
+      "label": "Find the Leipzig duplicate in Buda’s exile archive",
+      "item": "leipzig_restitution_proof",
+      "count": 1,
+      "limit": 1,
+      "requires": {
+        "setbacks": [
+          "leipzig_restitution"
+        ]
+      }
+    },
+    {
+      "id": "hamburg_restitution_search",
+      "label": "Recover the harbour counter-record from Buda’s merchants",
+      "item": "hamburg_restitution_proof",
+      "count": 1,
+      "limit": 1,
+      "requires": {
+        "setbacks": [
+          "hamburg_restitution"
+        ]
+      }
+    },
+    {
+      "id": "bologna_restitution_search",
+      "label": "Find the solar-leaf copy in Buda’s manuscript chest",
+      "item": "bologna_restitution_proof",
+      "count": 1,
+      "limit": 1,
+      "requires": {
+        "setbacks": [
+          "bologna_restitution"
+        ]
+      }
+    },
+    {
+      "id": "venice_restitution_search",
+      "label": "Recover the mirror calibration from Buda’s instrument archive",
+      "item": "venice_restitution_proof",
+      "count": 1,
+      "limit": 1,
+      "requires": {
+        "setbacks": [
+          "venice_restitution"
+        ]
+      }
+    },
+    {
+      "id": "galway_restitution_search",
+      "label": "Find the independent library counterseal in Buda’s charter archive",
+      "item": "galway_restitution_proof",
+      "count": 1,
+      "limit": 1,
+      "requires": {
+        "setbacks": [
+          "galway_restitution"
+        ]
+      }
+    }
+  ],
+  "recoveryAccess": [
+    "leipzig_restitution",
+    "hamburg_restitution",
+    "bologna_restitution",
+    "venice_restitution",
+    "galway_restitution"
+  ],
+  "riddleBooks": [
+    "riddle_words"
+  ],
+  "loreBooks": [
+    "lore_invaders",
+    "lore_crowns",
+    "lore_dawn_workshop",
+    "lore_eastern_letters"
   ]
 }

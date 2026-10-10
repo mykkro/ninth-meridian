@@ -88,8 +88,8 @@
     "no": "Greit. Jeg venter på deg her i byen. God reise."
   },
   "tereza_intro": {
-    "cs": "Jsem Tereza, učitelka na cestách. Rozumím slovensky a polsky. Doprovodím tě do Bratislavy; tam mě čekají žáci.",
-    "en": "I am Tereza, a travelling teacher. I understand Slovak and Polish. I can accompany you to Bratislava; my pupils are waiting there."
+    "cs": "Jsem Tereza, učitelka na cestách. Rozumím slovensky a polsky. Doprovodím tě do Prešpurku; tam mě čekají žáci.",
+    "en": "I am Tereza, a travelling teacher. I understand Slovak and Polish. I can accompany you to Pressburg; my pupils are waiting there."
   },
   "tereza_chat": {
     "cs": "Na cestě si nejlépe odpočine hlava, když si dva lidé na chvíli popovídají. Co máš na mysli?",
@@ -120,25 +120,25 @@
     "en": "Find Ada and ask about the cartographer. A polite question opens more doors than a confident guess."
   },
   "tereza_clueQuest": {
-    "cs": "Mapa nás vede do Bratislavy. Tam mluví slovensky; ráda ti pomohu, než se rozloučíme.",
-    "en": "The map leads us to Bratislava. People speak Slovak there; I will gladly help before we part."
+    "cs": "Mapa nás vede do Prešpurku. Tam mluví slovensky; ráda ti pomohu, než se rozloučíme.",
+    "en": "The map leads us to Pressburg. People speak Slovak there; I will gladly help before we part."
   },
   "tereza_laterQuest": {
     "cs": "Už máš první stopy. Zapisuj si, kdo co skutečně viděl, a odděluj to od toho, co jen zaslechl.",
     "en": "You have the first clues. Write down what each witness actually saw, and keep it apart from hearsay."
   },
   "tereza_departure": {
-    "cs": "Dál už tě doprovodit nemohu. Moje cesta vede jen mezi Prahou a Bratislavou. Vždycky mě najdeš tady, v tomto městě.",
-    "en": "I cannot accompany you farther. My road only runs between Prague and Bratislava. You can always find me here, in this city."
+    "cs": "Dál už tě doprovodit nemohu. Moje cesta vede jen mezi Prahou a Prešpurkem. Vždycky mě najdeš tady, v tomto městě.",
+    "en": "I cannot accompany you farther. My road only runs between Prague and Pressburg. You can always find me here, in this city."
   },
   "tereza_arrival": {
-    "cs": "Tady v Bratislavě se rozloučíme. Čekají mě žáci. Ale vždycky mě můžeš najít tady; přijď si někdy popovídat.",
-    "en": "Here in Bratislava we must part. My pupils are waiting. But you can always find me here; come back for a conversation."
+    "cs": "Tady v Prešpurku se rozloučíme. Čekají mě žáci. Ale vždycky mě můžeš najít tady; přijď si někdy popovídat.",
+    "en": "Here in Pressburg we must part. My pupils are waiting. But you can always find me here; come back for a conversation."
   },
   "sofie_intro": {
-    "cs": "Jsem Sofie. V Praze jsem se naučila česky; němčinu, nizozemštinu a dánštinu znám z dílen. Mohu s tebou dojít přes Amsterdam do Kodaně.",
-    "en": "I am Sofie. I learned Czech in Prague; I know German, Dutch, and Danish from the workshops. I can travel with you through Amsterdam to Copenhagen.",
-    "de": "Ich bin Sofie. In Prag habe ich Tschechisch gelernt; Deutsch, Niederländisch und Dänisch kenne ich aus den Werkstätten. Ich kann dich über Amsterdam nach Kopenhagen begleiten."
+    "cs": "Jsem Klara. V Praze jsem se naučila česky; němčinu, holandštinu a dánštinu znám z dílen. Mohu s tebou dojít přes Amsterdam do Kodaně.",
+    "en": "I am Klara. I learned Czech in Prague; I know German, Dutch, and Danish from the workshops. I can travel with you through Amsterdam to Copenhagen.",
+    "de": "Ich bin Klara. In Prag habe ich Tschechisch gelernt; Deutsch, Niederländisch und Dänisch kenne ich aus den Werkstätten. Ich kann dich über Amsterdam nach Kopenhagen begleiten."
   },
   "sofie_chat": {
     "cs": "Nástroje už jsem uklidila. Teď mám čas na příběhy a otázky.",
@@ -299,9 +299,9 @@
     "en": "Athens! This is as far as I can accompany you. The library needs me, but you can always find me here."
   },
   "sigrid_intro": {
-    "cs": "Jsem Sigrid, poselkyně severních přístavů. Česky jsem se naučila u karavan. Rozumím norsky, švédsky, finsky, anglicky a irsky. Doprovodím tě až do Galway.",
-    "en": "I am Sigrid, a courier of the northern ports. I learned Czech with the caravans. I understand Norwegian, Swedish, Finnish, English, and Irish. I can accompany you as far as Galway.",
-    "no": "Jeg er Sigrid, budbringer mellom havnene i nord. Jeg lærte tsjekkisk hos karavanene. Jeg forstår norsk, svensk, finsk, engelsk og irsk. Jeg kan følge deg helt til Galway."
+    "cs": "Jsem Sigrid, poselkyně severních přístavů. Česky jsem se naučila u karavan. Rozumím norsky, švédsky, finsky, anglicky a irsky. Doprovodím tě až do Gaillimh.",
+    "en": "I am Sigrid, a courier of the northern ports. I learned Czech with the caravans. I understand Norwegian, Swedish, Finnish, English, and Irish. I can accompany you as far as Gaillimh.",
+    "no": "Jeg er Sigrid, budbringer mellom havnene i nord. Jeg lærte tsjekkisk hos karavanene. Jeg forstår norsk, svensk, finsk, engelsk og irsk. Jeg kan følge deg helt til Gaillimh."
   },
   "sigrid_chat": {
     "cs": "Na moři není každý tichý den prázdný. I na souši si můžeme na chvíli vydechnout.",
@@ -340,13 +340,13 @@
   },
   "sigrid_clueQuest": {
     "cs": "S mapou polární záře se vydej za Aino do Helsinek. K irské bráně vede ještě jedna stopa.",
-    "en": "Take the aurora chart to Aino in Helsinki. There is one more clue before the Irish gate.",
-    "no": "Ta nordlyskartet med til Aino i Helsinki. Det finnes ett spor til før den irske porten."
+    "en": "Take the aurora chart to Aino in Turku. There is one more clue before the Irish gate.",
+    "no": "Ta nordlyskartet med til Aino i Turku. Det finnes ett spor til før den irske porten."
   },
   "sigrid_laterQuest": {
-    "cs": "Klíč už máš. V Galway naslouchej Niamh; poslední cesta je také pozváním k dalším jazykům.",
-    "en": "You have the key now. Listen to Niamh in Galway; the last road is also an invitation to more languages.",
-    "no": "Du har nøkkelen nå. Lytt til Niamh i Galway; den siste veien er også en invitasjon til flere språk."
+    "cs": "Klíč už máš. V Gaillimh naslouchej Niamh; poslední cesta je také pozváním k dalším jazykům.",
+    "en": "You have the key now. Listen to Niamh in Gaillimh; the last road is also an invitation to more languages.",
+    "no": "Du har nøkkelen nå. Lytt til Niamh i Gaillimh; den siste veien er også en invitasjon til flere språk."
   },
   "sigrid_departure": {
     "cs": "Mimo severní cestu už tě doprovodit nemohu. Zůstanu tady u přístavu; vždycky mě v tomto městě najdeš.",
@@ -354,9 +354,9 @@
     "no": "Jeg kan ikke følge deg utenfor den nordlige ruten. Jeg blir her ved havnen; du kan alltid finne meg i denne byen."
   },
   "sigrid_arrival": {
-    "cs": "Dorazili jsme do Galway. Dál už tě doprovodit nemohu, ale vždycky mě najdeš tady. Až dočteš, přijď mi vyprávět.",
-    "en": "We have reached Galway. This is as far as I can accompany you, but you can always find me here. When you finish reading, come tell me about it.",
-    "no": "Vi har kommet til Galway. Lenger kan jeg ikke følge deg, men du kan alltid finne meg her. Når du er ferdig med å lese, kom og fortell meg om det."
+    "cs": "Dorazili jsme do Gaillimh. Dál už tě doprovodit nemohu, ale vždycky mě najdeš tady. Až dočteš, přijď mi vyprávět.",
+    "en": "We have reached Gaillimh. This is as far as I can accompany you, but you can always find me here. When you finish reading, come tell me about it.",
+    "no": "Vi har kommet til Gaillimh. Lenger kan jeg ikke følge deg, men du kan alltid finne meg her. Når du er ferdig med å lese, kom og fortell meg om det."
   },
   "companion_voyageDone": {
     "cs": "Došli jsme do irské knihovny. Pátrání skončilo, ale každé další setkání může začít nový příběh.",
@@ -402,9 +402,9 @@
     "sk": "Novgorod otvoril tri cesty. Môžeš ich prejsť osobitne, ale v Aténach budeš potrebovať všetky tri relikvie."
   },
   "mira_departure": {
-    "cs": "Tady se rozloučíme. Znám cestu mezi Bratislavou a Novgorodem, ale do další části výpravy s tebou jít nemohu. Vždycky mě najdeš tady.",
-    "en": "We must part here. I know the road between Bratislava and Novgorod, but I cannot accompany you into the next part of the journey. You can always find me here.",
-    "sk": "Tu sa rozlúčime. Poznám cestu medzi Bratislavou a Novgorodom, ale do ďalšej časti výpravy s tebou ísť nemôžem. Vždy ma nájdeš tu."
+    "cs": "Tady se rozloučíme. Znám cestu mezi Prešpurkem a Novgorodem, ale do další části výpravy s tebou jít nemohu. Vždycky mě najdeš tady.",
+    "en": "We must part here. I know the road between Pressburg and Novgorod, but I cannot accompany you into the next part of the journey. You can always find me here.",
+    "sk": "Tu sa rozlúčime. Poznám cestu medzi Prešporkom a Novgorodom, ale do ďalšej časti výpravy s tebou ísť nemôžem. Vždy ma nájdeš tu."
   },
   "rowan_busy": {
     "cs": "Rád bych tě doprovázel, ale už máš společníka. Nejdřív se s ním rozluč. Počkám tady.",

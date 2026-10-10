@@ -1,0 +1,11 @@
+{
+  "id": "radovan",
+  "name": "Radovan · riddle sage",
+  "language": "cs",
+  "dialogue": "riddle_sage",
+  "description": "Radovan offers riddles in the local language. One stake, one answer.",
+  "riddles": [
+    "echo",
+    "shadow"
+  ]
+}

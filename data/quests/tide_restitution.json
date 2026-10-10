@@ -1,0 +1,12 @@
+{
+  "id": "tide_restitution",
+  "kind": "recovery",
+  "title": "The silenced tide witness",
+  "description": "By declaring the sailors lost to a storm, you allowed the wardens to seal the rescue route and detain Róisín. Search the low-tide shelter at the shrine for a surviving deposition, then bring it to Niamh in Gaillimh.",
+  "delayDays": 5,
+  "location": "galway",
+  "giver": "niamh",
+  "sourceLocation": "tide-shrine",
+  "sourceAction": "tide_restitution_search",
+  "repairItem": "tide_restitution_proof"
+}

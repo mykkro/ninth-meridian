@@ -1,0 +1,30 @@
+{
+  "id": "ash-temple",
+  "name": "Teampall na Fuinseoige",
+  "country": "Ireland",
+  "language": "ga",
+  "requires": "ireland_started",
+  "description": "An inland sanctuary shelters travellers beneath a carved ash tree. Fresh footprints lead to a sealed stone door; the carvings beside it repeat the same greeting in unfamiliar scripts.",
+  "npcs": [
+    "ciaran"
+  ],
+  "milestone": "ash-temple_verified",
+  "coordinates": {
+    "lon": -9.28,
+    "lat": 53.48
+  },
+  "mapLabelOffset": [
+    9,
+    -9
+  ],
+  "actions": [
+    {
+      "id": "ash-temple_search",
+      "label": "Trace the weathered doorway carvings",
+      "item": "ash-temple_evidence",
+      "count": 1,
+      "limit": 1,
+      "requires": "ireland_started"
+    }
+  ]
+}

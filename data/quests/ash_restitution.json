@@ -1,0 +1,12 @@
+{
+  "id": "ash_restitution",
+  "kind": "recovery",
+  "title": "The emptied refuge",
+  "description": "Your declaration gave the temple to armed wardens. Find the displaced families in Gaillimh’s refuge courtyard and bring their testimony to Niamh. Only then will Ciarán entrust you with the seal.",
+  "delayDays": 5,
+  "location": "galway",
+  "giver": "niamh",
+  "sourceLocation": "galway",
+  "sourceAction": "ash_restitution_search",
+  "repairItem": "ash_restitution_proof"
+}

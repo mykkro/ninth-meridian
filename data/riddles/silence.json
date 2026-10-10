@@ -1,0 +1,32 @@
+{
+  "id": "silence",
+  "question": {
+    "en": "Speak my name aloud and you break me. What am I?",
+    "cs": "Vyslov mé jméno nahlas a porušíš mě. Co jsem?",
+    "ga": "Abair m’ainm os ard agus brisfidh tú mé. Cad mé?"
+  },
+  "answers": [
+    {
+      "en": "A promise",
+      "cs": "Slib",
+      "ga": "Gealltanas"
+    },
+    {
+      "en": "Silence",
+      "cs": "Ticho",
+      "ga": "Ciúnas"
+    },
+    {
+      "en": "A seal",
+      "cs": "Pečeť",
+      "ga": "Séala"
+    }
+  ],
+  "correct": 1,
+  "stake": 100,
+  "explanation": {
+    "en": "Any spoken word interrupts the absence of sound.",
+    "cs": "Každé vyslovené slovo přeruší nepřítomnost zvuku.",
+    "ga": "Cuireann gach focal labhartha deireadh leis an easpa fuaime."
+  }
+}

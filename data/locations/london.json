@@ -18,5 +18,10 @@
   "mapLabelOffset": [
     9,
     -9
+  ],
+  "loreBooks": [
+    "lore_alchemy",
+    "lore_crowns",
+    "lore_western_tides"
   ]
 }

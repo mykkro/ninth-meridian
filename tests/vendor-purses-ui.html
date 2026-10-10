@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><title>Vendor purses</title><pre id="results">Running</pre><iframe id="game" title="Voyage"></iframe><style>iframe{width:100%;height:900px;border:0}</style>
+<script>
+const frame=document.getElementById('game'),results=document.getElementById('results'),assert=(value,message)=>{if(!value)throw Error(message);};
+async function run(){let html=await(await fetch('../index.html')).text();html=html.replace('<head>','<head><base href="'+new URL('../',location.href).href+'">').replace(/(<script src="engine\.js[^>]*><\/script>)/,'$1<script>const OriginalEngine=DialogueEngine;window.DialogueEngine=class extends OriginalEngine{constructor(world){super(world);window.testVoyage=this;}};<\/script>');frame.srcdoc=html;
+ for(let n=0;n<600&&!frame.contentDocument?.getElementById('load-status')?.hidden;n++)await new Promise(resolve=>setTimeout(resolve,50));
+ const doc=frame.contentDocument,game=frame.contentWindow.testVoyage;assert(game&&doc.getElementById('load-status').hidden,'Game loads');doc.getElementById('begin-voyage').click();
+
+ const language=doc.getElementById('ui-language'),render=()=>language.dispatchEvent(new Event('change'));language.value='en';game.open('marketFood');render();doc.getElementById('open-dialogue').click();const panel=doc.getElementById('shop-purses');assert(!panel.hidden&&panel.closest('dialog').open,'Purses visible in shop dialogue');assert(panel.children.length===2,'Both balances displayed');
+ const balances=()=>[...panel.querySelectorAll('strong')].map(node=>node.textContent),before=balances();assert(panel.textContent.includes('Your purse')&&panel.textContent.includes('Vendor’s purse'),'Labeled balances');await Promise.all([...panel.querySelectorAll('img')].map(img=>img.decode()));
+ const bread=()=>[...doc.querySelectorAll('#choices button')].find(button=>button.textContent.includes(frame.contentWindow.t(game.world.items.bread.name)));bread().click();assert(balances()[0]!==before[0]&&balances()[1]!==before[1],'Both balances update after purchase');assert(panel.querySelector('[data-owner=marketFood] strong').textContent===frame.contentWindow.coins(game.vendorGold()),'Vendor amount matches engine');
+ language.value='cs';render();assert(panel.textContent.includes('Tvůj měšec')&&panel.textContent.includes('Měšec obchodníka'),'Czech labels');game.state.gold=0;render();assert(bread().disabled,'Unaffordable item disabled');assert(panel.querySelector('[data-owner=player] strong').textContent===frame.contentWindow.coins(0),'Empty purse shown');
+ game.open('ada');render();assert(panel.hidden,'No vendor purses in ordinary dialogue');results.dataset.status='passed';results.textContent='PASS: both labeled shop purses, coin icons, live payment updates, Czech/English labels, empty purse and non-shop hiding.';
+}run().catch(error=>{results.dataset.status='failed';results.textContent=error.stack;});
+</script>

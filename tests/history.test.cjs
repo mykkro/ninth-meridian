@@ -1,5 +1,5 @@
 const assert=require('node:assert/strict');
-const Engine=require('../engine.js');
+const Engine=require('./story-engine.cjs');
 const {world}=require('./fixtures.cjs');
 const game=new Engine(world);
 assert.equal(game.state.conversations.length,1);

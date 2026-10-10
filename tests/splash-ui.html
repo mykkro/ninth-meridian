@@ -1,0 +1,23 @@
+<!doctype html><meta charset="utf-8"><title>Splash start checks</title>
+<pre id="results">Running</pre><iframe id="game" src="../index.html" title="Voyage"></iframe><iframe id="failure" title="Loading failure"></iframe>
+<style>iframe{width:100%;height:900px;border:0}</style>
+<script>
+const frame=document.getElementById('game'),results=document.getElementById('results');
+const assert=(value,message)=>{if(!value)throw Error(message);};
+async function run(){
+ for(let n=0;n<600&&!frame.contentDocument?.getElementById('load-status')?.hidden;n++)await new Promise(resolve=>setTimeout(resolve,50));
+ const doc=frame.contentDocument,win=frame.contentWindow,start=doc.getElementById('begin-voyage');
+ assert(doc.getElementById('load-status').hidden,'Game loaded: '+doc.getElementById('load-status').textContent);assert(!start.disabled,'Start is enabled');
+ assert(!doc.getElementById('splash').hidden&&doc.querySelector('main').inert,'Title visible before starting');
+ start.scrollIntoView({block:'center'});const bounds=start.getBoundingClientRect(),hit=doc.elementFromPoint(bounds.left+bounds.width/2,bounds.top+bounds.height/2);assert(hit===start||start.contains(hit),'Start button can receive a pointer click');
+ start.click();assert(doc.getElementById('splash').hidden&&!doc.body.classList.contains('at-splash'),'Start hides splash');assert(!doc.querySelector('main').inert&&!doc.querySelector('main').hidden&&win.getComputedStyle(doc.querySelector('main')).display!=='none','Start reveals interactive gameplay');
+ doc.getElementById('open-dialogue').click();assert(doc.getElementById('dialogue-modal').open,'First conversation works after start');doc.getElementById('dialogue-modal').close();
+ doc.getElementById('reset').click();assert(!doc.getElementById('splash').hidden,'New voyage returns to title');
+ const language=doc.getElementById('splash-language');language.value='en';language.dispatchEvent(new Event('change'));assert(start.textContent==='Begin your voyage'&&!start.disabled,'English start enabled');start.click();assert(!doc.querySelector('main').inert&&doc.getElementById('splash').hidden,'English start works');
+ let html=await(await fetch('../index.html')).text();html=html.replace('<head>','<head><base href="'+new URL('../',location.href).href+'">');html=html.replace(/(<script src="content\.js[^>]*><\/script>)/,'$1<script>WorldContent.loadWorld=async()=>{throw Error("Simulated missing content");};<\/script>');const failure=document.getElementById('failure');failure.srcdoc=html;
+ for(let n=0;n<100&&!failure.contentDocument?.getElementById('load-status')?.textContent.includes('Simulated missing content');n++)await new Promise(resolve=>setTimeout(resolve,50));
+ const failed=failure.contentDocument,status=failed.getElementById('load-status');assert(status.textContent.includes('Simulated missing content'),'Loading error explains failure');assert(status.closest('#splash')&&!status.hidden,'Failure message belongs to visible splash');assert(failed.getElementById('begin-voyage').disabled,'Failure does not enter broken gameplay');const statusBounds=status.getBoundingClientRect();assert(statusBounds.top>=0&&statusBounds.bottom<=failure.contentWindow.innerHeight,'Failure message is in viewport');
+ results.dataset.status='passed';results.textContent='PASS: unmodified index loads, start receives pointer clicks, Czech/English start, gameplay visibility, first conversation, restart, and visible loading failure.';
+}
+run().catch(error=>{results.dataset.status='failed';results.textContent=error.stack;});
+</script>

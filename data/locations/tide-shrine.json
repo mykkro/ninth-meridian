@@ -1,0 +1,42 @@
+{
+  "id": "tide-shrine",
+  "name": "Scrín na Taoide",
+  "country": "Ireland",
+  "language": "ga",
+  "requires": "ireland_started",
+  "description": "A coastal shrine stands above a dry tidal causeway. A rope bell, an abandoned mooring, and a slate of harbour watches tell conflicting stories about the missing sailors.",
+  "npcs": [
+    "roisin"
+  ],
+  "milestone": "tide-shrine_verified",
+  "coordinates": {
+    "lon": -9.6,
+    "lat": 53.23
+  },
+  "mapLabelOffset": [
+    9,
+    -9
+  ],
+  "actions": [
+    {
+      "id": "tide-shrine_search",
+      "label": "Inspect the causeway and tide slate",
+      "item": "tide-shrine_evidence",
+      "count": 1,
+      "limit": 1,
+      "requires": "ireland_started"
+    },
+    {
+      "id": "tide_restitution_search",
+      "label": "Search the low-tide shelter for a surviving deposition",
+      "item": "tide_restitution_proof",
+      "count": 1,
+      "limit": 1,
+      "requires": {
+        "setbacks": [
+          "tide_restitution"
+        ]
+      }
+    }
+  ]
+}

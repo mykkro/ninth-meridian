@@ -1,0 +1,19 @@
+{
+  "id": "refuge_rope",
+  "title": "The refuge courtyard",
+  "description": "Bring two lengths of rope to raise shelters in the courtyard. The refuge will share three packs of rations with you.",
+  "milestones": [
+    "refuge_rope_started",
+    "refuge_rope_done"
+  ],
+  "completion": "refuge_rope_done",
+  "fetchItem": "rope",
+  "fetchCount": 2,
+  "location": "galway",
+  "giver": "brendan",
+  "reward": {
+    "gold": 40,
+    "item": "travel_rations",
+    "count": 3
+  }
+}

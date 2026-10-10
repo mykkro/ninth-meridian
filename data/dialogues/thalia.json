@@ -1,0 +1,106 @@
+{
+  "id": "thalia",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "harbour_lights_offer",
+      "contexts": [
+        {
+          "requires": "harbour_lights_done",
+          "phrase": "harbour_lights_done"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "harbour_lights_accept",
+          "next": "task",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "harbour_lights_started"
+            }
+          ]
+        },
+        {
+          "phrase": "harbour_lights_deliver",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "harbour_lights_started",
+            "quantities": {
+              "salt": 2
+            }
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "harbour_lights",
+              "gold": 40,
+              "take": [
+                {
+                  "item": "salt",
+                  "count": 2
+                }
+              ],
+              "items": [
+                {
+                  "item": "scroll_native",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "harbour_lights_done"
+            }
+          ]
+        }
+      ]
+    },
+    "task": {
+      "phrase": "harbour_lights_offer",
+      "choices": [
+        {
+          "phrase": "harbour_lights_deliver",
+          "next": "done",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "harbour_lights_started",
+            "quantities": {
+              "salt": 2
+            }
+          },
+          "effects": [
+            {
+              "type": "reward",
+              "id": "harbour_lights",
+              "gold": 40,
+              "take": [
+                {
+                  "item": "salt",
+                  "count": 2
+                }
+              ],
+              "items": [
+                {
+                  "item": "scroll_native",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "type": "milestone",
+              "id": "harbour_lights_done"
+            }
+          ]
+        }
+      ]
+    },
+    "done": {
+      "phrase": "harbour_lights_done",
+      "outcome": "success",
+      "choices": []
+    }
+  }
+}

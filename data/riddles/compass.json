@@ -1,0 +1,32 @@
+{
+  "id": "compass",
+  "question": {
+    "en": "My little needle seeks the north, though no tailor can sew with it. What am I?",
+    "cs": "Má malá jehla hledá sever, ale žádný krejčí s ní nešije. Co jsem?",
+    "de": "Meine kleine Nadel sucht den Norden, doch kein Schneider kann mit ihr nähen. Was bin ich?"
+  },
+  "answers": [
+    {
+      "en": "A sundial",
+      "cs": "Sluneční hodiny",
+      "de": "Eine Sonnenuhr"
+    },
+    {
+      "en": "A spindle",
+      "cs": "Vřeteno",
+      "de": "Eine Spindel"
+    },
+    {
+      "en": "A compass",
+      "cs": "Kompas",
+      "de": "Ein Kompass"
+    }
+  ],
+  "correct": 2,
+  "stake": 100,
+  "explanation": {
+    "en": "A magnet guides the needle; sunlight is unnecessary.",
+    "cs": "Jehlu vede magnet; sluneční světlo není potřeba.",
+    "de": "Ein Magnet führt die Nadel; Sonnenlicht ist nicht nötig."
+  }
+}

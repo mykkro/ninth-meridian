@@ -1,0 +1,12 @@
+{
+  "id": "venice_restitution",
+  "kind": "recovery",
+  "title": "The cracked Venetian mirror",
+  "description": "Your order to force the mirror toward its reflection cracked the plate. Find the workshop’s calibration duplicate in Buda and have Eszter certify a replacement before returning to Vittorio.",
+  "delayDays": 4,
+  "location": "budapest",
+  "giver": "eszter",
+  "sourceLocation": "budapest",
+  "sourceAction": "venice_restitution_search",
+  "repairItem": "venice_restitution_proof"
+}

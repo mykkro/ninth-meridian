@@ -1,0 +1,32 @@
+{
+  "id": "hourglass",
+  "question": {
+    "en": "Two chambers share one narrow throat. Turn me over and falling grains measure time. What am I?",
+    "cs": "Dvě komory sdílejí jediné úzké hrdlo. Obrať mě a padající zrnka budou měřit čas. Co jsem?",
+    "it": "Due camere condividono una gola stretta. Capovolgimi e i granelli che cadono misurano il tempo. Che cosa sono?"
+  },
+  "answers": [
+    {
+      "en": "A grain sack",
+      "cs": "Pytel obilí",
+      "it": "Un sacco di grano"
+    },
+    {
+      "en": "An hourglass",
+      "cs": "Přesýpací hodiny",
+      "it": "Una clessidra"
+    },
+    {
+      "en": "A well",
+      "cs": "Studna",
+      "it": "Un pozzo"
+    }
+  ],
+  "correct": 1,
+  "stake": 100,
+  "explanation": {
+    "en": "The measured fall can begin again when the chambers exchange places.",
+    "cs": "Odměřený pád začne znovu, když si komory vymění místa.",
+    "it": "La caduta misurata ricomincia quando le camere si scambiano di posto."
+  }
+}

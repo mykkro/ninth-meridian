@@ -1,0 +1,194 @@
+{
+  "consequence_leave": {
+    "en": "I need time to study. Leave the evidence untouched.",
+    "cs": "Potřebuji čas na studium. Nechme důkazy nedotčené.",
+    "de": "Ich brauche Zeit zum Prüfen. Lasst die Beweise unberührt.",
+    "it": "Mi serve tempo per studiare. Non tocchiamo le prove.",
+    "ga": "Tá am ag teastáil uaim. Ná bain leis an bhfianaise.",
+    "hu": "Időre van szükségem. Ne nyúljunk a bizonyítékokhoz."
+  },
+  "consequence_depart": {
+    "en": "I will seek help and make restitution.",
+    "cs": "Vyhledám pomoc a napravím škodu.",
+    "de": "Ich werde Hilfe suchen und den Schaden wiedergutmachen.",
+    "it": "Cercherò aiuto e riparerò il danno.",
+    "ga": "Lorgóidh mé cabhair agus déanfaidh mé cúiteamh.",
+    "hu": "Segítséget keresek, és jóváteszem a kárt."
+  },
+  "recovery_confirm": {
+    "en": "I have recovered the evidence. Help me repair the harm I caused.",
+    "cs": "Získal jsem potřebné důkazy. Pomoz mi napravit škodu, kterou jsem způsobil.",
+    "hu": "Visszaszereztem a bizonyítékot. Segíts jóvátenni az okozott kárt.",
+    "ga": "Fuair mé an fhianaise. Cabhraigh liom an dochar a rinne mé a leigheas."
+  },
+  "leipzig_restitution_ask": {
+    "en": "I falsely accused the Leipzig printer. Can you help me retract it?",
+    "cs": "Křivě jsem obvinil lipského tiskaře. Pomůžeš mi obvinění odvolat?",
+    "hu": "Hamis váddal illettem a lipcsei nyomdászt. Segítesz visszavonni?"
+  },
+  "leipzig_restitution_task": {
+    "en": "A warrant is not erased by an apology. Recover the Leipzig duplicate from Buda’s exile archive; I will compare its seal and send a retraction. The journey and the evidence are your responsibility.",
+    "cs": "Zatykač nezmizí pouhou omluvou. Najdi lipský duplikát v budínském archivu vyhnanců; porovnám jeho pečeť a pošlu odvolání obvinění. Cesta a důkazy jsou tvou odpovědností.",
+    "hu": "Egy bocsánatkérés nem töröl el egy elfogatóparancsot. Keresd meg a lipcsei másolatot Buda száműzöttjeinek levéltárában."
+  },
+  "leipzig_restitution_repaired": {
+    "en": "The seals agree. I have sent the retraction and arranged the apprentice’s release. Konrad can speak again, but the week behind a locked door will not vanish. Return to Leipzig and finish the investigation.",
+    "cs": "Pečeti souhlasí. Poslala jsem odvolání obvinění a zajistila učňovo propuštění. Konrad může znovu promluvit, ale týden za zamčenými dveřmi nezmizí. Vrať se do Lipska a dokonči pátrání.",
+    "hu": "A pecsétek egyeznek. Visszavontam a vádat, és elintéztem az inas szabadulását. Térj vissza Lipcsébe."
+  },
+  "hamburg_restitution_ask": {
+    "en": "My warrant accused the Hamburg ferryman without tide evidence.",
+    "cs": "Můj příkaz obvinil hamburského převozníka bez přílivových důkazů.",
+    "hu": "Az árapály bizonyítékai nélkül vádoltam meg a hamburgi révészt."
+  },
+  "hamburg_restitution_task": {
+    "en": "The travelling merchants kept a counter-record. Find it in Buda and bring it here. I can overturn your warrant only with another witness’s sealed account.",
+    "cs": "Putující kupci uchovali protikladný záznam. Najdi jej v Budíně a přines sem. Tvůj příkaz mohu zrušit jen s ověřeným svědectvím dalšího svědka.",
+    "hu": "A kereskedők megőriztek egy ellenjelentést. Keresd meg Budán, és hozd ide. Hiteles tanúvallomásra van szükség."
+  },
+  "hamburg_restitution_repaired": {
+    "en": "The counter-record clears the ferryman. I have sent the release order, but some families have already fled beyond his reach. Return to Hamburg; Marta will reopen the tide book.",
+    "cs": "Protikladný záznam převozníka očišťuje. Poslala jsem příkaz k propuštění, ale některé rodiny už uprchly mimo jeho dosah. Vrať se do Hamburku; Marta znovu otevře přílivovou knihu.",
+    "hu": "Az ellenjelentés tisztázza a révészt. Visszatérhetsz Hamburgba. Néhány család azonban már messzire menekült."
+  },
+  "bologna_restitution_ask": {
+    "en": "I allowed Bologna’s solar leaf to be cut. Is there another copy?",
+    "cs": "Dovolil jsem oříznout boloňský sluneční list. Existuje jiná kopie?",
+    "hu": "Megengedtem a bolognai naplevél megvágását. Van másik példány?"
+  },
+  "bologna_restitution_task": {
+    "en": "A visiting scholar left a copy in the manuscript chest. Retrieve it. I will reconstruct the missing line, but the burned original cannot be returned to its keeper.",
+    "cs": "Hostující učenec zanechal kopii v truhle rukopisů. Najdi ji. Obnovím chybějící řádek, ale spálený originál už správkyni vrátit nelze.",
+    "hu": "Egy tudós másolatot hagyott a kéziratládában. Hozd ide. Az elégett eredetit nem lehet visszaadni."
+  },
+  "bologna_restitution_repaired": {
+    "en": "The sunrise line is restored from the copy. Take the certified reconstruction back to Chiara. We have recovered the meaning, not the page your order destroyed.",
+    "cs": "Řádek východu slunce je obnoven z kopie. Dones ověřenou rekonstrukci Chiaře. Zachránili jsme význam, ne stránku, kterou tvůj rozkaz zničil.",
+    "hu": "A hajnali sort helyreállítottam a másolatból. Térj vissza Chiarához. A jelentést megmentettük, az eredeti lapot nem."
+  },
+  "venice_restitution_ask": {
+    "en": "My instruction broke the Venetian mirror. Can its calibration be recovered?",
+    "cs": "Můj pokyn rozbil benátské zrcadlo. Lze obnovit jeho kalibraci?",
+    "hu": "Az utasításom összetörte a velencei tükröt. Visszaállítható a kalibrálása?"
+  },
+  "venice_restitution_task": {
+    "en": "The instrument archive holds a duplicate made before the plate broke. Fetch it. I can certify a replacement without pretending that your first order was harmless.",
+    "cs": "Archiv přístrojů uchovává duplikát z doby před rozbitím desky. Najdi jej. Mohu ověřit náhradu, aniž bych předstírala, že tvůj první rozkaz byl neškodný.",
+    "hu": "A műszerlevéltárban megvan a régi másolat. Hozd ide. Hitelesítek egy pótlást, de a kárt nem tagadjuk le."
+  },
+  "venice_restitution_repaired": {
+    "en": "The replacement can now be calibrated. Return to Vittorio and compare the physical instrument with its reflection again. The masked buyer’s offer was meant to make you hurry.",
+    "cs": "Náhradní desku lze nyní kalibrovat. Vrať se k Vittoriovi a znovu porovnej skutečný přístroj s jeho odrazem. Nabídka maskovaného kupce tě měla přimět ke spěchu.",
+    "hu": "A pótlás kalibrálható. Térj vissza Vittorióhoz, és vesd össze a műszert a tükörképével. A maszkos vevő siettetni akart."
+  },
+  "ash_restitution_ask": {
+    "en": "I gave the temple to the wardens. Help me protect the displaced families.",
+    "cs": "Předal jsem chrám strážcům. Pomoz mi ochránit vysídlené rodiny.",
+    "ga": "Thug mé an teampall do na gardaí. Cabhraigh liom na teaghlaigh a chosaint."
+  },
+  "ash_restitution_task": {
+    "en": "Find the families in the refuge courtyard and record who is still missing. I will arrange safe lodging from their testimony. Do not offer me another guess in place of their names.",
+    "cs": "Najdi rodiny na nádvoří útočiště a zjisti, kdo ještě chybí. Podle jejich svědectví zajistím bezpečné ubytování. Nenabízej mi další odhad místo jejich jmen.",
+    "ga": "Aimsigh na teaghlaigh sa chlós. Faigh amach cé atá ar iarraidh. Socróidh mé dídean sábháilte."
+  },
+  "ash_restitution_repaired": {
+    "en": "The families have safe lodging tonight. I have sent Ciarán their account; he will hear you again. Some beds remain empty, and no new seal can fill them.",
+    "cs": "Rodiny mají na dnešní noc bezpečné ubytování. Poslala jsem Ciaránovi jejich svědectví; znovu tě vyslechne. Některá lůžka zůstávají prázdná a žádná nová pečeť je nezaplní.",
+    "ga": "Tá dídean sábháilte acu anocht. Éistfidh Ciarán leat arís. Tá roinnt leapacha fós folamh."
+  },
+  "tide_restitution_ask": {
+    "en": "My verdict closed the rescue causeway and detained Róisín.",
+    "cs": "Můj rozsudek uzavřel záchrannou stezku a vedl k zadržení Róisín.",
+    "ga": "Dhún mo bhreithiúnas an cosán tarrthála agus gabhadh Róisín."
+  },
+  "tide_restitution_task": {
+    "en": "Someone left a deposition in the low-tide shelter below the shrine. Recover it while the route is exposed. A second witness can reopen the route and secure Róisín’s release.",
+    "cs": "Někdo zanechal svědectví v odlivovém úkrytu pod svatyní. Najdi je, dokud je cesta odkrytá. Druhý svědek může znovu otevřít stezku a zajistit propuštění Róisín.",
+    "ga": "Tá fianaise san áit fholaithe faoin scrín. Faigh í ag lag trá. Cabhróidh an dara finné le Róisín."
+  },
+  "tide_restitution_repaired": {
+    "en": "The deposition contradicts the watch. Róisín is released and the causeway reopened. She has lost five days to your certainty; return and listen before speaking for her again.",
+    "cs": "Svědectví vyvrací tvrzení hlídky. Róisín je propuštěna a stezka znovu otevřena. Tvou jistotou ztratila pět dní; vrať se a naslouchej, než budeš znovu mluvit za ni.",
+    "ga": "Tá Róisín saor agus an cosán oscailte. Chaill sí cúig lá. Fill uirthi agus éist sula labhraíonn tú ar a son."
+  },
+  "abbey_restitution_ask": {
+    "en": "I ordered the other languages burned. Can any of their voices be recovered?",
+    "cs": "Nařídil jsem spálit ostatní jazyky. Lze ještě některé jejich hlasy zachránit?",
+    "ga": "D’ordaigh mé na teangacha eile a dhó. An féidir cuid de na guthanna a shábháil?"
+  },
+  "abbey_restitution_task": {
+    "en": "Fintan hid a palimpsest behind the wall shelf. Retrieve it from the abbey. I can rebuild a shared account from that copy, but some lost lines will remain blank.",
+    "cs": "Fintan ukryl palimpsest za nástěnnou polici. Najdi jej v opatství. Z té kopie mohu obnovit společné svědectví, ale některé ztracené řádky zůstanou prázdné.",
+    "ga": "Chuir Fintan paileimpsest i bhfolach taobh thiar den tseilf. Faigh é. Fanfaidh roinnt línte folamh."
+  },
+  "abbey_restitution_repaired": {
+    "en": "The surviving scripts now stand side by side again. Fintan will reopen the archive to you. The blank spaces are part of this record too; do not call them a clean beginning.",
+    "cs": "Dochovaná písma znovu stojí vedle sebe. Fintan ti archiv opět otevře. Prázdná místa jsou také součástí tohoto záznamu; neříkej jim čistý začátek.",
+    "ga": "Tá na teangacha le chéile arís. Osclóidh Fintan an chartlann duit. Is cuid den taifead iad na línte folmha freisin."
+  },
+  "galway_restitution_ask": {
+    "en": "I surrendered the library’s voices. Help me annul the patron’s claim.",
+    "cs": "Vydal jsem hlasy knihovny. Pomoz mi zrušit patronův nárok.",
+    "hu": "Átadtam a könyvtár hangjait. Segíts érvényteleníteni a patrónus igényét."
+  },
+  "galway_restitution_task": {
+    "en": "The charter has an independent counterseal in Buda’s archive. Recover it here. You must return across the sea after I annul the agreement; its witnesses cannot be restored by a clever answer at the gate.",
+    "cs": "Zakládací listina má nezávislou protipečeť v budínském archivu. Najdi ji zde. Po zrušení dohody se musíš vrátit přes moře; její svědky neobnoví chytrá odpověď u brány.",
+    "hu": "A könyvtár alapítólevelének ellenpecsétje Buda levéltárában van. Keresd meg. A szerződés érvénytelenítése után térj vissza a tengeren át."
+  },
+  "galway_restitution_repaired": {
+    "en": "The counterseal invalidates the patron’s claim. I have sent warning to Gaillimh. The register has already been copied; Niamh will move the threatened families before reopening the doors. Return to her, and let no bargain speak over them again.",
+    "cs": "Protipečeť ruší patronův nárok. Poslala jsem varování do Gaillimh. Registr už byl opsán; Niamh přestěhuje ohrožené rodiny, než znovu otevře dveře. Vrať se k ní a nenech za ně už nikdy mluvit žádný obchod.",
+    "hu": "Az ellenpecsét érvényteleníti a patrónus igényét. Figyelmeztettem Gaillimhet. A névsort már lemásolták; Niamh biztonságba helyezi a családokat. Térj vissza hozzá."
+  },
+  "leipzig_restitution_failure": {
+    "en": "You sign the accusation. By dusk Konrad’s press is chained shut and his apprentice is taken away. A black-wax notice replaces the dispatch book. No second answer can retract your signature. Eszter in Buda holds a duplicate in the exile archive; find it and ask her to certify a retraction before returning. Three days are lost.",
+    "cs": "Podepisuješ obvinění. Za soumraku je Konradův lis spoután řetězem a jeho učeň odveden. Knihu zásilek nahrazuje oznámení s černým voskem. Druhá odpověď tvůj podpis neodvolá. Eszter v Budíně má duplikát v archivu vyhnanců; najdi jej a nech ověřit odvolání obvinění, než se vrátíš. Ztrácíš tři dny.",
+    "de": "Du unterschreibst die Anklage. Die Presse wird versiegelt, der Lehrling abgeführt. Eine andere Antwort macht deine Unterschrift nicht rückgängig. Suche die Abschrift im Exilarchiv von Buda und bitte Eszter um eine beglaubigte Rücknahme. Drei Tage sind verloren."
+  },
+  "hamburg_restitution_failure": {
+    "en": "Your order reaches the watch before you reconsider. The ferryman is dragged from the berth; the refugees who trusted him flee into the rain. Marta closes the tide book. A counter-record travelled with merchants to Buda. Recover it and ask Eszter to clear the warrant. Four days are lost.",
+    "cs": "Tvůj rozkaz dorazí k hlídce dřív, než si jej rozmyslíš. Převozníka odvlečou z kotviště; uprchlíci, kteří mu věřili, prchají do deště. Marta zavírá přílivovou knihu. Protikladný záznam odvezli kupci do Budína. Najdi jej a požádej Eszter o zrušení příkazu. Ztrácíš čtyři dny.",
+    "de": "Dein Befehl erreicht die Wache. Der Fährmann wird abgeführt, die Flüchtlinge fliehen. Marta schließt das Buch. Händler brachten den Gegenbericht nach Buda. Suche ihn und bitte Eszter um Aufhebung des Haftbefehls. Vier Tage sind verloren."
+  },
+  "bologna_restitution_failure": {
+    "en": "The knife passes through the sunrise line before Chiara can stop the binder. The fragments curl in the lamp flame; your chosen sequence has destroyed the original proof. An older copy survives in Eszter’s manuscript chest in Buda. Recover it there and ask her to reconstruct the leaf. Three days are lost.",
+    "cs": "Nůž protíná řádek východu slunce dřív, než Chiara zastaví vazače. Úlomky se kroutí v plameni lampy; zvolené pořadí zničilo původní důkaz. Starší kopie přežila v Eszteřině truhle rukopisů v Budíně. Najdi ji tam a požádej o obnovu listu. Ztrácíš tři dny.",
+    "it": "Il coltello taglia la riga dell’alba. I frammenti bruciano: la sequenza scelta ha distrutto la prova originale. Una vecchia copia si trova nel baule dei manoscritti di Eszter a Buda. Recuperala e chiedile di ricostruire il foglio. Tre giorni sono perduti."
+  },
+  "venice_restitution_failure": {
+    "en": "Vittorio obeys your signed instruction. The mounting snaps, and a crack runs through the etched sun. From the doorway, a man in a copper mask laughs once and disappears. The only calibration duplicate is in Buda. Recover it and ask Eszter to certify a replacement. Four days are lost.",
+    "cs": "Vittorio se řídí tvým podepsaným pokynem. Uchycení praská a rytým sluncem se táhne trhlina. Ve dveřích se muž v měděné masce jednou zasměje a zmizí. Jediný duplikát kalibrace je v Budíně. Najdi jej a požádej Eszter o ověření náhrady. Ztrácíš čtyři dny.",
+    "it": "Vittorio segue il tuo ordine firmato. Il supporto cede e il sole inciso si spacca. Un uomo con una maschera di rame ride sulla soglia e scompare. La copia della taratura è a Buda. Recuperala e chiedi a Eszter di certificare una sostituzione. Quattro giorni sono perduti."
+  },
+  "ash_restitution_failure": {
+    "en": "The wardens hear your declaration. Boots enter the sleeping hall; blankets are dragged into the rain. Ciarán covers the seal and refuses your next answer. Five days pass while the families scatter. Find them at Gaillimh’s refuge courtyard and take their testimony to Niamh. An apology here cannot make the hall safe.",
+    "cs": "Strážci slyší tvé prohlášení. Boty vstupují do noclehárny; přikrývky vláčejí do deště. Ciarán zakrývá pečeť a odmítá další odpověď. Pět dní uběhne, zatímco se rodiny rozprchnou. Najdi je na nádvoří galwayského útočiště a dones svědectví Niamh. Omluva zde noclehárnu nezabezpečí.",
+    "ga": "Cloiseann na gardaí thú. Caitheann siad na teaghlaigh amach sa bháisteach. Clúdaíonn Ciarán an séala. Tá cúig lá caillte. Aimsigh na teaghlaigh i nGaillimh agus tabhair a bhfianaise do Niamh."
+  },
+  "tide_restitution_failure": {
+    "en": "Your verdict is repeated by the watch. A chain closes the causeway; Róisín is led into the bell house for questioning. The next tide rises without its guide. Five days are lost. Search the shrine’s low-tide shelter for another deposition and take it to Niamh in Gaillimh before returning for the seal.",
+    "cs": "Hlídka opakuje tvůj rozsudek. Řetěz uzavírá stezku; Róisín odvádějí do zvonice k výslechu. Další příliv přichází bez průvodkyně. Ztrácíš pět dní. Prohledej odlivový úkryt u svatyně, najdi další svědectví a dones je Niamh do Gaillimh, než se vrátíš pro pečeť.",
+    "ga": "Dúnann slabhra an cosán. Tógtar Róisín chun ceistiú. Tagann an taoide gan treoraí. Tá cúig lá caillte. Faigh fianaise san áit fholaithe agus tabhair do Niamh í."
+  },
+  "abbey_restitution_failure": {
+    "en": "A keeper follows your order before Fintan can intervene. Different alphabets blacken in the lamp trays; the copper-masked visitor pockets a list of the absent scribes. Fintan shutters the seal. Six days are lost. A multilingual palimpsest remains behind the wall shelf. Recover it and take it to Niamh in Gaillimh.",
+    "cs": "Správce plní tvůj rozkaz dřív, než Fintan zasáhne. Různá písma černají v miskách lamp; návštěvník s měděnou maskou si schovává seznam nepřítomných písařů. Fintan uzavírá pečeť. Ztrácíš šest dní. Za nástěnnou policí přežil vícejazyčný palimpsest. Najdi jej a dones Niamh do Gaillimh.",
+    "ga": "Dónn na leathanaigh sna lampaí. Tógann fear le masc copair liosta na scríobhaithe. Dúnann Fintan an séala. Tá sé lá caillte. Faigh an paileimpsest taobh thiar den tseilf agus tabhair do Niamh é."
+  },
+  "niamh_bargain": {
+    "en": "Give the copper-masked patron the refuge register in return for his protection.",
+    "cs": "Dát patronovi s měděnou maskou registr uprchlíků výměnou za jeho ochranu.",
+    "ga": "Tabhair clár na ndídeanaithe don phátrún le masc copair ar son cosanta."
+  },
+  "niamh_monopoly": {
+    "en": "Authorize one keeper to silence the other languages; unity needs obedience.",
+    "cs": "Pověřit jediného správce umlčením ostatních jazyků; jednota vyžaduje poslušnost.",
+    "ga": "Tabhair cead do choimeádaí amháin na teangacha eile a chur ina dtost."
+  },
+  "galway_restitution_failure": {
+    "en": "You sign. The patron’s copper mask catches the lamplight as he copies the refuge names and seals the library doors. Niamh breaks off the ceremony. Seven days pass while families are moved into hiding. No new answer will cancel this charter. Sail to a mainland port, travel to Buda in Hungary, find the independent counterseal, and ask Eszter to annul your agreement before returning.",
+    "cs": "Podepisuješ. Patronova měděná maska zachytí světlo lamp, zatímco opisuje jména z útočiště a pečetí dveře knihovny. Niamh přeruší obřad. Sedm dní uběhne při přesunu rodin do úkrytů. Žádná nová odpověď tuto listinu nezruší. Odpluj do pevninského přístavu, cestuj do Budína v Uhrách, najdi nezávislou protipečeť a požádej Eszter o zrušení dohody, než se vrátíš.",
+    "ga": "Síníonn tú. Cóipeálann an pátrún na hainmneacha agus dúnann sé an leabharlann. Stopann Niamh an searmanas. Tá seacht lá caillte. Téigh go Buda trasna na farraige, faigh an frithshéala, agus iarr ar Eszter an conradh a chealú."
+  }
+}

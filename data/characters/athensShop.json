@@ -1,6 +1,6 @@
 {
   "id": "athensShop",
-  "name": "Athens · bookseller",
+  "name": "Nikolas · bookseller",
   "language": "el",
   "dialogue": "athensShop",
   "stock": [
@@ -8,5 +8,5 @@
     "scroll_en",
     "scroll_native"
   ],
-  "description": "Athens · bookseller. Speaks Greek."
+  "description": "Nikolas · bookseller. Speaks Greek."
 }
