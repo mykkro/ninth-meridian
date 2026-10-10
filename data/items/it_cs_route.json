@@ -33,6 +33,138 @@
     {
       "type": "phrase",
       "phrase": "luca_bye"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_record"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_investigate"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_archive"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_field"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_retry"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_confirm"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_bye"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_regionAsk"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_report"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_back"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bologna_greeting"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bologna_evidence"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bologna_intro"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bologna_puzzleA"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bologna_answerA"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bologna_puzzleB"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bologna_answerB"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bologna_wrong"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bologna_hint"
+    },
+    {
+      "type": "phrase",
+      "phrase": "bologna_finding"
+    },
+    {
+      "type": "phrase",
+      "phrase": "venice_greeting"
+    },
+    {
+      "type": "phrase",
+      "phrase": "venice_evidence"
+    },
+    {
+      "type": "phrase",
+      "phrase": "venice_intro"
+    },
+    {
+      "type": "phrase",
+      "phrase": "venice_puzzleA"
+    },
+    {
+      "type": "phrase",
+      "phrase": "venice_answerA"
+    },
+    {
+      "type": "phrase",
+      "phrase": "venice_puzzleB"
+    },
+    {
+      "type": "phrase",
+      "phrase": "venice_answerB"
+    },
+    {
+      "type": "phrase",
+      "phrase": "venice_wrong"
+    },
+    {
+      "type": "phrase",
+      "phrase": "venice_hint"
+    },
+    {
+      "type": "phrase",
+      "phrase": "venice_finding"
+    },
+    {
+      "type": "phrase",
+      "phrase": "italian_route_brief"
+    },
+    {
+      "type": "phrase",
+      "phrase": "italian_route_complete"
     }
   ],
   "description": "A limited Italian to Czech dictionary. Read it to study its entries."

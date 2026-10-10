@@ -1,0 +1,21 @@
+{
+  "id": "venice",
+  "name": "Venice",
+  "country": "Italy",
+  "language": "it",
+  "requires": "italy",
+  "description": "A glass workshop faces the lagoon. A boat pilot remembers which way the cartographer held his mirror.",
+  "npcs": [
+    "nadia",
+    "vittorio"
+  ],
+  "milestone": "venice_verified",
+  "coordinates": {
+    "lon": 12.3155,
+    "lat": 45.4408
+  },
+  "mapLabelOffset": [
+    10,
+    -10
+  ]
+}

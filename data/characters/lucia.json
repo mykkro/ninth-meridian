@@ -1,0 +1,32 @@
+{
+  "id": "lucia",
+  "name": "Lucia · manuscript scholar",
+  "language": "it",
+  "dialogue": "lucia",
+  "description": "An Italian manuscript scholar who studied Czech. Interprets Italian, French, Spanish, and Latin into Czech along the southern relic route.",
+  "companion": {
+    "name": "Lucia",
+    "native": "it",
+    "knows": [
+      "it",
+      "fr",
+      "es",
+      "la"
+    ],
+    "outputs": [
+      "cs"
+    ],
+    "description": "An Italian manuscript scholar who studied Czech. Interprets Italian, French, Spanish, and Latin into Czech along the southern relic route.",
+    "home": "florence",
+    "chatStart": "companionChat",
+    "dismissedNode": "companionFarewell",
+    "departurePhrase": "lucia_departure",
+    "route": [
+      "florence",
+      "bologna",
+      "venice",
+      "lyon",
+      "toledo"
+    ]
+  }
+}

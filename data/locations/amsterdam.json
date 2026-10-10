@@ -3,7 +3,12 @@
   "name": "Amsterdam",
   "country": "Netherlands",
   "language": "nl",
-  "requires": "germany",
+  "requires": {
+    "milestones": [
+      "germany",
+      "german_route"
+    ]
+  },
   "description": "The northern ring",
   "npcs": [
     "sanne",

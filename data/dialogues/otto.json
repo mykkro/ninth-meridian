@@ -40,6 +40,14 @@
           "phrase": "banter_rudeInsult",
           "next": "banterDismiss",
           "quality": "rude"
+        },
+        {
+          "phrase": "regional_regionAsk",
+          "next": "regionalBrief",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "germany"
+          }
         }
       ]
     },
@@ -103,8 +111,13 @@
     },
     "bye": {
       "phrase": "otto_bye",
-      "outcome": "success",
-      "choices": []
+      "choices": [
+        {
+          "phrase": "regional_regionAsk",
+          "next": "regionalBrief",
+          "quality": "sensible"
+        }
+      ]
     },
     "jokeEels": {
       "phrase": "otto_joke_reply",
@@ -150,6 +163,38 @@
       "phrase": "banter_rudeDismiss",
       "outcome": "dismissed",
       "choices": []
+    },
+    "regionalBrief": {
+      "phrase": "german_route_brief",
+      "choices": [
+        {
+          "phrase": "regional_report",
+          "next": "regionalComplete",
+          "quality": "sensible",
+          "requires": {
+            "milestones": [
+              "leipzig_verified",
+              "hamburg_verified"
+            ]
+          },
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "german_route"
+            }
+          ]
+        },
+        {
+          "phrase": "regional_back",
+          "next": "greeting",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "regionalComplete": {
+      "phrase": "german_route_complete",
+      "choices": [],
+      "outcome": "success"
     }
   }
 }

@@ -1,0 +1,108 @@
+{
+  "id": "konrad",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "leipzig_intro",
+      "choices": [
+        {
+          "phrase": "regional_investigate",
+          "next": "methods",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "methods": {
+      "phrase": "leipzig_intro",
+      "choices": [
+        {
+          "phrase": "regional_archive",
+          "next": "puzzleA",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "leipzig_witness"
+          }
+        },
+        {
+          "phrase": "regional_field",
+          "next": "puzzleB",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "leipzig_witness"
+          }
+        }
+      ]
+    },
+    "puzzleA": {
+      "phrase": "leipzig_puzzleA",
+      "choices": [
+        {
+          "phrase": "leipzig_answerA",
+          "next": "finding",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "leipzig_wrong",
+          "next": "hint",
+          "quality": "nonsense"
+        }
+      ]
+    },
+    "puzzleB": {
+      "phrase": "leipzig_puzzleB",
+      "choices": [
+        {
+          "phrase": "leipzig_answerB",
+          "next": "finding",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "leipzig_wrong",
+          "next": "hint",
+          "quality": "nonsense"
+        }
+      ]
+    },
+    "hint": {
+      "phrase": "leipzig_hint",
+      "choices": [
+        {
+          "phrase": "regional_retry",
+          "next": "methods",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "finding": {
+      "phrase": "leipzig_finding",
+      "choices": [
+        {
+          "phrase": "regional_confirm",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "leipzig_verified"
+            },
+            {
+              "type": "reward",
+              "id": "leipzig_investigation",
+              "gold": 8
+            }
+          ]
+        },
+        {
+          "phrase": "regional_retry",
+          "next": "methods",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "bye": {
+      "phrase": "regional_bye",
+      "choices": [],
+      "outcome": "success"
+    }
+  }
+}

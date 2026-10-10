@@ -1,0 +1,43 @@
+{
+  "id": "german_route",
+  "kind": "investigation",
+  "title": "The disputed northern chart",
+  "description": "Before Amsterdam, verify the reversed proof in Leipzig and the tide record in Hamburg. Visit the bookseller and ferryman first, then their local experts. You may take either city first. Return to me in Berlin with both conclusions.",
+  "started": "germany",
+  "completion": "german_route",
+  "location": "berlin",
+  "giver": "otto",
+  "milestones": [
+    "german_route",
+    "leipzig_witness",
+    "leipzig_verified",
+    "hamburg_witness",
+    "hamburg_verified"
+  ],
+  "steps": [
+    {
+      "milestone": "leipzig_witness",
+      "label": "Interview the witness in Leipzig",
+      "location": "leipzig",
+      "giver": "greta"
+    },
+    {
+      "milestone": "leipzig_verified",
+      "label": "Resolve the discrepancy in Leipzig",
+      "location": "leipzig",
+      "giver": "konrad"
+    },
+    {
+      "milestone": "hamburg_witness",
+      "label": "Interview the witness in Hamburg",
+      "location": "hamburg",
+      "giver": "hannes"
+    },
+    {
+      "milestone": "hamburg_verified",
+      "label": "Resolve the discrepancy in Hamburg",
+      "location": "hamburg",
+      "giver": "marta"
+    }
+  ]
+}

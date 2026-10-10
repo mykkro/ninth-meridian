@@ -1,0 +1,21 @@
+{
+  "id": "bologna",
+  "name": "Bologna",
+  "country": "Italy",
+  "language": "it",
+  "requires": "italy",
+  "description": "Under the porticoes, a student traces a missing manuscript leaf to the university archive.",
+  "npcs": [
+    "paolo",
+    "chiara"
+  ],
+  "milestone": "bologna_verified",
+  "coordinates": {
+    "lon": 11.3426,
+    "lat": 44.4949
+  },
+  "mapLabelOffset": [
+    -10,
+    18
+  ]
+}

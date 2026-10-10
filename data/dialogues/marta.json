@@ -1,0 +1,108 @@
+{
+  "id": "marta",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "hamburg_intro",
+      "choices": [
+        {
+          "phrase": "regional_investigate",
+          "next": "methods",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "methods": {
+      "phrase": "hamburg_intro",
+      "choices": [
+        {
+          "phrase": "regional_archive",
+          "next": "puzzleA",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "hamburg_witness"
+          }
+        },
+        {
+          "phrase": "regional_field",
+          "next": "puzzleB",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "hamburg_witness"
+          }
+        }
+      ]
+    },
+    "puzzleA": {
+      "phrase": "hamburg_puzzleA",
+      "choices": [
+        {
+          "phrase": "hamburg_answerA",
+          "next": "finding",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "hamburg_wrong",
+          "next": "hint",
+          "quality": "nonsense"
+        }
+      ]
+    },
+    "puzzleB": {
+      "phrase": "hamburg_puzzleB",
+      "choices": [
+        {
+          "phrase": "hamburg_answerB",
+          "next": "finding",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "hamburg_wrong",
+          "next": "hint",
+          "quality": "nonsense"
+        }
+      ]
+    },
+    "hint": {
+      "phrase": "hamburg_hint",
+      "choices": [
+        {
+          "phrase": "regional_retry",
+          "next": "methods",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "finding": {
+      "phrase": "hamburg_finding",
+      "choices": [
+        {
+          "phrase": "regional_confirm",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "hamburg_verified"
+            },
+            {
+              "type": "reward",
+              "id": "hamburg_investigation",
+              "gold": 8
+            }
+          ]
+        },
+        {
+          "phrase": "regional_retry",
+          "next": "methods",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "bye": {
+      "phrase": "regional_bye",
+      "choices": [],
+      "outcome": "success"
+    }
+  }
+}

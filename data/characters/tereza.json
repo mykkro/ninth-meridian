@@ -1,0 +1,32 @@
+{
+  "id": "tereza",
+  "name": "Tereza · travelling teacher",
+  "language": "cs",
+  "dialogue": "tereza",
+  "description": "A Czech teacher who interprets Slovak and Polish. Travels between Prague and Bratislava.",
+  "companion": {
+    "name": "Tereza",
+    "native": "cs",
+    "knows": [
+      "cs",
+      "sk",
+      "pl"
+    ],
+    "outputs": [
+      "cs"
+    ],
+    "description": "A Czech teacher who interprets Slovak and Polish. Travels between Prague and Bratislava.",
+    "home": "prague",
+    "chatStart": "companionChat",
+    "dismissedNode": "companionFarewell",
+    "departurePhrase": "tereza_departure",
+    "route": [
+      "prague",
+      "bratislava"
+    ],
+    "leaveAt": [
+      "bratislava"
+    ],
+    "arrivalPhrase": "tereza_arrival"
+  }
+}

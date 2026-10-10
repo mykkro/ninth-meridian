@@ -1,0 +1,38 @@
+{
+  "id": "paolo",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "bologna_greeting",
+      "choices": [
+        {
+          "phrase": "regional_ask",
+          "next": "evidence",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "evidence": {
+      "phrase": "bologna_evidence",
+      "choices": [
+        {
+          "phrase": "regional_record",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "bologna_witness"
+            }
+          ]
+        }
+      ],
+      "rumor": "bologna_evidence"
+    },
+    "bye": {
+      "phrase": "regional_bye",
+      "choices": [],
+      "outcome": "success"
+    }
+  }
+}

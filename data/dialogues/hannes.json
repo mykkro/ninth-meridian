@@ -1,0 +1,38 @@
+{
+  "id": "hannes",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "hamburg_greeting",
+      "choices": [
+        {
+          "phrase": "regional_ask",
+          "next": "evidence",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "evidence": {
+      "phrase": "hamburg_evidence",
+      "choices": [
+        {
+          "phrase": "regional_record",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "hamburg_witness"
+            }
+          ]
+        }
+      ],
+      "rumor": "hamburg_evidence"
+    },
+    "bye": {
+      "phrase": "regional_bye",
+      "choices": [],
+      "outcome": "success"
+    }
+  }
+}

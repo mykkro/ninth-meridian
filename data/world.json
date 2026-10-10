@@ -84,7 +84,20 @@
       "characters/osloArms.json",
       "characters/galwayGeneral.json",
       "characters/janek.json",
-      "characters/zuzana.json"
+      "characters/zuzana.json",
+      "characters/tereza.json",
+      "characters/sofie.json",
+      "characters/lucia.json",
+      "characters/rowan.json",
+      "characters/sigrid.json",
+      "characters/greta.json",
+      "characters/konrad.json",
+      "characters/hannes.json",
+      "characters/marta.json",
+      "characters/paolo.json",
+      "characters/chiara.json",
+      "characters/nadia.json",
+      "characters/vittorio.json"
     ],
     "items": [
       "items/sk_cs.json",
@@ -170,7 +183,11 @@
       "locations/stockholm.json",
       "locations/helsinki.json",
       "locations/budapest.json",
-      "locations/galway.json"
+      "locations/galway.json",
+      "locations/leipzig.json",
+      "locations/hamburg.json",
+      "locations/bologna.json",
+      "locations/venice.json"
     ],
     "quests": [
       "quests/ninth-meridian.json",
@@ -179,7 +196,9 @@
       "quests/rope_errand.json",
       "quests/ore_errand.json",
       "quests/wood_errand.json",
-      "quests/flowers_errand.json"
+      "quests/flowers_errand.json",
+      "quests/german_route.json",
+      "quests/italian_route.json"
     ],
     "dialogues": [
       "dialogues/ada.json",
@@ -235,10 +254,25 @@
       "dialogues/osloArms.json",
       "dialogues/galwayGeneral.json",
       "dialogues/janek.json",
-      "dialogues/zuzana.json"
+      "dialogues/zuzana.json",
+      "dialogues/tereza.json",
+      "dialogues/sofie.json",
+      "dialogues/lucia.json",
+      "dialogues/rowan.json",
+      "dialogues/sigrid.json",
+      "dialogues/greta.json",
+      "dialogues/konrad.json",
+      "dialogues/hannes.json",
+      "dialogues/marta.json",
+      "dialogues/paolo.json",
+      "dialogues/chiara.json",
+      "dialogues/nadia.json",
+      "dialogues/vittorio.json"
     ],
     "phrases": [
-      "phrases.json"
+      "phrases.json",
+      "companion-phrases.json",
+      "regional-phrases.json"
     ]
   }
 }

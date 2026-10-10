@@ -5,6 +5,7 @@
     const check=(condition,message)=>{if(!condition)throw Error(`Invalid game content: ${message}`);};
     for(const key of ['languages','items','companions','npcs','phrases','dialogues','languageLearning'])check(world[key]&&typeof world[key]==='object',`missing ${key}`);
     check(Array.isArray(world.locations)&&world.locations.length>0,'missing locations');
+    const locationIds=new Set(world.locations.map(l=>l.id));check(locationIds.size===world.locations.length,'duplicate location IDs');
     check(world.quest&&Array.isArray(world.quest.milestones),'missing quest milestones');
     const rules=world.languageLearning;
     for(const key of ['rudeThreshold','nonsenseThreshold','pointsPerEntry','pointsPerExchange'])check(Number.isFinite(rules[key])&&rules[key]>=0,`invalid learning rule ${key}`);
@@ -15,6 +16,7 @@
       if(!value)return;
       if(typeof value==='string'){check(milestones.has(value),`${context}: unknown milestone ${value}`);return;}
       check(typeof value==='object'&&!Array.isArray(value),`${context}: invalid requirements`);
+      check(value.location===undefined||locationIds.has(value.location),`${context}: unknown required location`);
       check(value.items===undefined||Array.isArray(value.items),`${context}: invalid items requirement`);
       check(value.milestones===undefined||Array.isArray(value.milestones),`${context}: invalid milestones requirement`);
       for(const [id,count]of Object.entries(value.quantities||{}))check(world.items[id]&&Number.isInteger(count)&&count>0,`${context}: invalid quantity requirement`);
@@ -26,6 +28,8 @@
       for(const [nodeId,node] of Object.entries(dialogue.nodes)){
         const context=`${id}/${nodeId}`;
         check(world.phrases[node.phrase],`${context}: missing phrase ${node.phrase}`);
+        check(node.contexts===undefined||Array.isArray(node.contexts),`${context}: invalid contextual lines`);
+        for(const variant of node.contexts||[]){check(world.phrases[variant.phrase],`${context}: missing contextual phrase`);requirements(variant.requires,context);}
         check(!node.rumor||typeof node.rumor==='string'&&!node.outcome,`${context}: invalid rumor node`);
         check(Array.isArray(node.choices),`${context}: choices must be an array`);
         check(!node.outcome||['success','dismissed'].includes(node.outcome)&&node.choices.length===0,`${context}: invalid terminal outcome`);
@@ -34,12 +38,16 @@
           check(!choice.language||world.languages[choice.language]&&world.phrases[choice.phrase][choice.language],`${context}: invalid response language`);
           check(['sensible','nonsense','rude'].includes(choice.quality),`${context}: invalid response quality`);
           check(!choice.next||dialogue.nodes[choice.next],`${context}: missing next node ${choice.next}`);
+          check(choice.companionOnly===undefined||typeof choice.companionOnly==='boolean',`${context}: invalid companion-only response`);
+          check(!choice.recruitBlocked||dialogue.nodes[choice.recruitBlocked],`${context}: missing recruitment refusal node`);
+          check((choice.effects||[]).filter(effect=>effect.type==='recruit').length<=1,`${context}: only one companion can join`);
           requirements(choice.requires,context);
           for(const effect of choice.effects||[]){
-            check(['give','milestone','recruit','reward'].includes(effect.type),`${context}: unknown effect`);
+            check(['give','milestone','recruit','dismiss','reward'].includes(effect.type),`${context}: unknown effect`);
             if(effect.type==='reward'){check(typeof effect.id==='string'&&effect.id&&Number.isFinite(effect.gold||0)&&(effect.gold||0)>=0,`${context}: invalid reward`);for(const entry of [...(effect.take||[]),...(effect.items||[])])check(world.items[entry.item]&&Number.isInteger(entry.count)&&entry.count>0,`${context}: invalid reward item`);}
             if(effect.type==='give')check(world.items[effect.item],`${context}: missing reward item`);
-            if(effect.type==='recruit')check(world.companions[effect.id],`${context}: missing companion`);
+            if(effect.type==='recruit')check(world.companions[effect.id]&&choice.recruitBlocked,`${context}: missing companion or recruitment refusal`);
+            if(effect.type==='dismiss')check(world.companions[effect.id]&&choice.companionOnly,`${context}: invalid companion dismissal`);
             if(effect.type==='milestone')check(milestones.has(effect.id),`${context}: unknown milestone`);
           }
         }
@@ -49,10 +57,9 @@
       check(world.languages[npc.language],`${id}: unknown language`);
       requirements(npc.requires,id);
       const dialogue=world.dialogues[npc.dialogue];check(dialogue,`${id}: missing dialogue`);
-      for(const node of Object.values(dialogue.nodes))for(const phrase of [node.phrase,...node.choices.map(c=>c.phrase)])check(world.phrases[phrase][npc.language],`${id}: ${phrase} has no ${npc.language} text`);
+      for(const node of Object.values(dialogue.nodes))for(const phrase of [node.phrase,...(node.contexts||[]).map(c=>c.phrase),...node.choices.map(c=>c.phrase)])check(world.phrases[phrase][node.language||npc.language],`${id}: ${phrase} has no ${node.language||npc.language} text`);
       for(const item of npc.stock||[])check(world.items[item]&&Number.isFinite(world.items[item].price)&&world.items[item].price>=0,`${id}: invalid stock item ${item}`);
     }
-    const locationIds=new Set(world.locations.map(l=>l.id));check(locationIds.size===world.locations.length,'duplicate location IDs');
     const actionIds=new Set();
     for(const location of world.locations){
       if(location.coordinates)check(Number.isFinite(location.coordinates.lon)&&location.coordinates.lon>=-180&&location.coordinates.lon<=180&&Number.isFinite(location.coordinates.lat)&&location.coordinates.lat>=-90&&location.coordinates.lat<=90,`${location.id}: invalid map coordinates`);
@@ -73,7 +80,14 @@
     }
     for(const [id,item]of Object.entries(world.items))if(item.type==='book')check(world.npcs[item.npc],`${id}: missing manuscript NPC`);
     for(const branch of world.quest.branches||[]){check(world.items[branch.item],`${branch.id}: missing branch relic`);check(Array.isArray(branch.locations)&&branch.locations.every(id=>locationIds.has(id)),`${branch.id}: invalid branch route`);}
-    for(const [id,quest]of Object.entries(world.quests||{}))if(quest.completion){check(milestones.has(quest.completion)&&world.items[quest.fetchItem],`${id}: invalid side quest`);check(quest.fetchCount===undefined||Number.isInteger(quest.fetchCount)&&quest.fetchCount>0,`${id}: invalid fetch count`);if(quest.giver)check(world.npcs[quest.giver]&&world.locations.find(l=>l.id===quest.location)?.npcs.includes(quest.giver),`${id}: invalid quest giver location`);}
+    for(const [id,quest]of Object.entries(world.quests||{}))if(quest.completion){
+      check(milestones.has(quest.completion),`${id}: unknown quest completion`);
+      if(quest.kind==='investigation'){
+        check(milestones.has(quest.started)&&Array.isArray(quest.steps)&&quest.steps.length>0,`${id}: invalid investigation`);
+        for(const step of quest.steps)check(milestones.has(step.milestone)&&typeof step.label==='string'&&step.label&&world.locations.find(l=>l.id===step.location)?.npcs.includes(step.giver),`${id}: invalid investigation lead`);
+      }else{check(world.items[quest.fetchItem],`${id}: invalid side quest`);check(quest.fetchCount===undefined||Number.isInteger(quest.fetchCount)&&quest.fetchCount>0,`${id}: invalid fetch count`);}
+      if(quest.giver)check(world.npcs[quest.giver]&&world.locations.find(l=>l.id===quest.location)?.npcs.includes(quest.giver),`${id}: invalid quest giver location`);
+    }
     for(const [id,item] of Object.entries(world.items))if(item.type==='dictionary'){
       check(world.languages[item.from]&&world.languages[item.to]&&(Array.isArray(item.entries)||Array.isArray(item.phrases)),`${id}: invalid dictionary`);
       check(item.entries===undefined||Array.isArray(item.entries),`${id}: entries must be an array`);
@@ -92,6 +106,13 @@
     for(const [id,companion]of Object.entries(world.companions)){
       check(world.languages[companion.native]&&Array.isArray(companion.knows)&&Array.isArray(companion.outputs),`${id}: invalid companion`);
       for(const lang of [...companion.knows,...companion.outputs])check(world.languages[lang],`${id}: unknown companion language`);
+      const npc=world.npcs[id],nodes=world.dialogues[npc?.dialogue]?.nodes;
+      check(npc&&locationIds.has(companion.home)&&world.locations.find(l=>l.id===companion.home).npcs.includes(id),`${id}: invalid companion home`);
+      check(nodes?.[companion.chatStart]&&nodes?.[companion.dismissedNode],`${id}: missing companion conversation or farewell`);
+      requirements(companion.requires,id);
+      for(const key of ['route','leaveAt','leaveBefore'])if(companion[key]!==undefined)check(Array.isArray(companion[key])&&companion[key].length>0&&companion[key].every(location=>locationIds.has(location)),`${id}: invalid companion travel rule`);
+      if(companion.route||companion.leaveBefore)check(world.phrases[companion.departurePhrase]?.[npc.language],`${id}: missing departure line`);
+      if(companion.leaveAt)check(world.phrases[companion.arrivalPhrase]?.[npc.language],`${id}: missing arrival line`);
     }
     return world;
   }

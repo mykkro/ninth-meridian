@@ -1,0 +1,21 @@
+{
+  "id": "hamburg",
+  "name": "Hamburg",
+  "country": "Germany",
+  "language": "de",
+  "requires": "germany",
+  "description": "Bells count the harbour watches. A ferryman and a tide keeper hold different halves of the same account.",
+  "npcs": [
+    "hannes",
+    "marta"
+  ],
+  "milestone": "hamburg_verified",
+  "coordinates": {
+    "lon": 9.9937,
+    "lat": 53.5511
+  },
+  "mapLabelOffset": [
+    10,
+    -10
+  ]
+}

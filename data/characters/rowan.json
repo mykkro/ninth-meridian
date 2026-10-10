@@ -1,0 +1,34 @@
+{
+  "id": "rowan",
+  "name": "Rowan · wandering librarian",
+  "language": "en",
+  "dialogue": "rowan",
+  "description": "An English librarian who learned Czech from visiting scholars. Translates English, French, and Irish into Czech and travels as far as Athens.",
+  "companion": {
+    "name": "Rowan",
+    "native": "en",
+    "knows": [
+      "en",
+      "fr",
+      "ga"
+    ],
+    "outputs": [
+      "cs"
+    ],
+    "description": "An English librarian who learned Czech from visiting scholars. Translates English, French, and Irish into Czech and travels as far as Athens.",
+    "home": "london",
+    "chatStart": "companionChat",
+    "dismissedNode": "companionFarewell",
+    "departurePhrase": "rowan_departure",
+    "leaveAt": [
+      "athens"
+    ],
+    "leaveBefore": [
+      "oslo",
+      "stockholm",
+      "helsinki",
+      "galway"
+    ],
+    "arrivalPhrase": "rowan_arrival"
+  }
+}

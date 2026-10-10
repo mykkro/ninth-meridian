@@ -1,0 +1,460 @@
+{
+  "companion_askWisdom": {
+    "cs": "Máš pro mě nějakou radu?",
+    "en": "Do you have any advice for me?",
+    "sk": "Máš pre mňa nejakú radu?",
+    "de": "Hast du einen Rat für mich?",
+    "it": "Hai un consiglio per me?",
+    "no": "Har du et råd til meg?"
+  },
+  "companion_askRumor": {
+    "cs": "Co se povídá mezi cestovateli?",
+    "en": "What are travellers saying?",
+    "sk": "Čo sa hovorí medzi cestovateľmi?",
+    "de": "Was erzählen die Reisenden?",
+    "it": "Che cosa raccontano i viaggiatori?",
+    "no": "Hva forteller de reisende?"
+  },
+  "companion_askEvents": {
+    "cs": "Co se tady teď děje?",
+    "en": "What is happening here lately?",
+    "sk": "Čo sa tu teraz deje?",
+    "de": "Was passiert hier gerade?",
+    "it": "Che cosa succede qui in questi giorni?",
+    "no": "Hva skjer her for tiden?"
+  },
+  "companion_askQuest": {
+    "cs": "Co si myslíš o našem pátrání?",
+    "en": "What do you think of our search?",
+    "sk": "Čo si myslíš o našom pátraní?",
+    "de": "Was denkst du über unsere Suche?",
+    "it": "Che cosa pensi della nostra ricerca?",
+    "no": "Hva tenker du om letingen vår?"
+  },
+  "companion_back": {
+    "cs": "Promluvme si o něčem jiném.",
+    "en": "Let us talk about something else.",
+    "sk": "Porozprávajme sa o niečom inom.",
+    "de": "Reden wir über etwas anderes.",
+    "it": "Parliamo di qualcos'altro.",
+    "no": "La oss snakke om noe annet."
+  },
+  "companion_dismiss": {
+    "cs": "Děkuji za pomoc. Odtud půjdu sám.",
+    "en": "Thank you for your help. I will travel alone from here.",
+    "sk": "Ďakujem za pomoc. Odtiaľto pôjdem sám.",
+    "de": "Danke für deine Hilfe. Von hier an reise ich allein.",
+    "it": "Grazie per il tuo aiuto. Da qui viaggerò da solo.",
+    "no": "Takk for hjelpen. Herfra reiser jeg alene."
+  },
+  "companion_join": {
+    "cs": "Pojď se mnou. Budeme cestovat společně.",
+    "en": "Come with me. We will travel together.",
+    "sk": "Poď so mnou. Budeme cestovať spolu.",
+    "de": "Komm mit mir. Wir reisen zusammen.",
+    "it": "Vieni con me. Viaggeremo insieme.",
+    "no": "Bli med meg. Vi reiser sammen."
+  },
+  "companion_talk": {
+    "cs": "Posaďme se na chvíli a promluvme si.",
+    "en": "Let us sit for a while and talk.",
+    "sk": "Sadnime si na chvíľu a porozprávajme sa.",
+    "de": "Setzen wir uns eine Weile und reden.",
+    "it": "Sediamoci un momento e parliamo.",
+    "no": "La oss sette oss litt og snakke."
+  },
+  "companion_decline": {
+    "cs": "Možná později. Zatím se měj dobře.",
+    "en": "Perhaps later. Take care for now.",
+    "sk": "Možno neskôr. Zatiaľ sa maj dobre.",
+    "de": "Vielleicht später. Mach es gut.",
+    "it": "Forse più tardi. Stammi bene.",
+    "no": "Kanskje senere. Ha det bra så lenge."
+  },
+  "companion_busy": {
+    "cs": "Ráda bych tě doprovázela, ale už máš společníka. Nejdřív se s ním rozluč. Počkám tady.",
+    "en": "I would like to accompany you, but you already have a companion. Dismiss them first. I will wait here.",
+    "sk": "Rada by som ťa sprevádzala, ale už máš spoločníka. Najprv sa s ním rozlúč. Počkám tu.",
+    "de": "Ich würde dich gern begleiten, aber du hast bereits einen Gefährten. Verabschiede dich zuerst von ihm. Ich warte hier.",
+    "it": "Vorrei accompagnarti, ma hai già un compagno. Prima salutalo. Ti aspetterò qui.",
+    "no": "Jeg vil gjerne følge deg, men du har allerede en følgesvenn. Ta avskjed med dem først. Jeg venter her."
+  },
+  "companion_farewell": {
+    "cs": "Dobrá. Budu na tebe čekat v tomto městě. Ať tě provází šťastná cesta.",
+    "en": "Very well. I will wait for you in this city. May your road be kind.",
+    "sk": "Dobre. Budem na teba čakať v tomto meste. Šťastnú cestu.",
+    "de": "Gut. Ich warte hier in dieser Stadt auf dich. Gute Reise.",
+    "it": "Va bene. Ti aspetterò in questa città. Buon viaggio.",
+    "no": "Greit. Jeg venter på deg her i byen. God reise."
+  },
+  "tereza_intro": {
+    "cs": "Jsem Tereza, učitelka na cestách. Rozumím slovensky a polsky. Doprovodím tě do Bratislavy; tam mě čekají žáci.",
+    "en": "I am Tereza, a travelling teacher. I understand Slovak and Polish. I can accompany you to Bratislava; my pupils are waiting there."
+  },
+  "tereza_chat": {
+    "cs": "Na cestě si nejlépe odpočine hlava, když si dva lidé na chvíli popovídají. Co máš na mysli?",
+    "en": "A conversation between two travellers is a fine way to rest the mind. What is on your mind?"
+  },
+  "tereza_joined": {
+    "cs": "Tak pojďme. Slovům, která cestou neznáš, zkusíme společně porozumět.",
+    "en": "Then let us go. We will try to understand the unfamiliar words together."
+  },
+  "tereza_wisdom": {
+    "cs": "Než odpovíš, zopakuj si potichu otázku. Často už v ní najdeš polovinu odpovědi.",
+    "en": "Before answering, repeat the question quietly to yourself. Often half the answer is already there."
+  },
+  "tereza_rumor": {
+    "cs": "V pražských dílnách se povídá, že Eliáš kreslil mapu podle jazyků, ne podle královských hranic. Hezký příběh, ale zatím jen pověst.",
+    "en": "In Prague's workshops they say Eliáš drew a map of languages rather than royal borders. A fine story, but still only a rumor."
+  },
+  "tereza_events": {
+    "cs": "Na tržišti potkávám kupce, kteří střídají jazyky tak rychle jako mince. Dobré místo k poslechu.",
+    "en": "At the market I meet traders who change languages as quickly as coins. A good place to listen."
+  },
+  "tereza_localEvents": {
+    "cs": "Pražští knihkupci dnes vystavují malé cestovní slovníky. Raději jeden skutečně přečti, než abys nesl deset zavřených knih.",
+    "en": "Prague's booksellers are displaying small travel dictionaries today. Better to read one than carry ten unopened books."
+  },
+  "tereza_quest": {
+    "cs": "Najdi Adu a ptej se na kartografa. Zdvořilá otázka ti otevře víc dveří než sebejistý odhad.",
+    "en": "Find Ada and ask about the cartographer. A polite question opens more doors than a confident guess."
+  },
+  "tereza_clueQuest": {
+    "cs": "Mapa nás vede do Bratislavy. Tam mluví slovensky; ráda ti pomohu, než se rozloučíme.",
+    "en": "The map leads us to Bratislava. People speak Slovak there; I will gladly help before we part."
+  },
+  "tereza_laterQuest": {
+    "cs": "Už máš první stopy. Zapisuj si, kdo co skutečně viděl, a odděluj to od toho, co jen zaslechl.",
+    "en": "You have the first clues. Write down what each witness actually saw, and keep it apart from hearsay."
+  },
+  "tereza_departure": {
+    "cs": "Dál už tě doprovodit nemohu. Moje cesta vede jen mezi Prahou a Bratislavou. Vždycky mě najdeš tady, v tomto městě.",
+    "en": "I cannot accompany you farther. My road only runs between Prague and Bratislava. You can always find me here, in this city."
+  },
+  "tereza_arrival": {
+    "cs": "Tady v Bratislavě se rozloučíme. Čekají mě žáci. Ale vždycky mě můžeš najít tady; přijď si někdy popovídat.",
+    "en": "Here in Bratislava we must part. My pupils are waiting. But you can always find me here; come back for a conversation."
+  },
+  "sofie_intro": {
+    "cs": "Jsem Sofie. V Praze jsem se naučila česky; němčinu, nizozemštinu a dánštinu znám z dílen. Mohu s tebou dojít přes Amsterdam do Kodaně.",
+    "en": "I am Sofie. I learned Czech in Prague; I know German, Dutch, and Danish from the workshops. I can travel with you through Amsterdam to Copenhagen.",
+    "de": "Ich bin Sofie. In Prag habe ich Tschechisch gelernt; Deutsch, Niederländisch und Dänisch kenne ich aus den Werkstätten. Ich kann dich über Amsterdam nach Kopenhagen begleiten."
+  },
+  "sofie_chat": {
+    "cs": "Nástroje už jsem uklidila. Teď mám čas na příběhy a otázky.",
+    "en": "I have put the tools away. Now I have time for stories and questions.",
+    "de": "Die Werkzeuge sind verstaut. Jetzt habe ich Zeit für Geschichten und Fragen."
+  },
+  "sofie_joined": {
+    "cs": "Půjdu s tebou. Když se ztratíš ve slovech, zkusím je převést do češtiny.",
+    "en": "I will come with you. If you lose your way among the words, I will try to put them into Czech.",
+    "de": "Ich komme mit. Wenn du dich zwischen den Wörtern verirrst, versuche ich, sie ins Tschechische zu übertragen."
+  },
+  "sofie_wisdom": {
+    "cs": "Řemeslník měří dvakrát a řeže jednou. Cestovatel by měl dvakrát naslouchat a jednou odpovědět.",
+    "en": "A craftsperson measures twice and cuts once. A traveller should listen twice and answer once.",
+    "de": "Ein Handwerker misst zweimal und schneidet einmal. Ein Reisender sollte zweimal zuhören und einmal antworten."
+  },
+  "sofie_rumor": {
+    "cs": "V dílnách se šeptá, že severní prsten nechladne ani v mořském větru. To je příběh učňů; pečeť a svědci budou lepším důkazem.",
+    "en": "The workshops whisper that the northern ring never cools, even in a sea wind. That is an apprentice's tale; the seal and witnesses are better evidence.",
+    "de": "In den Werkstätten heißt es, der nördliche Ring werde selbst im Seewind nicht kalt. Das ist eine Lehrlingsgeschichte; das Siegel und die Zeugen sind bessere Beweise."
+  },
+  "sofie_events": {
+    "cs": "Přístavy se chystají na odjezd lodí. U každé truhly uslyšíš jiné jméno a jiný přízvuk.",
+    "en": "The harbors are preparing for departing ships. At each chest you hear another name and another accent.",
+    "de": "Die Häfen bereiten die Schiffe zur Abfahrt vor. An jeder Truhe hörst du einen anderen Namen und einen anderen Akzent."
+  },
+  "sofie_localEvents": {
+    "cs": "Amsterdamští obchodníci porovnávají mapy a počítají zásoby. Sanne se vyplatí nejdřív ukázat skutečnou pečeť.",
+    "en": "Amsterdam's merchants are comparing charts and counting supplies. It is best to show Sanne the real seal first.",
+    "de": "Amsterdams Händler vergleichen Karten und zählen Vorräte. Zeige Sanne am besten zuerst das echte Siegel."
+  },
+  "sofie_quest": {
+    "cs": "Otto v Berlíně zná znamení hvězdy. Promluv s ním, než se vydáme dál.",
+    "en": "Otto in Berlin knows the sign of the star. Speak with him before we go on.",
+    "de": "Otto in Berlin kennt das Zeichen des Sterns. Sprich mit ihm, bevor wir weiterziehen."
+  },
+  "sofie_clueQuest": {
+    "cs": "Máme pečeť dílny, ale před Amsterdamem musíme ověřit nátisk v Lipsku a přílivový záznam v Hamburku. Pořadí si vyber; s oběma závěry se vrátíme k Ottovi do Berlína.",
+    "en": "We have the workshop seal, but before Amsterdam we must verify the Leipzig proof and the Hamburg tide record. Choose either city first; we will bring both findings back to Otto in Berlin.",
+    "de": "Wir haben das Werkstattsiegel, aber vor Amsterdam müssen wir den Leipziger Probedruck und den Hamburger Gezeitenbericht prüfen. Die Reihenfolge ist frei; wir bringen beide Ergebnisse zu Otto nach Berlin."
+  },
+  "sofie_laterQuest": {
+    "cs": "Severní prsten je u tebe. Pro Athény budou potřeba také čočka a sluneční kotouč; žádná cesta nenahradí ostatní.",
+    "en": "You have the northern ring. Athens also needs the lens and the sun disc; no route replaces the others.",
+    "de": "Du hast den nördlichen Ring. Für Athen brauchst du auch die Linse und die Sonnenscheibe; kein Weg ersetzt die anderen."
+  },
+  "sofie_departure": {
+    "cs": "Tady končí moje cesta s tebou. Patřím k dílnám mezi Berlínem, Amsterdamem a Kodaní. Ale vždycky mě najdeš tady.",
+    "en": "My road with you ends here. I belong to the workshops between Berlin, Amsterdam, and Copenhagen. But you can always find me here.",
+    "de": "Hier endet mein Weg mit dir. Ich gehöre zu den Werkstätten zwischen Berlin, Amsterdam und Kopenhagen. Aber du kannst mich immer hier finden."
+  },
+  "sofie_arrival": {
+    "cs": "Došli jsme do Kodaně. Dál už tě doprovodit nemohu; musím se vrátit k práci. Ale vždycky mě najdeš tady.",
+    "en": "We have reached Copenhagen. This is as far as I can accompany you; I must return to my work. But you can always find me here.",
+    "de": "Wir haben Kopenhagen erreicht. Weiter kann ich dich nicht begleiten; ich muss wieder arbeiten. Aber du kannst mich immer hier finden."
+  },
+  "lucia_intro": {
+    "cs": "Jsem Lucia. Studovala jsem rukopisy i češtinu. Rozumím italsky, francouzsky, španělsky a latinsky. Na cestě do Lyonu a Toleda ti mohu pomoci.",
+    "en": "I am Lucia. I studied manuscripts and Czech. I understand Italian, French, Spanish, and Latin. I can help on the road to Lyon and Toledo.",
+    "it": "Sono Lucia. Ho studiato i manoscritti e il ceco. Capisco l'italiano, il francese, lo spagnolo e il latino. Posso aiutarti sulla strada per Lione e Toledo."
+  },
+  "lucia_chat": {
+    "cs": "Na okrajích knih bývají dobré otázky. Jakou si dnes zapíšeme?",
+    "en": "The margins of books often hold good questions. Which one shall we write down today?",
+    "it": "Ai margini dei libri si trovano spesso buone domande. Quale scriveremo oggi?"
+  },
+  "lucia_joined": {
+    "cs": "Doprovodím tě. Rukopis může být starý, ale rozhovor o něm nemusí být suchý.",
+    "en": "I will accompany you. A manuscript may be old, but a conversation about it need not be dry.",
+    "it": "Ti accompagnerò. Un manoscritto può essere antico, ma parlarne non deve essere noioso."
+  },
+  "lucia_wisdom": {
+    "cs": "Slovo může mít několik významů. Hledej ten, který sedí k otázce i k věci, již držíš v ruce.",
+    "en": "A word can have several meanings. Look for the one that fits both the question and the object in your hand.",
+    "it": "Una parola può avere più significati. Cerca quello che si accorda con la domanda e con l'oggetto che hai in mano."
+  },
+  "lucia_rumor": {
+    "cs": "Jeden opisovač tvrdí, že kotouč zachytil slunce při zatmění. Nevěřím mu, ale ráda bych viděla poznámky na jeho okraji.",
+    "en": "A copyist claims the disc caught the sun during an eclipse. I do not believe him, but I would like to read the notes around its rim.",
+    "it": "Un copista sostiene che il disco catturò il sole durante un'eclissi. Non gli credo, ma vorrei leggere le note sul suo bordo."
+  },
+  "lucia_events": {
+    "cs": "Opisovači si půjčují inkoust a přou se o jedinou větu. V takových sporech bývá více péče než hněvu.",
+    "en": "The copyists are borrowing ink and arguing over a single sentence. Such arguments often contain more care than anger.",
+    "it": "I copisti si prestano l'inchiostro e discutono di una sola frase. In queste dispute c'è spesso più cura che rabbia."
+  },
+  "lucia_localEvents": {
+    "cs": "V Lyonu obchodníci přivazují zboží k vozům. Camille si svou zprávu připravila pečlivě; její dopis neztrať.",
+    "en": "In Lyon the merchants are tying goods to their carts. Camille prepared her message carefully; do not lose her letter.",
+    "it": "A Lione i mercanti legano le merci ai carri. Camille ha preparato con cura il suo messaggio; non perdere la sua lettera."
+  },
+  "lucia_quest": {
+    "cs": "Luca ve Florencii zná latinský kodex. Nejprve zjistíme, co nám může svěřit.",
+    "en": "Luca in Florence knows the Latin codex. First let us find out what he can entrust to us.",
+    "it": "Luca a Firenze conosce il codice latino. Prima scopriamo che cosa può affidarci."
+  },
+  "lucia_clueQuest": {
+    "cs": "Kodex má dvě stránky; mohu ti přeložit latinu. Před Lyonem však také obnovíme pořadí listů v Boloni a ověříme zrcadlo v Benátkách. Oba závěry přineseme Lucovi do Florencie.",
+    "en": "The codex has two pages; I can translate the Latin. Before Lyon we must also restore the Bologna leaf order and verify the Venetian mirror. We will bring both findings to Luca in Florence.",
+    "it": "Il codice ha due pagine; posso tradurre il latino. Prima di Lione dobbiamo anche ricostruire l’ordine dei fogli a Bologna e verificare lo specchio veneziano. Porteremo entrambe le conclusioni a Luca a Firenze."
+  },
+  "lucia_laterQuest": {
+    "cs": "Význam latinských stránek už známe. Jestli ještě chybí boloňské listy nebo benátské zrcadlo, dokončeme tyto stopy a vraťme se k Lucovi. Pak můžeme pokračovat přes Lyon za slunečním kotoučem.",
+    "en": "We understand the Latin pages now. If the Bologna leaves or Venetian mirror remain unresolved, finish those leads and return to Luca. Then we can continue through Lyon toward the sun disc.",
+    "it": "Ora comprendiamo le pagine latine. Se i fogli di Bologna o lo specchio veneziano restano da chiarire, completiamo queste piste e torniamo da Luca. Poi possiamo proseguire attraverso Lione verso il disco solare."
+  },
+  "lucia_departure": {
+    "cs": "Tady se naše cesty rozdělí. Zůstanu u rukopisů na této jižní cestě. Dál tě doprovodit nemohu, ale vždycky mě najdeš tady.",
+    "en": "Our roads part here. I will stay with the manuscripts along this southern route. I cannot accompany you farther, but you can always find me here.",
+    "it": "Qui le nostre strade si separano. Resterò con i manoscritti lungo questo percorso meridionale. Non posso accompagnarti oltre, ma puoi sempre trovarmi qui."
+  },
+  "rowan_intro": {
+    "cs": "Jsem Rowan, knihovník na cestách. Od českých učenců jsem se naučil tvůj jazyk. Mohu převádět angličtinu, francouzštinu a irštinu do češtiny. Do Athén bych rád šel s tebou.",
+    "en": "I am Rowan, a wandering librarian. Czech scholars taught me your language. I can interpret English, French, and Irish into Czech. I would be glad to travel with you as far as Athens."
+  },
+  "rowan_chat": {
+    "cs": "Knihovna může být i lavička pod stromem, když na ní sedí dva zvědaví lidé. O čem si povíme?",
+    "en": "A bench under a tree can be a library when two curious people sit on it. What shall we talk about?"
+  },
+  "rowan_joined": {
+    "cs": "Rád půjdu s tebou. Na cestě do Athén máme dost času na otázky.",
+    "en": "I will gladly come with you. On the road to Athens we have plenty of time for questions."
+  },
+  "rowan_wisdom": {
+    "cs": "Když dva příběhy nesouhlasí, nezahazuj hned jeden z nich. Zjisti, odkud vypravěči stáli a co mohli vidět.",
+    "en": "When two stories disagree, do not discard one immediately. Find out where the storytellers stood and what they could have seen."
+  },
+  "rowan_rumor": {
+    "cs": "Jeden námořník mi řekl, že na západě existuje knihovna, kde je každý návštěvník zároveň učitelem. Možná tím myslel Irsko, možná jen dobrou krčmu.",
+    "en": "A sailor told me of a library in the west where every visitor is also a teacher. Perhaps he meant Ireland; perhaps he only meant a good inn."
+  },
+  "rowan_events": {
+    "cs": "Pocestní si u večeře vyměňují zprávy o přístavech. Každá další hospoda jejich příběhy trochu zvětší.",
+    "en": "Travellers are exchanging harbor news over supper. Each new inn makes their stories a little larger."
+  },
+  "rowan_localEvents": {
+    "cs": "Londýnští přístavníci dnes opravují bedny a smějí se příběhu o vozidle plném úhořů. Bea má mnohem užitečnější zprávu.",
+    "en": "London's dockworkers are repairing crates and laughing about a craft full of eels. Bea has a much more useful message."
+  },
+  "rowan_quest": {
+    "cs": "Ukaž Bee stříbrnou hvězdu. Skutečný předmět přesvědčí svědka lépe než přesný popis.",
+    "en": "Show Bea the silver star. A real object persuades a witness better than an exact description."
+  },
+  "rowan_clueQuest": {
+    "cs": "Čočka je jen jedna část astrolábu. Severní prsten a sluneční kotouč nás ještě čekají.",
+    "en": "The lens is only one part of the astrolabe. The northern ring and sun disc still await us."
+  },
+  "rowan_laterQuest": {
+    "cs": "Všechny tři cesty se uzavírají. V Athénách přines Eleni skutečné tři relikvie; příběh sám nestačí.",
+    "en": "The three routes are coming together. Bring Eleni the three real relics in Athens; the story alone is not enough."
+  },
+  "rowan_departure": {
+    "cs": "Na sever už s tebou vyrazit nemohu. Čeká mě práce na katalogu. Ale vždycky mě najdeš tady, v tomto městě.",
+    "en": "I cannot set out north with you. A catalog is waiting for me. But you can always find me here, in this city."
+  },
+  "rowan_arrival": {
+    "cs": "Athény! Tady končí moje cesta s tebou. Knihovna mě potřebuje, ale vždycky mě můžeš najít tady.",
+    "en": "Athens! This is as far as I can accompany you. The library needs me, but you can always find me here."
+  },
+  "sigrid_intro": {
+    "cs": "Jsem Sigrid, poselkyně severních přístavů. Česky jsem se naučila u karavan. Rozumím norsky, švédsky, finsky, anglicky a irsky. Doprovodím tě až do Galway.",
+    "en": "I am Sigrid, a courier of the northern ports. I learned Czech with the caravans. I understand Norwegian, Swedish, Finnish, English, and Irish. I can accompany you as far as Galway.",
+    "no": "Jeg er Sigrid, budbringer mellom havnene i nord. Jeg lærte tsjekkisk hos karavanene. Jeg forstår norsk, svensk, finsk, engelsk og irsk. Jeg kan følge deg helt til Galway."
+  },
+  "sigrid_chat": {
+    "cs": "Na moři není každý tichý den prázdný. I na souši si můžeme na chvíli vydechnout.",
+    "en": "At sea, a quiet day is not an empty day. On land we can also pause for breath.",
+    "no": "Til sjøs er ikke en stille dag en tom dag. På land kan vi også ta en pust i bakken."
+  },
+  "sigrid_joined": {
+    "cs": "Půjdu s tebou. Až přijdou cizí slova, pomohu ti najít jejich břeh.",
+    "en": "I will come with you. When unfamiliar words arrive, I will help you find their shore.",
+    "no": "Jeg blir med deg. Når ukjente ord kommer, hjelper jeg deg å finne stranden deres."
+  },
+  "sigrid_wisdom": {
+    "cs": "Nespěchej jen proto, že ostatní běží. Dobrý posel ví, kdy je třeba zastavit a ověřit cestu.",
+    "en": "Do not hurry merely because others run. A good courier knows when to stop and check the road.",
+    "no": "Ikke skynd deg bare fordi andre løper. Et godt bud vet når det er tid for å stanse og sjekke veien."
+  },
+  "sigrid_rumor": {
+    "cs": "Námořníci tvrdí, že severní záře někdy kreslí písmena. Já v ní vidím světlo, ale Aino by možná přečetla víc.",
+    "en": "Sailors claim the northern lights sometimes draw letters. I see light in them, but Aino might read more.",
+    "no": "Sjøfolk sier at nordlyset av og til tegner bokstaver. Jeg ser lys, men Aino kunne kanskje lese mer."
+  },
+  "sigrid_events": {
+    "cs": "V přístavech se suší lana a opravují plachty. Poznáš, že někdo chce vyplout, ještě než vysloví název cíle.",
+    "en": "The ports are drying ropes and mending sails. You can tell someone means to depart before they name the destination.",
+    "no": "I havnene tørker de tau og reparerer seil. Du kan se at noen vil reise før de sier hvor de skal."
+  },
+  "sigrid_localEvents": {
+    "cs": "Ve Stockholmu si kupci vyměňují zprávy ze severu. Erikova mapa polární záře je ale důkaz, ne jen zpráva z přístavu.",
+    "en": "In Stockholm traders are exchanging news from the north. Erik's aurora chart is evidence, though, not merely harbor gossip.",
+    "no": "I Stockholm utveksler kjøpmenn nyheter fra nord. Men Eriks nordlyskart er et bevis, ikke bare havnesladder."
+  },
+  "sigrid_quest": {
+    "cs": "Ingrid v Oslu ti může svěřit severní znamení. Bez něj by nás Erik dál nepustil.",
+    "en": "Ingrid in Oslo may entrust you with the northern token. Without it, Erik would not send us farther.",
+    "no": "Ingrid i Oslo kan gi deg det nordlige tegnet. Uten det ville Erik ikke sende oss videre."
+  },
+  "sigrid_clueQuest": {
+    "cs": "S mapou polární záře se vydej za Aino do Helsinek. K irské bráně vede ještě jedna stopa.",
+    "en": "Take the aurora chart to Aino in Helsinki. There is one more clue before the Irish gate.",
+    "no": "Ta nordlyskartet med til Aino i Helsinki. Det finnes ett spor til før den irske porten."
+  },
+  "sigrid_laterQuest": {
+    "cs": "Klíč už máš. V Galway naslouchej Niamh; poslední cesta je také pozváním k dalším jazykům.",
+    "en": "You have the key now. Listen to Niamh in Galway; the last road is also an invitation to more languages.",
+    "no": "Du har nøkkelen nå. Lytt til Niamh i Galway; den siste veien er også en invitasjon til flere språk."
+  },
+  "sigrid_departure": {
+    "cs": "Mimo severní cestu už tě doprovodit nemohu. Zůstanu tady u přístavu; vždycky mě v tomto městě najdeš.",
+    "en": "I cannot accompany you beyond the northern route. I will stay here by the harbor; you can always find me in this city.",
+    "no": "Jeg kan ikke følge deg utenfor den nordlige ruten. Jeg blir her ved havnen; du kan alltid finne meg i denne byen."
+  },
+  "sigrid_arrival": {
+    "cs": "Dorazili jsme do Galway. Dál už tě doprovodit nemohu, ale vždycky mě najdeš tady. Až dočteš, přijď mi vyprávět.",
+    "en": "We have reached Galway. This is as far as I can accompany you, but you can always find me here. When you finish reading, come tell me about it.",
+    "no": "Vi har kommet til Galway. Lenger kan jeg ikke følge deg, men du kan alltid finne meg her. Når du er ferdig med å lese, kom og fortell meg om det."
+  },
+  "companion_voyageDone": {
+    "cs": "Došli jsme do irské knihovny. Pátrání skončilo, ale každé další setkání může začít nový příběh.",
+    "en": "We have reached the Irish library. The search is over, but every new meeting can begin another story.",
+    "sk": "Došli sme do írskej knižnice. Pátranie sa skončilo, ale každé ďalšie stretnutie môže začať nový príbeh.",
+    "de": "Wir haben die irische Bibliothek erreicht. Die Suche ist vorbei, aber jede neue Begegnung kann eine neue Geschichte beginnen.",
+    "it": "Abbiamo raggiunto la biblioteca irlandese. La ricerca è finita, ma ogni nuovo incontro può dare inizio a un'altra storia.",
+    "no": "Vi har nådd det irske biblioteket. Letingen er over, men hvert nytt møte kan starte en ny historie."
+  },
+  "mira_chat": {
+    "cs": "Cesta je lehčí, když si člověk může s někým promluvit. Co tě teď zajímá?",
+    "en": "The road is lighter when you have someone to talk to. What is on your mind?",
+    "sk": "Cesta je ľahšia, keď sa človek môže s niekým porozprávať. Čo ťa teraz zaujíma?"
+  },
+  "mira_wisdom": {
+    "cs": "Nejprve poslouchej, potom se ptej. Ticho není ostuda, když ti pomáhá porozumět.",
+    "en": "Listen first, then ask. Silence is no disgrace when it helps you understand.",
+    "sk": "Najprv počúvaj, potom sa pýtaj. Ticho nie je hanba, keď ti pomáha porozumieť."
+  },
+  "mira_events": {
+    "cs": "Karavany si před cestou vyměňují zprávy o mostech a hostincích. Vždycky se zeptej, kdy tam vypravěč naposledy byl.",
+    "en": "Caravans exchange news of bridges and inns before travelling. Always ask when the storyteller last visited.",
+    "sk": "Karavány si pred cestou vymieňajú správy o mostoch a hostincoch. Vždy sa spýtaj, kedy tam rozprávač naposledy bol."
+  },
+  "mira_lvivEvents": {
+    "cs": "Archiv ve Lvově je dnes plný písařů. Klíč schovej tak, abys ho mohl ukázat správnému člověku.",
+    "en": "Lviv's archive is full of scribes today. Keep the key where you can show it to the right person.",
+    "sk": "Archív vo Ľvove je dnes plný pisárov. Kľúč schovaj tak, aby si ho mohol ukázať správnemu človeku."
+  },
+  "mira_quest": {
+    "cs": "Zofia v Krakově může znát další stopu. Nejsme na konci pátrání; jen jsme se naučili položit lepší otázku.",
+    "en": "Zofia in Krakow may know the next clue. We are not at the end of the search; we have only learned to ask a better question.",
+    "sk": "Zofia v Krakove môže poznať ďalšiu stopu. Nie sme na konci pátrania; len sme sa naučili položiť lepšiu otázku."
+  },
+  "mira_archiveQuest": {
+    "cs": "Teď nás vede stopa do lvovského archivu. Oles bude chtít vidět skutečný klíč, nejen slyšet jeho jméno.",
+    "en": "The trail now leads to Lviv's archive. Oles will want to see the real key, not merely hear its name.",
+    "sk": "Teraz nás vedie stopa do ľvovského archívu. Oles bude chcieť vidieť skutočný kľúč, nielen počuť jeho meno."
+  },
+  "mira_routesQuest": {
+    "cs": "Novgorod otevřel tři cesty. Rozdělit je můžeš, ale v Athénách budeš potřebovat všechny tři relikvie.",
+    "en": "Novgorod has opened three routes. You can follow them separately, but Athens will need all three relics.",
+    "sk": "Novgorod otvoril tri cesty. Môžeš ich prejsť osobitne, ale v Aténach budeš potrebovať všetky tri relikvie."
+  },
+  "mira_departure": {
+    "cs": "Tady se rozloučíme. Znám cestu mezi Bratislavou a Novgorodem, ale do další části výpravy s tebou jít nemohu. Vždycky mě najdeš tady.",
+    "en": "We must part here. I know the road between Bratislava and Novgorod, but I cannot accompany you into the next part of the journey. You can always find me here.",
+    "sk": "Tu sa rozlúčime. Poznám cestu medzi Bratislavou a Novgorodom, ale do ďalšej časti výpravy s tebou ísť nemôžem. Vždy ma nájdeš tu."
+  },
+  "rowan_busy": {
+    "cs": "Rád bych tě doprovázel, ale už máš společníka. Nejdřív se s ním rozluč. Počkám tady.",
+    "en": "I would like to accompany you, but you already have a companion. Dismiss them first. I will wait here.",
+    "sk": "Rada by som ťa sprevádzala, ale už máš spoločníka. Najprv sa s ním rozlúč. Počkám tu.",
+    "de": "Ich würde dich gern begleiten, aber du hast bereits einen Gefährten. Verabschiede dich zuerst von ihm. Ich warte hier.",
+    "it": "Vorrei accompagnarti, ma hai già un compagno. Prima salutalo. Ti aspetterò qui.",
+    "no": "Jeg vil gjerne følge deg, men du har allerede en følgesvenn. Ta avskjed med dem først. Jeg venter her."
+  },
+  "companion_afterReunion": {
+    "cs": "Astroláb je obnovený a Eliáše jsme našli. Cesta ale pokračuje přes Norsko, Švédsko a Finsko do Irska. Maďarsko je dobrovolná odbočka.",
+    "en": "The astrolabe is restored and Eliáš has been found. The road continues through Norway, Sweden, and Finland to Ireland. Hungary is an optional detour.",
+    "sk": "Astroláb je obnovený a Eliáša sme našli. Cesta však pokračuje cez Nórsko, Švédsko a Fínsko do Írska. Maďarsko je dobrovoľná odbočka.",
+    "de": "Das Astrolabium ist wiederhergestellt und Eliáš gefunden. Der Weg führt weiter durch Norwegen, Schweden und Finnland nach Irland. Ungarn ist ein freiwilliger Abstecher.",
+    "it": "L'astrolabio è restaurato ed Eliáš è stato ritrovato. Il viaggio continua attraverso la Norvegia, la Svezia e la Finlandia fino all'Irlanda. L'Ungheria è una deviazione facoltativa.",
+    "no": "Astrolabiet er restaurert og Eliáš er funnet. Veien går videre gjennom Norge, Sverige og Finland til Irland. Ungarn er en valgfri avstikker."
+  },
+  "sofie_chartQuest": {
+    "cs": "Sanne nám dala námořní mapu. V Kodani ji ukaž Astrid; prsten ještě nemáme.",
+    "en": "Sanne gave us the sea chart. Show it to Astrid in Copenhagen; we do not have the ring yet.",
+    "de": "Sanne hat uns die Seekarte gegeben. Zeige sie Astrid in Kopenhagen; den Ring haben wir noch nicht."
+  },
+  "lucia_discQuest": {
+    "cs": "Sluneční kotouč už máš. Až získáš také severní prsten a čočku, přines všechny tři relikvie do Athén.",
+    "en": "You have the sun disc now. Once you also have the northern ring and lens, bring all three relics to Athens.",
+    "it": "Ora hai il disco solare. Quando avrai anche l'anello del nord e la lente, porta tutte e tre le reliquie ad Atene."
+  },
+  "sigrid_tokenQuest": {
+    "cs": "Severní znamení už máš. Ve Stockholmu ho ukaž Erikovi; od něj vede stopa dál.",
+    "en": "You have the northern token. Show it to Erik in Stockholm; he will lead us farther.",
+    "no": "Du har det nordlige tegnet. Vis det til Erik i Stockholm; han vil vise oss videre."
+  },
+  "sofie_leipzigEvents": {
+    "cs": "Tiskaři se tu přou o dva nátisky. Greta ví, který balík odešel; Konrad vysvětlí, proč deska obraz obrací.",
+    "en": "Printers here argue over two proofs. Greta knows which parcel left; Konrad can explain why the plate reverses the image.",
+    "de": "Die Drucker streiten über zwei Probedrucke. Greta weiß, welches Paket verschickt wurde; Konrad kann erklären, warum die Platte das Bild umkehrt."
+  },
+  "sofie_hamburgEvents": {
+    "cs": "Přístavní zvony sledují vodu, ne kostelní hodiny. Zeptej se Hannese na přejezd a pak s Martou porovnej hlídku a přístaviště.",
+    "en": "The harbour bells follow the water, not the church clock. Ask Hannes about the crossing, then let Marta compare the watch and the landing.",
+    "de": "Die Hafenglocken folgen dem Wasser, nicht der Kirchenuhr. Frage Hannes nach der Überfahrt und vergleiche dann mit Marta die Wache und den Anleger."
+  },
+  "lucia_bolognaEvents": {
+    "cs": "Univerzita má podezření na chybějící list. Paolo viděl značky vazby; Chiara je porovná s denními hodinami. Než někoho obviníš, vyslechni jej.",
+    "en": "The university suspects a missing leaf. Paolo saw the binding marks; Chiara can compare them with the solar hours. Listen before accusing anyone.",
+    "it": "L’università sospetta che manchi un foglio. Paolo ha visto i segni della rilegatura; Chiara può confrontarli con le ore solari. Ascolta prima di accusare qualcuno."
+  },
+  "lucia_veniceEvents": {
+    "cs": "Dílenská účtenka označuje desku jako zrcadlo. Nadia viděla rytý okraj; Vittorio ověří, která strana patří skutečnému přístroji.",
+    "en": "A workshop receipt calls the plate a mirror. Nadia saw its etched edge; Vittorio can test which direction belongs to the real instrument.",
+    "it": "Una ricevuta della bottega chiama la lastra uno specchio. Nadia ha visto il bordo inciso; Vittorio può verificare quale direzione appartiene allo strumento reale."
+  }
+}

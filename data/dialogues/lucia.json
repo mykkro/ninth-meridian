@@ -1,0 +1,184 @@
+{
+  "id": "lucia",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "lucia_intro",
+      "choices": [
+        {
+          "phrase": "companion_join",
+          "next": "companionJoined",
+          "quality": "sensible",
+          "recruitBlocked": "companionBusy",
+          "effects": [
+            {
+              "type": "recruit",
+              "id": "lucia"
+            }
+          ]
+        },
+        {
+          "phrase": "companion_talk",
+          "next": "companionChat",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_decline",
+          "next": "companionFarewell",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionChat": {
+      "phrase": "lucia_chat",
+      "choices": [
+        {
+          "phrase": "companion_askWisdom",
+          "next": "companionWisdom",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_askRumor",
+          "next": "companionRumor",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_askEvents",
+          "next": "companionEvents",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_askQuest",
+          "next": "companionQuest",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_dismiss",
+          "next": "companionFarewell",
+          "quality": "sensible",
+          "companionOnly": true,
+          "effects": [
+            {
+              "type": "dismiss",
+              "id": "lucia"
+            }
+          ]
+        }
+      ]
+    },
+    "companionJoined": {
+      "phrase": "lucia_joined",
+      "outcome": "success",
+      "choices": []
+    },
+    "companionBusy": {
+      "phrase": "companion_busy",
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "greeting",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionFarewell": {
+      "phrase": "companion_farewell",
+      "outcome": "success",
+      "choices": []
+    },
+    "companionWisdom": {
+      "phrase": "lucia_wisdom",
+      "rumor": "lucia_wisdom",
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionRumor": {
+      "phrase": "lucia_rumor",
+      "rumor": "lucia_rumor",
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionEvents": {
+      "phrase": "lucia_events",
+      "contexts": [
+        {
+          "requires": {
+            "location": "venice"
+          },
+          "phrase": "lucia_veniceEvents"
+        },
+        {
+          "requires": {
+            "location": "bologna"
+          },
+          "phrase": "lucia_bolognaEvents"
+        },
+        {
+          "requires": {
+            "location": "lyon"
+          },
+          "phrase": "lucia_localEvents"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionQuest": {
+      "phrase": "lucia_quest",
+      "contexts": [
+        {
+          "requires": {
+            "milestone": "ireland"
+          },
+          "phrase": "companion_voyageDone"
+        },
+        {
+          "requires": {
+            "milestone": "greece"
+          },
+          "phrase": "companion_afterReunion"
+        },
+        {
+          "requires": {
+            "milestone": "spain"
+          },
+          "phrase": "lucia_discQuest"
+        },
+        {
+          "requires": {
+            "milestone": "latin_deciphered"
+          },
+          "phrase": "lucia_laterQuest"
+        },
+        {
+          "requires": {
+            "item": "codex"
+          },
+          "phrase": "lucia_clueQuest"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    }
+  }
+}

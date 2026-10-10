@@ -1,0 +1,36 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Voyage browser test runner</title>
+<pre id="results">Running…</pre>
+<script>
+// Run the existing CommonJS suites when Node is unavailable. Serve the repo over HTTP.
+// The assertion adapter covers the strict assertions used by these suites.
+const output=document.getElementById('results');
+const sandbox={};sandbox.globalThis=sandbox;
+const strict={
+ ok(value,message){if(!value)throw Error(message||'Expected a truthy value');},
+ equal(actual,expected,message){if(!Object.is(actual,expected))throw Error(message||`Expected ${JSON.stringify(expected)}, received ${JSON.stringify(actual)}`);},
+ throws(fn){let threw=false;try{fn();}catch(error){threw=true;}if(!threw)throw Error('Expected an exception');}
+};
+const modules=new Map(),messages=[];
+const testConsole={log(...parts){messages.push(parts.join(' '));}};
+function load(path,parent=location.href){
+ if(path==='node:assert/strict')return strict;
+ const url=new URL(path,parent).href;if(modules.has(url))return modules.get(url).exports;
+ const request=new XMLHttpRequest();request.open('GET',url,false);request.send();
+ if(request.status!==200)throw Error(`HTTP ${request.status}: ${url}`);
+ const module={exports:{}};modules.set(url,module);
+ if(url.endsWith('.json'))module.exports=JSON.parse(request.responseText);
+ else new Function('require','module','exports','console','sandbox',`with(sandbox){${request.responseText}\n}\n//# sourceURL=${url}`)(path=>load(path,url),module,module.exports,testConsole,sandbox);
+ return module.exports;
+}
+(async()=>{
+ let failed=0;
+ for(const name of ['engine','content','dictionaries','rumors','branches','continuation','shops','gathering','banter','jokes','map','companions','regions']){
+  try{await load(`./${name}.test.cjs`);messages.push(`PASS ${name}`);}
+  catch(error){failed++;messages.push(`FAIL ${name}: ${error.stack}`);}
+ }
+ messages.push(failed?`${failed} suite(s) failed`:'ALL 13 SUITES PASSED');
+ output.textContent=messages.join('\n');output.dataset.status=failed?'failed':'passed';
+})();
+</script>

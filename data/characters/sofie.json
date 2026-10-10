@@ -1,0 +1,36 @@
+{
+  "id": "sofie",
+  "name": "Sofie · workshop interpreter",
+  "language": "de",
+  "dialogue": "sofie",
+  "description": "A workshop interpreter who learned Czech in Prague. Translates German, Dutch, Danish, and English into Czech along the northern relic route.",
+  "companion": {
+    "name": "Sofie",
+    "native": "de",
+    "knows": [
+      "de",
+      "nl",
+      "da",
+      "en"
+    ],
+    "outputs": [
+      "cs"
+    ],
+    "description": "A workshop interpreter who learned Czech in Prague. Translates German, Dutch, Danish, and English into Czech along the northern relic route.",
+    "home": "berlin",
+    "chatStart": "companionChat",
+    "dismissedNode": "companionFarewell",
+    "departurePhrase": "sofie_departure",
+    "route": [
+      "berlin",
+      "leipzig",
+      "hamburg",
+      "amsterdam",
+      "copenhagen"
+    ],
+    "leaveAt": [
+      "copenhagen"
+    ],
+    "arrivalPhrase": "sofie_arrival"
+  }
+}

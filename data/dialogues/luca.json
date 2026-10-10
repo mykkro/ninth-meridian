@@ -34,6 +34,14 @@
           "phrase": "banter_rudeInsult",
           "next": "banterDismiss",
           "quality": "rude"
+        },
+        {
+          "phrase": "regional_regionAsk",
+          "next": "regionalBrief",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "italy"
+          }
         }
       ]
     },
@@ -101,8 +109,13 @@
     },
     "bye": {
       "phrase": "luca_bye",
-      "outcome": "success",
-      "choices": []
+      "choices": [
+        {
+          "phrase": "regional_regionAsk",
+          "next": "regionalBrief",
+          "quality": "sensible"
+        }
+      ]
     },
     "banterSpoon": {
       "phrase": "banter_spoonRebuke",
@@ -138,6 +151,38 @@
       "phrase": "banter_rudeDismiss",
       "outcome": "dismissed",
       "choices": []
+    },
+    "regionalBrief": {
+      "phrase": "italian_route_brief",
+      "choices": [
+        {
+          "phrase": "regional_report",
+          "next": "regionalComplete",
+          "quality": "sensible",
+          "requires": {
+            "milestones": [
+              "bologna_verified",
+              "venice_verified"
+            ]
+          },
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "italian_route"
+            }
+          ]
+        },
+        {
+          "phrase": "regional_back",
+          "next": "greeting",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "regionalComplete": {
+      "phrase": "italian_route_complete",
+      "choices": [],
+      "outcome": "success"
     }
   }
 }

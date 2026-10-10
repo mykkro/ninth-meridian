@@ -1,0 +1,36 @@
+{
+  "id": "sigrid",
+  "name": "Sigrid · northern courier",
+  "language": "no",
+  "dialogue": "sigrid",
+  "description": "A Norwegian courier who learned Czech on caravan routes. Translates Norwegian, Swedish, Finnish, English, and Irish into Czech until Galway.",
+  "companion": {
+    "name": "Sigrid",
+    "native": "no",
+    "knows": [
+      "no",
+      "sv",
+      "fi",
+      "en",
+      "ga"
+    ],
+    "outputs": [
+      "cs"
+    ],
+    "description": "A Norwegian courier who learned Czech on caravan routes. Translates Norwegian, Swedish, Finnish, English, and Irish into Czech until Galway.",
+    "home": "oslo",
+    "chatStart": "companionChat",
+    "dismissedNode": "companionFarewell",
+    "departurePhrase": "sigrid_departure",
+    "route": [
+      "oslo",
+      "stockholm",
+      "helsinki",
+      "galway"
+    ],
+    "leaveAt": [
+      "galway"
+    ],
+    "arrivalPhrase": "sigrid_arrival"
+  }
+}

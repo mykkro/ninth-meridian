@@ -1,0 +1,288 @@
+{
+  "regional_ask": {
+    "en": "Tell me what you witnessed.",
+    "cs": "Pověz mi, co jsi viděl nebo viděla.",
+    "de": "Erzähle mir, was du beobachtet hast.",
+    "it": "Raccontami che cosa hai visto."
+  },
+  "regional_record": {
+    "en": "I will record this evidence.",
+    "cs": "Zapíšu si tuto stopu.",
+    "de": "Ich werde diese Spur notieren.",
+    "it": "Annoterò questa prova."
+  },
+  "regional_investigate": {
+    "en": "Let us investigate the discrepancy.",
+    "cs": "Prozkoumejme ten rozpor.",
+    "de": "Untersuchen wir den Widerspruch.",
+    "it": "Esaminiamo questa contraddizione."
+  },
+  "regional_archive": {
+    "en": "Compare the written records.",
+    "cs": "Porovnejme písemné záznamy.",
+    "de": "Vergleichen wir die schriftlichen Berichte.",
+    "it": "Confrontiamo i documenti scritti."
+  },
+  "regional_field": {
+    "en": "Reconstruct it from the physical marks.",
+    "cs": "Odvoďme to z hmotných značek.",
+    "de": "Rekonstruieren wir es anhand der materiellen Spuren.",
+    "it": "Ricostruiamolo dalle tracce materiali."
+  },
+  "regional_retry": {
+    "en": "Let me compare the evidence again.",
+    "cs": "Porovnám si stopy ještě jednou.",
+    "de": "Ich möchte die Spuren noch einmal vergleichen.",
+    "it": "Vorrei confrontare di nuovo le prove."
+  },
+  "regional_confirm": {
+    "en": "Record the conclusion for our return visit.",
+    "cs": "Zapišme závěr pro naši zpáteční návštěvu.",
+    "de": "Notieren wir das Ergebnis für unseren Gegenbesuch.",
+    "it": "Annotiamo il risultato per la nostra visita di ritorno."
+  },
+  "regional_bye": {
+    "en": "The record is safe. You can revisit us or follow the other lead.",
+    "cs": "Záznam je v bezpečí. Můžeš se vrátit nebo sledovat druhou stopu.",
+    "de": "Der Bericht ist sicher. Du kannst uns wieder besuchen oder der anderen Spur folgen.",
+    "it": "Il resoconto è al sicuro. Puoi tornare da noi o seguire l’altra pista."
+  },
+  "regional_regionAsk": {
+    "en": "What must we verify before leaving the country?",
+    "cs": "Co musíme ověřit před odjezdem ze země?",
+    "de": "Was müssen wir vor der Weiterreise aus dem Land überprüfen?",
+    "it": "Che cosa dobbiamo verificare prima di lasciare il paese?"
+  },
+  "regional_report": {
+    "en": "Both city investigations are complete. Compare the findings.",
+    "cs": "Obě městská pátrání jsou dokončena. Porovnej závěry.",
+    "de": "Beide Ermittlungen sind abgeschlossen. Vergleiche die Ergebnisse.",
+    "it": "Entrambe le indagini sono concluse. Confronta i risultati."
+  },
+  "regional_back": {
+    "en": "Let us return to our earlier conversation.",
+    "cs": "Vraťme se k předchozímu rozhovoru.",
+    "de": "Kehren wir zu unserem früheren Gespräch zurück.",
+    "it": "Torniamo alla nostra conversazione precedente."
+  },
+  "leipzig_greeting": {
+    "en": "The cartographer ordered two proofs, but only one was sent north. Ask about the delivery before trusting the printed map.",
+    "cs": "Kartograf objednal dva nátisky, ale na sever odešel jen jeden. Než uvěříš tištěné mapě, zeptej se na zásilku.",
+    "de": "Der Kartograf bestellte zwei Probedrucke, aber nur einer ging nach Norden. Frage nach der Lieferung, bevor du der gedruckten Karte vertraust."
+  },
+  "leipzig_evidence": {
+    "en": "The ledger says Hamburg. I saw the courier carry a blue parcel to the river gate; the red parcel stayed here.",
+    "cs": "V knize stojí Hamburk. Viděla jsem posla odnést modrý balík k říční bráně; červený zůstal tady.",
+    "de": "Im Buch steht Hamburg. Ich sah den Boten ein blaues Paket zum Flusstor tragen; das rote blieb hier."
+  },
+  "leipzig_intro": {
+    "en": "The two prints disagree. We can read the dispatch record or examine the reversed printing plate. Which evidence will you test?",
+    "cs": "Oba tisky si odporují. Můžeme číst záznam o odeslání nebo prozkoumat obrácenou tiskovou desku. Kterou stopu ověříš?",
+    "de": "Die beiden Drucke widersprechen sich. Wir können den Versandbericht lesen oder die spiegelverkehrte Druckplatte untersuchen. Welche Spur prüfst du?"
+  },
+  "leipzig_puzzleA": {
+    "en": "The red proof says south, the blue proof says north. Only the blue parcel was dispatched. Which direction belongs on our route?",
+    "cs": "Červený nátisk ukazuje jih, modrý sever. Odeslán byl jen modrý balík. Který směr patří do naší trasy?",
+    "de": "Der rote Probedruck zeigt Süden, der blaue Norden. Nur das blaue Paket wurde verschickt. Welche Richtung gehört zu unserer Route?"
+  },
+  "leipzig_answerA": {
+    "en": "Follow the blue proof north to Hamburg.",
+    "cs": "Podle modrého nátisku půjdeme na sever do Hamburku.",
+    "de": "Wir folgen dem blauen Probedruck nach Norden nach Hamburg."
+  },
+  "leipzig_puzzleB": {
+    "en": "The plate shows the star on the left; its paper impression shows it on the right. Should we copy the plate or the finished impression?",
+    "cs": "Na desce je hvězda vlevo, na papírovém otisku vpravo. Máme opsat desku, nebo hotový otisk?",
+    "de": "Auf der Platte steht der Stern links, auf dem Papierabdruck rechts. Kopieren wir die Platte oder den fertigen Abdruck?"
+  },
+  "leipzig_answerB": {
+    "en": "Use the paper impression: the plate is mirrored.",
+    "cs": "Použijeme papírový otisk: deska je zrcadlově obrácená.",
+    "de": "Wir verwenden den Papierabdruck: Die Platte ist spiegelverkehrt."
+  },
+  "leipzig_wrong": {
+    "en": "Both versions must be equally reliable.",
+    "cs": "Obě verze musí být stejně spolehlivé.",
+    "de": "Beide Versionen müssen gleich zuverlässig sein."
+  },
+  "leipzig_hint": {
+    "en": "A printing plate reverses an image. Compare the delivery record with the copy that actually left the workshop.",
+    "cs": "Tisková deska obraz obrací. Porovnej záznam o zásilce s kopií, která skutečně opustila dílnu.",
+    "de": "Eine Druckplatte kehrt das Bild um. Vergleiche den Versandbericht mit dem Exemplar, das die Werkstatt wirklich verlassen hat."
+  },
+  "leipzig_finding": {
+    "en": "The blue proof is authentic. Record its northern star mark, then compare it with the Hamburg tide record. Otto needs both findings in Berlin.",
+    "cs": "Modrý nátisk je pravý. Zapiš jeho severní hvězdnou značku a porovnej ji s přílivovým záznamem v Hamburku. Otto potřebuje oba závěry v Berlíně.",
+    "de": "Der blaue Probedruck ist echt. Notiere seine nördliche Sternmarke und vergleiche sie mit dem Hamburger Gezeitenbericht. Otto braucht beide Ergebnisse in Berlin."
+  },
+  "hamburg_greeting": {
+    "en": "Do not confuse the tide bell with the church clock. The cartographer crossed after the second harbour bell.",
+    "cs": "Nepleť si přílivový zvon s kostelními hodinami. Kartograf přejel po druhém přístavním zvonu.",
+    "de": "Verwechsle die Gezeitenglocke nicht mit der Kirchenuhr. Der Kartograf setzte nach der zweiten Hafenglocke über."
+  },
+  "hamburg_evidence": {
+    "en": "At the second bell the water was rising. His boat used the eastern landing, where the stone steps disappear at high tide.",
+    "cs": "Při druhém zvonu voda stoupala. Jeho loď přistála na východě, kde kamenné schody za přílivu mizí.",
+    "de": "Bei der zweiten Glocke stieg das Wasser. Sein Boot nutzte den östlichen Anleger, dessen Steinstufen bei Hochwasser verschwinden."
+  },
+  "hamburg_intro": {
+    "en": "The berth book gives a time; the steps give a water level. We can check the written watch or reconstruct the crossing from the harbour marks.",
+    "cs": "Kniha kotvišť udává čas; schody ukazují výšku vody. Můžeme ověřit zapsanou hlídku nebo odvodit přejezd z přístavních značek.",
+    "de": "Das Liegebuch nennt eine Zeit; die Stufen zeigen den Wasserstand. Wir können die schriftliche Wache prüfen oder die Überfahrt anhand der Hafenmarken rekonstruieren."
+  },
+  "hamburg_puzzleA": {
+    "en": "The first watch records falling water, the second rising water, the third high water. Which watch matches the ferryman?",
+    "cs": "První hlídka zapsala klesající vodu, druhá stoupající, třetí plný příliv. Která odpovídá převozníkovi?",
+    "de": "Die erste Wache notiert sinkendes Wasser, die zweite steigendes, die dritte Hochwasser. Welche passt zum Fährmann?"
+  },
+  "hamburg_answerA": {
+    "en": "The second watch, while the water was rising.",
+    "cs": "Druhá hlídka, když voda stoupala.",
+    "de": "Die zweite Wache, als das Wasser stieg."
+  },
+  "hamburg_puzzleB": {
+    "en": "The western landing is dry at low tide. The eastern steps are flooded at high tide. Which landing matches a rising-water departure from the stone steps?",
+    "cs": "Západní přístaviště je za odlivu suché. Východní schody příliv zatopí. Které přístaviště odpovídá odjezdu od kamenných schodů při stoupající vodě?",
+    "de": "Der westliche Anleger ist bei Niedrigwasser trocken. Die östlichen Stufen werden bei Hochwasser überflutet. Welcher Anleger passt zur Abfahrt von den Steinstufen bei steigendem Wasser?"
+  },
+  "hamburg_answerB": {
+    "en": "The eastern landing, before the steps were submerged.",
+    "cs": "Východní přístaviště, než voda schody zaplavila.",
+    "de": "Der östliche Anleger, bevor die Stufen überflutet wurden."
+  },
+  "hamburg_wrong": {
+    "en": "Ignore the tide and use the church clock.",
+    "cs": "Příliv ignorujeme a použijeme kostelní hodiny.",
+    "de": "Wir ignorieren die Gezeiten und verwenden die Kirchenuhr."
+  },
+  "hamburg_hint": {
+    "en": "The witness spoke about rising water and stone steps, not a church service. Match both details before choosing.",
+    "cs": "Svědek mluvil o stoupající vodě a kamenných schodech, ne o bohoslužbě. Než vybereš odpověď, spoj obě podrobnosti.",
+    "de": "Der Zeuge sprach von steigendem Wasser und Steinstufen, nicht von einem Gottesdienst. Vergleiche beide Einzelheiten."
+  },
+  "hamburg_finding": {
+    "en": "The crossing used the eastern landing during the second watch. This fixes the ring calibration. Take this finding and the Leipzig proof back to Otto in Berlin.",
+    "cs": "Přejezd vedl přes východní přístaviště během druhé hlídky. Tím určíme nastavení kruhu. Dones tento závěr a lipský nátisk Ottovi do Berlína.",
+    "de": "Die Überfahrt erfolgte am östlichen Anleger während der zweiten Wache. Das bestimmt die Ringkalibrierung. Bringe dieses Ergebnis und den Leipziger Probedruck zu Otto nach Berlin."
+  },
+  "bologna_greeting": {
+    "en": "A visitor borrowed the solar table, then returned it with a leaf out of order. Ask what I saw before accusing anyone of theft.",
+    "cs": "Návštěvník si půjčil sluneční tabulku a vrátil ji s listem na nesprávném místě. Než někoho obviníš z krádeže, zeptej se, co jsem viděl.",
+    "it": "Un visitatore prese in prestito la tavola solare e la restituì con un foglio fuori ordine. Chiedimi che cosa ho visto prima di accusare qualcuno di furto."
+  },
+  "bologna_evidence": {
+    "en": "The loose leaf shows a sunrise. Its edge has one puncture; the noon leaf has two, the sunset leaf three. None of the leaves was taken.",
+    "cs": "Volný list zobrazuje východ slunce. Na okraji má jednu dírku; polední list dvě a večerní tři. Žádný list nechybí.",
+    "it": "Il foglio sciolto mostra l’alba. Sul bordo ha un foro; il foglio del mezzogiorno ne ha due, quello del tramonto tre. Nessun foglio è stato rubato."
+  },
+  "bologna_intro": {
+    "en": "We can restore the text by following the hours, or restore the binding by following its puncture marks. Which method shall we use?",
+    "cs": "Text můžeme obnovit podle denních hodin, nebo vazbu podle děrování. Kterou metodu použijeme?",
+    "it": "Possiamo ricostruire il testo seguendo le ore, oppure la rilegatura seguendo i fori. Quale metodo usiamo?"
+  },
+  "bologna_puzzleA": {
+    "en": "The table must follow a single day. Where does the sunrise leaf belong relative to noon and sunset?",
+    "cs": "Tabulka má sledovat jediný den. Kam patří list s východem slunce vůči poledni a západu?",
+    "it": "La tavola deve seguire un solo giorno. Dove va il foglio dell’alba rispetto al mezzogiorno e al tramonto?"
+  },
+  "bologna_answerA": {
+    "en": "Sunrise first, noon second, sunset last.",
+    "cs": "Nejprve východ slunce, pak poledne a nakonec západ.",
+    "it": "Prima l’alba, poi il mezzogiorno, infine il tramonto."
+  },
+  "bologna_puzzleB": {
+    "en": "The binding holes count one, two, three. The loose leaf has one hole. Which position restores the sequence?",
+    "cs": "Dírky ve vazbě tvoří řadu jedna, dvě, tři. Volný list má jednu dírku. Která pozice obnoví pořadí?",
+    "it": "I fori della rilegatura seguono uno, due, tre. Il foglio sciolto ha un foro. Quale posizione ricostruisce la sequenza?"
+  },
+  "bologna_answerB": {
+    "en": "Put the one-hole leaf before the two-hole leaf.",
+    "cs": "List s jednou dírkou patří před list se dvěma.",
+    "it": "Mettiamo il foglio con un foro prima di quello con due."
+  },
+  "bologna_wrong": {
+    "en": "The loose leaf must belong at the end.",
+    "cs": "Volný list musí patřit na konec.",
+    "it": "Il foglio sciolto deve andare alla fine."
+  },
+  "bologna_hint": {
+    "en": "Compare the student’s sunrise with the first puncture mark. Both the day and the binding have a beginning.",
+    "cs": "Porovnej studentův východ slunce s první značkou vazby. Den i vazba mají začátek.",
+    "it": "Confronta l’alba descritta dallo studente con il primo foro. Sia il giorno sia la rilegatura hanno un inizio."
+  },
+  "bologna_finding": {
+    "en": "The solar table is complete: the leaf was misplaced, not stolen. Record the order and compare it with the Venetian mirror before returning to Luca.",
+    "cs": "Sluneční tabulka je úplná: list byl přeložen, ne ukraden. Zapiš pořadí a porovnej je s benátským zrcadlem, než se vrátíš k Lucovi.",
+    "it": "La tavola solare è completa: il foglio era fuori posto, non rubato. Annota l’ordine e confrontalo con lo specchio veneziano prima di tornare da Luca."
+  },
+  "venice_greeting": {
+    "en": "The mirror was not a window. I saw the cartographer turn it toward the morning sun, with the etched edge facing him.",
+    "cs": "To zrcadlo nebylo okno. Viděla jsem kartografa natočit je k rannímu slunci, rytým okrajem k sobě.",
+    "it": "Lo specchio non era una finestra. Ho visto il cartografo rivolgerlo verso il sole del mattino, con il bordo inciso verso di sé."
+  },
+  "venice_evidence": {
+    "en": "The workshop receipt calls it a reflecting plate. The etched sun was on his right, but in the reflection it appeared on his left.",
+    "cs": "Na dílenské účtence stojí odrazná deska. Vyryté slunce měl vpravo, ale v odrazu se objevilo vlevo.",
+    "it": "La ricevuta della bottega lo chiama lastra riflettente. Il sole inciso era alla sua destra, ma nel riflesso appariva alla sua sinistra."
+  },
+  "venice_intro": {
+    "en": "We can identify the plate from its workshop receipt, or test how it reverses the sun mark. Which experiment do you prefer?",
+    "cs": "Desku můžeme určit podle dílenské účtenky, nebo ověřit, jak obrací sluneční značku. Kterému pokusu dáš přednost?",
+    "it": "Possiamo identificare la lastra dalla ricevuta della bottega, oppure verificare come inverte il simbolo del sole. Quale prova preferisci?"
+  },
+  "venice_puzzleA": {
+    "en": "One receipt says clear window glass; the other says reflecting plate. Which object matches the pilot’s account?",
+    "cs": "Jedna účtenka uvádí čiré okenní sklo, druhá odraznou desku. Který předmět odpovídá výpovědi lodivodky?",
+    "it": "Una ricevuta dice vetro trasparente da finestra; l’altra dice lastra riflettente. Quale oggetto corrisponde al racconto della pilota?"
+  },
+  "venice_answerA": {
+    "en": "The reflecting plate: it makes a reversed image.",
+    "cs": "Odrazná deska: vytváří obrácený obraz.",
+    "it": "La lastra riflettente: crea un’immagine invertita."
+  },
+  "venice_puzzleB": {
+    "en": "The etched sun is physically on the right and appears on the left in the mirror. Which side should we record for the actual instrument?",
+    "cs": "Vyryté slunce je skutečně vpravo a v zrcadle vypadá jako vlevo. Kterou stranu zapíšeme pro skutečný přístroj?",
+    "it": "Il sole inciso è fisicamente a destra e appare a sinistra nello specchio. Quale lato annotiamo per lo strumento reale?"
+  },
+  "venice_answerB": {
+    "en": "Record the actual right edge, not the reflected left edge.",
+    "cs": "Zapíšeme skutečný pravý okraj, ne odražený levý.",
+    "it": "Annotiamo il bordo destro reale, non quello sinistro riflesso."
+  },
+  "venice_wrong": {
+    "en": "A reflection preserves every direction unchanged.",
+    "cs": "Odraz zachovává všechny směry beze změny.",
+    "it": "Un riflesso conserva tutte le direzioni senza cambiamenti."
+  },
+  "venice_hint": {
+    "en": "The witness distinguished the real etched edge from its reflection. A mirror image is evidence, but it needs interpretation.",
+    "cs": "Svědkyně rozlišila skutečný rytý okraj od jeho odrazu. Zrcadlový obraz je stopa, ale musíš jej správně vyložit.",
+    "it": "La testimone distingue il bordo inciso reale dal suo riflesso. L’immagine speculare è una prova, ma va interpretata."
+  },
+  "venice_finding": {
+    "en": "The mirror mark belongs on the real right edge. Bring this orientation and the Bologna leaf order to Luca in Florence; together they identify the southern route.",
+    "cs": "Zrcadlová značka patří na skutečný pravý okraj. Dones orientaci a pořadí boloňských listů Lucovi do Florencie; společně určí jižní trasu.",
+    "it": "Il simbolo dello specchio appartiene al bordo destro reale. Porta questo orientamento e l’ordine dei fogli di Bologna a Luca a Firenze; insieme identificano il percorso meridionale."
+  },
+  "german_route_brief": {
+    "en": "Before Amsterdam, verify the reversed proof in Leipzig and the tide record in Hamburg. Visit the bookseller and ferryman first, then their local experts. You may take either city first. Return to me in Berlin with both conclusions.",
+    "cs": "Před cestou do Amsterdamu ověř obrácený nátisk v Lipsku a přílivový záznam v Hamburku. Nejprve navštiv knihkupkyni a převozníka, pak místní odborníky. Pořadí měst si vyber. S oběma závěry se vrať ke mně do Berlína.",
+    "de": "Vor Amsterdam überprüfe den spiegelverkehrten Probedruck in Leipzig und den Gezeitenbericht in Hamburg. Besuche zuerst die Buchhändlerin und den Fährmann, dann ihre örtlichen Fachleute. Die Reihenfolge ist frei. Kehre mit beiden Ergebnissen zu mir nach Berlin zurück."
+  },
+  "german_route_complete": {
+    "en": "The authentic print and the eastern crossing agree. The ring calibration is verified; you can continue to Amsterdam.",
+    "cs": "Pravý tisk a východní přejezd si odpovídají. Nastavení kruhu je ověřeno; můžeš pokračovat do Amsterdamu.",
+    "de": "Der echte Druck und die östliche Überfahrt stimmen überein. Die Ringkalibrierung ist überprüft; du kannst nach Amsterdam weiterreisen."
+  },
+  "italian_route_brief": {
+    "en": "Before Lyon, restore the solar leaf order in Bologna and identify the mirror orientation in Venice. Speak to the student and boat pilot before consulting the archive and glass workshop. Either city can come first. Bring both conclusions back to Florence.",
+    "cs": "Před cestou do Lyonu obnov pořadí slunečních listů v Boloni a urči orientaci zrcadla v Benátkách. Před návštěvou archivu a sklářské dílny promluv se studentem a lodivodkou. Pořadí měst je na tobě. Oba závěry přines zpět do Florencie.",
+    "it": "Prima di Lione ricostruisci l’ordine dei fogli solari a Bologna e identifica l’orientamento dello specchio a Venezia. Parla con lo studente e la pilota prima di consultare l’archivio e la bottega del vetraio. Puoi scegliere l’ordine delle città. Riporta entrambe le conclusioni a Firenze."
+  },
+  "italian_route_complete": {
+    "en": "The restored solar table and the real mirror edge agree. The southern route is verified; you can continue to Lyon. Keep studying the Latin codex as well.",
+    "cs": "Obnovená sluneční tabulka a skutečný okraj zrcadla si odpovídají. Jižní trasa je ověřena; můžeš pokračovat do Lyonu. Dál studuj také latinský kodex.",
+    "it": "La tavola solare ricostruita e il bordo reale dello specchio concordano. Il percorso meridionale è verificato; puoi proseguire verso Lione. Continua anche a studiare il codice latino."
+  }
+}

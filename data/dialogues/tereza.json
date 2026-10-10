@@ -1,0 +1,166 @@
+{
+  "id": "tereza",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "tereza_intro",
+      "choices": [
+        {
+          "phrase": "companion_join",
+          "next": "companionJoined",
+          "quality": "sensible",
+          "recruitBlocked": "companionBusy",
+          "effects": [
+            {
+              "type": "recruit",
+              "id": "tereza"
+            }
+          ]
+        },
+        {
+          "phrase": "companion_talk",
+          "next": "companionChat",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_decline",
+          "next": "companionFarewell",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionChat": {
+      "phrase": "tereza_chat",
+      "choices": [
+        {
+          "phrase": "companion_askWisdom",
+          "next": "companionWisdom",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_askRumor",
+          "next": "companionRumor",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_askEvents",
+          "next": "companionEvents",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_askQuest",
+          "next": "companionQuest",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_dismiss",
+          "next": "companionFarewell",
+          "quality": "sensible",
+          "companionOnly": true,
+          "effects": [
+            {
+              "type": "dismiss",
+              "id": "tereza"
+            }
+          ]
+        }
+      ]
+    },
+    "companionJoined": {
+      "phrase": "tereza_joined",
+      "outcome": "success",
+      "choices": []
+    },
+    "companionBusy": {
+      "phrase": "companion_busy",
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "greeting",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionFarewell": {
+      "phrase": "companion_farewell",
+      "outcome": "success",
+      "choices": []
+    },
+    "companionWisdom": {
+      "phrase": "tereza_wisdom",
+      "rumor": "tereza_wisdom",
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionRumor": {
+      "phrase": "tereza_rumor",
+      "rumor": "tereza_rumor",
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionEvents": {
+      "phrase": "tereza_events",
+      "contexts": [
+        {
+          "requires": {
+            "location": "prague"
+          },
+          "phrase": "tereza_localEvents"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionQuest": {
+      "phrase": "tereza_quest",
+      "contexts": [
+        {
+          "requires": {
+            "milestone": "ireland"
+          },
+          "phrase": "companion_voyageDone"
+        },
+        {
+          "requires": {
+            "milestone": "greece"
+          },
+          "phrase": "companion_afterReunion"
+        },
+        {
+          "requires": {
+            "milestone": "bratislava"
+          },
+          "phrase": "tereza_laterQuest"
+        },
+        {
+          "requires": {
+            "milestone": "prague"
+          },
+          "phrase": "tereza_clueQuest"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    }
+  }
+}

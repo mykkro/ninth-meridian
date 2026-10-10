@@ -1,0 +1,170 @@
+{
+  "id": "rowan",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "rowan_intro",
+      "choices": [
+        {
+          "phrase": "companion_join",
+          "next": "companionJoined",
+          "quality": "sensible",
+          "recruitBlocked": "companionBusy",
+          "effects": [
+            {
+              "type": "recruit",
+              "id": "rowan"
+            }
+          ]
+        },
+        {
+          "phrase": "companion_talk",
+          "next": "companionChat",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_decline",
+          "next": "companionFarewell",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionChat": {
+      "phrase": "rowan_chat",
+      "choices": [
+        {
+          "phrase": "companion_askWisdom",
+          "next": "companionWisdom",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_askRumor",
+          "next": "companionRumor",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_askEvents",
+          "next": "companionEvents",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_askQuest",
+          "next": "companionQuest",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_dismiss",
+          "next": "companionFarewell",
+          "quality": "sensible",
+          "companionOnly": true,
+          "effects": [
+            {
+              "type": "dismiss",
+              "id": "rowan"
+            }
+          ]
+        }
+      ]
+    },
+    "companionJoined": {
+      "phrase": "rowan_joined",
+      "outcome": "success",
+      "choices": []
+    },
+    "companionBusy": {
+      "phrase": "rowan_busy",
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "greeting",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionFarewell": {
+      "phrase": "companion_farewell",
+      "outcome": "success",
+      "choices": []
+    },
+    "companionWisdom": {
+      "phrase": "rowan_wisdom",
+      "rumor": "rowan_wisdom",
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionRumor": {
+      "phrase": "rowan_rumor",
+      "rumor": "rowan_rumor",
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionEvents": {
+      "phrase": "rowan_events",
+      "contexts": [
+        {
+          "requires": {
+            "location": "london"
+          },
+          "phrase": "rowan_localEvents"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionQuest": {
+      "phrase": "rowan_quest",
+      "contexts": [
+        {
+          "requires": {
+            "milestone": "ireland"
+          },
+          "phrase": "companion_voyageDone"
+        },
+        {
+          "requires": {
+            "milestone": "greece"
+          },
+          "phrase": "companion_afterReunion"
+        },
+        {
+          "requires": {
+            "milestones": [
+              "britain",
+              "denmark",
+              "spain"
+            ]
+          },
+          "phrase": "rowan_laterQuest"
+        },
+        {
+          "requires": {
+            "milestone": "britain"
+          },
+          "phrase": "rowan_clueQuest"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    }
+  }
+}

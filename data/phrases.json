@@ -694,9 +694,9 @@
     "de": "Das ist Unsinn. Versuche es noch einmal."
   },
   "otto_bye": {
-    "cs": "Pečeť dobře opatruj.",
-    "en": "Keep the seal safe.",
-    "de": "Bewahre das Siegel gut auf."
+    "cs": "Pečeť dobře opatruj. Před odjezdem se mě zeptej, co ještě musíme ověřit v této zemi.",
+    "en": "Keep the seal safe. Before leaving, ask me what we still need to verify in this country.",
+    "de": "Bewahre das Siegel gut auf. Frage mich vor der Weiterreise, was wir in diesem Land noch prüfen müssen."
   },
   "berlinShop_browse": {
     "cs": "Mohu si prohlédnout vaše knihy?",
@@ -859,9 +859,9 @@
     "it": "Non ha senso. Rispondi con attenzione."
   },
   "luca_bye": {
-    "cs": "Nezapomeň si přečíst slovníček.",
-    "en": "Do not forget to read the glossary.",
-    "it": "Non dimenticare di leggere il glossario."
+    "cs": "Nezapomeň si přečíst slovníček. Před odjezdem se mě zeptej, co ještě musíme ověřit v této zemi.",
+    "en": "Do not forget to read the glossary. Before leaving, ask me what we still need to verify in this country.",
+    "it": "Non dimenticare di leggere il glossario. Prima di partire, chiedimi che cosa dobbiamo ancora verificare in questo paese."
   },
   "florenceShop_browse": {
     "cs": "Mohu si prohlédnout vaše knihy?",

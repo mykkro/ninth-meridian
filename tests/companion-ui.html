@@ -1,0 +1,53 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Companion UI integration check</title>
+<style>body{margin:0;font:14px system-ui}pre{padding:12px;white-space:pre-wrap}iframe{width:100%;height:2000px;border:0}</style>
+<pre id="results">Running companion UI checks…</pre>
+<iframe id="game" src="../index.html" title="Voyage game"></iframe>
+<script>
+const frame=document.getElementById('game'),output=document.getElementById('results');
+const assert=(value,message)=>{if(!value)throw Error(message);};
+const messages=[];
+async function run(){
+ for(let attempt=0;attempt<200;attempt++){
+  if(frame.contentDocument?.getElementById('load-status')?.hidden)break;
+  await new Promise(resolve=>setTimeout(resolve,50));
+ }
+ const doc=frame.contentDocument,win=frame.contentWindow;
+ assert(doc.getElementById('load-status').hidden,'Game did not finish loading');
+ const world=await win.WorldContent.loadWorld();
+ function clickButton(selector,label){const button=[...doc.querySelectorAll(selector+' button')].find(button=>button.textContent===win.t(label));assert(button&&!button.disabled,`Missing enabled button: ${label}`);button.click();}
+ function npc(id){clickButton('#npcs',world.npcs[id].name);}
+ function say(phrase){const button=[...doc.querySelectorAll('#choices button')].find(button=>{const words=button.querySelector('.response-text');return words&&words.textContent===world.phrases[phrase][words.lang];});assert(button&&!button.disabled,`Missing enabled response: ${phrase}`);button.click();}
+ function companion(name){assert(doc.querySelector('#companion h3')?.textContent===name,`Expected companion ${name}`);}
+ function travel(name){const button=[...doc.querySelectorAll('#locations button')].find(button=>button.textContent.startsWith(win.t(name)+' ·'));assert(button&&!button.disabled,`Destination unavailable: ${name}`);button.click();}
+ npc('tereza');say('companion_join');companion('Tereza');clickButton('#companion','Talk to companion');say('companion_askWisdom');
+ assert(doc.querySelector('#conversation .line:last-child p').textContent===world.phrases.tereza_wisdom.cs,'Wisdom line did not render');
+ say('companion_back');say('companion_askQuest');messages.push('PASS recruit, talk, wisdom, and quest discussion');
+ npc('ada');for(const phrase of ['ada_ask','ada_answer','ada_accept'])say(phrase);
+ travel('Bratislava');assert(!doc.querySelector('#companion h3'),'Tereza should have left on arrival');
+ assert(doc.getElementById('companion-notice').textContent.includes(world.phrases.tereza_arrival.cs),'Departure speech is missing');
+ assert(doc.getElementById('known-companions').textContent.includes('Bratislava'),'Waiting location is missing');
+ npc('tereza');say('companion_join');companion('Tereza');assert(doc.getElementById('companion-notice').textContent==='','Stale departure message after re-recruiting');
+ npc('mira');for(const phrase of ['mira_ask','mira_answer','mira_accept','mira_join'])say(phrase);
+ companion('Tereza');assert(doc.querySelector('#conversation .line:last-child p').textContent===world.phrases.companion_busy.sk,'Recruitment refusal did not render');
+ clickButton('#companion','Dismiss companion');assert(!doc.querySelector('#companion h3'),'Dismiss button did not clear the slot');
+ npc('mira');for(const phrase of ['mira_ask','mira_answer','mira_accept','mira_join'])say(phrase);companion('Mira');
+ messages.push('PASS arrival departure, waiting location, refusal, explicit dismissal, and replacement');
+ travel('Kraków');clickButton('#companion','Talk to companion');say('companion_askRumor');
+ assert(doc.querySelector('#conversation .line:last-child p').textContent===world.phrases.mira_rumorTrail.sk,'Remote companion rumor did not render');
+ say('companion_back');say('companion_askEvents');say('companion_back');say('companion_dismiss');
+ assert(!doc.querySelector('#companion h3'),'Dialogue dismissal did not clear the slot');
+ assert(doc.getElementById('known-companions').textContent.includes(win.t('Kraków')),'Dismissed Mira should wait in Krakow');
+ doc.getElementById('replay').click();assert(!doc.getElementById('notice').textContent,'Replaying farewell should not attempt to talk to an absent companion');
+ messages.push('PASS remote companion chat, events, dialogue dismissal, and farewell replay');
+ const language=doc.getElementById('ui-language');language.value='en';language.dispatchEvent(new win.Event('change'));
+ assert(doc.getElementById('companion').textContent.includes('Travelling alone'),'Companion status did not switch to English');
+ assert(doc.getElementById('known-companions').textContent.includes('Waiting in'),'Waiting status did not switch to English');
+ messages.push('PASS Czech / English UI');
+ npc('mira');for(const phrase of ['mira_ask','mira_answer','mira_accept','mira_join'])say(phrase);companion('Mira');
+ clickButton('#companion','Talk to companion');say('companion_askWisdom');
+ messages.push('ALL COMPANION UI CHECKS PASSED');output.textContent=messages.join('\n');output.dataset.status='passed';
+}
+run().catch(error=>{output.textContent=messages.join('\n')+'\nFAIL '+error.stack;output.dataset.status='failed';});
+</script>

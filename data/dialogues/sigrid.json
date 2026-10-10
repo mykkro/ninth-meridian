@@ -1,0 +1,166 @@
+{
+  "id": "sigrid",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "sigrid_intro",
+      "choices": [
+        {
+          "phrase": "companion_join",
+          "next": "companionJoined",
+          "quality": "sensible",
+          "recruitBlocked": "companionBusy",
+          "effects": [
+            {
+              "type": "recruit",
+              "id": "sigrid"
+            }
+          ]
+        },
+        {
+          "phrase": "companion_talk",
+          "next": "companionChat",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_decline",
+          "next": "companionFarewell",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionChat": {
+      "phrase": "sigrid_chat",
+      "choices": [
+        {
+          "phrase": "companion_askWisdom",
+          "next": "companionWisdom",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_askRumor",
+          "next": "companionRumor",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_askEvents",
+          "next": "companionEvents",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_askQuest",
+          "next": "companionQuest",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_dismiss",
+          "next": "companionFarewell",
+          "quality": "sensible",
+          "companionOnly": true,
+          "effects": [
+            {
+              "type": "dismiss",
+              "id": "sigrid"
+            }
+          ]
+        }
+      ]
+    },
+    "companionJoined": {
+      "phrase": "sigrid_joined",
+      "outcome": "success",
+      "choices": []
+    },
+    "companionBusy": {
+      "phrase": "companion_busy",
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "greeting",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionFarewell": {
+      "phrase": "companion_farewell",
+      "outcome": "success",
+      "choices": []
+    },
+    "companionWisdom": {
+      "phrase": "sigrid_wisdom",
+      "rumor": "sigrid_wisdom",
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionRumor": {
+      "phrase": "sigrid_rumor",
+      "rumor": "sigrid_rumor",
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionEvents": {
+      "phrase": "sigrid_events",
+      "contexts": [
+        {
+          "requires": {
+            "location": "stockholm"
+          },
+          "phrase": "sigrid_localEvents"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionQuest": {
+      "phrase": "sigrid_quest",
+      "contexts": [
+        {
+          "requires": {
+            "milestone": "ireland"
+          },
+          "phrase": "companion_voyageDone"
+        },
+        {
+          "requires": {
+            "milestone": "finland"
+          },
+          "phrase": "sigrid_laterQuest"
+        },
+        {
+          "requires": {
+            "milestone": "sweden"
+          },
+          "phrase": "sigrid_clueQuest"
+        },
+        {
+          "requires": {
+            "milestone": "norway"
+          },
+          "phrase": "sigrid_tokenQuest"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    }
+  }
+}

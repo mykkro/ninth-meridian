@@ -25,3 +25,16 @@ assert all(feature['geometry']['type'] in ('Polygon', 'MultiPolygon') for featur
 vertices = sum(len(ring) for feature in countries['features'] for polygon in ([feature['geometry']['coordinates']] if feature['geometry']['type'] == 'Polygon' else feature['geometry']['coordinates']) for ring in polygon)
 assert vertices > 500000, 'Expected 1:10m detailed country outlines'
 print('Passed: bundled world map country data.')
+regional = json.loads((root / 'assets/europe-borders.json').read_text(encoding='utf-8'))
+metadata = json.loads((root / 'assets/europe-relief.metadata.json').read_text(encoding='utf-8'))
+assert regional['crs'] == metadata['crs'] == 'EPSG:3035'
+assert regional['width'] == regional['height'] == 4096
+assert len(regional['countries']) == 60
+country_names = {f['properties']['ADMIN'] for f in countries['features']}
+assert all(c['name'] in country_names for c in regional['countries'])
+assert all(re.fullmatch(r'(?:[ML]-?\d+(?:\.\d+)?,-?\d+(?:\.\d+)?|Z)+', c['path']) for c in regional['countries'])
+assert (root / 'media/europe_relief_4096.jpg').is_file()
+embedded = re.search(r'const metadata=(\{.*\}); // Regenerated', (root / 'relief.js').read_text(encoding='utf-8'))
+assert json.loads(embedded.group(1)) == metadata
+assert metadata['boundsMeters'][2] - metadata['boundsMeters'][0] == metadata['boundsMeters'][3] - metadata['boundsMeters'][1]
+print('Passed: regional GISCO paths, country identity mapping, and embedded EPSG:3035 georeferencing.')

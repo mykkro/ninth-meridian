@@ -21,7 +21,9 @@
     "sweden",
     "finland",
     "hungary",
-    "ireland"
+    "ireland",
+    "german_route",
+    "italian_route"
   ],
   "branches": [
     {
@@ -40,7 +42,10 @@
         "amsterdam",
         "copenhagen"
       ],
-      "item": "ring"
+      "item": "ring",
+      "investigations": [
+        "german_route"
+      ]
     },
     {
       "id": "southern",
@@ -50,7 +55,10 @@
         "lyon",
         "toledo"
       ],
-      "item": "disc"
+      "item": "disc",
+      "investigations": [
+        "italian_route"
+      ]
     }
   ],
   "finalMilestone": "ireland",

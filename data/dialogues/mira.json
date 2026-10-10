@@ -159,7 +159,8 @@
               "type": "recruit",
               "id": "mira"
             }
-          ]
+          ],
+          "recruitBlocked": "companionBusy"
         }
       ]
     },
@@ -254,6 +255,134 @@
       "phrase": "banter_rudeDismiss",
       "outcome": "dismissed",
       "choices": []
+    },
+    "companionChat": {
+      "phrase": "mira_chat",
+      "choices": [
+        {
+          "phrase": "companion_askWisdom",
+          "next": "companionWisdom",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_askRumor",
+          "next": "companionRumor",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_askEvents",
+          "next": "companionEvents",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_askQuest",
+          "next": "companionQuest",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "companion_dismiss",
+          "next": "companionFarewell",
+          "quality": "sensible",
+          "companionOnly": true,
+          "effects": [
+            {
+              "type": "dismiss",
+              "id": "mira"
+            }
+          ]
+        }
+      ]
+    },
+    "companionBusy": {
+      "phrase": "companion_busy",
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "offer",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionFarewell": {
+      "phrase": "companion_farewell",
+      "outcome": "success",
+      "choices": []
+    },
+    "companionWisdom": {
+      "phrase": "mira_wisdom",
+      "rumor": "mira_wisdom",
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionRumor": {
+      "phrase": "mira_rumorTrail",
+      "rumor": "mira_rumorTrail",
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionEvents": {
+      "phrase": "mira_events",
+      "contexts": [
+        {
+          "requires": {
+            "location": "lviv"
+          },
+          "phrase": "mira_lvivEvents"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "companionQuest": {
+      "phrase": "mira_quest",
+      "contexts": [
+        {
+          "requires": {
+            "milestone": "ireland"
+          },
+          "phrase": "companion_voyageDone"
+        },
+        {
+          "requires": {
+            "milestone": "greece"
+          },
+          "phrase": "companion_afterReunion"
+        },
+        {
+          "requires": {
+            "milestone": "novgorod"
+          },
+          "phrase": "mira_routesQuest"
+        },
+        {
+          "requires": {
+            "milestone": "krakow"
+          },
+          "phrase": "mira_archiveQuest"
+        }
+      ],
+      "choices": [
+        {
+          "phrase": "companion_back",
+          "next": "companionChat",
+          "quality": "sensible"
+        }
+      ]
     }
   }
 }

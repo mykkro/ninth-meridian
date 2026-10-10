@@ -1,0 +1,38 @@
+{
+  "id": "nadia",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "venice_greeting",
+      "choices": [
+        {
+          "phrase": "regional_ask",
+          "next": "evidence",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "evidence": {
+      "phrase": "venice_evidence",
+      "choices": [
+        {
+          "phrase": "regional_record",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "venice_witness"
+            }
+          ]
+        }
+      ],
+      "rumor": "venice_evidence"
+    },
+    "bye": {
+      "phrase": "regional_bye",
+      "choices": [],
+      "outcome": "success"
+    }
+  }
+}

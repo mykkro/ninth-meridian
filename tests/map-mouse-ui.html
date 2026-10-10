@@ -1,0 +1,39 @@
+<!doctype html>
+<meta charset="utf-8">
+<base href="../">
+<title>Minimap mouse interaction check</title>
+<link rel="stylesheet" href="style.css">
+<pre id="results">Running minimap checks…</pre>
+<section id="map" class="map-panel" style="width:300px;margin:20px"></section>
+<script src="content.js"></script><script src="engine.js"></script><script src="relief.js"></script><script src="map.js"></script>
+<script>
+const assert=(value,message)=>{if(!value)throw Error(message);};
+(async()=>{
+ const world=await WorldContent.loadWorld();
+ const game=new DialogueEngine(world),container=document.getElementById('map');let travels=0;
+ const [geo,borders]=await Promise.all([fetch('assets/world-countries.geojson').then(r=>r.json()),fetch('assets/europe-borders.json').then(r=>r.json())]);
+ const map=new VoyageMapTools.VoyageMap(container,geo,world,game,id=>{travels++;game.travel(id);map.render();},s=>s,()=>'',borders);
+ const svg=()=>container.querySelector('svg');
+ function control(name){[...container.querySelectorAll('.map-controls button')].find(b=>b.textContent===name).click();}
+ control('Europe');const rect=svg().getBoundingClientRect(),x=Math.round(rect.left+rect.width*.65),y=Math.round(rect.top+rect.height*.35);
+ const before=map.mapPoint(svg(),x,y),width=map.view[2];
+ const wheel=new WheelEvent('wheel',{clientX:x,clientY:y,deltaY:-120,bubbles:true,cancelable:true});svg().dispatchEvent(wheel);
+ const after=map.mapPoint(svg(),x,y);
+ assert(wheel.defaultPrevented,'Wheel must stop page scrolling over the map');
+ assert(map.view[2]<width,'Wheel did not zoom');assert(Math.hypot(before[0]-after[0],before[1]-after[1])<1e-7,'Zoom anchor drifted');
+ const original=[...map.view],dragSvg=svg();
+ // Synthetic pointer events do not activate browser pointer capture. Real mouse
+ // events use native capture; here we test the DOM handlers and view geometry.
+ dragSvg.setPointerCapture=()=>{};
+ const pointer=(type,dx,dy)=>dragSvg.dispatchEvent(new PointerEvent(type,{pointerId:1,isPrimary:true,button:0,buttons:type==='pointerup'?0:1,clientX:x+dx,clientY:y+dy,bubbles:true,cancelable:true}));
+ pointer('pointerdown',0,0);pointer('pointermove',40,20);pointer('pointerup',40,20);
+ assert(map.view[0]<original[0]&&map.view[1]<original[1],'Drag did not pan');assert(map.view[2]===original[2],'Pan changed zoom');
+ container.querySelector('.map-marker.current').dispatchEvent(new MouseEvent('click',{bubbles:true}));assert(travels===0,'Drag must not trigger marker travel');
+ svg().dispatchEvent(new PointerEvent('pointerdown',{pointerId:2,isPrimary:true,button:0,clientX:x,clientY:y,bubbles:true}));
+ svg().dispatchEvent(new PointerEvent('pointerup',{pointerId:2,isPrimary:true,button:0,clientX:x,clientY:y,bubbles:true}));
+ container.querySelector('.map-marker.current').dispatchEvent(new MouseEvent('click',{bubbles:true}));assert(travels===1,'Normal marker click no longer works');
+ control('World');svg().dispatchEvent(new WheelEvent('wheel',{clientX:x,clientY:y,deltaY:-120,bubbles:true,cancelable:true}));assert(map.mode==='world','World wheel zoom changed projection');
+ control('Reset view');assert(map.mode==='discovered'&&map.pathProjection==='europe','Reset failed to restore discovered regions');
+ document.getElementById('results').textContent='PASS pointer-centered wheel zoom, page-scroll prevention, drag pan, marker click protection, World zoom, and Reset view.';
+})().catch(error=>{document.getElementById('results').textContent='FAIL: '+error.stack;});
+</script>

@@ -3,7 +3,12 @@
   "name": "Lyon",
   "country": "France",
   "language": "fr",
-  "requires": "italy",
+  "requires": {
+    "milestones": [
+      "italy",
+      "italian_route"
+    ]
+  },
   "description": "The southern disc",
   "npcs": [
     "camille",

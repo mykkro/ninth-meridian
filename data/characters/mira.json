@@ -15,6 +15,19 @@
     "outputs": [
       "sk"
     ],
-    "description": "A caravan interpreter. Translates Polish and Ukrainian into Slovak."
+    "description": "A caravan interpreter. Translates Polish and Ukrainian into Slovak.",
+    "home": "bratislava",
+    "chatStart": "companionChat",
+    "dismissedNode": "companionFarewell",
+    "requires": {
+      "milestone": "bratislava"
+    },
+    "route": [
+      "bratislava",
+      "krakow",
+      "lviv",
+      "novgorod"
+    ],
+    "departurePhrase": "mira_departure"
   }
 }

@@ -1,13 +1,29 @@
 # European relief layer
 
-The active layer uses the user-supplied `media/europe-blank-physical-hd.jpg` (1100 × 867), unchanged. Its original source, license, and projection were not supplied.
+The active raster is the user-supplied `media/europe_relief_4096.jpg` (4096 × 4096), generated from EuroDEM 2023. Its SHA-256 matches `C:\Work\europe-dem\europe_relief_4096.jpg`: `CC7524EE76C1409C183F98429A282996AE5D7BC6887E8C3721FA13FD1BC2EAD0`. The original generation scripts and metadata are preserved in [docs/map-sources](../docs/map-sources/). Earlier rasters and the stylized relief SVG remain unused.
 
-`relief.js` stores a fitted Lambert-style conic projection, a global affine calibration, and 26 manually estimated coastal landmarks. It projects the vectors into the image's coordinate system; the image remains a single raster at its original aspect ratio. Calibration has approximately 17 pixels RMS residual at the original image resolution. This is a measured approximation, not an identified original CRS or an exact georeference. The low-resolution Natural Earth outlines also simplify coastlines. Exact alignment would require a georeferenced source raster or reliable original projection and extent metadata.
+## Verified georeferencing
 
-Projection background: [PROJ documentation](https://proj.org/en/stable/operations/projections/lcc.html). The fitted parameters do not imply that the source image was actually made using that projection.
+The source GeoTIFF metadata specifies ETRS89 on the GRS80 ellipsoid with **arcsecond angular units** and 2-arcsecond pixels. Its `.tfw` describes that source raster, not the rendered JPEG. `make_relief.py` explicitly reprojects it to **EPSG:3035**, ellipsoidal Lambert azimuthal equal-area centered at 10°E, 52°N, with false easting/northing 4,321,000 / 3,210,000 metres. `relief.js` now implements that projection rather than a fitted spherical approximation. See the [PROJ LAEA documentation](https://proj.org/en/stable/operations/projections/laea.html).
 
-`assets/map-alignment-preview.png` overlays the actual projected outlines directly on the unchanged image. Regenerate it with `tests/render_map_alignment.ps1` on Windows. European views use this calibration; World view uses the global projection without the regional image.
+The renderer transforms the frame `[-25, 34.5, 36, 71.5]` from degrees (converted to source arcseconds), densifies each edge with 101 intermediate points, makes the projected bounding box square, and scales its side by 0.92. The resulting JPEG extent in easting/northing order is:
 
-The SVG clips the unchanged image to the projected country land shapes and applies a translucent grayscale multiply blend. This keeps unvisited countries gray and visited colors visible. Labels, routes, and clickable destinations stay above the terrain. No external tile service is needed.
+```text
+x min: 1413353.745234925 m   x max: 6465832.445449768 m
+y min:  954179.124379448 m   y max: 6006657.824594291 m
+pixel size: 1233.515307670 m
+```
 
-The earlier stylized `europe-relief.svg` remains an unused asset.
+`assets/europe-relief.metadata.json` records these parameters and coordinate checks. `python tests/prepare_europe_map.py` reproduces the frame without reading the large GeoTIFF or requiring GIS packages, updates the embedded runtime metadata, and extracts the border asset.
+
+## Borders and attribution
+
+The DEM contains elevations, not political boundaries. `make_political_svg.py` identifies its input as GISCO `CNTR_RG_*_3035.geojson`; the exact edition and scale of that input are not recorded. Its output already contains 60 country/territory paths in the JPEG pixel frame. `assets/europe-borders.json` extracts those paths from `media/europe_political_4096.svg`, preserving the supplied outlines and holes. Country names are reconciled with the world dataset; Svalbard/Jan Mayen paths are grouped with Norway for gameplay coloring. No raw source SVG markup is inserted into the DOM.
+
+European views use these GISCO paths for country fills, borders, and terrain clipping. Cities, labels, routes, and discovery bounds use the exact ellipsoidal projection. Countries outside the supplied border asset fall back to Natural Earth. World view uses Natural Earth and the original global projection without the regional raster. Country coloring, discovery, keyboard interaction, and travel gates remain dynamic.
+
+**© EuroGeographics for the administrative boundaries.** GISCO terms and attribution are described on the [Eurostat administrative units page](https://ec.europa.eu/eurostat/en/web/gisco/geodata/administrative-units); its stated permission covers noncommercial use. The original GISCO input edition and any separately granted permissions are unknown. EuroDEM attribution and licence documents are bundled as [Attribution Statement](../docs/map-sources/EuroDEM_2023_Attribution_Statement.pdf) and [Open Data Licence](../docs/map-sources/EuroGeographics_Open_Data_Licence_2024.pdf).
+
+The raster contains terrain for selected European countries. Some eastern land, including Ukraine and western Russia, and neighboring countries has no terrain data in the supplied image; live country vectors still provide those regions. The relief is land-clipped and blended in grayscale over country colors. Markers and labels remain above it.
+
+`assets/map-alignment-preview.png` overlays the actual supplied GISCO paths on the unchanged raster. Regenerate with `tests/render_map_alignment.ps1` on Windows. The preview includes borders outside the raster’s terrain coverage, distinguishing missing source coverage from alignment errors. Original SVG paths are rounded to 0.1 pixel and omit closely spaced vertices; DEM and boundary coastlines can differ in detail even with identical georeferencing.

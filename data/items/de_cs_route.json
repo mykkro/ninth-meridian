@@ -33,6 +33,138 @@
     {
       "type": "phrase",
       "phrase": "otto_bye"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_ask"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_record"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_investigate"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_archive"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_field"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_retry"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_confirm"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_bye"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_regionAsk"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_report"
+    },
+    {
+      "type": "phrase",
+      "phrase": "regional_back"
+    },
+    {
+      "type": "phrase",
+      "phrase": "leipzig_greeting"
+    },
+    {
+      "type": "phrase",
+      "phrase": "leipzig_evidence"
+    },
+    {
+      "type": "phrase",
+      "phrase": "leipzig_intro"
+    },
+    {
+      "type": "phrase",
+      "phrase": "leipzig_puzzleA"
+    },
+    {
+      "type": "phrase",
+      "phrase": "leipzig_answerA"
+    },
+    {
+      "type": "phrase",
+      "phrase": "leipzig_puzzleB"
+    },
+    {
+      "type": "phrase",
+      "phrase": "leipzig_answerB"
+    },
+    {
+      "type": "phrase",
+      "phrase": "leipzig_wrong"
+    },
+    {
+      "type": "phrase",
+      "phrase": "leipzig_hint"
+    },
+    {
+      "type": "phrase",
+      "phrase": "leipzig_finding"
+    },
+    {
+      "type": "phrase",
+      "phrase": "hamburg_greeting"
+    },
+    {
+      "type": "phrase",
+      "phrase": "hamburg_evidence"
+    },
+    {
+      "type": "phrase",
+      "phrase": "hamburg_intro"
+    },
+    {
+      "type": "phrase",
+      "phrase": "hamburg_puzzleA"
+    },
+    {
+      "type": "phrase",
+      "phrase": "hamburg_answerA"
+    },
+    {
+      "type": "phrase",
+      "phrase": "hamburg_puzzleB"
+    },
+    {
+      "type": "phrase",
+      "phrase": "hamburg_answerB"
+    },
+    {
+      "type": "phrase",
+      "phrase": "hamburg_wrong"
+    },
+    {
+      "type": "phrase",
+      "phrase": "hamburg_hint"
+    },
+    {
+      "type": "phrase",
+      "phrase": "hamburg_finding"
+    },
+    {
+      "type": "phrase",
+      "phrase": "german_route_brief"
+    },
+    {
+      "type": "phrase",
+      "phrase": "german_route_complete"
     }
   ],
   "description": "A limited German to Czech dictionary. Read it to study its entries."

@@ -1,0 +1,43 @@
+{
+  "id": "italian_route",
+  "kind": "investigation",
+  "title": "The sun table and the mirror",
+  "description": "Before Lyon, restore the solar leaf order in Bologna and identify the mirror orientation in Venice. Speak to the student and boat pilot before consulting the archive and glass workshop. Either city can come first. Bring both conclusions back to Florence.",
+  "started": "italy",
+  "completion": "italian_route",
+  "location": "florence",
+  "giver": "luca",
+  "milestones": [
+    "italian_route",
+    "bologna_witness",
+    "bologna_verified",
+    "venice_witness",
+    "venice_verified"
+  ],
+  "steps": [
+    {
+      "milestone": "bologna_witness",
+      "label": "Interview the witness in Bologna",
+      "location": "bologna",
+      "giver": "paolo"
+    },
+    {
+      "milestone": "bologna_verified",
+      "label": "Resolve the discrepancy in Bologna",
+      "location": "bologna",
+      "giver": "chiara"
+    },
+    {
+      "milestone": "venice_witness",
+      "label": "Interview the witness in Venice",
+      "location": "venice",
+      "giver": "nadia"
+    },
+    {
+      "milestone": "venice_verified",
+      "label": "Resolve the discrepancy in Venice",
+      "location": "venice",
+      "giver": "vittorio"
+    }
+  ]
+}

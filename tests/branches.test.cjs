@@ -2,17 +2,18 @@ const assert=require('node:assert/strict');
 const {assembleWorld}=require('../content.js');
 const World=assembleWorld(require('./fixtures.cjs').worldData,require('./fixtures.cjs').dialogueData);
 const Engine=require('../engine.js');
+const {investigateCountry}=require('./regional-routes.cjs');
 function say(g,phrase){const index=g.node.choices.findIndex(c=>c.phrase===phrase);assert.ok(index>=0,`Missing ${phrase}`);g.choose(index);}
 function finish(g,id){say(g,id+'_ask');say(g,id+'_answer');say(g,id+'_accept');}
 function prologue(g){finish(g,'ada');g.travel('bratislava');finish(g,'mira');say(g,'mira_alone');g.travel('krakow');finish(g,'zofia');g.travel('lviv');finish(g,'oles');g.travel('novgorod');finish(g,'lev');}
 function west(g){g.travel('london');finish(g,'bea');}
-function north(g){g.travel('berlin');finish(g,'otto');g.travel('amsterdam');finish(g,'sanne');g.travel('copenhagen');finish(g,'astrid');}
+function north(g){g.travel('berlin');finish(g,'otto');investigateCountry(g,'german_route');g.travel('amsterdam');finish(g,'sanne');g.travel('copenhagen');finish(g,'astrid');}
 function south(g){
  g.travel('florence');assert.throws(()=>g.open('latinCodex'));finish(g,'luca');assert.equal(g.state.inventory.codex,1);assert.equal(g.state.inventory.latin_glossary,1);
  g.read('latin_glossary');g.read('codex');assert.equal(g.language,'la');assert.ok(g.notes().some(n=>n.kind==='word'));
  say(g,'latin_silly');assert.ok(!g.state.milestones.includes('latin_deciphered'));say(g,'latin_reread');say(g,'latin_list');assert.ok(!g.state.milestones.includes('latin_deciphered'));say(g,'latin_greece');assert.ok(g.state.milestones.includes('latin_deciphered'));
  g.read('codex');say(g,'latin_list');say(g,'latin_greece');assert.equal(g.state.milestones.filter(id=>id==='latin_deciphered').length,1);
- g.travel('lyon');finish(g,'camille');g.read('codex');assert.equal(g.language,'la');say(g,'latin_list');say(g,'latin_greece');g.travel('toledo');finish(g,'ines');
+ investigateCountry(g,'italian_route',true,'field');g.travel('lyon');finish(g,'camille');g.read('codex');assert.equal(g.language,'la');say(g,'latin_list');say(g,'latin_greece');g.travel('toledo');finish(g,'ines');
 }
 for(const order of [[west,north,south],[south,west,north]]){
  const g=new Engine(World);for(const id of ['london','berlin','florence','athens'])assert.equal(g.canTravel(id),false);

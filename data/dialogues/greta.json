@@ -1,0 +1,38 @@
+{
+  "id": "greta",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "leipzig_greeting",
+      "choices": [
+        {
+          "phrase": "regional_ask",
+          "next": "evidence",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "evidence": {
+      "phrase": "leipzig_evidence",
+      "choices": [
+        {
+          "phrase": "regional_record",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "leipzig_witness"
+            }
+          ]
+        }
+      ],
+      "rumor": "leipzig_evidence"
+    },
+    "bye": {
+      "phrase": "regional_bye",
+      "choices": [],
+      "outcome": "success"
+    }
+  }
+}

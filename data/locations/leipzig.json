@@ -1,0 +1,21 @@
+{
+  "id": "leipzig",
+  "name": "Leipzig",
+  "country": "Germany",
+  "language": "de",
+  "requires": "germany",
+  "description": "Printers argue over a reversed star chart. A bookseller remembers who ordered it.",
+  "npcs": [
+    "greta",
+    "konrad"
+  ],
+  "milestone": "leipzig_verified",
+  "coordinates": {
+    "lon": 12.3731,
+    "lat": 51.3397
+  },
+  "mapLabelOffset": [
+    -10,
+    18
+  ]
+}

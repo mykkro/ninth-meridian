@@ -1,0 +1,61 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Country investigation UI check</title>
+<style>body{margin:0;font:14px system-ui}pre{padding:12px;white-space:pre-wrap}iframe{width:100%;height:2000px;border:0}</style>
+<pre id="results">Running country investigation UI checks…</pre>
+<iframe id="game" src="../index.html" title="Voyage game"></iframe>
+<script>
+const frame=document.getElementById('game'),output=document.getElementById('results');
+const assert=(value,message)=>{if(!value)throw Error(message);};
+const messages=[];
+async function run(){
+ for(let attempt=0;attempt<200;attempt++){
+  if(frame.contentDocument?.getElementById('load-status')?.hidden)break;
+  await new Promise(resolve=>setTimeout(resolve,50));
+ }
+ const doc=frame.contentDocument,win=frame.contentWindow;
+ assert(doc.getElementById('load-status').hidden,'Game failed to load');
+ const world=await win.WorldContent.loadWorld();
+ function button(selector,text){const result=[...doc.querySelectorAll(selector+' button')].find(b=>b.textContent===text);assert(result&&!result.disabled,'Missing enabled button: '+text);result.click();}
+ function npc(id){button('#npcs',win.t(world.npcs[id].name));}
+ function say(id){const result=[...doc.querySelectorAll('#choices button')].find(b=>{const line=b.querySelector('.response-text');return line?.textContent===world.phrases[id][line.lang];});assert(result&&!result.disabled,'Missing enabled response: '+id);result.click();assert(!doc.getElementById('notice').textContent,'Action error: '+doc.getElementById('notice').textContent);}
+ function travelButton(id){return [...doc.querySelectorAll('#locations button')].find(b=>b.textContent.startsWith(win.t(world.locations.find(l=>l.id===id).name)+' ·'));}
+ function travel(id){const result=travelButton(id);assert(result&&!result.disabled,'Locked city: '+id);result.click();}
+ function finish(id){for(const suffix of ['ask','answer','accept'])say(id+'_'+suffix);}
+ function lead(id){button('#journal',win.t('Follow lead')+': '+win.t(world.npcs[id].name));}
+ for(const [city,id]of [['prague','ada'],['bratislava','mira'],['krakow','zofia'],['lviv','oles'],['novgorod','lev']]){travel(city);finish(id);if(id==='mira')say('mira_alone');}
+ travel('berlin');finish('otto');assert(travelButton('amsterdam').disabled,'Amsterdam opened before investigating Germany');
+ assert(travelButton('amsterdam').textContent.includes(win.t(world.quests.german_route.title)),'Gate must name the country investigation');
+ assert(doc.getElementById('journal').textContent.includes(win.t(world.quests.german_route.title)),'Missing investigation journal');
+ npc('sofie');say('companion_join');
+ for(const [city,witness,expert,method]of [['hamburg','hannes','marta','field'],['leipzig','greta','konrad','archive']]){
+  lead(witness);say('regional_ask');say('regional_record');lead(expert);say('regional_investigate');say('regional_'+method);say(city+'_answer'+(method==='field'?'B':'A'));say('regional_confirm');
+  assert(doc.querySelector('#companion h3')?.textContent==='Sofie','Sofie left during a regional lead');
+  assert(travelButton('amsterdam').disabled,'Amsterdam opened without return visit');
+ }
+ button('#journal',win.t('Return with both findings')+': '+win.t('Berlin'));say('regional_regionAsk');say('regional_report');
+ assert(!travelButton('amsterdam').disabled,'Amsterdam should open after reporting');
+ messages.push('PASS Germany: journal leads, two cities, different solutions, companion continuity, return visit, and travel gate');
+ button('#companion',win.t('Dismiss companion'));
+ travel('florence');finish('luca');npc('lucia');say('companion_join');assert(travelButton('lyon').disabled,'Lyon opened before investigating Italy');
+ for(const [city,witness,expert]of [['bologna','paolo','chiara'],['venice','nadia','vittorio']]){
+  lead(witness);say('regional_ask');say('regional_record');lead(expert);say('regional_investigate');say('regional_archive');
+  if(city==='bologna'){
+   doc.getElementById('cast').click();assert(doc.getElementById('conversation').textContent.includes(world.phrases.bologna_puzzleA.en),'Scroll did not translate regional puzzle');
+  }
+  say(city+'_answerA');say('regional_confirm');assert(doc.querySelector('#companion h3')?.textContent==='Lucia','Lucia left during Italy investigation');
+ }
+ button('#journal',win.t('Return with both findings')+': '+win.t('Florence'));say('regional_regionAsk');say('regional_report');
+ assert(!travelButton('lyon').disabled,'Lyon should open after reporting');
+ const language=doc.getElementById('ui-language');language.value='en';language.dispatchEvent(new win.Event('change'));
+ assert(doc.getElementById('journal').textContent.includes('Country investigations'),'English journal heading missing');
+ assert(doc.getElementById('journal').textContent.includes('✓ The sun table and the mirror'),'Completed Italy status missing');
+ language.value='cs';language.dispatchEvent(new win.Event('change'));
+ assert(doc.getElementById('journal').textContent.includes('✓ Sluneční tabulka a zrcadlo'),'Czech investigation title missing');
+ assert(doc.querySelectorAll('.map-marker').length===22,'New cities are missing from the map');
+ travel('venice');npc('vittorio');
+ messages.push('PASS Italy: new NPCs, scroll translation, companion, return gate, Czech/English journal, and 22 map destinations');
+ messages.push('ALL COUNTRY INVESTIGATION UI CHECKS PASSED');output.textContent=messages.join('\n');output.dataset.status='passed';
+}
+run().catch(error=>{output.textContent=messages.join('\n')+'\nFAIL: '+error.stack;output.dataset.status='failed';});
+</script>

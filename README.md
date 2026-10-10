@@ -6,28 +6,48 @@
 
 A browser RPG prototype about an epic voyage through Europe, where understanding people is part of solving the mystery. Your native language is Czech. NPCs speak their own languages; phrasebooks, magical scrolls, and travelling companions help you understand them.
 
+See [the design document](docs/design.md) for the game philosophy, gameplay systems, content structures, runtime state, and development direction.
+
+Country labels have medieval flavor—Bohemia, Upper Hungary, the Holy Roman Empire, Ruthenia, and other kingdoms and regions—while the map uses today's borders. These are story names rather than a reconstruction of one historical year.
+
+Drag the minimap with the left mouse button to pan, and use the wheel to zoom around the pointer. **Reset view** restores the discovered-region view. City clicks still travel; dragging over a city does not. Zoom buttons and keyboard city activation remain available.
+
 ## Play the prototype
 
 Run `python -m http.server 8000` from this directory and visit `http://localhost:8000`. A static server is required because the browser fetches game content from JSON files; opening `index.html` directly with `file://` is unsupported and shows server instructions. No package install, build, backend application, or account is needed. All game scripts and content are local; optional Google fonts fall back to system fonts offline.
 
 Talk to Ada about Eliáš, ask for a hint or identify the nine-pointed star, and accept the map. At the bookseller, choose the polite browsing response to open the shop, then buy/read the border phrasebook before travelling. Follow the witnesses through Bratislava, Kraków, Lviv, and Novgorod. Invite Mira in Bratislava to see companion translation notes. After Novgorod, follow the three relic routes in any order, decipher the Latin codex, and reunite in Athens. Switch easy mode off to compare the experience. Replay any conversation without duplicating quest rewards. Start a new voyage resets everything. State is held in memory and resets on page refresh.
 
+## Country investigations
+
+Germany now branches from Berlin to Leipzig and Hamburg; Italy branches from Florence to Bologna and Venice. Visit the two cities in either order. Each has a witness and an expert, with a choice between checking written records and reconstructing physical evidence. Record the witness account, solve the discrepancy, then return both city findings to Otto or Luca. Amsterdam and Lyon open after that return visit. Each city pays eight coins once. Sofie and Lucia accompany these detours, and the existing German/Italian notes include the new phrases. The journal lists each lead and provides visit buttons.
+
 ## Three relic routes and the Greek reunion
 
-The prototype now has 18 destinations, a playable reunion, and a final journey to Ireland. Novgorod unlocks three independent starting destinations: London, Berlin, and Florence. You can switch between branches and revisit earlier locations without losing progress.
+The prototype now has 22 destinations, a playable reunion, and a final journey to Ireland. Novgorod unlocks three independent starting destinations: London, Berlin, and Florence. You can switch between branches and revisit earlier locations without losing progress.
 
 | Route | Journey | Evidence and reward |
 | --- | --- | --- |
 | Western | London, England (Britain) | Show the silver star to obtain the **crystal lens** |
-| Northern | Berlin → Amsterdam → Copenhagen | Obtain the workshop seal, trade its evidence for a sea chart, then receive the **northern ring** |
-| Southern | Florence → Lyon → Toledo | Obtain the Latin codex, decipher both pages, carry the French letter, then receive the **sun disc** |
+| Northern | Berlin → Leipzig + Hamburg → Berlin → Amsterdam → Copenhagen | Verify the print and tide record, report to Otto, then obtain the **northern ring** |
+| Southern | Florence → Bologna + Venice → Florence → Lyon → Toledo | Verify the solar leaves and mirror, report to Luca, decipher the codex, then obtain the **sun disc** |
 | Reunion | Athens, Greece | Bring all three relics after completing all three routes, restore the astrolabe, and find Eliáš |
 
 ```mermaid
 flowchart LR
     N[Novgorod] --> E[England: crystal lens]
-    N --> D[Germany] --> H[Netherlands] --> K[Denmark: northern ring]
-    N --> I[Italy: Latin codex] --> F[France]
+    N --> D[Berlin]
+    D --> LP[Leipzig]
+    D --> HB[Hamburg]
+    LP --> DR[Return both findings to Otto]
+    HB --> DR
+    DR --> H[Netherlands] --> K[Denmark: northern ring]
+    N --> I[Florence: Latin codex]
+    I --> BO[Bologna]
+    I --> VE[Venice]
+    BO --> IT[Return both findings to Luca]
+    VE --> IT
+    IT --> F[France]
     I --> L[Decipher both Latin pages]
     F --> S[Spain: sun disc]
     L --> S
@@ -55,6 +75,25 @@ Eleven additional sellers offer general supplies, food, weapons, or remedies. Pr
 The 17 new items include bread, cheese, dried meat, rations, a water flask, rope, torches, bandages, healing and stamina potions, antidote, arrows, an iron sword, short bow, shield, leather armour, and boots. Arrow purchases give **20 arrows for 6 coins**; other purchases give one item. Food, potions, ammunition, and basic supplies stack. New weapons and wearable equipment use `"stackable": false` so duplicate purchases are blocked. Purchases require a shop node, the seller's stock listing, and enough coins.
 
 Item JSON supports `price`, `purchaseQuantity`, `stackable`, `slot`, `stats`, `effects`, `ammunition`, and `compatibleWeapon`. Bow/ammunition references and purchase quantities are validated. Combat, equipping, eating, healing, and creature-defeat quests are not implemented yet; these fields prepare the inventory for those systems. Current gameplay is buying and carrying supplies, not applying their future effects. Quest-delivery resources remain distinct from general-store supplies to preserve the fetch-quest objectives.
+
+## Travelling companions
+
+You can travel with **one companion at a time**. Recruitment never replaces the current companion: the candidate explains that you already have someone with you. Use **Dismiss companion** first, then return to the candidate and invite them. Dismissal is also a response in the companion conversation.
+
+The companion panel always offers **Talk to companion**, including away from their home city. Conversations include rumors, small pieces of wisdom, local happenings in the game's fictional setting, and advice that changes with quest progress. Advice and rumors do not grant quest items or complete milestones. Repeating conversations does not farm knowledge or duplicate journal entries. Changing UI language keeps these authored utterances in the speaker's language.
+
+| Companion | First meeting | Interpretation | Travel limits |
+| --- | --- | --- | --- |
+| Tereza, travelling teacher | Prague | Slovak and Polish → Czech | Leaves on arrival in Bratislava; travels only between Prague and Bratislava |
+| Mira, caravan guide | Bratislava, after her clue | Polish and Ukrainian → Slovak | Accompanies the Bratislava–Krakow–Lviv–Novgorod route; leaves before going beyond it |
+| Rowan, wandering librarian | London | English, French, Irish → Czech | Leaves on arrival in Athens or before departing for the northern finale |
+| Sofie, workshop interpreter | Berlin | German, Dutch, Danish, English → Czech | Also visits Leipzig and Hamburg; travels Berlin–Amsterdam–Copenhagen; leaves on arrival in Copenhagen |
+| Lucia, manuscript scholar | Florence | Italian, French, Spanish, Latin → Czech | Also visits Bologna and Venice; travels Florence–Lyon–Toledo; leaves before going beyond that route |
+| Sigrid, northern courier | Oslo | Norwegian, Swedish, Finnish, English, Irish → Czech | Travels Oslo–Stockholm–Helsinki–Galway; leaves on arrival in Galway |
+
+Departures show the companion's farewell and waiting city. **Known companions** records where people you have met can be found. A dismissed companion waits in the current city; a companion leaving before travel stays in the departure city, and one leaving on arrival stays at the destination. They appear in that city's NPC list when you return and can be recruited again. The original home listing moves with them. Re-recruiting does not remove their route limits. Clicking the current destination again does not trigger another arrival.
+
+Translation assistance works in both difficulty modes and uses authored translations only. An interpreter can translate their native language into a different configured output language; an output identical to the source adds no redundant note. Mira retains her limited Slovak output, so understanding her notes still benefits from the border phrasebook.
 
 ## Optional errands and local wisdom
 
@@ -165,7 +204,7 @@ All authored game content is JSON, with no hardcoded dialogue trees in JavaScrip
 
 `data/world.json` is the single registration point. Each `content` group lists file paths relative to `data/`. Files are loaded in parallel, and listed location order controls the travel menu. Paths must stay within `data/`; duplicate file registrations and duplicate IDs within a group are rejected.
 
-To add a character, create `data/characters/new-guide.json` with `id`, `name`, `description`, `language`, and `dialogue`. Register `"characters/new-guide.json"` in `content.characters`, add its dialogue file to `content.dialogues`, add its phrase translations to a registered phrase file, and put the character ID in a location's `npcs` array. A recruitable character includes a `companion` object with `name`, `native`, `knows`, `outputs`, and `description`. A shop adds `stock` containing item IDs.
+To add a character, create `data/characters/new-guide.json` with `id`, `name`, `description`, `language`, and `dialogue`. Register `"characters/new-guide.json"` in `content.characters`, add its dialogue file to `content.dialogues`, add its phrase translations to a registered phrase file, and put the character ID in a location's `npcs` array. A recruitable character includes a `companion` object with `name`, `native`, `knows`, `outputs`, `description`, `home`, `chatStart`, and `dismissedNode`. Optional `requires` gates recruitment. `route` lists allowed travel destinations; `leaveBefore` lists destinations that cause a departure before travelling; `leaveAt` lists arrival stops. These rules require authored `departurePhrase` or `arrivalPhrase` fields. Recruitment choices declare a `recruitBlocked` node, and dismissal choices use `companionOnly: true` with a `dismiss` effect. A shop adds `stock` containing item IDs. See the new character/dialogue files and `data/companion-phrases.json` for complete examples.
 
 Items, locations, quests, and dialogue trees each have their own top-level `id`. Add their paths to the matching manifest group. Item descriptions explain purpose without changing gameplay rules. `activeQuest` selects a registered quest; the engine currently supports one active quest. Phrase files are maps of phrase IDs to language translations; you can split them into additional files and list each in `content.phrases`, keeping phrase IDs unique. The large existing vocabulary corpus stays separate and is not fetched at game startup.
 
@@ -202,7 +241,7 @@ Add phrases to `data/phrases.json` and a dialogue graph to its own file in `data
 }
 ```
 
-In `data/characters/keeper.json`, define the NPC with an `id`, name, description, `language`, and `dialogue` ID, then register its ID in a location’s `npcs` array. Add every referenced phrase, item, milestone, and next node before running. Every choice declares a `phrase` and `quality` (`sensible`, `rude`, or `nonsense`). Phrase IDs resolve in the NPC’s language, using the same translation rules as NPC lines. Choices without `next` end the conversation. Terminal nodes use `"outcome": "success"` or `"outcome": "dismissed"` and an empty `choices` array; their NPC line remains visible. Effects currently support `give` (unique quest item), `milestone` (unique progress flag), and `recruit` (unique companion). `requires` supports an item and/or milestone. A location’s `requires` gates travel on a milestone. A `"shop": true` node offers the NPC’s `stock` with prices from item definitions; scroll stock is unlimited, dictionary purchases are unique. JSON requires double-quoted keys and strings, with no comments or trailing commas. Refresh the page after editing content.
+In `data/characters/keeper.json`, define the NPC with an `id`, name, description, `language`, and `dialogue` ID, then register its ID in a location’s `npcs` array. Add every referenced phrase, item, milestone, and next node before running. Every choice declares a `phrase` and `quality` (`sensible`, `rude`, or `nonsense`). Phrase IDs resolve in the NPC’s language, using the same translation rules as NPC lines. Choices without `next` end the conversation. Terminal nodes use `"outcome": "success"` or `"outcome": "dismissed"` and an empty `choices` array; their NPC line remains visible. Effects support `give` (unique quest item), `milestone` (unique progress flag), `recruit` (the single companion slot), `dismiss` (the current companion), and `reward` (one-time counted rewards). `requires` supports items, quantities, milestones, and the current location. A location’s `requires` gates travel on a milestone. A `"shop": true` node offers the NPC’s `stock` with prices from item definitions; scroll stock is unlimited, dictionary purchases are unique. JSON requires double-quoted keys and strings, with no comments or trailing commas. Refresh the page after editing content.
 
 Requirements can also combine arrays: `{"items":["lens","ring","disc"],"milestones":["britain","denmark","spain"]}` requires every listed item and milestone. The same format works on locations, NPCs, and choices. Existing single-milestone string requirements remain supported. `quest.branches` lists each route’s title, location IDs, and reward item for journal rendering. Book items use `{"type":"book","name":"Codex of three paths","npc":"latinCodex"}`; their referenced dialogue NPC can be opened anywhere once the player owns the book, with its own language and prerequisite checks.
 
@@ -235,25 +274,27 @@ Scrolls use `{"type":"scroll", "name":"English scroll", "target":"en", "price":6
 
 ### Engine API
 
-Create `new DialogueEngine(WORLD)`. Use `open(npcId)`, `travel(locationId)`, `choose(choiceIndex)`, `buy(itemId)`, `read(itemId)`, `cast(scrollId)`, and `notes(phraseId)` (defaults to the current NPC line). `knowledge(language)` returns the score; `visibleChoices()` returns `{choice, index}` pairs with original node indices for `choose(index)`. Hidden choices are rejected by the engine, not just omitted by the UI. Scrolls translate only visible response phrases. `state` holds coins, inventory counts, learned books, companions, milestones, per-language knowledge, and credited study/practice records. `node`, `npc`, and `phrase` expose the current content; `lastResponse` records the chosen utterance and its translation notes. Invalid actions throw readable errors displayed by the demo.
+Create `new DialogueEngine(WORLD)`. Use `open(npcId)`, `travel(locationId)`, `choose(choiceIndex)`, `buy(itemId)`, `read(itemId)`, `cast(scrollId)`, and `notes(phraseId)` (defaults to the current NPC line). Companion controls use `talkCompanion()`, `dismissCompanion()`, `companionId`, `companionLocation(id)`, and `npcsHere()`. `knowledge(language)` returns the score; `visibleChoices()` returns `{choice, index}` pairs with original node indices for `choose(index)`. Hidden choices are rejected by the engine, not just omitted by the UI. Scrolls translate only visible response phrases. `state` holds coins, inventory counts, learned books, the single companion slot, met companions, waiting locations, the latest departure message, milestones, per-language knowledge, and credited study/practice records. `node`, `npc`, `phrase`, and `phraseId` expose the current content; `lastResponse` records the chosen utterance and its translation notes. Optional node `contexts` select the first matching `{requires, phrase}` variant, falling back to `node.phrase`; requirements can include a current `location`. Invalid actions throw readable errors displayed by the demo.
 
 ## Interactive travel map
 
 The initial view focuses on visited regions and known, unlocked destinations, expanding as you travel or reveal the next destination. Country labels appear only for those countries. Europe still offers the complete regional view for inspection.
 
-Country borders and coastlines use the more detailed Natural Earth 1:10m dataset (bundled locally). Border widths remain constant while zooming. This adds coastline and island detail; the relief image's approximate alignment remains a separate limitation.
+European borders and coastlines use the supplied GISCO political map, extracted into 60 country/territory paths. © EuroGeographics for the administrative boundaries. World view and fallback countries use bundled Natural Earth 1:10m geometry. Border widths remain constant while zooming.
 
-The supplied raster image (`media/europe-blank-physical-hd.jpg`) provides terrain shading. European views preserve its original 1100 x 867 proportions and project country outlines, labels, routes, and cities into one calibrated conic coordinate system. The image is never stretched into triangles. World view uses the original global projection without the regional relief. A translucent grayscale blend preserves country colors. Alignment remains approximate: the image has no supplied projection metadata, and the fitted coastal landmarks have about 17 pixels RMS error at source resolution. Inspect `assets/map-alignment-preview.png` for the actual outline overlay, or regenerate it using `tests/render_map_alignment.ps1`. See `assets/europe-relief.source.md` for calibration details.
+The supplied EuroDEM raster (`media/europe_relief_4096.jpg`) provides terrain shading. Its original renderer and GeoTIFF metadata confirm EPSG:3035, so European views now use the original ellipsoidal projection and image extent instead of fitted alignment. The square raster and GISCO paths share the same pixel frame; labels, routes, and cities use its georeferencing. World view uses the global projection without regional relief. A translucent grayscale blend preserves country colors. Some eastern destinations and neighboring countries have no terrain in the supplied raster and retain vector country fills. Inspect `assets/map-alignment-preview.png` for the outline overlay, or regenerate it using `tests/render_map_alignment.ps1`. Run `python tests/prepare_europe_map.py` to reproduce metadata and extract border paths. See `assets/europe-relief.source.md` for provenance, attribution, and coverage details.
 
 The map starts focused on Czechia and automatically expands to fit visited countries. Russia contributes only its western region, including Novgorod, to these bounds. Route lines connect visited places and their next unlocked destinations; later locked routes stay hidden. Country names follow the UI language. Countries begin gray and gain color on arrival; visited countries retain their color until reset. Czechia is already visited at the start. Select Europe, World, or Around me for alternative views; Discovered regions restores automatic expansion. Manual zoom preserves your chosen view. Click a marker or focus it and press Enter/Space to travel. The map and location list use the same engine travel requirements; locked markers explain the missing progress. Your current country and destination are highlighted. Around me follows your travels.
 
-Each location JSON defines `coordinates: {"lon": 14.4378, "lat": 50.0755}` and can set `mapLabelOffset: [9, -9]` to position its label. `map.js` renders the SVG from bundled public-domain [Natural Earth country outlines](https://www.naturalearthdata.com/downloads/110m-cultural-vectors/), so no tile service is needed. Dataset attribution is in `assets/world-countries.source.md`.
+Each location JSON defines `coordinates: {"lon": 14.4378, "lat": 50.0755}` and can set `mapLabelOffset: [9, -9]` to position its label. `map.js` renders bundled GISCO and public-domain [Natural Earth country outlines](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/), so no tile service is needed. Dataset attribution is in `assets/europe-relief.source.md` and `assets/world-countries.source.md`.
 
 ## Verification
 
+Run `node tests/companions.test.cjs` for single-companion enforcement, refusal dialogue, dismissal, remote chat, contextual advice, interpreter coverage, travel limits, waiting locations, re-recruitment, replay protection, reset, and content validation. With the static server running, open `/tests/browser-suite.html` to run all 13 CommonJS suites using a browser assertion adapter, and `/tests/companion-ui.html` for actual button-driven companion integration checks. All 13 suites and the Czech/English UI checks passed in headless Edge; native Node.js is unavailable in the implementation environment.
+
 With Node.js installed, run `node tests/engine.test.cjs`. Tests cover language learning and filter thresholds, native-language knowledge, original choice indices, hidden-choice rejection, repeat study/practice protection, dialogue branches, dismissals, hint recovery, response translations, complete prologue progression, directional dictionary notes, difficulty, single-use scroll scope, missing-translation protection, companion target language, proof requirements, shop restrictions, idempotent replay rewards, and content references.
 
-Run `node tests/content.test.cjs` for JSON assembly, reference validation, fetch loading, and failure handling. Run `python tests/check_static.py` for asset references, DOM target checks, and bundled map data. The static check and all eleven JavaScript suites passed during implementation; JavaScript suites ran in the available tool runtime using an adapter for Node assertion calls. Node.js and browser tooling were unavailable, so the native Node commands and browser interactions remain unverified here.
+Run `node tests/content.test.cjs` for JSON assembly, reference validation, fetch loading, and failure handling. Run `python tests/check_static.py` for asset references, DOM target checks, and bundled map data. The static check and all eleven JavaScript suites passed during implementation; JavaScript suites ran in the available tool runtime using an adapter for Node assertion calls. Node.js was unavailable, so native Node commands remain unverified here. The updated EuroDEM/GISCO map was additionally loaded and visually checked in headless Edge; map controls and travel gates were tested in V8 with an assertion adapter.
 
 Run `node tests/map.test.cjs` for map projection, SVG controls, keyboard travel, marker states, geographic coordinates, and shared travel requirements. Manual map checks: try available and locked markers, change views, switch UI language, and check label readability at a narrow viewport.
 
@@ -269,4 +310,6 @@ Manual browser checks: switch UI language while viewing responses, read a purcha
 
 ## Next implementation steps
 
-Add save/load with a versioned save schema; integrate selected word-corpus entries as limited dictionary pages; introduce evidence comparisons and longer quests; then build exploration, party management, and more countries. Future companions can have recruitment conditions, availability, costs, dialect knowledge, or imperfect translations. Keep authored quest-critical translations reliable so language puzzles are fair.
+Add save/load with a versioned save schema; integrate selected word-corpus entries as limited dictionary pages; introduce evidence comparisons and longer quests; then build exploration, party management, and more countries. Companion systems can next add schedules, costs, dialect knowledge, or imperfect translations to the implemented recruitment conditions and travel limits. Keep authored quest-critical translations reliable so language puzzles are fair.
+
+Run `node tests/regions.test.cjs` for country branches, city orders, both reasoning paths, witness prerequisites, return gates, companion travel, translations, one-time payments, reset, and content validation. Open `/tests/regions-ui.html` for actual button-driven checks of both investigations, the journal, map markers, translation scrolls, and Czech/English copy.

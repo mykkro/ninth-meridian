@@ -1,7 +1,81 @@
 'use strict';
+// Story names are presentation only; modern country keys still identify GIS borders.
+const COUNTRY_NAMES = {
+ 'Czechia': ['Bohemia', 'Čechy'],
+ 'Slovakia': ['Upper Hungary', 'Horní Uhry'],
+ 'Poland': ['Kingdom of Poland', 'Polské království'],
+ 'Ukraine': ['Ruthenia', 'Rusínské země'],
+ 'Russia': ['Novgorod Rus', 'Novgorodská Rus'],
+ 'England (Britain)': ['Kingdom of England', 'Anglické království'],
+ 'United Kingdom': ['Kingdom of England', 'Anglické království'],
+ 'Germany': ['Holy Roman Empire', 'Svatá říše římská'],
+ 'Netherlands': ['Low Countries', 'Nizozemské země'],
+ 'Denmark': ['Kingdom of Denmark', 'Dánské království'],
+ 'Italy': ['Italian States', 'Italské státy'],
+ 'France': ['Kingdom of France', 'Francouzské království'],
+ 'Spain': ['Iberian Kingdoms', 'Iberská království'],
+ 'Greece': ['Byzantine Lands', 'Byzantské země'],
+ 'Norway': ['Kingdom of Norway', 'Norské království'],
+ 'Sweden': ['Kingdom of Sweden', 'Švédské království'],
+ 'Finland': ['Finnish Lands', 'Finské země'],
+ 'Hungary': ['Kingdom of Hungary', 'Uherské království'],
+ 'Ireland': ['Gaelic Ireland', 'Gaelské Irsko']
+};
 // UI copy only. Authored NPC phrases and translated phrasebook entries stay in WORLD.
 const UI_CS = {
+ "Leipzig":"Lipsko",
+ "Greta · bookseller":"Greta · knihkupkyně",
+ "Konrad · printer":"Konrad · tiskař",
+ "Printers argue over a reversed star chart. A bookseller remembers who ordered it.":"Tiskaři se přou o obrácenou hvězdnou mapu. Knihkupkyně si pamatuje jejího objednavatele.",
+ "Hamburg":"Hamburk",
+ "Hannes · ferryman":"Hannes · převozník",
+ "Marta · tide keeper":"Marta · správkyně přílivů",
+ "Bells count the harbour watches. A ferryman and a tide keeper hold different halves of the same account.":"Zvony odpočítávají přístavní hlídky. Převozník a správkyně přílivů znají každý jinou polovinu stejného příběhu.",
+ "Bologna":"Boloňa",
+ "Paolo · university student":"Paolo · univerzitní student",
+ "Chiara · archivist":"Chiara · archivářka",
+ "Under the porticoes, a student traces a missing manuscript leaf to the university archive.":"Pod podloubím student sleduje stopu chybějícího listu rukopisu až do univerzitního archivu.",
+ "Venice":"Benátky",
+ "Nadia · boat pilot":"Nadia · lodivodka",
+ "Vittorio · glassworker":"Vittorio · sklář",
+ "A glass workshop faces the lagoon. A boat pilot remembers which way the cartographer held his mirror.":"Sklářská dílna hledí na lagunu. Lodivodka si pamatuje, jak kartograf držel své zrcadlo.",
+ "Interview the witness in Leipzig":"Vyslechni svědka: Lipsko",
+ "Resolve the discrepancy in Leipzig":"Vyřeš rozpor: Lipsko",
+ "Interview the witness in Hamburg":"Vyslechni svědka: Hamburk",
+ "Resolve the discrepancy in Hamburg":"Vyřeš rozpor: Hamburk",
+ "The disputed northern chart":"Sporná severní mapa",
+ "Before Amsterdam, verify the reversed proof in Leipzig and the tide record in Hamburg. Visit the bookseller and ferryman first, then their local experts. You may take either city first. Return to me in Berlin with both conclusions.":"Před cestou do Amsterdamu ověř obrácený nátisk v Lipsku a přílivový záznam v Hamburku. Nejprve navštiv knihkupkyni a převozníka, pak místní odborníky. Pořadí měst si vyber. S oběma závěry se vrať ke mně do Berlína.",
+ "Interview the witness in Bologna":"Vyslechni svědka: Boloňa",
+ "Resolve the discrepancy in Bologna":"Vyřeš rozpor: Boloňa",
+ "Interview the witness in Venice":"Vyslechni svědka: Benátky",
+ "Resolve the discrepancy in Venice":"Vyřeš rozpor: Benátky",
+ "The sun table and the mirror":"Sluneční tabulka a zrcadlo",
+ "Before Lyon, restore the solar leaf order in Bologna and identify the mirror orientation in Venice. Speak to the student and boat pilot before consulting the archive and glass workshop. Either city can come first. Bring both conclusions back to Florence.":"Před cestou do Lyonu obnov pořadí slunečních listů v Boloni a urči orientaci zrcadla v Benátkách. Před návštěvou archivu a sklářské dílny promluv se studentem a lodivodkou. Pořadí měst je na tobě. Oba závěry přines zpět do Florencie.",
+ "Country investigations":"Pátrání v zemích",
+ "Follow lead":"Sledovat stopu",
+ "Return with both findings":"Vrátit se s oběma závěry",
+ "Complete the country investigation":"Dokonči pátrání v zemi",
+
+ 'Travelling companion':'Společník na cestě','Known companions':'Známí společníci','Satchel':'Brašna',
+ 'Talk to companion':'Promluvit se společníkem','Dismiss companion':'Rozloučit se se společníkem','Talk':'Promluvit',
+ 'Travelling alone. You may recruit one companion.':'Cestuješ sám. Můžeš přibrat jednoho společníka.',
+ 'Meet local travellers to find an interpreter.':'Seznam se s místními cestovateli a najdi tlumočníka.',
+ 'Waiting in':'Čeká ve městě','Visit companion':'Navštívit společníka','Interprets':'Tlumočí','Close message':'Zavřít zprávu',
+ 'This companion cannot join you here yet.':'Tento společník se k tobě tady zatím nemůže přidat.',
+ 'Dismiss your current companion before recruiting another.':'Než přibereš jiného společníka, rozluč se s tím současným.',
+ 'That companion is not travelling with you.':'Tento společník s tebou necestuje.','You have no travelling companion.':'Nemáš společníka na cestě.',
+ 'Tereza · travelling teacher':'Tereza · učitelka na cestách','Sofie · workshop interpreter':'Sofie · tlumočnice z dílen',
+ 'Lucia · manuscript scholar':'Lucia · badatelka v rukopisech','Rowan · wandering librarian':'Rowan · potulný knihovník','Sigrid · northern courier':'Sigrid · severní poselkyně',
+ 'A Czech teacher who interprets Slovak and Polish. Travels between Prague and Bratislava.':'Česká učitelka, která tlumočí slovenštinu a polštinu. Cestuje mezi Prahou a Bratislavou.',
+ 'A workshop interpreter who learned Czech in Prague. Translates German, Dutch, Danish, and English into Czech along the northern relic route.':'Tlumočnice z dílen, která se v Praze naučila česky. Na severní cestě za relikvií tlumočí němčinu, nizozemštinu, dánštinu a angličtinu do češtiny.',
+ 'An Italian manuscript scholar who studied Czech. Interprets Italian, French, Spanish, and Latin into Czech along the southern relic route.':'Italská badatelka v rukopisech, která studovala češtinu. Na jižní cestě tlumočí italštinu, francouzštinu, španělštinu a latinu do češtiny.',
+ 'An English librarian who learned Czech from visiting scholars. Translates English, French, and Irish into Czech and travels as far as Athens.':'Anglický knihovník, který se od hostujících učenců naučil česky. Tlumočí angličtinu, francouzštinu a irštinu do češtiny a cestuje až do Athén.',
+ 'A Norwegian courier who learned Czech on caravan routes. Translates Norwegian, Swedish, Finnish, English, and Irish into Czech until Galway.':'Norská poselkyně, která se u karavan naučila česky. Až do Galway tlumočí norštinu, švédštinu, finštinu, angličtinu a irštinu do češtiny.',
+ '© EuroGeographics for the administrative boundaries':'© EuroGeographics pro správní hranice',
+ 'EuroDEM relief':'Reliéf EuroDEM',
  'Discovered regions':'Objevené oblasti',
+ 'Reset view':'Obnovit pohled',
+ 'Drag to pan, scroll to zoom. Click a marked place to travel.':'Tažením posouvej mapu, kolečkem přibližuj. Kliknutím na místo můžeš cestovat.',
  'United Kingdom':'Spojené království',
  'Voyage map':'Mapa výpravy','Europe':'Evropa','World':'Svět','Around me':'Moje okolí','Zoom in':'Přiblížit','Zoom out':'Oddálit','Interactive world map':'Interaktivní mapa světa',
  'Click a marked place to travel. Locked places show what is missing.':'Kliknutím na označené místo můžeš cestovat. Zamčená místa ukazují, co ti chybí.',
@@ -75,7 +149,7 @@ Object.assign(UI_CS,{"Beatrice · abbey keeper":"Beatrice · správkyně opatstv
 Object.assign(UI_CS,{"Restored astrolabe":"Obnovený astroláb","Northern token":"Severní znamení","Aurora chart":"Mapa polární záře","Irish gate key":"Klíč od irské brány","Scholar’s compass":"Učenecký kompas","Bag of salt":"Sáček soli","Lavender bundle":"Svazek levandule","Coil of rope":"Svitek lana","Bag of ore":"Sáček rudy","Travelling boots":"Cestovní boty","Healing salve":"Léčivá mast","Brass compass":"Mosazný kompas","Warm cloak":"Teplý plášť","Ingrid · northern guide":"Ingrid · severská průvodkyně","Erik · aurora cartographer":"Erik · kartograf polární záře","Aino · rune reader":"Aino · čtenářka run","Eszter · travelling scholar":"Eszter · cestující učenka","Niamh · final gatekeeper":"Niamh · strážkyně poslední brány","Boris · baker":"Boris · pekař","Dana · dockhand":"Dana · přístavní dělnice","Marie · herbalist":"Marie · bylinkářka","Rosa · gardener":"Rosa · zahradnice","Petros · fisherman":"Petros · rybář","Freja · chandler":"Freja · dodavatelka lodního vybavení","Bjørn · smith":"Bjørn · kovář","Liv · miner":"Liv · hornice","Oslo field notes":"Oslo · cestovní zápisky","Stockholm field notes":"Stockholm · cestovní zápisky","Helsinki field notes":"Helsinki · cestovní zápisky","Budapest field notes":"Budapest · cestovní zápisky","Galway field notes":"Galway · cestovní zápisky","Boris · baker · errand":"Boris · pekař · pochůzka","Marie · herbalist · errand":"Marie · bylinkářka · pochůzka","Petros · fisherman · errand":"Petros · rybář · pochůzka","Bjørn · smith · errand":"Bjørn · kovář · pochůzka"});
 Object.assign(UI_CS,{"Bread loaf":"Bochník chleba","Cheese wedge":"Kus sýra","Dried meat":"Sušené maso","Travel rations":"Cestovní zásoby","Water flask":"Polní láhev","Travel rope":"Cestovní lano","Torch":"Pochodeň","Bandage":"Obvaz","Minor healing potion":"Malý léčivý lektvar","Stamina potion":"Lektvar výdrže","Antidote":"Protijed","Arrows":"Šípy","Iron sword":"Železný meč","Short bow":"Krátký luk","Wooden shield":"Dřevěný štít","Leather armor":"Kožená zbroj","Leather boots":"Kožené boty","Matěj · general store":"Matěj · smíšené zboží","Lenka · food stall":"Lenka · potraviny","Václav · arms merchant":"Václav · zbrojíř","Jana · caravan cook":"Jana · kuchařka karavany","Piotr · bowyer":"Piotr · výrobce luků","Greta · outfitter":"Greta · obchodnice s výbavou","Paola · grocer":"Paola · prodavačka potravin","Diego · apothecary":"Diego · lékárník","Daphne · potion seller":"Daphne · prodavačka lektvarů","Tor · weaponsmith":"Tor · zbrojíř","Aoife · general store":"Aoife · smíšené zboží","Food carried as a supply for later exploration.":"Jídlo jako zásoba pro budoucí průzkum.","A basic supply for future exploration and crafting.":"Základní zásoba pro budoucí průzkum a výrobu.","Equipment with metadata for future exploration and combat.":"Výbava připravená pro budoucí průzkum a souboje.","A one-use supply with an authored effect for future gameplay.":"Jednorázová zásoba s definovaným účinkem pro budoucí hraní.","A bottled remedy with an authored effect for future gameplay.":"Lék v lahvičce s definovaným účinkem pro budoucí hraní.","A bundle of twenty arrows for a short bow.":"Balíček dvaceti šípů pro krátký luk.","A weapon with an authored attack value for future combat.":"Zbraň s definovanou silou útoku pro budoucí souboje."});
 let uiLanguage='cs';
-function t(text){return uiLanguage==='cs'?(UI_CS[text]||text):(text==='Translate this line'?'Translate line & responses':text==='Prologue complete. The observatory trail continues in future chapters.'?'Prologue complete. Three routes are open: collect the lens in England, the ring in Denmark, and the disc in Spain. Then travel to Greece.':text);}
+function t(text){if(Object.hasOwn(COUNTRY_NAMES,text))return COUNTRY_NAMES[text][uiLanguage==='cs'?1:0];return uiLanguage==='cs'?(UI_CS[text]||text):(text==='Translate this line'?'Translate line & responses':text==='Prologue complete. The observatory trail continues in future chapters.'?'Prologue complete. Three routes are open: collect the lens in England, the ring in Denmark, and the disc in Spain. Then travel to Greece.':text);}
 function coins(n){return uiLanguage==='cs'?`${n} mincí`:`${n} coins`;}
 function entryCount(n){return uiLanguage==='cs'?`${n} položek`:`${n} entries`;}
 function buyLabel(name,price){return `${uiLanguage==='cs'?'Koupit':'Buy'} ${t(name)} · ${coins(price)}`;}

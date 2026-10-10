@@ -1,0 +1,108 @@
+{
+  "id": "vittorio",
+  "start": "greeting",
+  "nodes": {
+    "greeting": {
+      "phrase": "venice_intro",
+      "choices": [
+        {
+          "phrase": "regional_investigate",
+          "next": "methods",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "methods": {
+      "phrase": "venice_intro",
+      "choices": [
+        {
+          "phrase": "regional_archive",
+          "next": "puzzleA",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "venice_witness"
+          }
+        },
+        {
+          "phrase": "regional_field",
+          "next": "puzzleB",
+          "quality": "sensible",
+          "requires": {
+            "milestone": "venice_witness"
+          }
+        }
+      ]
+    },
+    "puzzleA": {
+      "phrase": "venice_puzzleA",
+      "choices": [
+        {
+          "phrase": "venice_answerA",
+          "next": "finding",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "venice_wrong",
+          "next": "hint",
+          "quality": "nonsense"
+        }
+      ]
+    },
+    "puzzleB": {
+      "phrase": "venice_puzzleB",
+      "choices": [
+        {
+          "phrase": "venice_answerB",
+          "next": "finding",
+          "quality": "sensible"
+        },
+        {
+          "phrase": "venice_wrong",
+          "next": "hint",
+          "quality": "nonsense"
+        }
+      ]
+    },
+    "hint": {
+      "phrase": "venice_hint",
+      "choices": [
+        {
+          "phrase": "regional_retry",
+          "next": "methods",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "finding": {
+      "phrase": "venice_finding",
+      "choices": [
+        {
+          "phrase": "regional_confirm",
+          "next": "bye",
+          "quality": "sensible",
+          "effects": [
+            {
+              "type": "milestone",
+              "id": "venice_verified"
+            },
+            {
+              "type": "reward",
+              "id": "venice_investigation",
+              "gold": 8
+            }
+          ]
+        },
+        {
+          "phrase": "regional_retry",
+          "next": "methods",
+          "quality": "sensible"
+        }
+      ]
+    },
+    "bye": {
+      "phrase": "regional_bye",
+      "choices": [],
+      "outcome": "success"
+    }
+  }
+}
