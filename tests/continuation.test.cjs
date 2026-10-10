@@ -24,7 +24,7 @@ for(const [id,at,from,giver,provider,resource,reward,gold,count]of [
  errands.travel(at);errands.open(giver);say(errands,id+'_wisdomAsk');assert.ok(errands.state.rumors.some(r=>r.id===id+'_wisdom'));say(errands,id+'_accept');assert.throws(()=>say(errands,id+'_turnin'));
  errands.travel(from);errands.open(provider);say(errands,id+'_take');assert.equal(errands.state.inventory[resource],1);
  errands.travel(at);errands.open(giver);const before=errands.state.gold;say(errands,id+'_turnin');assert.equal(errands.state.gold,before+gold);assert.equal(errands.state.inventory[resource],0);assert.equal(errands.state.inventory[reward],count);assert.ok(errands.state.milestones.includes(id+'_done'));
- errands.travel(from);errands.open(provider);say(errands,id+'_take');errands.travel(at);errands.open(giver);assert.throws(()=>say(errands,id+'_turnin'));assert.equal(errands.state.gold,before+gold);assert.equal(errands.state.inventory[reward],count);
+ errands.travel(from);errands.open(provider);say(errands,id+'_take');errands.travel(at);errands.open(giver);const afterTravel=errands.state.gold;assert.throws(()=>say(errands,id+'_turnin'));assert.equal(errands.state.gold,afterTravel);assert.equal(errands.state.inventory[reward],count);
 }
 errands.reset();assert.equal(errands.state.rewarded.length,0);
 console.log('Passed: Toledo arrival before Latin deciphering, relic gate, northern epilogue, optional Hungary, Irish finale, side deliveries, consumption, and one-time rewards.');

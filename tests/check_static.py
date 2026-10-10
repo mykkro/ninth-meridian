@@ -2,11 +2,12 @@
 from pathlib import Path
 import re
 import json
+from urllib.parse import urlsplit
 
 root = Path(__file__).resolve().parent.parent
 html = (root / 'index.html').read_text(encoding='utf-8')
 references = re.findall(r'(?:src|href)="([^"]+)"', html)
-assert all((root / path).is_file() for path in references), references
+assert all((root / urlsplit(path).path).is_file() for path in references), references
 ids = set(re.findall(r'id="([^"]+)"', html))
 app = (root / 'app.js').read_text(encoding='utf-8')
 targets = set(re.findall(r"\$\('([^']+)'\)", app))

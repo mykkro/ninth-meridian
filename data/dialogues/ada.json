@@ -113,6 +113,7 @@
         {
           "phrase": "ada_accept",
           "next": "bye",
+          "closesConversation": true,
           "quality": "sensible",
           "effects": [
             {

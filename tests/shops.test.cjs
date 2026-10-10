@@ -8,7 +8,7 @@ g.open('marketArms');g.buy('arrows');assert.equal(g.state.inventory.arrows,20);g
 g.buy('short_bow');assert.equal(g.state.inventory.short_bow,1);const gold=g.state.gold;assert.equal(g.canBuy('short_bow'),false);assert.throws(()=>g.buy('short_bow'));assert.equal(g.state.gold,gold);
 g.state.gold=0;assert.throws(()=>g.buy('arrows'));assert.equal(g.state.inventory.arrows,40);
 const rude=g.node.choices.findIndex(c=>c.quality==='rude');g.state.native='en';g.state.knowledge.cs=0;g.choose(rude);assert.throws(()=>g.buy('arrows'));
-g.state.milestones=['italy','france'];g.travel('toledo');g.open('toledoPotions');g.state.gold=50;g.buy('health_potion');g.buy('health_potion');g.buy('antidote');assert.equal(g.state.inventory.health_potion,2);assert.equal(g.state.inventory.antidote,1);
+g.state.gold=100000;g.state.milestones=['italy','france'];g.travel('toledo');g.open('toledoPotions');g.state.gold=50;g.buy('health_potion');g.buy('health_potion');g.buy('antidote');assert.equal(g.state.inventory.health_potion,2);assert.equal(g.state.inventory.antidote,1);
 assert.equal(world.items.health_potion.effects.restoreHealth,25);assert.equal(world.items.short_bow.ammunition,'arrows');
 assert.equal(Object.values(world.npcs).filter(npc=>npc.specialty).length,11);
 console.log('Passed: shop specialities, bundle quantities, stacking, unique equipment, coins, stock restrictions, dismissals, and future combat metadata.');

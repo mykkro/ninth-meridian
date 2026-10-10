@@ -15,7 +15,8 @@
               "type": "recruit",
               "id": "rowan"
             }
-          ]
+          ],
+          "closesConversation": true
         },
         {
           "phrase": "companion_talk",
@@ -25,7 +26,8 @@
         {
           "phrase": "companion_decline",
           "next": "companionFarewell",
-          "quality": "sensible"
+          "quality": "sensible",
+          "closesConversation": true
         }
       ]
     },

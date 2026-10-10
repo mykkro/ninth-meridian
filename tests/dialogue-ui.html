@@ -1,0 +1,73 @@
+<!doctype html><meta charset="utf-8"><title>Dialogue modal checks</title>
+<pre id="results">Running</pre><iframe id="game" src="../index.html" title="Voyage"></iframe>
+<script>
+const frame=document.getElementById('game');
+const assert=(value,message)=>{if(!value)throw Error(message);};
+async function run(){
+ for(let n=0;n<200&&!frame.contentDocument?.getElementById('load-status')?.hidden;n++)await new Promise(resolve=>setTimeout(resolve,50));
+ const doc=frame.contentDocument;
+ assert(doc.getElementById('load-status').hidden,'Game loads');
+ assert(!doc.getElementById('splash').hidden,'Splash shown');
+ assert(doc.getElementById('splash-title').textContent.length>0,'Title shown');
+ await doc.querySelector('.splash-art').decode();
+ doc.getElementById('begin-voyage').click();
+ assert(doc.getElementById('splash').hidden,'Begin enters game');
+ assert(!doc.querySelector('main #choices'),'No inline reply choices');
+ const language=doc.getElementById('ui-language');language.value='en';language.dispatchEvent(new Event('change'));
+ doc.querySelector('#npcs button').click();
+ const modal=doc.getElementById('dialogue-modal');
+ assert(modal.open&&modal.matches(':modal'),'Native modal opens for NPC');
+ assert(modal.querySelector('#choices button'),'Replies inside modal');
+ assert(modal.querySelector('#cast'),'Translation controls inside modal');
+ assert(modal.querySelector('.portrait').src.includes('/avatars/ada.svg'),'Character portrait');
+ doc.getElementById('cast').click();
+ assert(modal.querySelector('.dialogue-log .note'),'Scroll translation in log');
+ modal.querySelector('#choices button:not(:disabled)').click();
+ assert(modal.open,'Reply keeps dialogue open');
+ assert(modal.querySelector('.transcript-player'),'Chosen reply in log');
+ assert(frame.contentWindow.getComputedStyle(modal.querySelector('.conversation-past')).overflowY==='visible','History has no nested scrollbar');
+ assert(frame.contentWindow.getComputedStyle(modal.querySelector('.dialogue-log')).overflowY==='visible','Log has no nested scrollbar');
+ modal.querySelector('.modal-close').click();
+ await new Promise(resolve=>setTimeout(resolve,30));
+ assert(!modal.open,'Close button closes modal');
+ assert(!doc.querySelector('main #choices'),'Replies stay exclusively in modal after close');
+ doc.getElementById('open-dialogue').click();assert(modal.open,'Reopen conversation');
+ modal.querySelector('.modal-close').click();await new Promise(resolve=>setTimeout(resolve,30));
+ const tabs=[...doc.querySelectorAll('.journal-tabs button')];tabs.find(b=>b.textContent==='Conversations').click();
+ doc.querySelector('.journal-conversation button').click();
+ const archive=doc.getElementById('conversation-archive');
+ assert(archive.open&&archive.matches(':modal'),'Journal archive opens as modal');
+ assert(archive.querySelector('.transcript-player'),'Archive includes replies');
+ assert(archive.querySelector('.note'),'Archive includes translations');
+ assert(!archive.querySelector('#choices'),'Archive is read only');
+ const icons=[...doc.querySelectorAll('img.avatar')];
+ await Promise.all(icons.map(img=>img.decode()));
+ assert(icons.every(img=>img.naturalWidth>0),'Avatars load');
+ archive.close();await new Promise(resolve=>setTimeout(resolve,30));
+ language.value='cs';language.dispatchEvent(new Event('change'));
+ assert(doc.getElementById('open-dialogue').textContent==='Otev\u0159\u00edt rozhovor','Czech modal copy');
+ const world=await frame.contentWindow.WorldContent.loadWorld();
+ doc.querySelector('#npcs button').click();
+ for(const phrase of ['ada_ask','ada_answer','ada_accept']){const response=frame.contentWindow.cityNames(world.phrases[phrase].cs,'cs');const choice=[...doc.querySelectorAll('#choices button')].find(button=>button.querySelector('.response-text')?.textContent===response);assert(choice&&!choice.disabled,'Quest response '+phrase);choice.click();}
+ assert(!modal.open,'Accepting the map concludes and closes Ada dialogue');
+ const dateBefore=doc.getElementById('current-date').textContent;
+ const destination=[...doc.querySelectorAll('#locations button')].find(button=>button.textContent.includes(frame.contentWindow.t(world.locations.find(place=>place.id==='bratislava').name)));assert(destination&&!destination.disabled,'Travel destination');destination.click();
+ const travel=doc.getElementById('travel-modal');assert(travel.open,'Destination opens transport modal');assert(!travel.textContent.includes('Bratislav'),'Transport uses historical city name');assert(doc.getElementById('current-date').textContent===dateBefore,'Choosing destination does not advance time');
+ travel.querySelector('.modal-close').click();assert(doc.getElementById('current-date').textContent===dateBefore,'Cancelling is free and instant');
+ destination.click();travel.querySelector('.transport-option').click();assert(travel.open&&travel.querySelector('.journey-symbol'),'Hiring shows symbolic journey');await travel.querySelector('.journey-symbol').decode();assert(travel.querySelector('.journey-symbol').src.includes('carriage-painted.png'),'Polished carriage illustration loads');
+ await new Promise(resolve=>setTimeout(resolve,1100));
+ assert(!travel.querySelector('.arrival-button').hidden,'Arrival button appears');travel.querySelector('.arrival-button').click();assert(!travel.open,'Arrival returns to destination');assert(doc.getElementById('current-date').textContent!==dateBefore,'Hiring advances time');
+ assert(doc.querySelector('#locations button.active').textContent.includes(frame.contentWindow.t(world.locations.find(place=>place.id==='bratislava').name)),'Paid arrival');
+ const legacy=document.createElement('iframe');document.body.append(legacy);
+ const response=await fetch('../index.html');const html=await response.text();
+ legacy.srcdoc=html.replace('<head>','<head><base href="../">').replace(/<section id="splash"[\s\S]*?<\/section>/,'');
+ for(let n=0;n<200&&!legacy.contentDocument?.getElementById('load-status')?.hidden;n++)await new Promise(resolve=>setTimeout(resolve,50));
+ assert(legacy.contentDocument.getElementById('load-status').hidden,'Old HTML without splash loads');
+ assert(legacy.contentDocument.getElementById('splash'),'Old HTML gets splash restored');
+ assert(!legacy.contentDocument.getElementById('splash').hidden,'Restored splash is visible');
+ legacy.contentDocument.getElementById('begin-voyage').click();
+ assert(!legacy.contentDocument.querySelector('main').hasAttribute('inert'),'Old HTML enters playable game');
+ document.getElementById('results').textContent='PASS: dialogue modal, replies, translations, close/reopen, journal archive, avatars, and Czech copy.';
+}
+run().catch(error=>document.getElementById('results').textContent='FAIL: '+error.stack);
+</script>

@@ -148,7 +148,8 @@
         {
           "phrase": "mira_alone",
           "next": "soloBye",
-          "quality": "sensible"
+          "quality": "sensible",
+          "closesConversation": true
         },
         {
           "phrase": "mira_join",
@@ -160,7 +161,8 @@
               "id": "mira"
             }
           ],
-          "recruitBlocked": "companionBusy"
+          "recruitBlocked": "companionBusy",
+          "closesConversation": true
         }
       ]
     },

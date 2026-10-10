@@ -23,6 +23,43 @@ const COUNTRY_NAMES = {
 };
 // UI copy only. Authored NPC phrases and translated phrasebook entries stay in WORLD.
 const UI_CS = {
+ 'Travelling...':'Na cest\u011b\u2026','You have arrived':'Dorazil jsi',
+ 'You arrived at destination':'Dorazil jsi do c\u00edle',
+
+ 'Goodbye':'Na shledanou',
+ 'Arrange transport':'Zajistit dopravu','Hire a carriage':'Najmout ko\u010d\u00e1r','Hire a horse':'Najmout kon\u011b','Book boat passage':'Zaplatit plavbu',
+ 'Ferry transfer included':'P\u0159evoz lod\u00ed v cen\u011b','Your purse':'Tv\u016fj m\u011b\u0161ec','Close travel window':'Zav\u0159\u00edt dopravu',
+ 'Not enough coins for this journey.':'Na tuto cestu nem\u00e1\u0161 dost pen\u011bz.',
+ 'This transport is unavailable for this route.':'Tato doprava nen\u00ed pro tuto trasu dostupn\u00e1.',
+ 'Choose transport to begin your journey.':'Vyber dopravu a vydej se na cestu.',
+ 'Shared currency: 1 gold = 100 silver = 10,000 copper.':'Spole\u010dn\u00e1 m\u011bna: 1 zlat\u00fd = 100 st\u0159\u00edbrn\u00fdch = 10 000 m\u011bd\u011bn\u00fdch.',
+
+ 'Unroll map':'Rozvinout mapu','Close map':'Zav\u0159\u00edt mapu',
+ "The cartographer's trail across Europe":'Kartografova cesta Evropou',
+ 'Follow the witnesses. Restore the astrolabe.':'Sleduj sv\u011bdky. Obnov astrol\u00e1b.',
+ 'Marked cities trace your voyage; the larger seal shows your current location.':'Ozna\u010den\u00e1 m\u011bsta sleduj\u00ed tvou v\u00fdpravu; v\u011bt\u0161\u00ed pe\u010de\u0165 ukazuje tvou polohu.',
+
+ 'Difficulty':'Obt\u00ed\u017enost','Easy':'Snadn\u00e1','Hard':'T\u011b\u017ek\u00e1',
+ 'Learned phrasebook hints appear in conversations.':'V rozhovorech se zobrazuj\u00ed n\u00e1pov\u011bdy z p\u0159e\u010dten\u00fdch slovn\u00edk\u016f.',
+ 'Recall phrasebook meanings yourself. Interpreters and translation scrolls still help.':'V\u00fdznamy ze slovn\u00edk\u016f si vybavuj s\u00e1m. Tlumo\u010dn\u00edci a p\u0159ekladov\u00e9 svitky ti st\u00e1le pomohou.',
+
+ 'Close book':'Zav\u0159\u00edt knihu',
+ 'A journey of words and wonders':'Cesta slov a z\u00e1zrak\u016f',
+ 'Your story':'Tv\u016fj p\u0159\u00edb\u011bh',
+ 'Your task':'Tv\u016fj \u00fakol',
+ 'Begin your voyage':'Vydej se na cestu',
+ 'splash-backstory':'Jsi u\u010de\u0148 kartografa Eli\u00e1\u0161e Vorela z Prahy. Tv\u016fj mistr zmizel a zanechal dopis s mapou nemo\u017en\u00e9ho dev\u00e1t\u00e9ho poledn\u00edku. Ve sv\u00e9 bra\u0161n\u011b nese\u0161 jeho posledn\u00ed stopu; tvou v\u00fdpravou za\u010d\u00edn\u00e1 p\u00e1tr\u00e1n\u00ed po pravd\u011b.',
+ 'splash-objective':'Najdi p\u011bt sv\u011bdk\u016f, sleduj mistrovy stopy nap\u0159\u00ed\u010d Evropou a z\u00edskej \u010d\u00e1sti Astrol\u00e1bu svornosti. Za\u010dni rozhovorem s Adou, pra\u017eskou kartografkou.',
+ 'splash-guidance':'Zpo\u010d\u00e1tku zn\u00e1\u0161 jen \u010de\u0161tinu. \u010cti slovn\u00edky, u\u010d se od m\u00edstn\u00edch a hledej tlumo\u010dn\u00edky. P\u0159ekladov\u00e9 svitky ti pomohou v obt\u00ed\u017en\u00fdch rozhovorech. Den\u00edk uchov\u00e1 tv\u00e9 cesty, stopy i rozhovory.',
+
+ 'Open conversation':'Otev\u0159\u00edt rozhovor', 'Close conversation':'Zav\u0159\u00edt rozhovor',
+
+ 'Dialogue log':'Z\u00e1znam rozhovoru', 'Quests':'\u00dakoly', 'Events':'Ud\u00e1losti', 'Conversations':'Rozhovory',
+ 'Voyage begun':'V\u00fdprava zah\u00e1jena', 'Travelled':'Cestov\u00e1n\u00ed', 'Gathered':'Nasb\u00edr\u00e1no', 'Purchased':'Zakoupeno',
+ 'Reward received':'Odm\u011bna z\u00edsk\u00e1na', 'Clue recorded':'Stopa zaznamen\u00e1na',
+ 'Companion recruited':'Spole\u010dn\u00edk p\u0159ijat', 'Companion dismissed':'Spole\u010dn\u00edk propu\u0161t\u011bn', 'Companion departed':'Spole\u010dn\u00edk ode\u0161el',
+ 'Used translation scroll':'Pou\u017eit p\u0159ekladov\u00fd svitek', 'Progress recorded':'Postup zaznamen\u00e1n',
+
  "Leipzig":"Lipsko",
  "Greta · bookseller":"Greta · knihkupkyně",
  "Konrad · printer":"Konrad · tiskař",
@@ -150,16 +187,24 @@ Object.assign(UI_CS,{"Restored astrolabe":"Obnovený astroláb","Northern token"
 Object.assign(UI_CS,{"Bread loaf":"Bochník chleba","Cheese wedge":"Kus sýra","Dried meat":"Sušené maso","Travel rations":"Cestovní zásoby","Water flask":"Polní láhev","Travel rope":"Cestovní lano","Torch":"Pochodeň","Bandage":"Obvaz","Minor healing potion":"Malý léčivý lektvar","Stamina potion":"Lektvar výdrže","Antidote":"Protijed","Arrows":"Šípy","Iron sword":"Železný meč","Short bow":"Krátký luk","Wooden shield":"Dřevěný štít","Leather armor":"Kožená zbroj","Leather boots":"Kožené boty","Matěj · general store":"Matěj · smíšené zboží","Lenka · food stall":"Lenka · potraviny","Václav · arms merchant":"Václav · zbrojíř","Jana · caravan cook":"Jana · kuchařka karavany","Piotr · bowyer":"Piotr · výrobce luků","Greta · outfitter":"Greta · obchodnice s výbavou","Paola · grocer":"Paola · prodavačka potravin","Diego · apothecary":"Diego · lékárník","Daphne · potion seller":"Daphne · prodavačka lektvarů","Tor · weaponsmith":"Tor · zbrojíř","Aoife · general store":"Aoife · smíšené zboží","Food carried as a supply for later exploration.":"Jídlo jako zásoba pro budoucí průzkum.","A basic supply for future exploration and crafting.":"Základní zásoba pro budoucí průzkum a výrobu.","Equipment with metadata for future exploration and combat.":"Výbava připravená pro budoucí průzkum a souboje.","A one-use supply with an authored effect for future gameplay.":"Jednorázová zásoba s definovaným účinkem pro budoucí hraní.","A bottled remedy with an authored effect for future gameplay.":"Lék v lahvičce s definovaným účinkem pro budoucí hraní.","A bundle of twenty arrows for a short bow.":"Balíček dvaceti šípů pro krátký luk.","A weapon with an authored attack value for future combat.":"Zbraň s definovanou silou útoku pro budoucí souboje."});
 // Renaissance city names apply to UI labels and prose, keeping content/save IDs stable.
 const CITY_NAMES = {
+ sk: [[/\bBratislavou\b/g,'Pre\u0161porkom'],[/\bBratislavy\b/g,'Pre\u0161porka'],[/\bBratislave\b/g,'Pre\u0161porku'],[/\bBratislavu\b/g,'Pre\u0161porok'],[/\bBratislava\b/g,'Pre\u0161porok']],
+
  en: [[/\bBratislava\b/g, 'Pressburg'], [/\bBudapest\b/g, 'Buda and Pest'], [/\bHelsinki\b/g, 'Helsingfors']],
  cs: [[/\bBratislavou\b/g, 'Prešpurkem'], [/\bBratislavy\b/g, 'Prešpurku'], [/\bBratislavě(?!\p{L})/gu, 'Prešpurku'], [/\bBratislava\b/g, 'Prešpurk'], [/\bBudapest\b/g, 'Budín a Pešť'], [/\bBudapešť(?!\p{L})/gu, 'Budín a Pešť'], [/\bHelsinki\b/g, 'Helsingfors']]
 };
-function cityNames(text){for(const [pattern,name] of CITY_NAMES[uiLanguage==='cs'?'cs':'en'])text=text.replace(pattern,name);return text;}
+function cityNames(text,language=uiLanguage){for(const [pattern,name] of CITY_NAMES[Object.hasOwn(CITY_NAMES,language)?language:'en'])text=text.replace(pattern,name);return text;}
 Object.assign(UI_CS,{"Rain on the cobblestones. A sealed letter waits in the mapmaker’s shop. A bowl of milk stands beside the millrace, beyond the reach of the rain.": "Déšť na dlažbě. V kartografově obchodě čeká zapečetěný dopis. U mlýnského náhonu stojí miska mléka, chráněná před deštěm.", "The archive smells of dust and candle wax. Tiny warding marks have been scratched beneath its oldest shelves.": "Archiv voní prachem a voskem. Pod nejstaršími policemi jsou vyrytá drobná ochranná znamení.", "Sunlight falls across the manuscript stalls. An alchemist’s shutter bears the signs of seven metals, one freshly rubbed away.": "Slunce dopadá na stánky s rukopisy. Na alchymistově okenici jsou znamení sedmi kovů; jedno je čerstvě setřené.", "Bells sound above the narrow streets. An astrologer has chalked tomorrow’s planetary hours beside the apothecary’s door.": "Nad úzkými ulicemi znějí zvony. Astrolog napsal křídou u lékárníkových dveří zítřejší planetární hodiny.", "Salt air drifts through the library courtyard. Between two shelves, a whisper stops before you can make out its language.": "Slaný vzduch proudí nádvořím knihovny. Mezi dvěma policemi utichne šepot dřív, než poznáš jeho jazyk.", "The reunited relics; a guide to the last route. Its needle sometimes hesitates when no hand is moving it.": "Spojené relikvie; průvodce poslední cestou. Jeho ručička občas zaváhá, i když se ho žádná ruka nedotýká.", "A small jar of herbal salve. The apothecary seals it under a waxing moon, as her teacher taught her.": "Malá nádobka bylinné masti. Lékárnice ji pečetí za dorůstajícího měsíce, jak ji naučila její učitelka."});
 Object.assign(UI_CS,{"Bells count the harbour watches. A ferryman and a tide keeper hold different halves of the same account. White cords hang above a few cabin doors; no two sailors explain them alike.": "Zvony odpočítávají přístavní hlídky. Převozník a správkyně přílivů znají každý jinou polovinu stejného příběhu. Nad několika kajutami visí bílé šňůry; každý námořník je vysvětluje jinak.", "The last road to Ireland passes wagons bound for the southern forts. A soldier stitches his torn sleeve while a child sleeps beside a refugee cart.": "Poslední cesta do Irska míjí vozy směřující k jižním pevnostem. Voják si zašívá roztržený rukáv, zatímco u vozu uprchlíků spí dítě.", "Cargo waits beneath shuttered warehouses. Escort fees have risen since the Baltic fighting began; a dockhand quietly unties a white cord from an abandoned berth.": "Náklad čeká pod zavřenými sklady. Od začátku baltských bojů zdražil doprovod lodí; přístavní dělník potichu odvazuje bílou šňůru z opuštěného kotviště."});
 Object.assign(UI_CS,{"Sunlight falls across the manuscript stalls. An alchemist’s shutter bears the signs of seven metals, one freshly rubbed away. Nearby, the painter-engineer Matteo da Fiesole displays a sketch of a flying wing; his apprentice is still repairing the model.": "Slunce dopadá na stánky s rukopisy. Na alchymistově okenici jsou znamení sedmi kovů; jedno je čerstvě setřené. Nedaleko malíř a konstruktér Matteo da Fiesole vystavuje náčrt létajícího křídla; jeho učeň stále opravuje model.", "Under the porticoes, a student traces a missing manuscript leaf to the university archive. Behind him, artist-engineer Caterina Bellandi demonstrates a geared brass hand; the fingers close neatly, but will not open again.": "Pod podloubím student sleduje stopu chybějícího listu rukopisu až do univerzitního archivu. Za ním umělkyně a konstruktérka Caterina Bellandi předvádí mosaznou ruku s ozubenými koly; prsty se úhledně zavřou, ale už neotevřou.", "A glass workshop faces the lagoon. A boat pilot remembers which way the cartographer held his mirror. Beside the quay, a patron examines Matteo’s drawing of a diving bell while a glassworker argues about how much pressure its window could bear.": "Sklářská dílna hledí na lagunu. Lodivodka si pamatuje, jak kartograf držel své zrcadlo. U nábřeží mecenáš prohlíží Matteův nákres potápěčského zvonu, zatímco sklář se pře o tlak, který by vydrželo jeho okénko.", "Salt air drifts through the library courtyard. Between two shelves, a whisper stops before you can make out its language. Fresh earth lies in a shallow bowl beneath an unmarked lintel; someone quietly covers it when you approach.": "Slaný vzduch proudí nádvořím knihovny. Mezi dvěma policemi utichne šepot dřív, než poznáš jeho jazyk. Pod neoznačeným překladem leží v mělké misce čerstvá hlína; když se přiblížíš, někdo ji tiše přikryje."});
 let uiLanguage='cs';
-function t(text){if(Object.hasOwn(COUNTRY_NAMES,text))return COUNTRY_NAMES[text][uiLanguage==='cs'?1:0];return cityNames(uiLanguage==='cs'?(UI_CS[text]||text):(text==='Translate this line'?'Translate line & responses':text==='Prologue complete. The observatory trail continues in future chapters.'?'Prologue complete. Three routes are open: collect the lens in England, the ring in Denmark, and the disc in Spain. Then travel to Greece.':text));}
-function coins(n){return uiLanguage==='cs'?`${n} mincí`:`${n} coins`;}
+const INTRO_EN = {
+ 'splash-backstory':"You are an apprentice to Prague cartographer Eliáš Vorel. Your mentor has vanished, leaving a letter and a map marked with an impossible ninth meridian. His last clue is in your satchel. Now you must discover where his trail leads.",
+ 'splash-objective':"Find five witnesses, follow your mentor's trail across Europe, and recover the pieces of the Concordance Astrolabe. Begin by speaking to Ada, the mapmaker in Prague.",
+ 'splash-guidance':"You begin knowing only Czech. Read phrasebooks, learn from locals, and recruit interpreters. Translation scrolls can help with difficult exchanges. Your journal keeps your journeys, clues, and conversations."
+};
+function t(text){if(Object.hasOwn(INTRO_EN,text))return cityNames(uiLanguage==='cs'?UI_CS[text]:INTRO_EN[text]);if(Object.hasOwn(COUNTRY_NAMES,text))return COUNTRY_NAMES[text][uiLanguage==='cs'?1:0];return cityNames(uiLanguage==='cs'?(UI_CS[text]||text):(text==='Translate this line'?'Translate line & responses':text==='Prologue complete. The observatory trail continues in future chapters.'?'Prologue complete. Three routes are open: collect the lens in England, the ring in Denmark, and the disc in Spain. Then travel to Greece.':text));}
+function coins(n){const gold=Math.floor(n/10000),silver=Math.floor(n%10000/100),copper=n%100;const pieces=[];if(gold)pieces.push(`${gold} ${uiLanguage==='cs'?'zl.':'gold'}`);if(silver)pieces.push(`${silver} ${uiLanguage==='cs'?'st\u0159.':'silver'}`);if(copper||!pieces.length)pieces.push(`${copper} ${uiLanguage==='cs'?'m\u011b\u010f.':'copper'}`);return pieces.join(' \u00b7 ');}
+
 function entryCount(n){return uiLanguage==='cs'?`${n} položek`:`${n} entries`;}
 function buyLabel(name,price){return `${uiLanguage==='cs'?'Koupit':'Buy'} ${t(name)} · ${coins(price)}`;}
 function localizeStaticUI(){

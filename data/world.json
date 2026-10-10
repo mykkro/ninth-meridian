@@ -272,7 +272,8 @@
     "phrases": [
       "phrases.json",
       "companion-phrases.json",
-      "regional-phrases.json"
+      "regional-phrases.json",
+      "farewell-phrases.json"
     ]
   }
 }
