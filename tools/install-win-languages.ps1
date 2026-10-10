@@ -19,12 +19,12 @@ if (-not $PSBoundParameters.ContainsKey('Languages')) {
     $worldPath = Join-Path $PSScriptRoot '..\data\world.json'
     $world = Get-Content -LiteralPath $worldPath -Raw -Encoding UTF8 | ConvertFrom-Json
     $windowsTags = @{
-        cs='cs-CZ'; sk='sk-SK'; pl='pl-PL'; uk='uk-UA'; ru='ru-RU'; en='en-GB'
+        ga='ga-IE'; cs='cs-CZ'; sk='sk-SK'; pl='pl-PL'; uk='uk-UA'; ru='ru-RU'; en='en-GB'
         es='es-ES'; it='it-IT'; de='de-DE'; nl='nl-NL'; da='da-DK'; fr='fr-FR'
         el='el-GR'; no='nb-NO'; sv='sv-SE'; fi='fi-FI'; hu='hu-HU'
     }
     $Languages = @(foreach ($language in $world.languages.PSObject.Properties.Name) {
-        if ($language -in @('ga','la','eo')) { continue }
+        if ($language -in @('la','eo')) { continue }
         if (-not $windowsTags.ContainsKey($language)) { throw "No Windows language tag configured for game language: $language" }
         $windowsTags[$language]
     })
@@ -43,7 +43,7 @@ $results = @()
 $restartNeeded = $false
 foreach ($tag in ($Languages | Select-Object -Unique)) {
     if ($tag -notmatch '^[a-z]{2,3}-[A-Z]{2}$') { throw "Invalid language tag: $tag (use tags such as cs-CZ)." }
-    if ($tag -match '^(ga|la|eo)-') { Write-Warning "Skipping ${tag}: excluded from game speech."; continue }
+    if ($tag -match '^(la|eo)-') { Write-Warning "Skipping ${tag}: excluded from game speech."; continue }
     if ($IncludeDisplayLanguagePack -and $PSCmdlet.ShouldProcess($tag, 'Install display language pack without changing system defaults')) {
         try {
             if (-not (Get-Command Install-Language -ErrorAction SilentlyContinue)) { throw 'Install-Language is unavailable on this Windows edition.' }

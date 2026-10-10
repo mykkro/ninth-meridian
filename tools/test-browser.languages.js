@@ -1,5 +1,6 @@
 (() => {
   const samples = [
+    ['ga', 'Dia duit, seo tástáil ar an nguth Gaeilge.'],
     ['cs', 'Dobrý den, toto je zkouška českého hlasu.'],
     ['sk', 'Dobrý deň, toto je skúška slovenského hlasu.'],
     ['pl', 'Dzień dobry, to jest test polskiego głosu.'],

@@ -14,22 +14,40 @@
     {
       "title": {
         "en": "Light and stone",
-        "cs": "Světlo a kámen"
+        "cs": "Světlo a kámen",
+        "de": "Licht und Stein",
+        "it": "Luce e pietra",
+        "hu": "Fény és kő",
+        "ga": "Solas agus cloch"
       },
       "text": {
         "en": "A cliff sends a traveller’s cry back a moment later. Soft earth and open fields swallow it. Light travels differently: when a body blocks it, the dark outline depends on the number and position of the lamps.",
-        "cs": "Skála vrací poutníkovo volání o chvíli později. Měkká půda a otevřená pole je pohlcují. Světlo se chová jinak: když mu tělo brání v cestě, tmavý obrys závisí na počtu a poloze lamp."
+        "cs": "Skála vrací poutníkovo volání o chvíli později. Měkká půda a otevřená pole je pohlcují. Světlo se chová jinak: když mu tělo brání v cestě, tmavý obrys závisí na počtu a poloze lamp.",
+        "de": "Ein Fels wirft den Ruf eines Reisenden zurück. Weiche Erde und offene Felder verschlucken ihn. Wenn ein Körper das Licht verdeckt, hängt sein dunkler Umriss von der Zahl und der Stellung der Lampen ab.",
+        "it": "Una rupe rimanda il grido del viaggiatore. La terra soffice e i campi aperti lo assorbono. Quando un corpo blocca la luce, il suo contorno scuro dipende dal numero e dalla posizione delle lampade.",
+        "hu": "A szikla visszaküldi az utazó kiáltását. A puha föld és a nyílt mező elnyeli. Ha egy test eltakarja a fényt, sötét körvonala a lámpák számától és helyétől függ.",
+        "ga": "Cuireann aill béic an taistealaí ar ais chuige. Súnn cré bhog agus páirceanna oscailte an fhuaim isteach. Nuair a chuireann corp bac ar an solas, braitheann a imlíne dhorcha ar líon na lampaí agus ar a suíomh."
       }
     },
     {
       "title": {
         "en": "What is absent",
-        "cs": "Co chybí"
+        "cs": "Co chybí",
+        "de": "Was fehlt",
+        "it": "Ciò che manca",
+        "hu": "Ami hiányzik",
+        "ga": "An rud atá ar iarraidh"
       },
       "text": {
         "en": "The mason measures stone; the gravedigger measures the space left after stone and earth are removed. In the cloister, the rule of quiet holds only until someone utters a word.",
-        "cs": "Kameník měří kámen; hrobník měří prostor, který zůstane po odebrání kamene a země. Klášterní pravidlo mlčení platí jen do chvíle, kdy někdo vysloví slovo."
+        "cs": "Kameník měří kámen; hrobník měří prostor, který zůstane po odebrání kamene a země. Klášterní pravidlo mlčení platí jen do chvíle, kdy někdo vysloví slovo.",
+        "de": "Der Maurer misst den Stein, der Totengräber den Raum, der nach dem Entfernen von Erde und Stein bleibt. Im Kloster herrscht Ruhe nur, bis jemand ein Wort ausspricht.",
+        "it": "Il muratore misura la pietra; il becchino misura lo spazio lasciato dopo aver tolto terra e pietra. Nel chiostro la quiete dura soltanto finché qualcuno pronuncia una parola.",
+        "hu": "A kőműves a követ méri, a sírásó pedig a föld és a kő eltávolítása után maradt teret. A kolostorban a csend csak addig tart, amíg valaki ki nem mond egy szót.",
+        "ga": "Tomhaiseann an saor cloiche an chloch; tomhaiseann an tochaltóir uaighe an spás a fhágtar nuair a bhaintear cré agus cloch. Sa chlabhstra maireann an ciúnas go dtí go ndeir duine focal."
       }
     }
-  ]
+  ],
+  "format": "book",
+  "weightKg": 0.2
 }

@@ -11,3 +11,5 @@ game.state.location='star-abbey';assert.throws(()=>game.rentRoom(),/city inn/);
 assert.match(world.phrases.trust_refusal.de,/Ich vertraue dir nicht/);
 for(const language of Object.keys(world.languages))assert.ok(world.phrases.trust_refusal[language]&&world.phrases.inn_greeting[language]);
 console.log('PASS: free short waits, overnight boundary, paid rooms, atomic failures, city innkeepers and local refusals.');
+
+game.state.location="prague";game.state.gold=120;game.state.companions=["tereza"];assert.equal(game.roomQuote(2).cost,120);game.rentRoom(2);assert.equal(game.state.gold,0);

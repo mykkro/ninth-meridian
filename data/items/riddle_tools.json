@@ -14,22 +14,40 @@
     {
       "title": {
         "en": "Signs and directions",
-        "cs": "Znamení a směry"
+        "cs": "Znamení a směry",
+        "de": "Zeichen und Richtungen",
+        "it": "Segni e direzioni",
+        "hu": "Jelek és irányok",
+        "ga": "Comharthaí agus treonna"
       },
       "text": {
         "en": "Ink can mark a whole river on a dry sheet. A navigator carries another guide: a magnetised needle floating or balanced on a pivot. It seeks north even beneath clouds.",
-        "cs": "Inkoust může vyznačit celou řeku na suchém listu. Plavec má i jiného průvodce: zmagnetizovanou jehlu plovoucí na vodě či vyváženou na čepu. Hledá sever i pod mraky."
+        "cs": "Inkoust může vyznačit celou řeku na suchém listu. Plavec má i jiného průvodce: zmagnetizovanou jehlu plovoucí na vodě či vyváženou na čepu. Hledá sever i pod mraky.",
+        "de": "Tinte kann einen ganzen Fluss auf einem trockenen Blatt darstellen. Ein Seefahrer trägt einen anderen Wegweiser: eine magnetisierte Nadel, die schwimmt oder auf einer Spitze ruht. Sie zeigt auch unter Wolken nach Norden.",
+        "it": "L’inchiostro può tracciare un intero fiume su un foglio asciutto. Il navigatore porta un’altra guida: un ago magnetizzato, galleggiante o in equilibrio su un perno. Cerca il nord anche sotto le nuvole.",
+        "hu": "A tinta egy egész folyót ábrázolhat egy száraz lapon. A hajós más útmutatót is hord: vízen úszó vagy tengelyen egyensúlyozó mágnesezett tűt. Felhők alatt is északot keresi.",
+        "ga": "Is féidir le dúch abhainn iomlán a léiriú ar leathanach tirim. Tá treoraí eile ag an loingseoir: snáthaid mhaighnéadaithe ar snámh nó ar mhaighdeog. Díríonn sí ó thuaidh fiú faoi na scamaill."
       }
     },
     {
       "title": {
         "en": "Keeping the hours",
-        "cs": "Měření hodin"
+        "cs": "Měření hodin",
+        "de": "Die Stunden bewahren",
+        "it": "Misurare le ore",
+        "hu": "Az órák mérése",
+        "ga": "Na huaireanta a thomhas"
       },
       "text": {
         "en": "Wax feeds a flame at the cost of its own height. Glassmakers join two bulbs by a narrow passage; dry sand falls between them. Neither instrument can serve forever without tending.",
-        "cs": "Vosk živí plamen za cenu vlastní výšky. Skláři spojují dvě baňky úzkým průchodem; mezi nimi padá suchý písek. Ani jeden nástroj neslouží věčně bez péče."
+        "cs": "Vosk živí plamen za cenu vlastní výšky. Skláři spojují dvě baňky úzkým průchodem; mezi nimi padá suchý písek. Ani jeden nástroj neslouží věčně bez péče.",
+        "de": "Wachs nährt eine Flamme und verliert dabei seine Höhe. Zwei Glasgefäße sind durch einen engen Durchgang verbunden; trockener Sand fällt hindurch. Beide Werkzeuge brauchen Pflege.",
+        "it": "La cera alimenta una fiamma consumando la propria altezza. Due bulbi di vetro sono uniti da un passaggio stretto; la sabbia asciutta cade dall’uno all’altro. Entrambi gli strumenti richiedono cura.",
+        "hu": "A viasz saját magasságát fogyasztva táplálja a lángot. Két üveggömböt keskeny nyílás köt össze; száraz homok hullik át rajta. Mindkét eszköz gondozást igényel.",
+        "ga": "Cothaíonn céir lasair agus í ag éirí níos giorra. Ceanglaíonn pasáiste caol dhá bholgán gloine; titeann gaineamh tirim eatarthu. Teastaíonn cúram ón dá uirlis."
       }
     }
-  ]
+  ],
+  "format": "book",
+  "weightKg": 0.2
 }

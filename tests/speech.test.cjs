@@ -21,3 +21,5 @@ assert.equal(speech.speak('Wrong language','en',{voiceId:'c'}),false);
 speech.speak('Named variant','en',{voiceId:undefined,variant:'Voice A'});assert.equal(spoken.at(-1).voice.voiceURI,'a');
 let received;speech.setProvider({supports:()=>true,cancel:()=>{},speak:(text,language,options)=>{received=options;return true;}});speech.speak('Future','de',{gender:'male',variant:'storyteller'});assert.deepEqual(received,{gender:'male',variant:'storyteller'});
 console.log('PASS: voice matching, exclusions, preferences, variants, gender forwarding, persistence and provider replacement.');
+
+env.speechSynthesis.getVoices=()=>[{lang:'ga-IE',name:'Irish test',voiceURI:'irish'}];speech.setProvider(new BrowserSpeechProvider(env));assert.equal(speech.speak('Dia duit','ga'),true);assert.equal(spoken.at(-1).lang,'ga-IE');assert.equal(speech.listVoices('ga').length,1);console.log('PASS: Irish playback with matching Gaelic voice.');

@@ -102,6 +102,7 @@
       if(location.coordinates)check(Number.isFinite(location.coordinates.lon)&&location.coordinates.lon>=-180&&location.coordinates.lon<=180&&Number.isFinite(location.coordinates.lat)&&location.coordinates.lat>=-90&&location.coordinates.lat<=90,`${location.id}: invalid map coordinates`);
       check(world.languages[location.language],`${location.id}: unknown language`);
       check(Array.isArray(location.npcs)&&location.npcs.length>0,`${location.id}: missing NPCs`);
+      for(const id of location.riddleBooks||[]){const book=world.items[id];check(book?.title?.[location.language]&&book.pages.every(page=>page.title[location.language]&&page.text[location.language]),`${location.id}: missing original reference-book edition ${id}`);}
       for(const npc of location.npcs)check(world.npcs[npc],`${location.id}: unknown NPC ${npc}`);
       requirements(location.requires,location.id);
       check(location.recoveryAccess===undefined||Array.isArray(location.recoveryAccess)&&location.recoveryAccess.every(id=>world.quests[id]?.kind==='recovery'),`${location.id}: invalid recovery access`);

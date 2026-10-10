@@ -25,9 +25,9 @@
     "ga": "Tá an fhianaise seo i mo dhialann cheana."
   },
   "ash-temple_intro": {
-    "en": "The door stayed closed to armed men, but a refugee child opened it with a greeting. Copy the carvings before you decide what the builders intended.",
-    "cs": "Dveře zůstaly zavřené ozbrojencům, ale dítě uprchlíků je otevřelo pozdravem. Než rozhodneš, co stavitelé zamýšleli, obkresli rytiny.",
-    "ga": "Dúnadh an doras ar na saighdiúirí. D’oscail páiste é le beannacht. Scrúdaigh na comharthaí."
+    "en": "The door stayed closed to armed men, but a refugee child opened it with a greeting. Copy the carvings before you decide what the builders intended. First explore this site and collect its evidence record. Then bring it to me so we can examine what happened. Verified testimony earns a seal. Bring all three sanctuary seals to Niamh in Gaillimh.",
+    "cs": "Dveře zůstaly zavřené ozbrojencům, ale dítě uprchlíků je otevřelo pozdravem. Než rozhodneš, co stavitelé zamýšleli, obkresli rytiny. Nejdřív prozkoumej toto místo a vezmi záznam důkazů. Potom mi ho ukaž a společně posoudíme, co se stalo. Za ověřené svědectví dostaneš pečeť. Až získáš všechny tři pečeti, dones je Niamh do Gaillimh.",
+    "ga": "Dúnadh an doras ar na saighdiúirí. D’oscail páiste é le beannacht. Scrúdaigh na comharthaí. Scrúdaigh an áit seo ar dtús agus bailigh taifead na fianaise. Ansin taispeáin dom é. Gheobhaidh tú séala ar son fianaise dheimhnithe. Tabhair na trí shéala go léir chuig Niamh i nGaillimh."
   },
   "ash-temple_puzzle": {
     "en": "Your rubbing shows three greetings, all pointing inward. Sword marks were scratched over them much later. What belongs to the original threshold? Your answer will become an order. An accusation or destructive instruction cannot be undone by trying another reply; you may leave to study first.",
@@ -55,14 +55,14 @@
     "ga": "Tá an bhrí cheart agat. Tóg séala na fáilte. Is tearmann í an leabharlann."
   },
   "tide-shrine_intro": {
-    "en": "People call the Silent Tide kidnappers. I saw the sailors lead families along the causeway. Study the tide marks; fear has changed the story.",
-    "cs": "Lidé nazývají Tichý příliv únosci. Viděla jsem námořníky vést rodiny po stezce. Prozkoumej přílivové značky; strach změnil celý příběh.",
-    "ga": "Deirtear gur fuadaithe iad. Chonaic mé mairnéalaigh ag cabhrú le teaghlaigh. Scrúdaigh an taoide."
+    "en": "I am Róisín, keeper of this tidal shrine. The sailors known as the Silent Tide are accused of kidnapping families. I witnessed those families leaving the boats and walking inland. I need you to establish whether they were fleeing a disaster or being taken against their will. Compare the tide slate, the ropes and the footprints; do not rely on the accusation alone. First explore this site and collect its evidence record. Then bring it to me so we can examine what happened. Verified testimony earns a seal. Bring all three sanctuary seals to Niamh in Gaillimh.",
+    "cs": "Jsem Róisín, správkyně této přílivové svatyně. Námořníci zvaní Tichý příliv jsou obviněni z únosu rodin. Viděla jsem rodiny vystupovat z lodí a odcházet do vnitrozemí. Potřebuji zjistit, zda prchaly před nebezpečím, nebo je někdo odváděl proti jejich vůli. Porovnej tabulku přílivů, lana a stopy; samotné obvinění není důkaz. Nejdřív prozkoumej toto místo a vezmi záznam důkazů. Potom mi ho ukaž a společně posoudíme, co se stalo. Za ověřené svědectví dostaneš pečeť. Až získáš všechny tři pečeti, dones je Niamh do Gaillimh.",
+    "ga": "Is mise Róisín, coimeádaí na scríne seo. Tá na mairnéalaigh ar a dtugtar an Taoide Chiúin cúisithe as teaghlaigh a fhuadach. Chonaic mé na teaghlaigh ag fágáil na mbád agus ag siúl isteach ón gcósta. Ní mór dúinn a fháil amach ar theith siad ó bhaol nó ar tugadh leo iad in aghaidh a dtola. Cuir an taifead taoide, na rópaí agus na lorg coise i gcomparáid; ní cruthúnas í an chúis féin. Scrúdaigh an áit seo ar dtús agus bailigh taifead na fianaise. Ansin taispeáin dom é. Gheobhaidh tú séala ar son fianaise dheimhnithe. Tabhair na trí shéala go léir chuig Niamh i nGaillimh."
   },
   "tide-shrine_puzzle": {
-    "en": "The slate records a low tide at the second bell. Footprints run from the boats toward shelter, and the ropes were untied rather than cut. What happened? Your answer will become an order. An accusation or destructive instruction cannot be undone by trying another reply; you may leave to study first.",
-    "cs": "Tabulka zaznamenává odliv při druhém zvonění. Stopy vedou od lodí k úkrytu a lana byla rozvázána, ne přeřezána. Co se stalo? Tvá odpověď se stane příkazem. Obvinění či ničivý pokyn neodvoláš jinou odpovědí; můžeš nejprve odejít a studovat.",
-    "ga": "Bhí lag trá ag an dara clog. Téann na lorganna i dtreo an tearmainn. Cad a tharla? Beidh do fhreagra ina ordú. Ní chealóidh freagra eile cúiseamh ná scrios. Is féidir leat staidéar a dhéanamh ar dtús."
+    "en": "We have three observations. The slate records low tide at the second bell, when the stone causeway was passable. Footprints lead from the boats to an inland shelter. The ropes are neither broken nor cut: someone untied the knots. Which account explains all three observations? Your conclusion becomes an official testimony. Declaring the sailors dead after a storm will make the wardens seal the causeway and stop the search for survivors. If you are uncertain, leave to study the evidence first.",
+    "cs": "Máme tři důkazy. Tabulka uvádí odliv při druhém zvonu, takže kamenná stezka byla tehdy průchodná. Stopy vedou od lodí k úkrytu ve vnitrozemí. Lana nejsou přetržená ani přeříznutá: někdo rozvázal uzly. Které vysvětlení odpovídá všem třem důkazům? Tvé rozhodnutí bude zapsáno jako úřední svědectví. Označíš-li námořníky za mrtvé po bouři, stráže uzavřou stezku a zmaří hledání přeživších. Pokud si nejsi jistý, odejdi nejdřív důkazy prostudovat.",
+    "ga": "Tá trí phíosa fianaise againn. Bhí trá íseal ag an dara clog agus bhí an cabhsa cloiche insiúlta. Téann na lorg coise ó na báid chuig foscadh intíre. Níl na rópaí briste ná gearrtha: scaoil duine na snaidhmeanna. Cén míniú a oireann do na trí phíosa fianaise? Beidh do chonclúid ina fianaise oifigiúil. Má dhearbhaíonn tú go bhfuair na mairnéalaigh bás i stoirm, dúnfaidh na gardaí an cabhsa agus stopfaidh siad an cuardach. Mura bhfuil tú cinnte, téigh agus scrúdaigh an fhianaise ar dtús."
   },
   "tide-shrine_answer": {
     "en": "The sailors guided a planned evacuation at low tide.",
@@ -85,9 +85,9 @@
     "ga": "Tóg séala na fianaise. Chosain na mairnéalaigh teaghlaigh faoi rún."
   },
   "star-abbey_intro": {
-    "en": "Eliáš left the last leaf here. Each language preserves a different part of the promise. Recover the hidden page before you try to complete it.",
-    "cs": "Eliáš tu zanechal poslední list. Každý jazyk uchovává jinou část slibu. Než jej zkusíš doplnit, najdi ukrytou stránku.",
-    "ga": "D’fhág Eliáš an leathanach anseo. Tá cuid den gheallúint i ngach teanga. Aimsigh an leathanach."
+    "en": "Eliáš left the last leaf here. Each language preserves a different part of the promise. Recover the hidden page before you try to complete it. First explore this site and collect its evidence record. Then bring it to me so we can examine what happened. Verified testimony earns a seal. Bring all three sanctuary seals to Niamh in Gaillimh.",
+    "cs": "Eliáš tu zanechal poslední list. Každý jazyk uchovává jinou část slibu. Než jej zkusíš doplnit, najdi ukrytou stránku. Nejdřív prozkoumej toto místo a vezmi záznam důkazů. Potom mi ho ukaž a společně posoudíme, co se stalo. Za ověřené svědectví dostaneš pečeť. Až získáš všechny tři pečeti, dones je Niamh do Gaillimh.",
+    "ga": "D’fhág Eliáš an leathanach anseo. Tá cuid den gheallúint i ngach teanga. Aimsigh an leathanach. Scrúdaigh an áit seo ar dtús agus bailigh taifead na fianaise. Ansin taispeáin dom é. Gheobhaidh tú séala ar son fianaise dheimhnithe. Tabhair na trí shéala go léir chuig Niamh i nGaillimh."
   },
   "star-abbey_puzzle": {
     "en": "The fragments say: shelter the stranger; hear the witness; let no keeper silence another voice. What should the restored astrolabe do? Your answer will become an order. An accusation or destructive instruction cannot be undone by trying another reply; you may leave to study first.",

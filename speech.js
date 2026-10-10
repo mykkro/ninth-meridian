@@ -1,6 +1,6 @@
 (function(root){
  'use strict';
- const blocked=new Set(['ga','la','eo']);
+ const blocked=new Set(['la','eo']);
  const base=language=>String(language||'').toLowerCase().split(/[-_]/)[0];
  class BrowserSpeechProvider{
   constructor(env=root){this.env=env;}

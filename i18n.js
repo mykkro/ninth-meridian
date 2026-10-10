@@ -219,7 +219,7 @@ const INTRO_EN = {
  'splash-objective':"Find five witnesses, follow your mentor's trail across Europe, and recover the pieces of the Concordance Astrolabe. Begin by speaking to Ada, the mapmaker in Prague.",
  'splash-guidance':"You begin knowing only Czech. Read phrasebooks, learn from locals, and recruit interpreters. Translation scrolls can help with difficult exchanges. Your journal keeps your journeys, clues, and conversations."
 };
-function t(text){if(Object.hasOwn(INTRO_EN,text))return cityNames(uiLanguage==='cs'?UI_CS[text]:INTRO_EN[text]);if(Object.hasOwn(COUNTRY_NAMES,text))return COUNTRY_NAMES[text][uiLanguage==='cs'?1:0];return cityNames(uiLanguage==='cs'?(UI_CS[text]||text):(text==='Translate this line'?'Translate line & responses':text==='Prologue complete. The observatory trail continues in future chapters.'?'Prologue complete. Three routes are open: collect the lens in England, the ring in Denmark, and the disc in Spain. Then travel to Greece.':text));}
+function t(text){if(uiLanguage==='cs'&&text.endsWith(' · innkeeper'))return text.replace(' · innkeeper',' · hostinský');if(Object.hasOwn(INTRO_EN,text))return cityNames(uiLanguage==='cs'?UI_CS[text]:INTRO_EN[text]);if(Object.hasOwn(COUNTRY_NAMES,text))return COUNTRY_NAMES[text][uiLanguage==='cs'?1:0];return cityNames(uiLanguage==='cs'?(UI_CS[text]||text):(text==='Translate this line'?'Translate line & responses':text==='Prologue complete. The observatory trail continues in future chapters.'?'Prologue complete. Three routes are open: collect the lens in England, the ring in Denmark, and the disc in Spain. Then travel to Greece.':text));}
 function coins(n){if(n<0)return '−'+coins(-n);const gold=Math.floor(n/10000),silver=Math.floor(n%10000/100),copper=n%100;const pieces=[];if(gold)pieces.push(`${gold} ${uiLanguage==='cs'?'zl.':'gold'}`);if(silver)pieces.push(`${silver} ${uiLanguage==='cs'?'st\u0159.':'silver'}`);if(copper||!pieces.length)pieces.push(`${copper} ${uiLanguage==='cs'?'m\u011b\u010f.':'copper'}`);return pieces.join(' \u00b7 ');}
 
 function entryCount(n){return uiLanguage==='cs'?`${n} položek`:`${n} entries`;}
@@ -264,3 +264,9 @@ Object.assign(UI_CS,{"City":"Město"});
 Object.assign(UI_CS,{"Companions":"Společníci"});
 
 Object.assign(UI_CS,{"Inn":"Hostinec","For overnight waiting, rent a room at an inn.":"Na noc si pronajmi pokoj v hostinci.","Travel to a city inn to stay overnight.":"Pro přenocování navštiv městský hostinec.","Keeper of the local inn.":"Hostinský místního hostince."});
+
+Object.assign(UI_CS,{"Quest started":"Úkol zahájen","Quest started!":"Úkol zahájen!","Investigation started":"Pátrání zahájeno","Waited":"Čekání","Stayed at an inn":"Pobyt v hostinci"});
+
+Object.assign(UI_CS,{"Settings":"Nastavení","Training":"Trénink","All passages have Czech translations for testing.":"Všechny texty mají český překlad pro testování.","Port city":"Přístavní město"});
+
+Object.assign(UI_CS,{"Reputation changed":"Pověst se změnila","Helped the local community":"Pomoc místním","Donated to the local temple or church":"Almužna místnímu chrámu či kostelu"});

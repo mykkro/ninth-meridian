@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict'),Engine=require('../engine.js'),{world}=require('./fixtures.cjs');
+const game=new Engine(world);game.state.location='galway';game.state.companions=[];
+const id=world.locations.find(l=>l.id==='galway').riddleBooks[0];
+assert.equal(game.bookSource(id),'ga');assert.deepEqual(game.bookLanguages(id).map(v=>v.language),['ga']);
+for(const page of world.items[id].pages)assert.ok(page.text.ga&&page.title.ga);
+assert.equal(game.notes('inn_greeting','ga',null).some(n=>n.language==='cs'),false);
+game.state.training=true;assert.ok(game.notes('inn_greeting','ga',null).some(n=>n.language==='cs'&&n.via==='Training'));
+assert.ok(game.bookLanguages(id).some(v=>v.language==='cs'&&v.via==='Training'));
+game.state.training=false;game.translateBook(id,'scroll_native');assert.ok(game.bookLanguages(id).some(v=>v.language==='cs'));
+for(const city of world.locations)for(const bookId of city.riddleBooks||[])for(const page of world.items[bookId].pages)assert.ok(page.text[city.language]&&page.title[city.language],`${city.id}: original reference edition`);
+assert.ok(game.isPort('galway'));assert.equal(game.isPort('prague'),false);
+console.log('PASS: Training Czech hints, Irish original books, scroll translation and original library editions.');

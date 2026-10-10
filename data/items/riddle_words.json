@@ -14,22 +14,40 @@
     {
       "title": {
         "en": "Words that belong to people",
-        "cs": "Slova, která patří lidem"
+        "cs": "Slova, která patří lidem",
+        "de": "Wörter, die Menschen gehören",
+        "it": "Parole che appartengono alle persone",
+        "hu": "Az emberekhez tartozó szavak",
+        "ga": "Focail a bhaineann le daoine"
       },
       "text": {
         "en": "A child receives a word by which others will call them. Ownership does not mean that the owner uses the word most. A secret, by contrast, is kept out of other mouths.",
-        "cs": "Dítě dostane slovo, kterým je ostatní budou volat. Vlastnictví neznamená, že vlastník slovo používá nejčastěji. Tajemství se naopak drží mimo cizí ústa."
+        "cs": "Dítě dostane slovo, kterým je ostatní budou volat. Vlastnictví neznamená, že vlastník slovo používá nejčastěji. Tajemství se naopak drží mimo cizí ústa.",
+        "de": "Ein Kind erhält ein Wort, mit dem andere es rufen. Der Besitzer muss dieses Wort nicht am häufigsten benutzen. Ein Geheimnis dagegen soll nicht in fremde Münder gelangen.",
+        "it": "Un bambino riceve una parola con cui gli altri lo chiameranno. Non è detto che il proprietario usi quella parola più degli altri. Un segreto, invece, deve restare lontano dalle bocche altrui.",
+        "hu": "A gyermek kap egy szót, amellyel mások szólítják. Nem feltétlenül a tulajdonos használja ezt a szót a legtöbbször. A titkot viszont távol kell tartani mások szájától.",
+        "ga": "Faigheann páiste focal a úsáidfidh daoine eile chun glaoch air. Ní gá gurb é an t-úinéir is mó a úsáideann an focal sin. Coinnítear rún, áfach, amach as béal daoine eile."
       }
     },
     {
       "title": {
         "en": "Leaves without branches",
-        "cs": "Listy bez větví"
+        "cs": "Listy bez větví",
+        "de": "Blätter ohne Zweige",
+        "it": "Fogli senza rami",
+        "hu": "Ág nélküli levelek",
+        "ga": "Duilleoga gan chraobhacha"
       },
       "text": {
         "en": "In a scriptorium, leaves are sheets of parchment. Stitch them together and they can carry the words of a dead teacher to a pupil not yet born.",
-        "cs": "V písařské dílně jsou listy stránky pergamenu. Sešij je a mohou přenést slova zemřelého učitele k žákovi, který se ještě nenarodil."
+        "cs": "V písařské dílně jsou listy stránky pergamenu. Sešij je a mohou přenést slova zemřelého učitele k žákovi, který se ještě nenarodil.",
+        "de": "In der Schreibstube sind Blätter Pergamentstücke. Zusammengenäht tragen sie die Worte eines verstorbenen Lehrers zu einem Schüler, der noch nicht geboren ist.",
+        "it": "Nello scriptorium le foglie sono fogli di pergamena. Cuciti insieme, portano le parole di un maestro morto a un allievo non ancora nato.",
+        "hu": "Az íróműhelyben a levelek pergamenlapok. Összevarrva egy halott tanító szavait vihetik el egy még meg sem született tanítványhoz.",
+        "ga": "Sa scríobhlann is leathanaigh phár iad na duilleoga. Agus iad fuaite le chéile, is féidir leo focail múinteora mhairbh a thabhairt do dhalta nach bhfuil sa saol fós."
       }
     }
-  ]
+  ],
+  "format": "book",
+  "weightKg": 0.2
 }
