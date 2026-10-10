@@ -506,8 +506,8 @@
     "en": "Many stories circulate here. What would you like to ask about?"
   },
   "ada_rumorLocal": {
-    "cs": "Učni říkají, že dobrá mapa potřebuje okraje plné poznámek, ne jen krásné barvy.",
-    "en": "Apprentices say a good map needs margins full of notes, not just beautiful colours."
+    "cs": "Učni nechávají u mlýna misku pro vodníka. Ráno je prázdná; mlynář viní kočky.",
+    "en": "Apprentices leave a saucer by the mill for the river keeper. By morning it is empty; the miller blames the cats."
   },
   "ada_rumorTrail": {
     "cs": "Prý Eliáš podepisoval soukromé dopisy hvězdou s devíti cípy. Zkontroluj svůj dopis.",
@@ -524,10 +524,10 @@
     "sk": "Vraj Eliáš nechal správu pri starej bráne v Krakove. Žena, ktorú hľadáš, opravuje hodinky."
   },
   "zofia_rumorLocal": {
-    "cs": "Místní říkají, že každé hodiny v této ulici ukazují jiný čas. Já podezírám líné majitele.",
-    "en": "Locals say every clock on this street shows a different time. I suspect lazy owners.",
-    "pl": "Miejscowi mówią, że każdy zegar na tej ulicy pokazuje inną godzinę. Ja podejrzewam leniwych właścicieli.",
-    "sk": "Miestni hovoria, že každé hodiny na tejto ulici ukazujú iný čas. Ja podozrievam lenivých majiteľov."
+    "cs": "Místní viní polednici, když se ženci vracejí zmatení. Radím jim odpočívat ve stínu, ale poslední snop stejně nechávají stát.",
+    "en": "Locals blame the noon spirit when field workers return confused. I tell them to rest in the shade, but they still leave the last sheaf standing.",
+    "pl": "Miejscowi obwiniają południcę, gdy żniwiarze wracają zdezorientowani. Radzę im odpoczywać w cieniu, ale i tak zostawiają ostatni snop na polu.",
+    "sk": "Miestni vinia poludnicu, keď sa ženci vracajú zmätení. Radím im odpočívať v tieni, ale posledný snop aj tak nechávajú stáť."
   },
   "zofia_rumorTrail": {
     "cs": "Archivář ve Lvově prý nevěří pouhým příběhům. Vezmi mosazný klíč, jinak truhlu neotevře.",
@@ -536,10 +536,10 @@
     "sk": "Archivár vo Ľvove vraj neverí iba príbehom. Vezmi mosadzný kľúč, inak truhlicu neotvorí."
   },
   "oles_rumorLocal": {
-    "cs": "Říká se, že v podzemí archivu žije duch, který přerovnává knihy. Myslím, že je to naše kočka.",
-    "en": "They say a ghost in the archive cellar rearranges the books. I think it is our cat.",
-    "uk": "Кажуть, у підвалі архіву живе привид, який переставляє книжки. Я думаю, це наш кіт.",
-    "sk": "Hovorí sa, že v podzemí archívu žije duch, ktorý premiestňuje knihy. Myslím, že je to naša mačka."
+    "cs": "Prý domácí duch přerovnává knihy ve sklepě archivu. Vinil jsem naši kočku, dokud jsem nenašel svazek na polici, kam nedosáhne.",
+    "en": "They say a house spirit rearranges the books in the archive cellar. I blamed our cat, until I found a volume on a shelf she cannot reach.",
+    "uk": "Кажуть, домовик переставляє книжки в підвалі архіву. Я звинувачував нашого кота, доки не знайшов том на полиці, до якої він не дістанеться.",
+    "sk": "Vraj domáci duch premiestňuje knihy v pivnici archívu. Vinil som našu mačku, kým som nenašiel zväzok na polici, kam nedosiahne."
   },
   "oles_rumorTrail": {
     "cs": "Cestovatelé říkají, že astronom v Novgorodu pozná stříbrnou hvězdu. Cestou ji neprodávej.",
@@ -548,9 +548,9 @@
     "sk": "Cestovatelia hovoria, že astronóm v Novgorode spozná striebornú hviezdu. Cestou ju nepredávaj."
   },
   "lev_rumorLocal": {
-    "cs": "Moji žáci tvrdí, že můj dalekohled vidí sny. Ve skutečnosti jen zapomínají čistit sklo.",
-    "en": "My students insist my telescope sees dreams. In fact, they simply forget to clean the glass.",
-    "ru": "Ученики уверяют, что мой телескоп видит сны. На самом деле они просто забывают протирать стекло."
+    "cs": "Dřevorubci mluví o lešijovi, který si půjčuje známé hlasy. Mapuji hvězdy, ne lesní duchy; přesto bych v noci za voláním z cesty nesešel.",
+    "en": "Woodcutters speak of a leshy that borrows familiar voices. I chart the stars, not forest spirits; still, I would not follow a call off the road at night.",
+    "ru": "Дровосеки говорят о лешем, который подражает знакомым голосам. Я составляю карты звёзд, а не лесных духов; всё же ночью не сошёл бы с дороги на зов."
   },
   "lev_rumorTrail": {
     "cs": "Říká se, že devátý poledník není čára na běžné mapě, ale tajné znamení. Hledej stejné symboly v dopisech.",
@@ -566,9 +566,9 @@
     "en": "People head across the border without a dictionary. I would read the border phrasebook before Bratislava."
   },
   "slovakShop_rumorLocal": {
-    "cs": "Pod hradem prý spí drak, který se živí ztracenými rukavicemi. Nevěřím tomu, ale rukavice mizí.",
-    "en": "A dragon supposedly sleeps beneath the castle and eats lost gloves. I doubt it, but gloves do disappear.",
-    "sk": "Vraj pod hradom spí drak, ktorý sa živí stratenými rukavicami. Neverím tomu, ale rukavice miznú."
+    "cs": "Převozník říká, že mu po soumraku pod lodí klepe vodník. Slyšela jsem to také, ale uvolněná prkna znějí skoro stejně.",
+    "en": "The ferryman says a river spirit knocks beneath his boat after dusk. I have heard it too, though loose planks make much the same sound.",
+    "sk": "Prievozník vraví, že mu po súmraku pod loďou klope vodník. Počula som to tiež, ale uvoľnené dosky znejú skoro rovnako."
   },
   "slovakShop_rumorTrail": {
     "cs": "Slyšela jsem, že Mira zná polštinu i ukrajinštinu. Její poznámky ale budou slovensky.",
@@ -588,10 +588,10 @@
     "sk": "Počul som, že strieborná hviezda leží na dne studne. Zofia však hovorí o truhlici v archíve. Komu veríš?"
   },
   "ukrainianShop_rumorLocal": {
-    "cs": "Čtenáři říkají, že na okrajích starých knih se někdy skrývá zajímavější příběh než v samotném textu.",
-    "en": "Readers say the margins of old books sometimes hide a more interesting story than the text itself.",
-    "uk": "Читачі кажуть, що на полях старих книжок іноді ховається цікавіша історія, ніж у самому тексті.",
-    "sk": "Čitatelia hovoria, že na okrajoch starých kníh sa niekedy skrýva zaujímavejší príbeh než v samotnom texte."
+    "cs": "Čtenáři nacházejí na okrajích starých knih drobná ochranná znamení. Snad se písaři báli něčeho horšího než vlhka; snad jen zkoušeli pera.",
+    "en": "Readers have found little warding signs in the margins of old books. Perhaps the scribes feared something worse than damp; perhaps they were only practising their pens.",
+    "uk": "Читачі знаходять на полях старих книжок маленькі оберегові знаки. Може, писарі боялися чогось гіршого за вогкість; а може, просто випробовували пера.",
+    "sk": "Čitatelia nachádzajú na okrajoch starých kníh drobné ochranné znamenia. Azda sa pisári báli niečoho horšieho než vlhka; azda iba skúšali perá."
   },
   "ukrainianShop_rumorTrail": {
     "cs": "Říká se, že další svědek mluví rusky. Severské poznámky obsahují užitečné otázky, ale ne všechny odpovědi.",
@@ -1263,9 +1263,9 @@
     "ga": "Tá. Táim réidh don chéim dheireanach."
   },
   "niamh_clue": {
-    "cs": "Klíč otevírá bránu. Není tu zlatý poklad, ale knihovna jazyků.",
-    "en": "The key opens the gate. This is no hoard of gold, but a library of languages.",
-    "ga": "Osclaíonn an eochair an geata. Ní taisce óir atá anseo, ach leabharlann na dteangacha."
+    "cs": "Klíč otevírá bránu. Není tu zlatý poklad, ale knihovna jazyků. Přikryté misky se nedotýkej. Někteří zde skládají zemi sliby, o kterých nemluví nahlas.",
+    "en": "The key opens the gate. This is no hoard of gold, but a library of languages. Leave the covered bowl untouched. Some here keep vows to the earth that they do not speak aloud.",
+    "ga": "Osclaíonn an eochair an geata. Ní taisce óir atá anseo, ach leabharlann na dteangacha. Ná bain leis an mbabhla clúdaithe. Tugann daoine anseo gealltanais don talamh nach labhraíonn siad os ard fúthu."
   },
   "niamh_accept": {
     "cs": "Podělím se o tyto vědomosti se všemi.",

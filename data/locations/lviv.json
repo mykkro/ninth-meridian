@@ -4,7 +4,7 @@
   "country": "Ukraine",
   "language": "uk",
   "requires": "krakow",
-  "description": "In a candlelit archive, a locked chest holds a piece of the sky.",
+  "description": "The archive smells of dust and candle wax. Tiny warding marks have been scratched beneath its oldest shelves.",
   "npcs": [
     "oles",
     "ukrainianShop"

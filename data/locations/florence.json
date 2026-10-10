@@ -4,7 +4,7 @@
   "country": "Italy",
   "language": "it",
   "requires": "novgorod",
-  "description": "The southern disc",
+  "description": "Sunlight falls across the manuscript stalls. An alchemist’s shutter bears the signs of seven metals, one freshly rubbed away. Nearby, the painter-engineer Matteo da Fiesole displays a sketch of a flying wing; his apprentice is still repairing the model.",
   "npcs": [
     "luca",
     "florenceShop",

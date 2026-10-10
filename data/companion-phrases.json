@@ -104,12 +104,12 @@
     "en": "Before answering, repeat the question quietly to yourself. Often half the answer is already there."
   },
   "tereza_rumor": {
-    "cs": "V pražských dílnách se povídá, že Eliáš kreslil mapu podle jazyků, ne podle královských hranic. Hezký příběh, ale zatím jen pověst.",
-    "en": "In Prague's workshops they say Eliáš drew a map of languages rather than royal borders. A fine story, but still only a rumor."
+    "cs": "V pražských dílnách se povídá, že Eliáš kreslil mapu jazyků, ne královských hranic. Jeden mlynář přísahá, že se inkoust jejích řek za měsíčního světla hýbal. Viděla jsem jen opis.",
+    "en": "In Prague's workshops they say Eliáš drew a map of languages rather than royal borders. A miller swears its river ink moved in moonlight. I have only seen a copy."
   },
   "tereza_events": {
-    "cs": "Na tržišti potkávám kupce, kteří střídají jazyky tak rychle jako mince. Dobré místo k poslechu.",
-    "en": "At the market I meet traders who change languages as quickly as coins. A good place to listen."
+    "cs": "Na tržišti rodiny prchající před válkou o východní řeky mění zprávy za chléb. Jeden vozka slyšel děla; jeho bratranec tvrdí, že boje už skončily.",
+    "en": "At the market, families fleeing the eastern river war trade news for bread. A carter has heard cannon; his cousin insists the fighting is already over."
   },
   "tereza_localEvents": {
     "cs": "Pražští knihkupci dnes vystavují malé cestovní slovníky. Raději jeden skutečně přečti, než abys nesl deset zavřených knih.",
@@ -211,19 +211,19 @@
     "it": "Ti accompagnerò. Un manoscritto può essere antico, ma parlarne non deve essere noioso."
   },
   "lucia_wisdom": {
-    "cs": "Slovo může mít několik významů. Hledej ten, který sedí k otázce i k věci, již držíš v ruce.",
-    "en": "A word can have several meanings. Look for the one that fits both the question and the object in your hand.",
-    "it": "Una parola può avere più significati. Cerca quello che si accorda con la domanda e con l'oggetto che hai in mano."
+    "cs": "Slovo může mít několik významů. Alchymisté užívají stejné znamení pro kov i bludnou hvězdu. Než uvěříš jednomu významu, přečti si okolní řádky.",
+    "en": "A word can have several meanings. Alchemists use the same sign for a metal and a wandering star. Read the surrounding lines before you trust either meaning.",
+    "it": "Una parola può avere più significati. Gli alchimisti usano lo stesso segno per un metallo e una stella errante. Leggi le righe vicine prima di fidarti di uno dei due significati."
   },
   "lucia_rumor": {
-    "cs": "Jeden opisovač tvrdí, že kotouč zachytil slunce při zatmění. Nevěřím mu, ale ráda bych viděla poznámky na jeho okraji.",
-    "en": "A copyist claims the disc caught the sun during an eclipse. I do not believe him, but I would like to read the notes around its rim.",
-    "it": "Un copista sostiene che il disco catturò il sole durante un'eclissi. Non gli credo, ma vorrei leggere le note sul suo bordo."
+    "cs": "Opisovač tvrdí, že kotouč zachytil slunce při zatmění. Matteo da Fiesole chce jeho světlo namalovat a změřit otáčivými zrcadly. Jeho náčrty jsou krásné; přístroj zatím nefunguje.",
+    "en": "A copyist claims the disc caught the sun during an eclipse. Matteo da Fiesole wants to paint its light and measure it with turning mirrors. His sketches are beautiful; the apparatus has yet to work.",
+    "it": "Un copista sostiene che il disco catturò il sole durante un’eclissi. Matteo da Fiesole vuole dipingerne la luce e misurarla con specchi rotanti. I suoi disegni sono belli; l’apparecchio non funziona ancora."
   },
   "lucia_events": {
-    "cs": "Opisovači si půjčují inkoust a přou se o jedinou větu. V takových sporech bývá více péče než hněvu.",
-    "en": "The copyists are borrowing ink and arguing over a single sentence. Such arguments often contain more care than anger.",
-    "it": "I copisti si prestano l'inchiostro e discutono di una sola frase. In queste dispute c'è spesso più cura che rabbia."
+    "cs": "Opisovači se přou o vyškrábanou modlitbu k Nezářícímu slunci. Někteří ji nazývají textem kultu; archivář říká, že může jít o starou alegorii. Nikdo nechce jmenovat člověka, který ji přinesl.",
+    "en": "The copyists are arguing over a scraped-out prayer to the Unlit Sun. Some call it a cult text; the archivist says it may be an old allegory. Nobody will name the person who brought it.",
+    "it": "I copisti discutono di una preghiera raschiata al Sole Spento. Alcuni la chiamano un testo di culto; l’archivista dice che potrebbe essere un’antica allegoria. Nessuno vuole nominare chi l’ha portata."
   },
   "lucia_localEvents": {
     "cs": "V Lyonu obchodníci přivazují zboží k vozům. Camille si svou zprávu připravila pečlivě; její dopis neztrať.",
@@ -267,12 +267,12 @@
     "en": "When two stories disagree, do not discard one immediately. Find out where the storytellers stood and what they could have seen."
   },
   "rowan_rumor": {
-    "cs": "Jeden námořník mi řekl, že na západě existuje knihovna, kde je každý návštěvník zároveň učitelem. Možná tím myslel Irsko, možná jen dobrou krčmu.",
-    "en": "A sailor told me of a library in the west where every visitor is also a teacher. Perhaps he meant Ireland; perhaps he only meant a good inn."
+    "cs": "Námořník mi vyprávěl o západní knihovně, kde zavřené knihy šeptají. Viděl také návštěvníky odcházet s hlínou za nehty. Když se zeptal, čí zahradu obdělávají, správce změnil téma.",
+    "en": "A sailor told me of a western library where closed books whisper. He also saw visitors leave with soil beneath their nails. When he asked whose garden they tended, the keeper changed the subject."
   },
   "rowan_events": {
-    "cs": "Pocestní si u večeře vyměňují zprávy o přístavech. Každá další hospoda jejich příběhy trochu zvětší.",
-    "en": "Travellers are exchanging harbor news over supper. Each new inn makes their stories a little larger."
+    "cs": "U večeře námořníci mluví o vzdáleném obléhání za jižním mořem. Tady zdražilo obilí a dvě lodě se nevrátily. Tolik může hostinský potvrdit.",
+    "en": "Over supper, sailors speak of a distant siege beyond the southern sea. Here, grain costs more and two ships have failed to return. That much the innkeeper can confirm."
   },
   "rowan_localEvents": {
     "cs": "Londýnští přístavníci dnes opravují bedny a smějí se příběhu o vozidle plném úhořů. Bea má mnohem užitečnější zprávu.",
@@ -324,9 +324,9 @@
     "no": "Sjøfolk sier at nordlyset av og til tegner bokstaver. Jeg ser lys, men Aino kunne kanskje lese mer."
   },
   "sigrid_events": {
-    "cs": "V přístavech se suší lana a opravují plachty. Poznáš, že někdo chce vyplout, ještě než vysloví název cíle.",
-    "en": "The ports are drying ropes and mending sails. You can tell someone means to depart before they name the destination.",
-    "no": "I havnene tørker de tau og reparerer seil. Du kan se at noen vil reise før de sier hvor de skal."
+    "cs": "V přístavech opravují plachty pro baltskou válku. Jeden kapitán přibil nad kajutu bílou šňůru; říká, že bratrstvo Tichého přílivu slibuje bezpečnou plavbu. Posádka o tom nechce mluvit.",
+    "en": "The ports are mending sails for the Baltic war. A captain has nailed a white cord above his cabin door; he says the Quiet Tide fellowship promises safe passage. His crew will not discuss it.",
+    "no": "I havnene reparerer de seil til krigen i Østersjøen. En kaptein har spikret en hvit snor over lugardøren; han sier at Det stille tidevanns brorskap lover trygg ferd. Mannskapet vil ikke snakke om det."
   },
   "sigrid_localEvents": {
     "cs": "Ve Stockholmu si kupci vyměňují zprávy ze severu. Erikova mapa polární záře je ale důkaz, ne jen zpráva z přístavu.",

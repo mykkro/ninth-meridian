@@ -1,0 +1,25 @@
+<!doctype html><meta charset="utf-8"><title>Book reader checks</title>
+<pre id="results">Running</pre><iframe id="game" src="../index.html" title="Game"></iframe>
+<script>
+const frame=document.getElementById('game');
+const assert=(value,message)=>{if(!value)throw Error(message);};
+async function run(){
+ for(let n=0;n<200&&!frame.contentDocument?.getElementById('load-status')?.hidden;n++)await new Promise(resolve=>setTimeout(resolve,50));
+ const doc=frame.contentDocument;
+ assert(doc.getElementById('load-status').hidden,'Game loaded');
+ const click=(selector,text)=>{const b=[...doc.querySelectorAll(selector)].find(b=>b.textContent.includes(text));assert(b&&!b.disabled,'Enabled '+text);b.click();};
+ click('#npcs button','knihkupec');
+ const world=await frame.contentWindow.WorldContent.loadWorld();
+ click('#choices button',world.phrases.shopBrowse.cs);
+ click('#choices button','Koupit');
+ click('#inventory button','Přečíst slovník');
+ const reader=doc.querySelector('.book-reader');assert(reader.open,'Modal opens');
+ assert(reader.querySelectorAll('.book-page').length===2,'Facing pages');
+ assert(reader.querySelector('.book-entry'),'Entries rendered');
+ const next=reader.querySelector('[data-turn="next"]');
+ if(!next.disabled){next.click();assert(reader.querySelector('.book-page-number').textContent==='3','Page turn');reader.querySelector('[data-turn="previous"]').click();assert(reader.querySelector('.book-page-number').textContent==='1','Previous pages');}
+ click('.book-reader button','Zavřít');assert(!reader.open,'Close');
+ document.getElementById('results').textContent='Passed: book opens, facing pages, entries, navigation, and close.';
+}
+run().catch(error=>document.getElementById('results').textContent='FAILED: '+error.message);
+</script>
